@@ -2,9 +2,162 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
+    <main>
+        <div class="menu">
+            <div class="menu-button">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="logo">
+            <span>Билли.Маркет</span>
+        </div>
+        <div class="search">
+            <div class="search__input">
+                <input type="text">
+                <input type="button" value="Найти">
+            </div>
+        </div>
+        <div class="search-ya">
+            <input class="search-ya__input">
+        </div>
+        <div class="search-min">
+            <div class="search-min__input">
+                <input type="text" placeholder="Введите запрос">
+            </div>
+            <span class="search-button"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="nav">
+            <div class="nav__close">
+                <div class="menu-close-button">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div><a href="#">Морские ракушки</a></div>
+            <div><a href="#">Сунвениры из тайланда</a></div>
+            <div><a href="#">Автомобили тесла</a></div>
+            <div><a href="#">Марки из разных стран</a></div>
+            <div><a href="#">Заказать сувенир</a></div>
+        </div>
+        <div class="goods">
+            <div class="good">
+                <div class="good__wrap">
+                    <div class="good__image">
+                        <img alt="testimg" title="testimg" height="200" src="img.jpg">
+                    </div>
+                    <div class="good__name"><a href="#">Термокружка</a></div>
+                    <div class="good__price">300 &#8381;</div>
+                    <div class="good__rating">
+                        <div class="good__rating__flag">4.5</div>
+                        <div class="good__rating__flag-arrow"></div>
+                        <div class="good__rating__feedback-count">111 отзывов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="good">
+                <div class="good__wrap">
+                    <div class="good__image">
+                        <img alt="testimg" title="testimg" height="200" src="img.jpg">
+                    </div>
+                    <div class="good__name"><a href="#">Термокружка</a></div>
+                    <div class="good__price">300 &#8381;</div>
+                    <div class="good__rating">
+                        <div class="good__rating__flag">4.5</div>
+                        <div class="good__rating__flag-arrow"></div>
+                        <div class="good__rating__feedback-count">111 отзывов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="good">
+                <div class="good__wrap">
+                    <div class="good__image">
+                        <img alt="testimg" title="testimg" height="200" src="img.jpg">
+                    </div>
+                    <div class="good__name"><a href="#">Термокружка</a></div>
+                    <div class="good__price">300 &#8381;</div>
+                    <div class="good__rating">
+                        <div class="good__rating__flag">4.5</div>
+                        <div class="good__rating__flag-arrow"></div>
+                        <div class="good__rating__feedback-count">111 отзывов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="good">
+                <div class="good__wrap">
+                    <div class="good__image">
+                        <img alt="testimg" title="testimg" height="200" src="img.jpg">
+                    </div>
+                    <div class="good__name"><a href="#">Термокружка</a></div>
+                    <div class="good__price">300 &#8381;</div>
+                    <div class="good__rating">
+                        <div class="good__rating__flag">4.5</div>
+                        <div class="good__rating__flag-arrow"></div>
+                        <div class="good__rating__feedback-count">111 отзывов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="good">
+                <div class="good__wrap">
+                    <div class="good__image">
+                        <img alt="testimg" title="testimg" height="200" src="img.jpg">
+                    </div>
+                    <div class="good__name"><a href="#">Термокружка</a></div>
+                    <div class="good__price">300 &#8381;</div>
+                    <div class="good__rating">
+                        <div class="good__rating__flag">4.5</div>
+                        <div class="good__rating__flag-arrow"></div>
+                        <div class="good__rating__feedback-count">111 отзывов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tags">
+            <div class="tags__head">
+                Популярные товары
+            </div>
+            <div class="tags__items">
+                <div><a href="#">Ракушка морская</a></div>
+                <div><a href="#">Чесалка для спины</a></div>
+                <div><a href="#">Четки</a></div>
+            </div>
+        </div>
+        <div class="form">
+            <h1>Заказать сувенир</h1>
+            <div class="form__wrap">
+                <div>
+                    <label for="count">Количество:</label>
+                    <input id="count" type="text">
+                </div>
+                <div>
+                    <label for="city">Город:</label>
+                    <select id="city">
+                        <option>-</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" placeholder="email">
+                </div>
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" type="text" placeholder="Номер телефона*">
+                </div>
+                <div>
+                    <label for="date">Дата доставки:</label>
+                    <input id="date" type="text" placeholder="дд.мм.гггг">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

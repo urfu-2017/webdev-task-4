@@ -1,0 +1,172 @@
+.logo
+{
+    background: white;
+    text-align: center;
+    line-height: 130px;
+    font-size: 30px;
+    grid-area: logo;
+}
+
+.search
+{
+    background: white;
+    grid-area: search;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input
+{
+    display: flex;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.search__input > input:first-child
+{
+    flex-grow: 1;
+    height: 58px;
+    font-size: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px solid rgb(232, 232, 232);
+}
+
+.search__input > input:last-child
+{
+    width: 134px;
+    font-size: 25px;
+    cursor: pointer;
+    background: rgb(232, 232, 232);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+.search-min
+{
+    background: white;
+    display: none;
+    grid-area: search;
+    padding-right: 30px;
+}
+
+.search-min > .search-min__input
+{
+    display: none;
+    width: 100%;
+}
+
+.search-min > .search-min__input > input
+{
+    height: 30px;
+    border: 2px solid rgb(232, 232, 232);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.search-min > .search-button
+{
+    color: lightblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.search-ya
+{
+    display: none;
+    grid-area: search;
+    background: white;
+    padding: 0 20px;
+}
+
+.search-ya__input
+{
+    height: 30px;
+    border: 3px solid rgb(253, 221, 60);
+    border-right: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+
+.search-ya:after
+{
+    content: '';
+    display: block;
+    border: 3px solid rgb(253, 221, 60);
+    border-left: none;
+    border-bottom: none;
+    width: 25px;
+    height: 25px;
+
+    position: relative;
+    left: -13px;
+
+    transform: rotate(45deg);
+}
+
+.menu
+{
+    grid-area: menu;
+    background: white;
+    display: none;
+
+    line-height: 50px;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.menu-button
+{
+    cursor: pointer;
+    width: 30px;
+    float: right;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 720px)
+{
+    .logo
+    {
+        line-height: 70px;
+    }
+
+    .search
+    {
+        display: none;
+    }
+
+    .search-min
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .search
+    {
+        display: none;
+    }
+
+    .search-ya
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo
+    {
+        line-height: 50px;
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    .menu
+    {
+        display: block;
+    }
+}
