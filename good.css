@@ -1,0 +1,60 @@
+.good
+{
+    background: white;
+    width: 290px;
+    border: 1px solid rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.good__wrap > div
+{
+    margin-bottom: 7px;
+}
+
+.good__name > a
+{
+    text-decoration: none;
+}
+
+.good__price
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.good__rating > div
+{
+    float: left;
+}
+
+.good__rating__flag
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+    background: rgb(82, 159, 6);
+}
+
+.good__rating__feedback-count
+{
+    font-size: 14px;
+    line-height: 25px;
+    color: gray;
+    padding-left: 10px;
+}
+
+.good__rating__flag-arrow
+{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+
+    border-left: 12px solid rgb(82, 159, 6);
+}

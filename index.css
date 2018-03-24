@@ -1,0 +1,88 @@
+@import './nav.css';
+@import './good.css';
+@import './form.css';
+@import './head.css';
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: rgb(246, 246, 246);
+    font-family: Helvetica, sans-serif;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 30px 210px auto 210px 30px;
+    grid-template-rows: 120px 30px 200px auto 30px 380px 30px;
+
+    grid-template-areas: 'logo logo search search search'
+        '. .   .    .    .'
+        '. nav main tags .'
+        '. . main . .'
+        '. . .    . .'
+        '. . form . .'
+        '. . .    . .';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.goods
+{
+    grid-area: main;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 291px);
+}
+
+.goods > div
+{
+    float: left;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 720px)
+{
+    main
+    {
+        grid-template-rows: 70px 30px auto 20px auto 10px auto 30px 380px 30px;
+        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-areas: 'logo logo search search'
+            '. . . .'
+            '. nav nav .'
+            '. . . .'
+            '. main main .'
+            '. . . .'
+            '. tags tags .'
+            '. . . .'
+            '. form form .'
+            '. .    .    .';
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    main
+    {
+        grid-template-rows: 50px 60px 30px auto 20px auto 50px auto 30px ;
+        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-areas: 'logo logo menu menu'
+            'search search search search'
+            '. . . .'
+            '. tags tags .'
+            '. . . .'
+            '. main main .'
+            '. . . .'
+            '. form form .'
+            '. .    .    .';
+    }
+
+    .goods
+    {
+        justify-content: center;
+    }
+}
