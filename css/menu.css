@@ -1,0 +1,13 @@
+.menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-area: h;
+    background-color: white;
+    padding: 7%;
+}
+
+.menu_item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 4%;
+}

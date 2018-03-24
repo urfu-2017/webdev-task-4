@@ -1,0 +1,13 @@
+.popular {
+    grid-area: e;
+    background-color: white;
+    padding: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.popular_item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 4%;
+}

@@ -1,10 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/souvenirs.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/popular.css">
 </head>
+
 <body>
+    <header class="search">
+        <h1 class="search_name">Билли.Маркет</h1>
+        <input size="60" class="search_input">
+        <button class="search_button">
+            Найти
+        </button>
+    </header>
+    <main>
+        <article class="menu">
+            <a href="" class="menu_item">Морские ракушки</a>
+            <a href="" class="menu_item">Сувениры из Тайланда</a>
+            <a href="" class="menu_item">Автомобили Тесла</a>
+            <a href="" class="menu_item">Марки из разных стран</a>
+            <a href="" class="menu_item">Заказать сувенир</a>
+        </article>
+        <article class="souvenirs">
+            <section class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/shell.JPG">
+                <div class="souvenirs_item_info">
+                    <a href="" class="souvenirs_item_info_name">
+                        Ракушка "Морское дно"
+                    </a>
+                    <div class="souvenirs_item_info_price">
+                        290 ₽
+                    </div>
+                    <div class="souvenirs_item_info_rating">
+                        4.0
+                    </div>
+                    <div class="souvenirs_item_info_review">
+                        111 отзывов
+                    </div>
+                </div>
+            </section>
+            <section class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/glass.JPG">
+                <div class="souvenirs_item_info">
+                    <a href="" class="souvenirs_item_info_name">
+                        Термокружкус "Батарейка"
+                    </a>
+                    <div class="souvenirs_item_info_price">
+                        404 ₽
+                    </div>
+                    <div class="souvenirs_item_info_rating">
+                        4.5
+                    </div>
+                    <div class="souvenirs_item_info_review">
+                        290 отзывов
+                    </div>
+                </div>
+            </section>
+            <section class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/car.JPG">
+                <div class="souvenirs_item_info">
+                    <a href="" class="souvenirs_item_info_name">
+                        Автомобиль "Тесла"
+                    </a>
+                    <div class="souvenirs_item_info_price">
+                        359 900 ₽
+                    </div>
+                    <div class="souvenirs_item_info_rating">
+                        4.5
+                    </div>
+                    <div class="souvenirs_item_info_review">
+                        1 отзыв
+                    </div>
+                </div>
+            </section>
+            <section class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/back.JPG">
+                <div class="souvenirs_item_info">
+                    <a href="" class="souvenirs_item_info_name">
+                        Чесалка для спины
+                    </a>
+                    <div class="souvenirs_item_info_price">
+                        195 ₽
+                    </div>
+                    <div class="souvenirs_item_info_rating">
+                        4.0
+                    </div>
+                    <div class="souvenirs_item_info_review">
+                        29 отзыв
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="order">
+            <h2 class="order_name">Заказать сувенир</h2>
+            <div class="order_item">
+                Количество:
+                <input size="20">
+            </div>
+            <div class="order_item">
+                Город:
+                <input size="20">
+            </div>
+            <div class="order_item">
+                Email:
+                <input size="20">
+            </div>
+            <div class="order_item">
+                Телефон:
+                <input size="20">
+            </div>
+            <div class="order_item ">
+                Дата доставки :
+                <input size="20">
+            </div>
+            <button class="order_reset">
+                Cбросить заказ
+            </button>
+            <button class="order_send">
+                Заказать
+            </button>
+        </article>
+        <article class="popular">
+            <h2>Популярные товары</h2>
+            <a href="" class="popular_item">Ракушка морская</a>
+            <a href="" class="popular_item">Чесалка для спины</a>
+            <a href="" class="popular_item">Чётки</a>
+        </article>
+    </main>
 </body>
+
 </html>

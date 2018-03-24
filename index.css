@@ -1,0 +1,34 @@
+body {
+    padding: 5%;
+}
+
+main {
+    grid-area: b;
+    display: grid;
+    grid-template-areas: 
+            "h c e"
+            "l d m";
+    grid-template-columns: 25% 50% 25%;
+    background-color: rgb(238, 237, 237);
+    padding-top: 5%;
+}
+
+.search {
+    margin-bottom:2%;
+}
+
+.search_name {
+    display: inline;
+    font-size: 3em;
+    font-weight: 100
+}
+
+.search_input {
+    margin-left: 3%;
+    height: 30px;
+}
+
+.search_button {
+    height: 36px;
+    margin-bottom: 2%;
+}
