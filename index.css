@@ -11,6 +11,8 @@ main {
     grid-template-columns: 25% 50% 25%;
     background-color: rgb(238, 237, 237);
     padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .search {
@@ -31,4 +33,29 @@ main {
 .search_button {
     height: 36px;
     margin-bottom: 2%;
+}
+
+@media screen and (min-width: 981px) {
+    .search_input {
+        visibility: visible !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    main {
+        grid-template-areas: 
+                "h h"
+                "c c"
+                "e e"
+                "d d";
+        grid-template-columns: 50% 50%;
+    }
+
+    main > * {
+        margin-bottom: 5%;
+    }
+
+    .search_input {
+        visibility: hidden;
+    }
 }

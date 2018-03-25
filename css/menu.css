@@ -1,13 +1,27 @@
 .menu {
-    margin-left: 10%;
-    margin-right: 10%;
     grid-area: h;
     background-color: white;
     padding: 7%;
+    margin-right: 7%;
 }
 
 .menu_item {
     display: block;
     text-decoration: none;
     margin-bottom: 4%;
+}
+
+@media screen and (max-width: 980px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 120px;
+        margin-right: 0%;
+    }
+    .menu_item {
+        display: inline-block;
+        width: 200px;
+    }
 }

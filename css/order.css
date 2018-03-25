@@ -14,3 +14,9 @@
 .order_send {
     float: right;
 }
+
+@media screen and (max-width: 980px) {
+    .order {
+        margin-top: 0%;
+    }
+}
