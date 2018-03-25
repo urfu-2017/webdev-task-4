@@ -42,3 +42,10 @@
 .souvenirs_item_info_name {
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 720px) {
+    .souvenirs_item {
+        display: block;
+    }
+}

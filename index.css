@@ -35,13 +35,7 @@ main {
     margin-bottom: 2%;
 }
 
-@media screen and (min-width: 981px) {
-    .search_input {
-        visibility: visible !important;
-    }
-}
-
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 720px) and (max-width: 1023px) {
     main {
         grid-template-areas: 
                 "h h"
@@ -57,5 +51,15 @@ main {
 
     .search_input {
         visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        grid-template-areas: 
+                "h"
+                "e"
+                "c"
+                "d";
     }
 }

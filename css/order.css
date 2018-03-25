@@ -15,7 +15,7 @@
     float: right;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 720px) and (max-width: 1023px) {
     .order {
         margin-top: 0%;
     }
