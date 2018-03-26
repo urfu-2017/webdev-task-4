@@ -3,13 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="./index-phone.css"/>
+    <link rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="./index-pad.css"/>
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./index-desktop.css"/>    
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./css/search-bar.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/popular.css">
-    <link rel="stylesheet" href="./css/item-list.css">
-    <link rel="stylesheet" href="./css/order-form.css">
 </head>
 
 <body>
@@ -20,22 +17,14 @@
         </form>
         <button class="search-bar__button">Найти</button>
     </header>
-    <nav class="nav white-block">
+    <nav class="nav white-block center">
         <div class="nav__category">Морские ракушки</div>
         <div class="nav__category">Сувениры из Тайланда</div>
         <div class="nav__category">Автомобили Тесла</div>
         <div class="nav__category">Марки из разных стран</div>
         <div class="nav__category">Заказать сувенир</div>
     </nav>
-    <section class="popular white-block">
-        <header class="popular__header">Популярные товары</header>
-        <div class="popular-items">
-            <div class="popular__item">Ракушка морская</div>
-            <div class="popular__item">Чесалка для спины</div>
-            <div class="popular__item">Чётки</div>
-        </div>
-    </section>
-    <section class="item-list">
+    <section class="item-list center">
         <article class="item white-block">
             <div class="item__img-container">
                 <img class="item__img" src="./static/seashell.jpg" alt="seashell image">
@@ -81,7 +70,15 @@
             </div>
         </article>
     </section>
-    <section class="order-form white-block">
+    <section class="popular white-block center">
+        <header class="popular__header">Популярные товары</header>
+        <div class="popular-items">
+            <div class="popular__item">Ракушка морская</div>
+            <div class="popular__item">Чесалка для спины</div>
+            <div class="popular__item">Чётки</div>
+        </div>
+    </section>
+    <section class="order-form white-block center">
         <header class="order-form__header">Заказать сувенир</header>
         <div class="order-form__container">
             <div class="order-form__name">Количество:</div>

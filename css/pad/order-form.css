@@ -1,0 +1,20 @@
+.order-form__header
+{
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.order-form__container
+{
+    margin: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-form__controls
+{
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: space-around;
+}

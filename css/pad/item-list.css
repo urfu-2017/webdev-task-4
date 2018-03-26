@@ -1,0 +1,12 @@
+.item
+{
+    width: 48%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.item__img
+{
+    width: 150px;
+    height: 150px;
+}
