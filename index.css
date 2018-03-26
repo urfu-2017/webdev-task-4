@@ -1,0 +1,27 @@
+body
+{
+    font: 13.3px Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #0054b9;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-goods
+{
+    display: flex;
+    flex-direction: column;
+}
