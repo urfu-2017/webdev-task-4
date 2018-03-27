@@ -4,7 +4,122 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Roboto:400,700" rel="stylesheet">
 </head>
 <body>
+<header class="header">
+    <div class="header__top">
+        <h1 class="header__heading">
+            Билли.Маркет
+        </h1>
+        <button class="header__menu sandwich">
+            <span class="sandwich-bar"></span>
+            <span class="sandwich-bar"></span>
+            <span class="sandwich-bar"></span>
+        </button>
+    </div>
+    <input type="search" name="search" placeholder="Искать товары" class="header__search">
+</header>
+<main class="main">
+    <aside class="categories main__item">
+        <ul class="categories__list">
+            <li class="categories__item">
+                <a class="categories__link link" href="#">Морские ракушки</a>
+            </li>
+            <li class="categories__item">
+                <a class="categories__link link" href="#">Сувениры из Тайланда</a>
+            </li>
+            <li class="categories__item">
+                <a class="categories__link link" href="#">Автомобили Тесла</a>
+            </li>
+            <li class="categories__item">
+                <a class="categories__link link" href="#">Марки из разных стран</a>
+            </li>
+
+        </ul>
+    </aside>
+    <aside class="popular main__item">
+        <h2 class="popular__heading">Популярные товары</h2>
+        <ul class="popular__items">
+            <li class="popular__item">
+                <a class="popular__link link" href="#">Ракушка морская</a>
+            </li>
+            <li class="popular__item">
+                <a class="popular__link link" href="#">Чесалка для спины</a>
+            </li>
+            <li class="popular__item">
+                <a class="popular__link link" href="#">Чётки</a>
+            </li>
+        </ul>
+    </aside>
+    <section class="lots">
+        <div class="lot main__item">
+            <img src="assets/images/1.png" alt="Тов ар" class="lot__img">
+            <a href="#" class="lot__link link">Ракушка &laquo;Морское дно&raquo;</a>
+            <span class="lot__price">290 &#8381;</span>
+            <div class="lot__feedback">
+                <span class="lot__rating">4.0</span>
+                <span class="lot__feedback-count">111 отзывов</span>
+            </div>
+        </div>
+        <div class="lot main__item">
+            <img src="assets/images/1.png" alt="Товар" class="lot__img">
+            <a href="#" class="lot__link link">Ракушка &laquo;Морское дно&raquo;</a>
+            <span class="lot__price">290 &#8381;</span>
+            <div class="lot__feedback">
+                <span class="lot__rating">4.0</span>
+                <span class="lot__feedback-count">111 отзывов</span>
+            </div>
+        </div>
+        <div class="lot main__item">
+            <img src="assets/images/1.png" alt="Товар" class="lot__img">
+            <a href="#" class="lot__link link">Ракушка &laquo;Морское дно&raquo;</a>
+            <span class="lot__price">290 &#8381;</span>
+            <div class="lot__feedback">
+                <span class="lot__rating">4.0</span>
+                <span class="lot__feedback-count">111 отзывов</span>
+            </div>
+        </div>
+        <div class="lot main__item">
+            <img src="assets/images/1.png" alt="Товар" class="lot__img">
+            <a href="#" class="lot__link link">Ракушка &laquo;Морское дно&raquo;</a>
+            <span class="lot__price">290 &#8381;</span>
+            <div class="lot__feedback">
+                <span class="lot__rating">4.0</span>
+                <span class="lot__feedback-count">111 отзывов</span>
+            </div>
+        </div>
+    </section>
+    <form method="post" action="" class="order">
+        <h2 class="order__heading">Заказать сувенир</h2>
+        <label class="order__label">
+            Количество
+            <input class="order__input" type="number" name="quantity" >
+        </label>
+        <label class="order__label">
+            Город
+            <select class="order__input" name="town">
+                <option value="">-</option>
+                <option value="town">Город</option>
+            </select>
+        </label>
+        <label class="order__label">
+            Email
+            <input class="order__input" type="email" name="email">
+        </label>
+        <label for="tel" class="order__label">
+            Телефон
+            <input class="order__input" type="tel" name="tel" id="tel">
+        </label>
+        <label for="date" class="order__label">
+            Дата доставки:
+            <input class="order__input" type="date" name="date" id="date">
+        </label>
+        <div class="order__buttons">
+            <button class="order__reset" type="reset">Сбросить заказ</button>
+            <button class="order__submit" type="submit">Заказать</button>
+        </div>
+    </form>
+</main>
 </body>
 </html>
