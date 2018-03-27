@@ -12,12 +12,12 @@ const header = {
         input: document.querySelector('.search__input'),
         button: document.querySelector('.search__button')
     }
-}
+};
 
 const navigation = {
     wrapper: document.querySelector('.navigation'),
     getCloseIcon: () => document.querySelector('.navigation__close-icon')
-}
+};
 
 const page = document.querySelector('.page');
 
@@ -36,13 +36,14 @@ function main() {
         FONT_AWESOME_TIMEOUT
     );
 
+    // eslint-disable-next-line no-undef
     var hammer = new Hammer(page, { preventDefault: true });
-    hammer.on("swipeleft", () => switchNavigationDrawer());
+    hammer.on('swipeleft', () => switchNavigationDrawer());
 }
 
 // Switchers
 
-function switchSearchField(collapse=false) {
+function switchSearchField(collapse = false) {
     if (window.innerWidth < 600 || window.innerWidth >= 1024) {
         return;
     }
@@ -52,7 +53,7 @@ function switchSearchField(collapse=false) {
     header.search.button.style.display = collapse ? 'none' : 'block';
 }
 
-function switchNavigationDrawer(collapse=false) {
+function switchNavigationDrawer(collapse = false) {
     document.body.style.overflow = collapse ? 'visible' : 'hidden';
     navigation.wrapper.style.display = collapse ? 'none' : 'flex';
 }
