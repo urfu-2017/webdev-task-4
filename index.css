@@ -35,7 +35,7 @@ main {
     margin-bottom: 2%;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (max-width: 979px)  /* Tablet */ {
     main {
         grid-template-areas: 
                 "h h"
@@ -49,8 +49,22 @@ main {
         margin-bottom: 5%;
     }
 
+    .search_name {
+        display: inline;
+        font-size: 2em;
+        font-weight: 100;
+    }
+
     .search_input {
         visibility: hidden;
+        width: 350px;
+    }
+
+    .popular_wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -61,5 +75,16 @@ main {
                 "e"
                 "c"
                 "d";
+        grid-template-columns: 100%;
     }
+
+    .search_input {
+        visibility: visible;
+        width: 250px;
+    }
+
+    .search_button {
+        visibility: hidden;
+    }
+
 }

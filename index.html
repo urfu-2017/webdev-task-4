@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/order.css">
     <link rel="stylesheet" href="./css/popular.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
+    <input type="checkbox" class="">
     <header class="search">
         <h1 class="search_name">Билли.Маркет</h1>
         <input size="60" class="search_input">
@@ -119,7 +121,7 @@
                 Дата доставки :
                 <input size="20" type="date">
             </div>
-            <button class="order_reset">
+            <button class="order_reset" type="reset">
                 Cбросить заказ
             </button>
             <button class="order_send">
@@ -128,9 +130,11 @@
         </article>
         <article class="popular">
             <h2>Популярные товары</h2>
-            <a href="" class="popular_item">Ракушка морская</a>
-            <a href="" class="popular_item">Чесалка для спины</a>
-            <a href="" class="popular_item">Чётки</a>
+            <div class="popular_wrapper">
+                <a href="" class="popular_item">Ракушка морская</a>
+                <a href="" class="popular_item">Чесалка для спины</a>
+                <a href="" class="popular_item">Чётки</a>
+            </div>
         </article>
     </main>
 </body>

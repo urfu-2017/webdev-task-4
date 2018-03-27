@@ -11,14 +11,27 @@
     margin-bottom: 4%;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (max-width: 979px) {
     .popular {
         margin-left: 0%;
-        padding-top: 2%;
+        padding-top: 2%; 
+    }
+
+    .popular_wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
     .popular_item {
         display: inline;
-        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .popular_wrapper {
+        display: block;
+    }
+    .popular_item {
+        display: block;
     }
 }

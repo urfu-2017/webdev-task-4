@@ -15,8 +15,18 @@
     float: right;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (max-width: 979px) {
     .order {
         margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .order_item > input {
+        width: 110px;
+    }
+
+    .order_item > input {
+        display: block;
     }
 }
