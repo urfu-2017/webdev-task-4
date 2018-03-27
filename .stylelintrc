@@ -1,3 +1,7 @@
 {
-  "extends": "stylelint-config-hrundel"
+  "extends": "stylelint-config-hrundel",
+  "rules": {
+    "block-opening-brace-newline-before": null,
+    "indentation": null
+  }
 }
