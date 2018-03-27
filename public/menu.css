@@ -1,0 +1,44 @@
+.menu__title
+{
+    display: none;
+}
+
+.menu
+{
+    grid-column: 1 / 2;
+    background-color: #FFFF;
+    margin: var(--margin-for-blocks) 0 0 var(--margin-for-blocks);
+    height: 15vmax;
+    border: .3vmax solid var(--color-theme-dark);
+}
+
+.menu_hide
+{
+    display: none;
+}
+
+.menu__item
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    text-decoration: transparent;
+    color: #00F;
+    display: block;
+    margin: .8vmax 0;
+}
+
+.menu__category-items,
+.menu__side-items
+{
+    margin: 1.5vmax;
+}
+
+.menu__item:hover
+{
+    color: var(--color-anchor-hover);
+}
+
+.menu__item:active
+{
+    color: var(--color-anchor-active);
+}

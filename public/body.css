@@ -1,0 +1,15 @@
+@import 'header.css';
+@import 'main.css';
+@import './fonts/fonts.css';
+
+.body
+{
+    --color-theme: #e8e8e8;
+    --color-theme-dark: #c8c8c8;
+    --margin-for-blocks: 1vmax;
+    --color-anchor-hover: #F00C;
+    --color-anchor-active: #F00;
+    --standard-font-size: 1.3vmax;
+    margin: 0;
+    background-color: var(--color-theme);
+}

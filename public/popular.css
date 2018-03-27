@@ -1,0 +1,41 @@
+.popular
+{
+    grid-column: 3 / 4;
+    background-color: #FFFF;
+    margin: var(--margin-for-blocks) var(--margin-for-blocks) 0 0;
+    height: 14vmax;
+    border: .3vmax solid var(--color-theme-dark);
+}
+
+.popular__title
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.4vmax;
+    text-align: center;
+}
+
+.popular__items
+{
+    margin: 0 1.6vmax;
+}
+
+.popular__item
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    text-decoration: transparent;
+    color: #00F;
+    display: block;
+    margin: 0.8vmax 0;
+}
+
+.popular__item:hover
+{
+    color: var(--color-anchor-hover);
+}
+
+.popular__item:active
+{
+    color: var(--color-anchor-active);
+}

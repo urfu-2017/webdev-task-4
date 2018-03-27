@@ -1,0 +1,12 @@
+@import 'menu.css';
+@import 'popular.css';
+@import 'products-list.css';
+@import 'order.css';
+
+.main
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 1.5vmax;
+    grid-column-gap: var(--margin-for-blocks);
+}

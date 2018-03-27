@@ -1,0 +1,76 @@
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    src: url('./YandexSansDisplay-Regular.eot');
+    src:    url('./YandexSansDisplay-Regular.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansDisplay-Regular.woff') format('woff'),  
+            url('./YandexSans/YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Display Bold';
+    src: url('./YandexSansDisplay-Bold.eot');
+    src:    url('./YandexSansDisplay-Bold.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansDisplay-Bold.woff') format('woff'),  
+            url('./YandexSans/YandexSansDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Thin';
+    src: url('./YandexSansText-Thin.eot');
+    src:    url('./YandexSansText-Thin.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansText-Thin.woff') format('woff'),  
+            url('./YandexSans/YandexSansText-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Light';
+    src: url('./YandexSansText-Light.eot');
+    src:    url('./YandexSansText-Light.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansText-Light.woff') format('woff'),  
+            url('./YandexSans/YandexSansText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Regular';
+    src: url('./YandexSansText-Regular.eot');
+    src:    url('./YandexSansText-Regular.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansText-Regular.woff') format('woff'),  
+            url('./YandexSans/YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Medium';
+    src: url('./YandexSansText-Medium.eot');
+    src:    url('./YandexSansText-Medium.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansText-Medium.woff') format('woff'),  
+            url('./YandexSans/YandexSansText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Bold';
+    src: url('./YandexSansText-Bold.eot');
+    src:    url('./YandexSansText-Bold.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansText-Bold.woff') format('woff'),  
+            url('./YandexSans/YandexSansText-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,35 @@
+@import 'search.css';
+
+.header 
+{
+    --header-height: 5vmax;
+    --header-font-size: 3vmax;
+    display: flex;
+    background-color: #FFF;    
+    box-shadow: 0 0 2vmin 1vmin var(--color-theme-dark);
+    z-index: 1;
+}
+
+.header__title
+{
+    font-family: 'Yandex Sans Text Thin', sans-serif;
+    /* font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-stretch: ultra-condensed; */
+    font-size: var(--header-font-size);
+    transform: scale(.7, 1.2);
+    margin: 1vmin;
+}
+
+.header__title_red
+{
+    font-family: 'Yandex Sans Text Light', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-weight: bold; */
+    margin-right: 1vmin;
+}
+
+.header__title::first-letter
+{
+    color: #F00;
+}

@@ -3,8 +3,113 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./public/body.css">
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <h1 class="header__title"><span class="header__title_red">Билли</span>Маркет</h1>
+        <label class="search search_hide">
+            <input type="checkbox" class="search_hide-checkbox" />
+            <img src="./public/pics/search.png" alt="Show input for search" class="search__show-click-img" />
+        </label>
+        <form class="search">
+            <button class="search__button">Найти</button>
+            <input type="search" name="q" class="search__input" />
+        </form>
+    </header>
+    <main class="main">
+        <input type="button" class="menu_hide"> 
+        <nav class="menu">
+            <h2 class="menu__title">Выбрать категорию</h2>
+            <div class="menu__category-items">
+                <a href="https://google.com/" class="menu__item">Морские ракушки</a>
+                <a href="https://google.com/" class="menu__item">Сувениры из Таиланда</a>
+                <a href="https://google.com/" class="menu__item">Автомобили Тесла</a>
+                <a href="https://google.com/" class="menu__item">Марки из разных стран</a>
+            </div>
+            <div class="menu__side-items">
+                <a href="https://google.com/" class="menu__item">Заказать сувенир</a>
+            </div>
+        </nav>
+        <aside class="popular">
+            <h2 class="popular__title">Популярные товары</h2>
+            <div class="popular__items">
+                <a href="https://google.com/" class="popular__item">Ракушка морская</a>
+                <a href="https://google.com/" class="popular__item">Чесалка для спины</a>
+                <a href="https://google.com/" class="popular__item">Чётки</a>
+                <a href="https://google.com/" class="popular__item">Нечётки</a>
+            </div>
+        </aside>
+        <article class="products-list">
+            <h2 class="products-list__title">Сувениры</h2>
+            <figure class="product">
+                <div class="product__basic-feature">
+                    <img src="./public/pics/shell.png" alt="Ракушка &quot;Морское дно&quot;" class="product__photo">
+                    <a href="https://google.com/" class="product__title">1Ракушка &quot;Морское дно&quot;</a>
+                </div>
+                <figcaption class="product__other-info">
+                    <span class="product__price">290 &#8381;</span>
+                    <div class="product__rating">44.0</div>
+                    <span class="product__feedback">111 отзывов</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <div class="product__basic-feature">
+                    <img src="./public/pics/shell.png" alt="Ракушка &quot;Морское дно&quot;" class="product__photo">
+                    <a href="https://google.com/" class="product__title">2Ракушка &quot;Морское дно&quot;</a>
+                </div>
+                <figcaption class="product__other-info">
+                    <span class="product__price">290 &#8381;</span>
+                    <div class="product__rating">4.0</div>
+                    <span class="product__feedback">111 отзывов</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <div class="product__basic-feature">
+                    <img src="./public/pics/shell.png" alt="Ракушка &quot;Морское дно&quot;" class="product__photo">
+                    <a href="https://google.com/" class="product__title">3Ракушка &quot;Морское дно&quot;</a>
+                </div>
+                <figcaption class="product__other-info">
+                    <span class="product__price">290 &#8381;</span>
+                    <div class="product__rating">4.0</div>
+                    <span class="product__feedback">111 отзывов</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <div class="product__basic-feature">
+                    <img src="./public/pics/shell.png" alt="Ракушка &quot;Морское дно&quot;" class="product__photo">
+                    <a href="https://google.com/" class="product__title">4Ракушка &quot;Морское дно&quot;</a>
+                </div>
+                <figcaption class="product__other-info">
+                    <span class="product__price">290 &#8381;</span>
+                    <div class="product__rating">4.0</div>
+                    <span class="product__feedback">111 отзывов</span>
+                </figcaption>
+            </figure>
+        </article>
+        <form class="order">
+            <h2 class="order__title">Заказать сувенир</h2>
+            <fieldset class="order__info">
+                <!-- <legend class="order__info_append-title">Параметра заказа</legend> -->
+                Количество<input type="number" class="order__input"><br />
+                Город<select>
+                    <option>не выбран</option>
+                    <option>Москва и Московская область</option>
+                    <option>Санкт-Петербург и Ленинградская область</option>
+                    <option>Екатеринбург</option>
+                    <option>Казань</option>
+                    <option>Ростов-на-Дону</option>
+                    <option>Пермь</option>
+                </select><br />
+                Email<input type="email" class="order__input"><br />
+                Телефон<input type="tel" class="order__input"><br />
+                Дата доставки<input type="date" class="order__input"><br />
+            </fieldset>
+            <div class="order__buttons">
+                <input type="reset" value="Сбросить заказ" class="order_reset">
+                <input type="submit" value="Заказать!" class="order_submit">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
