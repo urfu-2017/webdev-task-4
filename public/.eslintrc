@@ -1,7 +1,0 @@
-{
-  "extends": "hrundel/browser",
-  "rules": {
-    "block-opening-brace-newline-before": null,
-    "indentation": null
-  }
-}
