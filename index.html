@@ -2,22 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <div class="header__top">
-        <h1 class="header__heading">
-            Билли.Маркет
-        </h1>
-        <button class="header__menu sandwich">
-            <span class="sandwich-bar"></span>
-            <span class="sandwich-bar"></span>
-            <span class="sandwich-bar"></span>
-        </button>
-    </div>
+    <h1 class="header__heading">
+        Билли.Маркет
+    </h1>
+    <button class="header__menu sandwich">
+        <span class="sandwich-bar"></span>
+        <span class="sandwich-bar"></span>
+        <span class="sandwich-bar"></span>
+    </button>
     <input type="search" name="search" placeholder="Искать товары" class="header__search">
 </header>
 <main class="main">
@@ -54,7 +54,7 @@
     </aside>
     <section class="lots">
         <div class="lot main__item">
-            <img src="assets/images/1.png" alt="Тов ар" class="lot__img">
+            <img src="assets/images/1.png" alt="Товар" class="lot__img">
             <a href="#" class="lot__link link">Ракушка &laquo;Морское дно&raquo;</a>
             <span class="lot__price">290 &#8381;</span>
             <div class="lot__feedback">
@@ -90,11 +90,11 @@
             </div>
         </div>
     </section>
-    <form method="post" action="" class="order">
+    <form method="post" action="/" class="order">
         <h2 class="order__heading">Заказать сувенир</h2>
         <label class="order__label">
             Количество
-            <input class="order__input" type="number" name="quantity" >
+            <input class="order__input" type="number" name="quantity">
         </label>
         <label class="order__label">
             Город
@@ -105,21 +105,22 @@
         </label>
         <label class="order__label">
             Email
-            <input class="order__input" type="email" name="email">
+            <input class="order__input" type="email" name="email" placeholder="Email">
         </label>
-        <label for="tel" class="order__label">
+        <label class="order__label">
             Телефон
-            <input class="order__input" type="tel" name="tel" id="tel">
+            <input class="order__input" type="tel" name="tel" placeholder="Номер телефона*">
         </label>
-        <label for="date" class="order__label">
+        <label class="order__label">
             Дата доставки:
-            <input class="order__input" type="date" name="date" id="date">
+            <input class="order__input" type="date" name="date">
         </label>
         <div class="order__buttons">
-            <button class="order__reset" type="reset">Сбросить заказ</button>
-            <button class="order__submit" type="submit">Заказать</button>
+            <button class="order__reset btn_order" type="reset">Сбросить заказ</button>
+            <button class="order__submit btn_order" type="submit">Заказать!</button>
         </div>
     </form>
 </main>
+<script src="index.js"></script>
 </body>
 </html>
