@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 24px;
+
+    border: 1px solid #eee;
+}
+
+.item__name {
+    margin: 8px 0 0;
+}
+
+.item__price {
+    margin: 8px 0 0;
+
+    font-weight: 500;
+}
+
+.item__rating {
+    margin: 2px 0 0;
+}
+
+.item__rating-value {
+    font-weight: 400;
+}
+
+.item__comments-count {
+    color: #999;
+    font-weight: 400;
+}

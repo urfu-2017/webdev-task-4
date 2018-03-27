@@ -1,10 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
-    <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Маркет</title>
+    <link rel="stylesheet" href="./public/index.css">
+    <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="./public/scripts/script.js"></script>
 </head>
+
 <body>
+    <header class="header">
+        <span class="logo">Маркет</span>
+        <i class="fas fa-bars fa-2x header__bars-icon"></i>
+        <div class="search">
+            <i class="fas fa-search fa-2x search__icon"></i>
+            <input type="text" class="search__input">
+            <input type="button" value="Найти" class="search__button">
+        </div>
+    </header>
+    <div class="page">
+        <div class="navigation">
+            <i class="fas fa-times fa-2x navigation__close-icon"></i>
+            <a class="link" href="">Морские ракушки</a>
+            <a class="link" href="">Сувениры из Тайланда</a>
+            <a class="link" href="">Автомобили Tesla</a>
+            <a class="link" href="">Марки из разных стран</a>
+            <a class="link" href="">Заказать сувенир</a>
+        </div>
+        <main class="items">
+            <a class="item item_1">
+                <img class="item__photo" width="170" src="./public/shell.jpeg">
+                <span class="item__name link">Красная ракушка</span>
+                <span class="item__price">290 &#8381;</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.5</span>
+                    <span class="item__comments-count">74 отзывов</span>
+                </div>
+            </a>
+            <a class="item item_2">
+                <img class="item__photo" width="170" src="./public/shell.jpeg">
+                <span class="item__name link">Жёлтая ракушка</span>
+                <span class="item__price">290 &#8381;</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.5</span>
+                    <span class="item__comments-count">111 отзывов</span>
+                </div>
+            </a>
+            <a class="item item_3">
+                <img class="item__photo" width="170" src="./public/shell.jpeg">
+                <span class="item__name link">Зелёная ракушка</span>
+                <span class="item__price">290 &#8381;</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.5</span>
+                    <span class="item__comments-count">92 отзывов</span>
+                </div>
+            </a>
+            <a class="item item_4">
+                <img class="item__photo" width="170" src="./public/shell.jpeg">
+                <span class="item__name link">Синяя ракушка</span>
+                <span class="item__price">290 &#8381;</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.5</span>
+                    <span class="item__comments-count">84 отзывов</span>
+                </div>
+            </a>
+        </main>
+        <div class="suggest">
+            <h4 class="suggest__header">Популярные товары</h4>
+            <a class="link" href="">Жёлтая ракушка</a>
+            <a class="link" href="">Зелёная ракушка</a>
+            <a class="link" href="">Красная ракушка</a>
+        </div>
+        <form class="form">
+            <h3 class="form__header">Заказать сувенир</h3>
+            <label class="form__row">
+                <span>Количество</span>
+                <input class="form__input" type="number">
+            </label>
+            <label class="form__row">
+                <span>Город</span>
+                <select class="form__input form__input_select">
+                    <option>—</option>
+                    <option>Лондон</option>
+                    <option>Париж</option>
+                    <option>Верхняя Салда</option>
+                </select>
+            </label>
+            <label class="form__row">
+                <span>E-mail</span>
+                <input class="form__input" type="email" placeholder="E-mail">
+            </label>
+            <label class="form__row">
+                <span>Телефон</span>
+                <input class="form__input" type="text" placeholder="Номер телефона*">
+            </label>
+            <label class="form__row">
+                <span>Дата доставки</span>
+                <input class="form__input" type="date" placeholder="ДД.ММ.ГГГГ">
+            </label>
+        </form>
+    </div>
 </body>
+
 </html>

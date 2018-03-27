@@ -1,0 +1,53 @@
+@import './navigation.css';
+@import './items.css';
+@import './suggest.css';
+@import './form.css';
+
+.page {
+    display: grid;
+    grid-gap: 24px;
+    justify-items: stretch;
+    align-items: flex-start;
+
+    padding: 24px;
+
+    background: #eee;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .page {
+        grid-template-columns: auto auto min-content auto auto;
+        grid-template-areas: '. n i s .'
+                             '. n f s .';
+    }
+
+    body {
+        overflow: visible !important;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+    .page {
+        grid-template-columns: auto min-content auto;
+        grid-template-areas: '. n .'
+                             '. i .'
+                             '. s .'
+                             '. f .';
+    }
+
+    body {
+        overflow: visible !important;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 425px) {
+    .page {
+        grid-template-columns: auto min-content auto;
+        grid-template-areas: '. i .'
+                             '. s .'
+                             '. f .';
+    }
+}
