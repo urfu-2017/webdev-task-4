@@ -130,7 +130,7 @@ body
         width: 1000px;
         margin: 0 auto;
         grid-template-columns: 250px 500px 250px;
-        grid-template-rows: 60px 700px 300px;
+        grid-template-rows: 60px auto 300px;
         grid-template-areas: 'search search search' 'nav goods pop' '. order .';
     }
 
@@ -226,7 +226,7 @@ body
     {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 120px 700px 100px 300px;
+        grid-template-rows: 60px 120px auto 100px 300px;
         grid-template-areas: 'search' 'nav' 'goods' 'pop' 'order';
     }
 
@@ -311,7 +311,7 @@ body
     {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 70px 150px 1100px 300px;
+        grid-template-rows: 70px 150px auto 300px;
         grid-template-areas: 'search' 'pop' 'goods' 'order';
     }
 
@@ -396,6 +396,6 @@ body
 
     .order-form
     {
-        margin: 50px 30px;
+        margin: 20px 30px 0;
     }
 }
