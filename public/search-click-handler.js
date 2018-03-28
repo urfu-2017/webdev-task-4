@@ -23,10 +23,23 @@ const height = Math.max(
     document.body.offsetHeight, document.documentElement.offsetHeight,
     document.body.clientHeight, document.documentElement.clientHeight
 );
+const currentWidth = document.body.clientWidth;
 
 function showMenu(e) {
     e.stopPropagation();
     menu.style.height = `${height}px`;
+    menu.style.width = '50%';
+    menu.style.left = '50%';
+    body.addEventListener('click', () => {
+        menu.style.display = 'none';
+        body.style['overflow-y'] = 'auto';
+    });
+    menu.addEventListener('click', (eMenu) => {
+        eMenu.stopPropagation()
+    });
+}
+
+sandwich.addEventListener('click', (e) => {
     if (getComputedStyle(menu).display === 'none') {
         menu.style.display = 'block';
         body.style['overflow-y'] = 'hidden';
@@ -34,32 +47,45 @@ function showMenu(e) {
         menu.style.display = 'none';
         body.style['overflow-y'] = 'auto';
     }
-    body.addEventListener('click', () => {
-        if (getComputedStyle(menu).display === 'block') {
-            menu.style.display = 'none';
-            body.style['overflow-y'] = 'auto';
-        }
-    });
-    menu.addEventListener('click', (eMenu) => {
-        eMenu.stopPropagation()
-    });
+    showMenu(e)
+});
+
+const touchMoveHandler = e => {
+    if (e.changedTouches[0].pageX > (currentWidth / 2)) {
+        let offsetX = (e.changedTouches[0].pageX / currentWidth)*100;
+        menu.style.left = `${offsetX}%`;
+        let width = 100 - offsetX;
+        menu.style.width = `${width}%`
+        // alert(document.body.clientWidth)
+    }
 }
 
-sandwich.addEventListener('click', showMenu);
+const touchEndHandler = e => {
+    const unTapPlaceX = e.changedTouches[0].pageX;
+    if (e.changedTouches[0].pageX < currentWidth / 2) {
+        menu.style.display = 'block';
+        body.style['overflow-y'] = 'hidden';
+    } else {
+        menu.style.display = 'none';
+        body.style['overflow-y'] = 'auto';
+    }
+    showMenu(e)
+    document.removeEventListener('touchend', touchEndHandler)
+}
 
-if (document.body.clientWidth <= 576) {
-    const currentWidth = document.body.clientWidth;
-    document.addEventListener('touchstart', e1 => {
-        console.log(1)
-        
-        const tapPlaceX = e1.changedTouches[0].pageX;
+if (currentWidth <= 576) {
+    document.addEventListener('touchstart', e => {
+        e.stopPropagation();   
+        const tapPlaceX = e.changedTouches[0].pageX;
         if ((tapPlaceX / currentWidth) > 0.95) {
-            document.addEventListener('touchend', e2 => {
-                const unTapPlaceX = e2.changedTouches[0].pageX;
-                if ((tapPlaceX - unTapPlaceX) * 4 > currentWidth){
-                    showMenu(e2);
-                }
-            });
+            menu.style.height = `${height}px`;
+            menu.style['overflow-x'] = 'hidden';
+            menu.style.display = 'block';
+            menu.style.width = '0%'
+            menu.style.left = '100%';
+            menu.style.border = 'none';
+            document.addEventListener('touchmove', touchMoveHandler);
+            document.addEventListener('touchend', touchEndHandler);
         }
     });
 }

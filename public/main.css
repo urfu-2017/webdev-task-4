@@ -29,6 +29,6 @@
         /* background: tomato; */
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto 6fr;
-        margin: auto calc(var(--margin-for-blocks)*2);
+        margin: auto calc(var(--margin-for-blocks));
     }
 }
