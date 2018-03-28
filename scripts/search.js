@@ -1,13 +1,22 @@
-/* eslint-disable no-unused-vars */
-function showSearch() {
-    document.getElementById('search').style.display = 'flex';
-    document.getElementById('search-icon').style.display = 'none';
-    document.getElementById('search-text').focus();
-}
+const searchIcon = document.querySelector('.search-icon');
+const searchBar = document.querySelector('.search');
+const searchInput = document.querySelector('.search__input');
 
-function hideSearch() {
-    if (document.documentElement.clientWidth > 450 && document.documentElement.clientWidth < 1281) {
-        document.getElementById('search').style.display = 'none';
-        document.getElementById('search-icon').style.display = 'block';
-    }
-}
+searchIcon.onclick = () => {
+    searchIcon.style.visibility = 'hidden';
+    searchBar.style.visibility = 'visible';
+    searchInput.focus();
+
+    searchInput.onblur = () => {
+        searchIcon.style.visibility = 'visible';
+        searchBar.style.visibility = 'hidden';
+    };
+};
+
+const button = document.querySelector('.btn-menu');
+const page = document.querySelector('.page');
+/* eslint-disable no-undef */
+const hammer = new Hammer(page);
+hammer.on('swipeleft', () => {
+    button.click();
+});

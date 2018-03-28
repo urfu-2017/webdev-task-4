@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="./scripts/search.js"></script>
+    <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script defer src="./scripts/search.js"></script>
 </head>
 <body class="page">
     <input type="checkbox" id="hmt" class="hidden-menu-ticker">
@@ -16,10 +17,10 @@
     <div class="page-wrapper">
     <header class="header">
         <h1 class="header__text">Билли.Маркет</h1>
-        <div class="search-icon" id="search-icon" onclick="showSearch()"></div>
-        <div class="search" id="search">
+        <div class="search-icon"></div>
+        <div class="search">
             <input class="search__input" type="text" name="search-text" id="search-text"
-                   placeholder="Искать товары" onblur="hideSearch()">
+                   placeholder="Искать товары">
             <button class="search__button">Найти</button>
         </div>
     </header>
