@@ -126,10 +126,13 @@
         sandwich.addEventListener('click', () => {
             var menu = document.getElementsByClassName('menu')[0];
             menu.style.height = `${height}px`;
+            var body = document.getElementsByClassName('body')[0];
             if (getComputedStyle(menu).display === 'none') {
                 menu.style.display = 'block';
+                body.style['overflow-y'] = 'hidden';
             } else {
                 menu.style.display = 'none';
+                body.style['overflow-y'] = 'auto';
             }
         });
 
