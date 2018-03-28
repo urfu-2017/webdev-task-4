@@ -32,6 +32,6 @@
 
     .menu__item:last-of-type
     {
-        width: calc(100% - 22px)
+        width: calc(100% - 22px);
     }
 }

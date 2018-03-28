@@ -9,39 +9,39 @@
     <link rel="stylesheet" href="./static/popular.css">
     <link rel="stylesheet" href="./static/content.css">
     <link rel="stylesheet" href="./static/order.css">
-    <script src="./static/js/index.js" type="text/javascript"></script>
+    <script src="./static/js/index.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-    <section class="header">
-        <h1 class="header__title">Билли.Маркет</h1>
+    <article class="header">
+        <h2 class="header__title">Билли.Маркет</h2>
         <div class="search">
             <input type="checkbox" class="search__show-button" id="search__show-button" checked>
             <input class="search__input" id="search__input">
             <div class="search__button">Найти</div>
-            <label class="search__loupe" for="search__show-button">🔎</div>
+            <label class="search__loupe" for="search__show-button">🔎</label>
         </div>
-    </section>
-    <section class="menu">
+    </article>
+    <article class="menu">
         <a class="menu__item" href="#">Морские ракушки</a>
         <a class="menu__item" href="#">Сувениры из Тайланда</a>
         <a class="menu__item" href="#">Автомобили Тесла</a>
         <a class="menu__item" href="#">Марки из разных стран</a>
         <a class="menu__item" href="#order">Заказать сувенир</a>
-    </section>
-    <section class="popular">
+    </article>
+    <article class="popular">
         <h2 class="popular__title">Популярные товары</h2>
         <div class="popular__items">
-            <a class="popular__item" href='#'>Ракушка морская</a>
-            <a class="popular__item" href='#'>Чесалка для спины</a>
-            <a class="popular__item" href='#'>Четки</a>
+            <a class="popular__item" href="#">Ракушка морская</a>
+            <a class="popular__item" href="#">Чесалка для спины</a>
+            <a class="popular__item" href="#">Четки</a>
         </div>
-    </section>
-    <section class="content">
+    </article>
+    <article class="content">
         <div class="good">
             <figure>
-                <img class="good__picture" src="./static/img/dno.png" alt="" />
-                <figcaption class="good__name"><a href='#'>Ракушка "Морское дно"</a></figcaption>
+                <img class="good__picture" src="./static/img/dno.png" alt="">
+                <figcaption class="good__name"><a href="#">Ракушка "Морское дно"</a></figcaption>
             </figure>
             <span class="good__price">290</span>
             <div class="good__info">
@@ -51,8 +51,8 @@
         </div>
         <div class="good">
             <figure>
-                <img class="good__picture" src="./static/img/cup.png" alt="" />
-                <figcaption class="good__name"><a href='#'>Термокружка</a></figcaption>
+                <img class="good__picture" src="./static/img/cup.png" alt="">
+                <figcaption class="good__name"><a href="#">Термокружка</a></figcaption>
             </figure>
             <span class="good__price">404</span>
             <div class="good__info">
@@ -62,8 +62,8 @@
         </div>
         <div class="good">
             <figure>
-                <img class="good__picture" src="./static/img/car.png" alt="" />
-                <figcaption class="good__name"><a href='#'>Автомобиль "Тесла"</a></figcaption>
+                <img class="good__picture" src="./static/img/car.png" alt="">
+                <figcaption class="good__name"><a href="#">Автомобиль "Тесла"</a></figcaption>
             </figure>
             <span class="good__price">999 999</span>
             <div class="good__info">
@@ -73,8 +73,8 @@
         </div>
         <div class="good">
             <figure>
-                <img class="good__picture" src="./static/img/back.png" alt="" />
-                <figcaption class="good__name"><a href='#'>Чесалка для спины</a></figcaption>
+                <img class="good__picture" src="./static/img/back.png" alt="">
+                <figcaption class="good__name"><a href="#">Чесалка для спины</a></figcaption>
             </figure>
             <span class="good__price">195</span>
             <div class="good__info">
@@ -82,8 +82,8 @@
                 <div class="good__comments">29 отзывов</div>
             </div>
         </div>
-    </section>
-    <section class="order" id="order">
+    </article>
+    <article class="order" id="order">
         <h2 class="order__title">Заказать сувенир</h2>
         <form class="order-form">
             <div class="order-form__item">
@@ -109,8 +109,8 @@
             <div class="order-form__buttons">
                 <button class="order-form__reset" type="reset">Сбросить Заказ</button>
                 <button class="order-form__submit" type="submit">Заказать!</button>
-            </div>  
+            </div>
         </form>
-    </section>
+    </article>
 </body>
 </html>
