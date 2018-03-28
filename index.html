@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/order.css">
     <link rel="stylesheet" href="./css/popular.css">
+    <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script defer src="scripts/index.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-    <input type="checkbox" class="">
     <header class="search">
         <h1 class="search_name">Билли.Маркет</h1>
         <input size="60" class="search_input">
@@ -21,8 +22,10 @@
             Найти
         </button>
     </header>
-    <main>
+    <main class="main">
+        <button class="sandwitch"></button>
         <article class="menu">
+            <button class="menu_exit"></button>
             <a href="" class="menu_item">Морские ракушки</a>
             <a href="" class="menu_item">Сувениры из Тайланда</a>
             <a href="" class="menu_item">Автомобили Тесла</a>
@@ -140,5 +143,3 @@
 </body>
 
 </html>
-
-<script src="scripts/index.js" type="text/javascript"></script>

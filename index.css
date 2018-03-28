@@ -81,6 +81,7 @@ main {
     .search_input {
         visibility: visible;
         width: 250px;
+        margin-left: 0%;
     }
 
     .search_button {
