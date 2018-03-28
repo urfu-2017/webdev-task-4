@@ -119,7 +119,8 @@
         display: none;
     }
 
-    .search-form__input{
+    .search-form__input
+    {
         display: block;
     }
 
@@ -157,6 +158,7 @@
         width: 24px;
         height: 24px;
         background-image: url('../images/menu/web/ic_menu_black_24dp_1x.png');
+
         background-size: contain;        
         display: block;
         content: '';
@@ -166,8 +168,7 @@
     }
 }
 
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+@media (min-resolution: 192dpi),
     (min-resolution: 2dppx)
 {
     .header__menu

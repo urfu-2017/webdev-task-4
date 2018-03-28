@@ -4,7 +4,6 @@
     max-width: 200px;
     padding: 10px;
     background: #fff;
-    padding: 10px;
     margin: 20px 10px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1);
     align-self: flex-start;
@@ -16,7 +15,7 @@
     width: 24px;
     height: 24px;
     background-image: url('../images/clear/web/ic_clear_black_24dp_1x.png');
-    background-size: contain;    
+    background-size: contain;
 }
 
 .nav__list
@@ -42,11 +41,11 @@
     margin: 20px 0;
 }
 
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+@media (min-resolution: 192dpi),
     (min-resolution: 2dppx)
 {
-    .nav__close {
+    .nav__close
+    {
         background-image: url('../images/clear/web/ic_clear_black_24dp_2x.png');
     }
 }
