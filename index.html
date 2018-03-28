@@ -4,7 +4,104 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./scripts/search.js"></script>
 </head>
-<body>
+<body class="page">
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+    </label>
+    <div class="page-wrapper">
+    <header class="header">
+        <h1 class="header__text">Билли.Маркет</h1>
+        <div class="search-icon" id="search-icon" onclick="showSearch()"></div>
+        <div class="search" id="search">
+            <input class="search__input" type="text" name="search-text" id="search-text"
+                   placeholder="Искать товары" onblur="hideSearch()">
+            <button class="search__button">Найти</button>
+        </div>
+    </header>
+    <main class="content">
+        <nav class="navigation">
+            <a href="#" class="navigation__link">Морские ракушки</a>
+            <a href="#" class="navigation__link">Сувениры из Тайланда</a>
+            <a href="#" class="navigation__link">Автомобили Тесла</a>
+            <a href="#" class="navigation__link">Марки из разнык стран</a>
+            <a href="#order" class="navigation__link">Сделать заказ</a>
+        </nav>
+        <section class="items">
+            <div class="item-wrapper">
+                <article class="item">
+                    <img src="images/racoon.png" alt="Ракушка" class="item__image">
+                    <a href="#" class="item__name">Ракушка "Морское дно"</a>
+                    <p class="item__price">290 &#x20bd;</p>
+                    <p class="item__review-count">42 отзыва</p>
+                </article>
+            </div>
+            <div class="item-wrapper">
+                <article class="item">
+                    <img src="images/thermocup.png" alt="Кружка" class="item__image">
+                    <a href="#" class="item__name">Термокружкус "Батарейка"</a>
+                    <p class="item__price">404 &#x20bd;</p>
+                    <p class="item__review-count">13 отзывов</p>
+                </article>
+            </div>
+            <div class="item-wrapper">
+                <article class="item">
+                    <img src="images/tesla.png" alt="Тесла" class="item__image">
+                    <a href="#" class="item__name">Автомобиль "Тесла"</a>
+                    <p class="item__price">359 999 &#x20bd;</p>
+                    <p class="item__review-count">705 отзывов</p>
+                </article>
+            </div>
+            <div class="item-wrapper">
+                <article class="item">
+                    <img src="images/stick.png" alt="Палка" class="item__image">
+                    <a href="#" class="item__name">Чесалка для спины</a>
+                    <p class="item__price">195 &#x20bd;</p>
+                    <p class="item__review-count">1 отзыв</p>
+                </article>
+            </div>
+        </section>
+        <aside class="popular">
+            <h4 class="popular__header">Популярные товары</h4>
+            <div class="popular-wrapper">
+                <a href="#" class="popular__link">Ракушка морская</a>
+                <a href="#" class="popular__link">Чесалка для спины</a>
+                <a href="#" class="popular__link">Чётки</a>
+            </div>
+        </aside>
+        <form class="order-form" action="/" method="post" id="order">
+            <div class="order-form__content-wrapper">
+                <h3 class="order-form__header">Заказать сувенир</h3>
+                <div class="form-item">
+                    <label class="order-form__label" for="quantity">Количество</label>
+                    <input class="order-form__input" type="number" name="quantity" id="quantity">
+                </div>
+                <div class="form-item">
+                    <label class="order-form__label" for="city">Город</label>
+                    <input class="order-form__input" type="search" name="city" id="city">
+                </div>
+                <div class="form-item">
+                    <label class="order-form__label" for="email">Email</label>
+                    <input class="order-form__input" type="email" name="email" id="email" placeholder="email">
+                </div>
+                <div class="form-item">
+                    <label class="order-form__label" for="tel">Телефон</label>
+                    <input class="order-form__input" type="tel" name="tel" id="tel"
+                           placeholder="Номер телефона*" required>
+                </div>
+                <div class="form-item">
+                    <label class="order-form__label" for="date">Дата доставки</label>
+                    <input class="order-form__input" type="date" name="delivery-date" id="date">
+                </div>
+                <button class="order-form__button" type="reset">Сбросить</button>
+                <button class="order-form__button" type="submit">Сделать заказ!</button>
+            </div>
+        </form>
+    </main>
+</div>
 </body>
 </html>

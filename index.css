@@ -1,0 +1,458 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    font-weight: 700;
+
+    text-decoration: none;
+
+    color: #4646d1;
+}
+
+.navigation,
+.items,
+.popular,
+.order-form
+{
+    background: white;
+}
+
+.header
+{
+    display: flex;
+
+    padding: 2% 5%;
+
+    background: #fff;
+
+    grid-area: header;
+}
+
+.header__text
+{
+    margin-right: 1%;
+}
+
+.search
+{
+    display: inline-flex;
+
+    border: 2px solid #e8e8e8;
+    border-radius: 3px;
+
+    flex-grow: 1;
+}
+
+.search__input
+{
+    text-indent: 1%;
+
+    flex-grow: 10;
+}
+
+.search__button
+{
+    background: #e8e8e8;
+
+    flex-grow: 1;
+}
+
+.search__input,
+.search__button
+{
+    border: none;
+}
+
+.search-icon
+{
+    position: absolute;
+    right: 5%;
+
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url('images/search-icon.png');
+}
+
+.page
+{
+    background: #f6f6f6;
+}
+
+.navigation,
+.popular,
+.order-form
+{
+    border: 1px #e8e8e8 solid;
+}
+
+.navigation
+{
+    grid-area: nav;
+}
+
+.popular
+{
+    grid-area: popular;
+}
+
+.navigation__link,
+.popular__link
+{
+    display: block;
+}
+
+.items
+{
+    border: 1px #e8e8e8 solid;
+
+    grid-area: items;
+}
+
+.item-wrapper
+{
+    display: inline-block;
+
+    width: 49%;
+}
+
+.item
+{
+    padding: 10%;
+}
+
+.item__image
+{
+    display: block;
+
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.item__price
+{
+    font-weight: 600;
+}
+
+.item__review-count
+{
+    font-weight: 600;
+
+    opacity: .5;
+}
+
+.order-form
+{
+    grid-area: order;
+}
+
+.form-item
+{
+    display: flex;
+
+    margin: 2px 0;
+
+    justify-content: space-between;
+}
+
+.order-form__content-wrapper
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 10% 2%;
+}
+
+.order-form__button
+{
+    border: 1px #e8e8e8 solid;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.hidden-menu-ticker
+{
+    display: none;
+}
+
+/* desktop */
+@media screen and (min-width: 1281px)
+{
+    .content
+    {
+        display: grid;
+
+        padding: 5% 0;
+
+        grid-area: content;
+        grid-template-areas: 'nav items popular'
+            '. items .'
+            '. order .';
+        grid-template-rows: 40% auto;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .header__text,
+    .search__input
+    {
+        font-size: 25px;
+    }
+
+    .order-form
+    {
+        margin-top: 10%;
+    }
+
+    .navigation
+    {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+    }
+
+    .navigation,
+    .popular
+    {
+        width: 50%;
+        padding: 5%;
+
+        justify-self: center;
+    }
+
+    .popular__link
+    {
+        margin: 3%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:451px) and (max-width: 1280px)
+{
+    .page
+    {
+        display: grid;
+
+        grid-template-areas: 'header'
+            'nav'
+            'popular'
+            'order';
+        align-content: center;
+    }
+
+    .header__text,
+    .search__input
+    {
+        font-size: 20px;
+    }
+
+    .search,
+    .search__button
+    {
+        display: none;
+    }
+
+    .search-icon
+    {
+        display: inline;
+    }
+
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation
+    {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    .navigation__link
+    {
+        width: 49%;
+
+        text-align: center;
+    }
+
+    .navigation,
+    .items,
+    .popular,
+    .order-form
+    {
+        width: 90%;
+        margin: 15px;
+    }
+
+    .popular-wrapper
+    {
+        display: flex;
+
+        justify-content: space-around;
+    }
+}
+
+/* smartphone */
+@media screen and (max-width: 450px)
+{
+    .item-wrapper
+    {
+        width: 100%;
+    }
+
+    .header
+    {
+        display: block;
+    }
+
+    .header__text
+    {
+        font-size: 15px;
+    }
+
+    .items,
+    .popular,
+    .order-form 
+    {
+        margin: 5% 0;
+    }
+
+    .search
+    {
+        width: 100%;
+    }
+
+    .search__button
+    {
+        display: none;
+    }
+
+    .search__input
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    .popular
+    {
+        padding: 2% 5%;
+    }
+
+    .popular__header
+    {
+        margin: 2% 0;
+    }
+
+    .popular__link
+    {
+        text-indent: 2%;
+    }
+
+    /* sandwich */
+    .navigation
+    {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: -200px;
+
+        display: block;
+
+        box-sizing: border-box;
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 10px;
+
+        list-style: none;
+
+        transition: left .2s;
+        transform: translateZ(0);
+
+        backface-visibility: hidden;
+    }
+
+    .btn-menu
+    {
+        position: absolute;
+        z-index: 3;
+        top: 5px;
+        right: 5px;
+
+        width: 25px;
+        padding: 5px;
+
+        cursor: pointer;
+        transition: left .23s;
+
+        color: #fff;
+        background-color: #666;
+    }
+
+    .btn-menu span
+    {
+        position: relative;
+
+        display: block;
+
+        height: 5px;
+        margin: 5px 0 0;
+
+        transition: all .1s linear .23s;
+
+        background-color: #fff;
+    }
+
+    .btn-menu span.first
+    {
+        margin-top: 0;
+    }
+
+    .hidden-menu-ticker:checked ~ .btn-menu
+    {
+        position: fixed;
+        right: 200px;
+    }
+
+    .hidden-menu-ticker:checked ~ .page-wrapper
+    {
+        overflow-y: hidden;
+    }
+
+    .hidden-menu-ticker:checked ~ .page-wrapper .navigation
+    {
+        right: 0;
+    }
+
+    .hidden-menu-ticker:checked ~ .btn-menu span.first
+    {
+        top: 10px;
+
+        transform: rotate(45deg);
+    }
+
+    .hidden-menu-ticker:checked ~ .btn-menu span.second
+    {
+        opacity: 0;
+    }
+
+    .hidden-menu-ticker:checked ~ .btn-menu span.third
+    {
+        top: -10px;
+
+        transform: rotate(-45deg);
+    }
+}
