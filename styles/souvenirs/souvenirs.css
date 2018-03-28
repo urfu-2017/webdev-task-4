@@ -1,0 +1,63 @@
+@import url('./__souvenir/souvenirs__souvenir.css');
+
+.souvenirs
+{
+    grid-area: 👽;
+
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-template-areas: 's1 s2'
+        's3 s4';
+
+    font-family: 'Arial', sans-serif;
+}
+
+.souvenir1 
+{
+    grid-area: s1;
+}
+
+.souvenir2
+{
+    grid-area: s2;
+}
+
+.souvenir3 
+{
+    grid-area: s3;
+}
+
+.souvenir4 
+{
+    grid-area: s4;
+}
+
+.souvenirs__souvenir:nth-child(2n)
+{
+    border-left: none;
+}
+
+.souvenirs__souvenir:nth-child(n + 3)
+{
+    border-top: none;
+}
+
+@media screen and (min-device-width: 721px) and (max-device-width: 1260px)
+{
+    .souvenirs
+    {
+        margin-top: 20px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-device-width: 720px)
+{
+    .souvenirs
+    {
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}

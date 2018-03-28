@@ -1,0 +1,77 @@
+.souvenirs__souvenir
+{
+    background: white;
+    border: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.souvenirs__img-wrapper
+{
+    margin: 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.souvenirs__name
+{
+    margin: 0 0 10px 30px;
+}
+
+.souvenirs__price
+{
+    margin: 0 0 10px 30px;
+    font-weight: bold;
+}
+
+.souvenirs__rating
+{
+    margin: 0 0 10px 30px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    padding: 1px 5px;
+}
+
+.high-rated
+{
+    background: #529f06;
+}
+
+.low-rated
+{
+    background: #8cb512;
+}
+
+.souvenirs__triangle
+{
+    position: absolute;
+    border: 10.3px solid transparent;
+    left: 62.2px;
+    bottom: 38px;
+}
+
+.triangle-high-rated
+{
+    border-left: 5px solid #529f06;
+}
+
+.triangle-low-rated
+{
+    border-left: 5px solid #8cb512;
+}
+
+.souvenirs__reviews
+{
+    margin-left: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+    font-size: 13px;
+    color: grey;
+}
+
+.souvenirs__link
+{
+    text-decoration: none;
+}

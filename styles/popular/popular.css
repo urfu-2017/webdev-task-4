@@ -1,0 +1,86 @@
+.popular
+{
+    background: white;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #f0f0f0;
+}
+
+.popular__header 
+{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.popular__list 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular__list-element
+{
+    margin-bottom: 10px;
+}
+
+.popular__list-link
+{
+    text-decoration: none;
+}
+
+@media screen and (min-device-width: 1260px)
+{
+    .popular
+    {
+        grid-area: 🤖;
+        width: 200px;
+        padding: 30px 20px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-device-width: 721px) and (max-device-width: 1260px)
+{
+    .popular
+    {
+        margin-top: 20px;
+        order: 1;
+        width: 80%;
+    }
+
+    .popular__header 
+    {
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+
+    .popular__list
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-device-width: 720px)
+{
+    .popular
+    {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .popular__header 
+    {
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+
+    .popular__list
+    {
+        margin-left: 13%;
+        margin-bottom: 20px;
+    }
+}
