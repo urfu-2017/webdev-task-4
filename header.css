@@ -1,0 +1,59 @@
+.header
+{
+    grid-area: h;
+    padding: 5px 10px 10px;
+    display: grid;
+    background-color: #fff;
+}
+
+.header__title
+{
+    grid-area: t;
+    font-size: 25px;
+    margin: 0;
+}
+
+.header__burger
+{
+    display: none;
+}
+
+.search
+{
+    grid-area: s;
+    width: 100%;
+    display: flex;
+}
+
+.search__input,
+.search__button
+{
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    height: 30px;
+}
+
+.search__input
+{
+    width: 90%;
+}
+
+.search__button
+{
+    background-color: #e8e8e8;
+}
+
+/*become mobile*/
+@media screen
+{
+    .header
+    {
+        grid-template-areas: 't b' 's s';
+    }
+
+    .header__burger
+    {
+        grid-area: b;
+        margin: auto 0 auto auto;
+    }
+}

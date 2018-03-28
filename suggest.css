@@ -1,0 +1,19 @@
+.suggest
+{
+    grid-area: s;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.suggest__title
+{
+    margin: 0 0 10px;
+}
+
+.suggest__items
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}

@@ -1,0 +1,22 @@
+.item
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.item__price
+{
+    font-weight: bold;
+}
+
+.item__rating-value
+{
+    position: relative;
+    background-color: #569f20;
+    padding: 1px;
+    width: 35px;
+    height: 20px;
+    box-sizing: border-box;
+}

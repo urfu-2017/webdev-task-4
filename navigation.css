@@ -1,0 +1,30 @@
+@media screen
+{
+    .navigation
+    {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50%;
+        background-color: #fff;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .navigation > a
+    {
+        margin-bottom: 10px;
+    }
+
+    .navigation__close
+    {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: #9d9d9d;
+    }
+}
+

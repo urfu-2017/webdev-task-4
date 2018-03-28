@@ -1,0 +1,33 @@
+@import 'header.css';
+@import 'suggest.css';
+@import 'navigation.css';
+@import 'order.css';
+@import 'item.css';
+
+body
+{
+    margin: 0;
+    font: 17px sans-serif;
+    background-color: #f6f6f6;
+}
+
+main
+{
+    padding: 20px;
+}
+
+.link
+{
+    color: #3072c4;
+    text-decoration: none;
+}
+
+@media screen
+{
+    main
+    {
+        display: grid;
+        grid-template-areas: 's';
+        grid-row-gap: 10px;
+    }
+}
