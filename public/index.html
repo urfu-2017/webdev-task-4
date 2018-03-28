@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Задача «Тим слишком занят»</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="heading">
+        <div class="heading__service-name">
+            <span>Билли.Маркет</span>
+        </div>
+        <div class="heading__search">
+            <input type="text" class="heading__search-line">
+            <button class="heading__search-btn">Найти</button>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="#" class="navigation__link">Морские ракушки</a>
+        <a href="#" class="navigation__link">Сувениры из Тайланда</a>
+        <a href="#" class="navigation__link">Автомобили Тесла</a>
+        <a href="#" class="navigation__link">Марки из разных стран</a>
+        <a href="#" class="navigation__link">Заказать сувенир</a>
+    </nav>
+    <div class="cards">
+        <div class="card">
+            <img src="./img/seashell.jpg" alt="товар">
+            <a href="#" class="card-title">Ракушка «Морское дно»</a>
+            <span class="card-price">290 ₽</span>
+            <div class="card-opinion">
+                <span class="card-rating">4.0</span>
+                <span class="card-ratings-count">101 отзыв</span>                    
+            </div>
+        </div>
+    </div>
+    <aside class="popular">
+        <h4 class="popular__title">Популярные товары</h4>
+        <a href="#" class="popular__link">Ракушка морская</a>
+        <a href="#" class="popular__link">Чесалка для спины</a>
+        <a href="#" class="popular__link">Чётки</a>
+    </aside>
+    <div class="order">
+        <form method="post" action="/" class="order__form">
+            <h4 class="order__form-title">Заказать сувенир</h4>
+            <label class="order__param">
+                Количество
+                <input class="order__form-input" type="number">
+            </label>
+            <label class="order__param">
+                Город
+                <select class="order__form-input" name="town">
+                    <option disabled>Выберите город</option>
+                    <option value="Lisbon">Лисабон</option>
+                </select>
+            </label>
+            <label class="order__param">
+                Email
+                <input class="order__form-input" type="email" placeholder="Email">
+            </label>
+            <label class="order__param">
+                Телефон
+                <input class="order__form-input" type="tel" placeholder="Номер телефона">
+            </label>
+            <label class="order__param">
+                Дата доставки:
+                <input class="order__form-input" type="date">
+            </label>
+            <button class="order__form-reset" type="reset">Сбросить заказ</button>
+            <button class="order__form-submit" type="submit">Заказать!</button>
+        </form>
+    </div>
+
+</body>
+</html>
