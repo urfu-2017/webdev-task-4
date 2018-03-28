@@ -18,10 +18,13 @@
         <span class="sandwich-bar"></span>
         <span class="sandwich-bar"></span>
     </button>
-    <input type="search" name="search" placeholder="Искать товары" class="header__search">
+    <div class="search-box">
+        <input type="search" name="search" placeholder="Искать товары" class="header__search">
+        <button class="header__search-button">Найти</button>
+    </div>
 </header>
 <main class="main">
-    <aside class="categories main__item">
+    <nav class="categories main__item">
         <ul class="categories__list">
             <li class="categories__item">
                 <a class="categories__link link" href="#">Морские ракушки</a>
@@ -35,9 +38,11 @@
             <li class="categories__item">
                 <a class="categories__link link" href="#">Марки из разных стран</a>
             </li>
-
+            <li class="categories__item categories__order">
+                <a class="categories__link link" href="#order">Заказать сувенир</a>
+            </li>
         </ul>
-    </aside>
+    </nav>
     <aside class="popular main__item">
         <h2 class="popular__heading">Популярные товары</h2>
         <ul class="popular__items">
@@ -90,7 +95,7 @@
             </div>
         </div>
     </section>
-    <form method="post" action="/" class="order">
+    <form method="post" action="/" class="order main__item" id="order">
         <h2 class="order__heading">Заказать сувенир</h2>
         <label class="order__label">
             Количество
