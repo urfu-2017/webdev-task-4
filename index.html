@@ -4,15 +4,21 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./public/body.css">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script>
+        function deleteSearch() {
+            if /*не в фокусе -- убрать*/
+        }
+    </script>
 </head>
+<!-- <body class="body" onload="deleteSearch()"> -->
 <body class="body">
     <header class="header">
         <h1 class="header__title"><span class="header__title_red">Билли</span>.Маркет</h1>
         <input type="image" src="./public/pics/menu.png" class="menu_show-button" tabindex="1" /> 
         <input type="checkbox" class="search_hide-checkbox" id="search_hide" />
-        <label for="search_hide" class="search search_hide" tabindex="0"></label>
-        <form class="search">
+        <label for="search_hide" class="search_hide" tabindex="1"></label>
+        <form class="search" tabindex="1">
             <button class="search__button" tabindex="2">Найти</button>
             <input type="search" name="q" class="search__input" tabindex="1" />
         </form>
@@ -127,14 +133,14 @@
             }
         });
 
-        document.addEventListener('touchmove', (e) => {
-            e.preventDefault();
-            // alert('hi');
-            // var changes = e.changedTouches;
-            for (var i=0; i < e.changedTouches.length; i++) {
-                console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-            }
-        });
+        // document.addEventListener('touchmove', (e) => {
+        //     e.preventDefault();
+        //     // alert('hi');
+        //     // var changes = e.changedTouches;
+        //     for (var i=0; i < e.changedTouches.length; i++) {
+        //         console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
+        //     }
+        // });
 
         // function showIf(e) {
         //     e.preventDefault();
