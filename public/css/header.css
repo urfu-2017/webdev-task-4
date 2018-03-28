@@ -159,7 +159,7 @@
         height: 24px;
         background-image: url('../images/menu/web/ic_menu_black_24dp_1x.png');
 
-        background-size: contain;        
+        background-size: contain;
         display: block;
         content: '';
         position: absolute;
