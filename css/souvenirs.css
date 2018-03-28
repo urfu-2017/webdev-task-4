@@ -1,51 +1,63 @@
-.souvenirs {
+.souvenirs
+{
     grid-area: c;
     background-color: white;
     padding: 3%;
 }
 
-.souvenirs_item {
+.souvenirs_item
+{
     width: 48%;
     display: inline-block;
 }
 
-.souvenirs_item_img {
+.souvenirs_item_img
+{
     width: 100%;
     display: block;
 }
 
-.souvenirs_item_info {
+.souvenirs_item_info
+{
     margin-left: 10%;
 }
 
-.souvenirs_item_info_price {
+.souvenirs_item_info_price
+{
     margin-top: 1%;
 }
 
-.souvenirs_item_info > * {
+.souvenirs_item_info > div,
+.souvenirs_item_info > a
+{
     margin-bottom: 1%;
 }
 
-.souvenirs_item_info_price {
+.souvenirs_item_info_price
+{
     font-weight: bold;
 }
 
-.souvenirs_item_info_rating {
+.souvenirs_item_info_rating
+{
     display: inline;
 }
 
-.souvenirs_item_info_review {
+.souvenirs_item_info_review
+{
     margin-left: 3%;
     display: inline;
 }
 
-.souvenirs_item_info_name {
+.souvenirs_item_info_name
+{
     text-decoration: none;
 }
 
-
-@media screen and (max-width: 720px) {
-    .souvenirs_item {
+@media screen and (max-width: 720px)
+{
+    .souvenirs_item
+    {
         display: block;
         width: 100%;
     }

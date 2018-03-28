@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/order.css">
     <link rel="stylesheet" href="./css/popular.css">
     <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
-    <script defer src="scripts/index.js" type="text/javascript"></script>
+    <script defer src="scripts/index.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -24,17 +24,17 @@
     </header>
     <main class="main">
         <button class="sandwitch"></button>
-        <article class="menu">
+        <div class="menu">
             <button class="menu_exit"></button>
             <a href="" class="menu_item">Морские ракушки</a>
             <a href="" class="menu_item">Сувениры из Тайланда</a>
             <a href="" class="menu_item">Автомобили Тесла</a>
             <a href="" class="menu_item">Марки из разных стран</a>
             <a href="" class="menu_item">Заказать сувенир</a>
-        </article>
-        <article class="souvenirs">
-            <section class="souvenirs_item">
-                <img class="souvenirs_item_img" src="images/shell.JPG">
+        </div>
+        <div class="souvenirs">
+            <div class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/shell.JPG" alt="ракушка">
                 <div class="souvenirs_item_info">
                     <a href="" class="souvenirs_item_info_name">
                         Ракушка "Морское дно"
@@ -49,9 +49,9 @@
                         111 отзывов
                     </div>
                 </div>
-            </section>
-            <section class="souvenirs_item">
-                <img class="souvenirs_item_img" src="images/glass.JPG">
+            </div>
+            <div class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/glass.JPG" alt="кружка">
                 <div class="souvenirs_item_info">
                     <a href="" class="souvenirs_item_info_name">
                         Термокружкус "Батарейка"
@@ -66,9 +66,9 @@
                         290 отзывов
                     </div>
                 </div>
-            </section>
-            <section class="souvenirs_item">
-                <img class="souvenirs_item_img" src="images/car.JPG">
+            </div>
+            <div class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/car.JPG" alt="машина">
                 <div class="souvenirs_item_info">
                     <a href="" class="souvenirs_item_info_name">
                         Автомобиль "Тесла"
@@ -83,9 +83,9 @@
                         1 отзыв
                     </div>
                 </div>
-            </section>
-            <section class="souvenirs_item">
-                <img class="souvenirs_item_img" src="images/back.JPG">
+            </div>
+            <div class="souvenirs_item">
+                <img class="souvenirs_item_img" src="images/back.JPG" alt="чесалка">
                 <div class="souvenirs_item_info">
                     <a href="" class="souvenirs_item_info_name">
                         Чесалка для спины
@@ -100,9 +100,9 @@
                         29 отзыв
                     </div>
                 </div>
-            </section>
-        </article>
-        <article class="order">
+            </div>
+        </div>
+        <div class="order">
             <h2 class="order_name">Заказать сувенир</h2>
             <div class="order_item">
                 Количество:
@@ -130,15 +130,15 @@
             <button class="order_send">
                 Заказать
             </button>
-        </article>
-        <article class="popular">
+        </div>
+        <div class="popular">
             <h2>Популярные товары</h2>
             <div class="popular_wrapper">
                 <a href="" class="popular_item">Ракушка морская</a>
                 <a href="" class="popular_item">Чесалка для спины</a>
                 <a href="" class="popular_item">Чётки</a>
             </div>
-        </article>
+        </div>
     </main>
 </body>
 

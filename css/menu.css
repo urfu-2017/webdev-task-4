@@ -1,26 +1,35 @@
-.menu {
+.menu
+{
     grid-area: h;
     background-color: white;
     padding: 7%;
     margin-right: 7%;
 }
 
-.menu_exit {
+.sandwitch 
+{
+    display: none;
+}
+
+.menu_exit
+{
     display: none;
     width: 20px;
     height: 20px;
     float: right;
-    margin-right: 20px;
 }
 
-.menu_item {
+.menu_item
+{
     display: block;
     text-decoration: none;
     margin-bottom: 4%;
 }
 
-@media screen and (max-width: 979px) {
-    .menu {
+@media screen and (max-width: 979px)
+{
+    .menu
+    {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -28,30 +37,35 @@
         padding-left: 120px;
         margin-right: 0%;
     }
-    .menu_item {
+    .menu_item
+    {
         display: inline-block;
         width: 200px;
     }
 }
 
-@media screen and (max-width: 720px) {
-    .menu {
+@media screen and (max-width: 720px)
+{
+    .menu
+    {
         display: none;
         padding-top: 2%;
         padding-left: 2%;
         position: fixed;
         top: 0;
-        left: 50%;
+        left: 45%;
         height: 100%;
         justify-content: flex-start;
         width: 50%;
     }
 
-    .menu_item {
+    .menu_item
+    {
         margin-top: 10%;
     }
 
-    .sandwitch {
+    .sandwitch
+    {
         display: block;
         position: absolute;
         top: 5%;
@@ -60,7 +74,8 @@
         height: 15px;
     }
 
-    .sandwitch:checked ~ .menu > .menu_exit {
+    .sandwitch:checked ~ .menu > .menu_exit
+    {
         display: block;
     }
 }

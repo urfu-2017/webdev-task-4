@@ -9,7 +9,7 @@ searchButton.onclick = function () {
         searchInput.focus();
         searchInput.onblur = function () {
             searchInput.style.visibility = 'hidden';
-        }
+        };
     }
 };
 
@@ -24,12 +24,12 @@ exitButton.onclick = function () {
 sandwitchButton.onclick = function () {
     menu.style.display = 'block';
     exitButton.style.display = 'block';
-}
+};
 
 const main = document.querySelector('.main');
-
+// eslint-disable-next-line no-undef
 var hammer = new Hammer(main, { preventDefault: true });
-    hammer.on('swipeleft', () => {
-        menu.style.display = 'block';
-        exitButton.style.display = 'block';
-    });
+hammer.on('swipeleft', () => {
+    menu.style.display = 'block';
+    exitButton.style.display = 'block';
+});
