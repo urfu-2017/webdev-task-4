@@ -48,7 +48,8 @@
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         margin: 0;
-        height: calc(var(--device-independet-font-size) * 1.5 * 1.4 * 4);
+        /* height: calc(var(--device-independet-font-size) * 1.5 * 1.4 * 4); */
+        height: auto;
     }
 
     .popular__title
@@ -75,9 +76,10 @@
 {
     .popular
     {
-        margin-top: var(--margin-for-blocks);
+        margin: var(--margin-for-blocks) 0;
         grid-row: 1 / 2;
-        height: calc(var(--device-independet-font-size) * 2.5 *  2.3 * 4);
+        /* height: calc(var(--device-independet-font-size) * 2.5 *  2.3 * 4); */
+        height: auto;
     }
 
     .popular__title

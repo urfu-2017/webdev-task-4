@@ -5,11 +5,6 @@
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./public/body.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <script>
-        function deleteSearch() {
-            if /*не в фокусе -- убрать*/
-        }
-    </script>
 </head>
 <!-- <body class="body" onload="deleteSearch()"> -->
 <body class="body">
@@ -117,20 +112,28 @@
         </form>
     </main>
     <script>
-        const sandwich = document.getElementsByClassName('menu_show-button')[0];
-        const height = Math.max(
+        var sandwich = document.getElementsByClassName('menu_show-button')[0];
+        var height = Math.max(
             document.body.scrollHeight, document.documentElement.scrollHeight,
             document.body.offsetHeight, document.documentElement.offsetHeight,
             document.body.clientHeight, document.documentElement.clientHeight
         );
+        var body = document.getElementsByClassName('body')[0];
+        var menu = document.getElementsByClassName('menu')[0];
         sandwich.addEventListener('click', () => {
-            var menu = document.getElementsByClassName('menu')[0];
             menu.style.height = `${height}px`;
-            var body = document.getElementsByClassName('body')[0];
             if (getComputedStyle(menu).display === 'none') {
                 menu.style.display = 'block';
                 body.style['overflow-y'] = 'hidden';
             } else {
+                menu.style.display = 'none';
+                body.style['overflow-y'] = 'auto';
+            }
+        });
+
+        var back = document.getElementsByClassName('main')[0];
+        back.addEventListener('click', () => {
+            if (getComputedStyle(menu).display === 'block') {
                 menu.style.display = 'none';
                 body.style['overflow-y'] = 'auto';
             }
