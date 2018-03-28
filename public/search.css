@@ -35,7 +35,7 @@
 
 .search__button
 {
-    font-size: 1.3vmax;
+    font-size: 2vw;
     flex-grow: 1;
     border-left: none !important;
     background-color: var(--color-theme);
@@ -91,11 +91,6 @@
         display: none;
     }
 
-    .search_hide-checkbox:checked ~ .search
-    {
-        display: flex;
-    }
-
     .order__title
     {
         font-size: calc(var(--device-independet-font-size)*2.8);
@@ -115,7 +110,7 @@
     .search__input,
     .search__button
     {
-        font-size: 3vmax;
+        font-size: 4vw;
         height: calc(var(--header-font-size)*1.8);
     }
 

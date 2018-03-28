@@ -3,7 +3,7 @@
     grid-column: 3 / 4;
     background-color: #FFFF;
     margin-right: var(--margin-for-blocks);
-    height: calc(var(--device-independet-font-size)*12);
+    height: calc(var(--device-independet-font-size)*15);
     border: .3vmax solid var(--color-theme-dark);
     border-radius: .3vmax;
 }
@@ -12,7 +12,7 @@
 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: calc(var(--device-independet-font-size)*1.1);
+    font-size: calc(1.5vw * 1.1);
     text-align: center;
 }
 
@@ -24,7 +24,7 @@
 .popular__item
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--device-independet-font-size);
+    font-size: 1.5vw;
     text-decoration: transparent;
     color: #00F;
     display: block;
@@ -47,7 +47,7 @@
     {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
-        margin: 0;
+        margin: var(--margin-for-blocks) 0;
         /* height: calc(var(--device-independet-font-size) * 1.5 * 1.4 * 4); */
         height: auto;
     }

@@ -13,7 +13,7 @@
         <input type="image" src="./public/pics/menu.png" class="menu_show-button" tabindex="1" /> 
         <input type="checkbox" class="search_hide-checkbox" id="search_hide" />
         <label for="search_hide" class="search_hide" tabindex="1"></label>
-        <form class="search" tabindex="1">
+        <form class="search" tabindex="-1">
             <button class="search__button" tabindex="2">Найти</button>
             <input type="search" name="q" class="search__input" tabindex="1" />
         </form>
@@ -111,60 +111,6 @@
             </div>
         </form>
     </main>
-    <script>
-        var sandwich = document.getElementsByClassName('menu_show-button')[0];
-        var height = Math.max(
-            document.body.scrollHeight, document.documentElement.scrollHeight,
-            document.body.offsetHeight, document.documentElement.offsetHeight,
-            document.body.clientHeight, document.documentElement.clientHeight
-        );
-        var body = document.getElementsByClassName('body')[0];
-        var menu = document.getElementsByClassName('menu')[0];
-        sandwich.addEventListener('click', () => {
-            menu.style.height = `${height}px`;
-            if (getComputedStyle(menu).display === 'none') {
-                menu.style.display = 'block';
-                body.style['overflow-y'] = 'hidden';
-            } else {
-                menu.style.display = 'none';
-                body.style['overflow-y'] = 'auto';
-            }
-        });
-
-        var back = document.getElementsByClassName('main')[0];
-        back.addEventListener('click', () => {
-            if (getComputedStyle(menu).display === 'block') {
-                menu.style.display = 'none';
-                body.style['overflow-y'] = 'auto';
-            }
-        });
-
-        // document.addEventListener('touchmove', (e) => {
-        //     e.preventDefault();
-        //     // alert('hi');
-        //     // var changes = e.changedTouches;
-        //     for (var i=0; i < e.changedTouches.length; i++) {
-        //         console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-        //     }
-        // });
-
-        // function showIf(e) {
-        //     e.preventDefault();
-        //     var el = document.getElementsByTagName("canvas")[0];
-        //     var ctx = el.getContext("2d");
-        //     var touches = e.changedTouches;
-                    
-        //     for (var i = 0; i < touches.length; i++) {
-        //         log("touchstart:" + i + "...");
-        //         ongoingTouches.push(copyTouch(touches[i]));
-        //         var color = colorForTouch(touches[i]);
-        //         ctx.beginPath();
-        //         ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
-        //         ctx.fillStyle = color;
-        //         ctx.fill();
-        //         log("touchstart:" + i + ".");
-        //     }
-        // }
-    </script>
+    <script src="./public/search-click-handler.js"></script>
 </body>
 </html>
