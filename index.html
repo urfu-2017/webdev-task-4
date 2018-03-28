@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width">
 </head>
+
 <body>
+    <header class="header">
+        <h1 class="header__title">Билли.Маркет</h1>
+        <button type="button" class="header__menu-button">
+            <img src="./images/buter.png" alt="button-image" width="20" height="20">
+        </button>
+        <form class="search-form-desktop">
+            <input type="text" class="search-form-desktop__input">
+            <button type="button" class="search-form-desktop__button">Найти</button>
+        </form>
+        <form class="search-form-tablet">
+            <input type="text" class="search-form-tablet__input">
+            <button type="button" class="search-form-tablet__button">
+                <img src="./images/search.png" alt="button-image" width="20" height="20">
+            </button>
+        </form>
+        <form class="search-form-mobile">
+            <input type="text" class="search-form-mobile__input" placeholder="Искать товары">
+        </form>
+    </header>
+    <nav class="navigation">
+        <button type="button" class="navigation__close-button">
+            &#10005;
+        </button>
+        <a href="#">Морские ракушки</a>
+        <a href="#">Сувениры из Тайланда</a>
+        <a href="#">Автомобили Тесла</a>
+        <a href="#">Марки из разных стран</a>
+        <a href="#">Заказать сувенир</a>
+    </nav>
+    <section class="goods">
+        <article class="item">
+            <a href="#">
+                <img src="./images/Rakushka.jpg" alt="Ракушка" width="200" height="200">
+                <div>Ракушка "Морское дно"</div>
+            </a>
+            <p class="item__price">290 &#8381;</p>
+            <div class="item__feedback">
+                <span class="item__feedback__mark">4.0</span>
+                <span class="item__feedback__mark-arrow"></span>
+                <span class="item__feedback__response-count">111 отзывов</span>
+            </div>
+        </article>
+        <article class="item">
+            <a href="#">
+                <img src="./images/Termo.jpg" alt="Термокружка" width="200" height="200">
+                <div>Термокружкус "Батарейка"</div>
+            </a>
+            <p class="item__price">404 &#8381;</p>
+            <div class="item__feedback">
+                <span class="item__feedback__mark">4.5</span>
+                <span class="item__feedback__mark-arrow"></span>
+                <span class="item__feedback__response-count">290 отзывов</span>
+            </div>
+        </article>
+        <article class="item">
+            <a href="#">
+                <img src="./images/Tesla.jpg" alt="Тесла" width="200" height="200">
+                <div>Автомобиль "Тесла"</div>
+            </a>
+            <p class="item__price">359 900 &#8381;</p>
+            <div class="item__feedback">
+                <span class="item__feedback__mark">4.5</span>
+                <span class="item__feedback__mark-arrow"></span>
+                <span class="item__feedback__response-count">1 отзыв</span>
+            </div>
+        </article>
+        <article class="item">
+            <a href="#">
+                <img src="./images/Palka.jpg" alt="Палка-чесалка" width="200"
+                    height="200">
+                <div>Чесалка для спины</div>
+            </a>
+            <p class="item__price">195 &#8381;</p>
+            <div class="item__feedback">
+                <span class="item__feedback__mark">4.0</span>
+                <span class="item__feedback__mark-arrow"></span>
+                <span class="item__feedback__response-count">29 отзывов</span>
+            </div>
+        </article>
+    </section>
+    <form class="order-form">
+        <h2 class="order-form__title">Заказать сувенир</h2>
+        <p>
+            <label for="amount">
+                <span>Количество:</span>
+            </label>
+            <input type="number" id="amount" name="amount">
+        </p>
+        <p>
+            <label for="city">
+                <span>Город</span>
+            </label>
+            <input type="text" placeholder="-" id="city" name="city">
+        </p>
+        <p>
+            <label for="mail">
+                <span>Email</span>
+            </label>
+            <input type="email" placeholder="email" id="mail" name="mail">
+        </p>
+        <p>
+            <label for="telephone">
+                <span>Телефон</span>
+            </label>
+            <input type="tel" placeholder="Номер телефона*" id="telephone"
+                name="telephone">
+        </p>
+        <p>
+            <label for="date">
+                <span>Дата доставки:</span>
+            </label>
+            <input type="date" id="date" name="date">
+        </p>
+        <p>
+            <button type="reset">Сбросить заказ</button>
+            <button>Заказать!</button>
+        </p>
+    </form>
+    <aside class="popular-goods">
+        <h2 class="popular-goods__title">Популярные товары</h2>
+        <div class="popular-goods__items">
+            <a href="#">Ракушка морская</a>
+            <a href="#">Чесалка для спины</a>
+            <a href="#">Чётки</a>
+        </div>
+    </aside>
+    <script src="script.js"></script>
 </body>
+
 </html>
