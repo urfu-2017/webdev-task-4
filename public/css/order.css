@@ -1,10 +1,12 @@
-.order {
+.order
+{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.order__form {
+.order__form
+{
     width: 100%;
     max-width: 700px;
     padding: 10px 10%;
@@ -14,65 +16,75 @@
     margin: 0 20px 20px;
 }
 
-.form__string {
+.form__string
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 5px 0;
 }
 
-.order__text {
+.order__text
+{
     font-size: 20px;
 }
 
-.form__input {
+.form__input
+{
     width: 200px;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,.2);
 }
 
-select {
+select
+{
     padding-right: 25px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.order__city {
+.order__city
+{
     position: relative;
 }
 
-.order__city::after {
-    content: "";
+.order__city::after
+{
+    content: '';
     padding: 0 8px;
     font-size: 12px;
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 0;
     z-index: 1;
     text-align: center;
     pointer-events: none;
-    background: url("../images/select.png") no-repeat;
+    background: url('../images/select.png') no-repeat;
     background-size: contain;
     background-position: right;
     width: 16px;
     height: 100%;
     border-radius: 0 5px 5px 0;
-  }
+}
 
-@media (max-width: 480px) {
-    .order__form {
+@media (max-width: 480px)
+{
+    .order__form
+    {
         max-width: 295px;
         padding: 10px;
         margin: 0 0 20px;
     }
 
-    .order__text {
+    .order__text
+    {
         font-size: 15px;
     }
 
-    .form__input {
+    .form__input
+    {
         width: 140px;
     }
 }

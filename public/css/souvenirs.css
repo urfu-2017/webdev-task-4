@@ -1,23 +1,27 @@
-.souvenirs {
+.souvenirs
+{
     width: 100%;
     max-width: 700px;
     margin: 20px 10px;
 }
 
-.souvenirs__string {
+.souvenirs__string
+{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.souvenirs__tile {
+.souvenirs__tile
+{
     width: 50%;
     background: #fff;
     padding: 10px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1)
 }
 
-.souvenirs__tile_div_image {
+.souvenirs__tile_div_image
+{
     width: 100%;
     height: 295px;
     margin: 0 0 10px;
@@ -25,34 +29,41 @@
     justify-content: center;
 }
 
-.souvenirs__tile_image {
+.souvenirs__tile_image
+{
     max-width: 100%;
 }
 
-.souvenirs__tile_features {
+.souvenirs__tile_features
+{
     display: flex;
 }
 
-.souvenirs__tile_features_rating {
+.souvenirs__tile_features_rating
+{
     color: #fff;
     display: block;
     width: 24px;
     padding: 0 2px;
 }
 
-.rating-4 {
+.rating-4
+{
     background: #8cb512;
 }
 
-.rating-45 {
+.rating-45
+{
     background: #54a008;
 }
 
-.souvenirs__tile_features_angle {
+.souvenirs__tile_features_angle
+{
     width: 0;
 }
 
-.souvenirs__tile_features_angle::after{
+.souvenirs__tile_features_angle::after
+{
     content: ' ';
     width: 12px;
     height: 14px;
@@ -66,25 +77,31 @@
     background: inherit;
 }
 
-.souvenirs__tile_features_review {
+.souvenirs__tile_features_review
+{
     color: #808080;
     margin: 0 10px;
 }
 
-@media (max-width: 768px) {
-    .souvenirs__tile_div_image {
+@media (max-width: 768px)
+{
+    .souvenirs__tile_div_image
+    {
         height: calc(100vh / 2 - 60 px);
     }
 }
 
-@media (max-width: 480px) {
-    .souvenirs__string {
+@media (max-width: 480px)
+{
+    .souvenirs__string
+    {
         max-width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .souvenirs__tile {
+    .souvenirs__tile
+    {
         width: 295px;
         box-sizing: border-box;
     }

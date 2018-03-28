@@ -1,4 +1,5 @@
-.popular {
+.popular
+{
     width: 100%;
     max-width: 200px;
     padding: 10px;
@@ -8,31 +9,38 @@
     align-self: flex-start;
 }
 
-.popular__list {
+.popular__list
+{
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-.popular__list li {
+.popular__list li
+{
     margin: 10px 0;
 }
 
-.popular__list-link {
+.popular__list-link
+{
     text-decoration: none;
     color: #04b;
 }
 
-@media (max-width: 768px) {
-    .popular {
+@media (max-width: 768px)
+{
+    .popular
+    {
         max-width: 100%;
         margin: 0;
         box-sizing: border-box;
     }
 }
 
-@media (max-width: 480px) {
-    .popular {
+@media (max-width: 480px)
+{
+    .popular
+    {
         max-width: 295px;
         align-self: center;
     }
