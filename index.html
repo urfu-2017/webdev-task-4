@@ -6,5 +6,93 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">Билли.Маркет</div>
+            <div class="nav__search search-block">
+                <input type="text" class="search-block__input">
+                <div class="search-block__submit">Найти</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="order-block">
+            <div class="order-block__item">Морские ракушки</div>
+            <div class="order-block__item">Сувениры из Тайланда</div>
+            <div class="order-block__item">Автомобили Тесла</div>
+            <div class="order-block__item">Марки из разных стран</div>
+            <div class="order-block__order">Заказать сувенир</div>
+        </div>
+        <div class="product-block">
+            <div class="product-block__item item">
+                <img class="item__image" src="./dno.png" alt="Ракушка «Морское дно»">
+                <div class="item__title">Ракушка «Морское дно»</div>
+                <div class="item__cost">290 &#8381;</div>
+                <div class="item__feedback"><span class="item__feedback__rating">4.0</span> 111 отзывов</div>
+            </div>
+            <div class="product-block__item item">
+                <img class="item__image" src="./kruzhka.png" alt="Термокружкус «Батарейка»">
+                <div class="item__title">Термокружкус «Батарейка»</div>
+                <div class="item__cost">404 &#8381;</div>
+                <div class="item__feedback"><span class="item__feedback__rating">4.5</span> 290 отзывов</div>
+            </div>
+            <div class="product-block__item item">
+                <img class="item__image" src="./tesla.png" alt="Автомобиль «Тесла»">
+                <div class="item__title">Автомобиль «Тесла»</div>
+                <div class="item__cost">359 900 &#8381;</div>
+                <div class="item__feedback"><span class="item__feedback__rating">4.5</span> 1 отзыв</div>
+            </div>
+            <div class="product-block__item item">
+                <img class="item__image" src="./chesches.png" alt="Чесалка для спины">
+                <div class="item__title">Чесалка для спины</div>
+                <div class="item__cost">195 &#8381;</div>
+                <div class="item__feedback"><span class="item__feedback__rating">4.0</span> 29 отзывов</div>
+            </div>
+        </div>
+        <div class="popular-block">
+            <div class="popular-block__title">Популярные товары</div>
+            <div class="popular-block__list">
+                <div>Ракушка морская</div>
+                <div>Чесалка для спины</div>
+                <div>Чётки</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-order-block">
+            <div class="footer-order-block__title">Заказать сувенир</div>
+            <form class="footer-order-block__form order-form">
+                <div class="order-form__row">
+                    <label for="count" class="order-form__row__label">Количество</label>
+                    <input type="text" name="count" id="count" class="order-form__row__input">
+                </div>
+                <div class="order-form__row">
+                    <label for="city" class="order-form__row__label">Город</label>
+                    <select name="city" id="city" class="order-form__row__input">
+                        <option value="-1" selected>-</option>
+                    </select>
+                </div>
+                <div class="order-form__row">
+                    <label for="email" class="order-form__row__label">Email</label>
+                    <input type="email" name="email" id="email"
+                           placeholder="email" class="order-form__row__input">
+                </div>
+                <div class="order-form__row">
+                    <label for="phone" class="order-form__row__label">Телефон</label>
+                    <input type="tel" name="phone" id="phone"
+                           placeholder="Номер телефона*" class="order-form__row__input">
+                </div>
+                <div class="order-form__row">
+                    <label for="date_delivery" class="order-form__row__label">Дата доставки</label>
+                    <input type="text" name="date_delivery" id="date_delivery"
+                           placeholder="дд.мм.гггг" class="order-form__row__input">
+                </div>
+                <div class="order-form__row">
+                    <button type="reset" class="order-form__row__reset">Сбросить заказ</button>
+                    <button type="submit" class="order-form__row__reset">Заказать!</button>
+                </div>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
