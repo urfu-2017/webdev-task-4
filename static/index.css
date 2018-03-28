@@ -1,0 +1,58 @@
+html
+{
+    background: whitesmoke;
+    height: 100vh;
+    font: 14px sans-serif;
+}
+
+body
+{
+    display: grid;
+    grid-template-rows: 100px 25px auto auto 25px auto;
+    grid-template-columns: 180px 25px 1fr 25px 180px;
+    grid-template-areas:    'h h h h h'
+                            '. . . . .' 
+                            'm . c . p'
+                            '. . c . .'
+                            '. . . . .'
+                            '. . o . .';
+    width: 800px;
+    margin: auto;
+}
+
+h1,
+h2
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    margin: 4px 0;
+    color: blue;
+}
+
+figure
+{
+    margin: 0;
+}
+
+@media(max-width: 850px) 
+{
+    body 
+    {
+        grid-template-rows: 75px 15px auto 15px auto 15px auto 25px;
+        grid-template-columns: 1fr;
+        grid-template-areas:    'h'
+                                '.'
+                                'm'
+                                '.' 
+                                'c'
+                                '.'
+                                'p'
+                                '.'
+                                'o';
+        width: 95vw;
+    }
+}
