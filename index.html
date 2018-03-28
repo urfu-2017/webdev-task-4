@@ -4,21 +4,20 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./public/body.css">
+
 </head>
 <body class="body">
     <header class="header">
-        <h1 class="header__title"><span class="header__title_red">Билли</span>Маркет</h1>
-        <label class="search search_hide">
-            <input type="checkbox" class="search_hide-checkbox" />
-            <img src="./public/pics/search.png" alt="Show input for search" class="search__show-click-img" />
-        </label>
+        <h1 class="header__title"><span class="header__title_red">Билли</span>.Маркет</h1>
+        <input type="image" src="./public/pics/menu.png" class="menu_show-button" tabindex="1" /> 
+        <input type="checkbox" class="search_hide-checkbox" id="search_hide" />
+        <label for="search_hide" class="search search_hide" tabindex="0"></label>
         <form class="search">
-            <button class="search__button">Найти</button>
-            <input type="search" name="q" class="search__input" />
+            <button class="search__button" tabindex="2">Найти</button>
+            <input type="search" name="q" class="search__input" tabindex="1" />
         </form>
     </header>
     <main class="main">
-        <input type="button" class="menu_hide"> 
         <nav class="menu">
             <h2 class="menu__title">Выбрать категорию</h2>
             <div class="menu__category-items">
@@ -34,10 +33,10 @@
         <aside class="popular">
             <h2 class="popular__title">Популярные товары</h2>
             <div class="popular__items">
-                <a href="https://google.com/" class="popular__item">Ракушка морская</a>
-                <a href="https://google.com/" class="popular__item">Чесалка для спины</a>
-                <a href="https://google.com/" class="popular__item">Чётки</a>
-                <a href="https://google.com/" class="popular__item">Нечётки</a>
+                <a href="https://google.com/" class="popular__item" tabindex="-1">Ракушка морская</a>
+                <a href="https://google.com/" class="popular__item" tabindex="-1">Чесалка для спины</a>
+                <a href="https://google.com/" class="popular__item" tabindex="-1">Чётки</a>
+                <a href="https://google.com/" class="popular__item" tabindex="-1">Нечётки</a>
             </div>
         </aside>
         <article class="products-list">
@@ -49,7 +48,7 @@
                 </div>
                 <figcaption class="product__other-info">
                     <span class="product__price">290 &#8381;</span>
-                    <div class="product__rating">44.0</div>
+                    <div class="product__rating">4.0</div>
                     <span class="product__feedback">111 отзывов</span>
                 </figcaption>
             </figure>
@@ -90,9 +89,9 @@
         <form class="order">
             <h2 class="order__title">Заказать сувенир</h2>
             <fieldset class="order__info">
-                <!-- <legend class="order__info_append-title">Параметра заказа</legend> -->
-                Количество<input type="number" class="order__input"><br />
-                Город<select>
+                <legend class="order__info_append-title">Параметра заказа</legend>
+                Количество<input type="number" class="order__input">
+                Город<select class="order__input">
                     <option>не выбран</option>
                     <option>Москва и Московская область</option>
                     <option>Санкт-Петербург и Ленинградская область</option>
@@ -100,10 +99,10 @@
                     <option>Казань</option>
                     <option>Ростов-на-Дону</option>
                     <option>Пермь</option>
-                </select><br />
-                Email<input type="email" class="order__input"><br />
-                Телефон<input type="tel" class="order__input"><br />
-                Дата доставки<input type="date" class="order__input"><br />
+                </select>
+                Email<input type="email" class="order__input">
+                Телефон<input type="tel" class="order__input">
+                Дата доставки<input type="date" class="order__input">
             </fieldset>
             <div class="order__buttons">
                 <input type="reset" value="Сбросить заказ" class="order_reset">
@@ -111,5 +110,49 @@
             </div>
         </form>
     </main>
+    <script>
+        const sandwich = document.getElementsByClassName('menu_show-button')[0];
+        const height = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+        sandwich.addEventListener('click', () => {
+            var menu = document.getElementsByClassName('menu')[0];
+            menu.style.height = `${height}px`;
+            if (getComputedStyle(menu).display === 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            // alert('hi');
+            // var changes = e.changedTouches;
+            for (var i=0; i < e.changedTouches.length; i++) {
+                console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
+            }
+        });
+
+        // function showIf(e) {
+        //     e.preventDefault();
+        //     var el = document.getElementsByTagName("canvas")[0];
+        //     var ctx = el.getContext("2d");
+        //     var touches = e.changedTouches;
+                    
+        //     for (var i = 0; i < touches.length; i++) {
+        //         log("touchstart:" + i + "...");
+        //         ongoingTouches.push(copyTouch(touches[i]));
+        //         var color = colorForTouch(touches[i]);
+        //         ctx.beginPath();
+        //         ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
+        //         ctx.fillStyle = color;
+        //         ctx.fill();
+        //         log("touchstart:" + i + ".");
+        //     }
+        // }
+    </script>
 </body>
 </html>

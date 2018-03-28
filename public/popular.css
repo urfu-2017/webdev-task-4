@@ -2,16 +2,17 @@
 {
     grid-column: 3 / 4;
     background-color: #FFFF;
-    margin: var(--margin-for-blocks) var(--margin-for-blocks) 0 0;
-    height: 14vmax;
+    margin-right: var(--margin-for-blocks);
+    height: calc(var(--device-independet-font-size)*12);
     border: .3vmax solid var(--color-theme-dark);
+    border-radius: .3vmax;
 }
 
 .popular__title
 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.4vmax;
+    font-size: calc(var(--device-independet-font-size)*1.1);
     text-align: center;
 }
 
@@ -23,7 +24,7 @@
 .popular__item
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vmax;
+    font-size: var(--device-independet-font-size);
     text-decoration: transparent;
     color: #00F;
     display: block;
@@ -38,4 +39,61 @@
 .popular__item:active
 {
     color: var(--color-anchor-active);
+}
+
+@media screen and (max-width: 768px) 
+{ 
+    .popular
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin: 0;
+        height: calc(var(--device-independet-font-size) * 1.5 * 1.4 * 4);
+    }
+
+    .popular__title
+    {
+        margin: 1.6vmax;
+        font-size: calc(var(--device-independet-font-size) * 1.5);
+        text-align: left;
+    }
+
+    .popular__items
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .popular__item
+    {
+        font-size: calc(var(--device-independet-font-size) * 1.4);        
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .popular
+    {
+        margin-top: var(--margin-for-blocks);
+        grid-row: 1 / 2;
+        height: calc(var(--device-independet-font-size) * 2.5 *  2.3 * 4);
+    }
+
+    .popular__title
+    {
+        font-size: calc(var(--device-independet-font-size) * 2.5);
+    }
+
+    .popular__items
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular__item
+    {
+        font-size: calc(var(--device-independet-font-size) * 2.3);        
+    }
 }

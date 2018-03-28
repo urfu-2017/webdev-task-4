@@ -1,5 +1,27 @@
 @font-face
 {
+    font-family: 'Yandex Sans Display Thin';
+    src: url('./YandexSansDisplay-Thin.eot');
+    src:    url('./YandexSansDisplay-Thin.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansDisplay-Thin.woff') format('woff'),  
+            url('./YandexSans/YandexSansDisplay-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Display Light';
+    src: url('./YandexSansDisplay-Light.eot');
+    src:    url('./YandexSansDisplay-Light.eot?iefix') format('eot'),
+            url('./YandexSans/YandexSansDisplay-Light.woff') format('woff'),  
+            url('./YandexSans/YandexSansDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
     font-family: 'Yandex Sans Display Regular';
     src: url('./YandexSansDisplay-Regular.eot');
     src:    url('./YandexSansDisplay-Regular.eot?iefix') format('eot'),
