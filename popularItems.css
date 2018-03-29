@@ -1,0 +1,39 @@
+.popularItems
+{
+    grid-area: popular;
+    background-color: white;
+    padding: 30px;
+}
+
+.popularItems__head
+{
+    margin-top: 0px;
+}
+
+.popularItems__items div
+{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 720px)
+{
+    .popularItems
+    {
+        margin: 0 125px;
+    }
+
+    .popularItems__items
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .popularItems
+    {
+        margin: 0 37px;
+    }
+
+}

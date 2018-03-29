@@ -1,0 +1,40 @@
+.form
+{
+    grid-area: form;
+    background-color: white;
+    padding: 0px 30px 30px;
+    margin: 10px 10px 0px;
+}
+
+.field
+{
+    clear: both;
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+label
+{
+    float: left;
+    margin-right: 160px;
+}
+
+.form__wrap
+{
+    float: left;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 720px)
+{
+    .form
+    {
+        margin: 0 125px;
+    }
+    
+}
+
+
+@media screen and (max-width: 720px)
+{
+
+}
