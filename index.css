@@ -1,0 +1,172 @@
+body
+{
+    background: #ddd;
+    margin: 0;
+}
+
+.header
+{
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sandwich
+{
+    cursor: pointer;
+    display: none;
+}
+
+.logo
+{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+.search
+{
+    margin-right: 100px;
+}
+
+.search__input
+{
+    width: 200px;
+}
+
+.search__reveal
+{
+    display: none;
+}
+
+.logo__image
+{
+    height: 60px;
+}
+
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.menu
+{
+    padding: 10px;
+    height: 100px;
+    width: 280px;
+    margin-left: 50px;
+    background: #fff;
+    position: relative;
+}
+
+.menu__close
+{
+    color: #000;
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-list
+{
+    list-style: none;
+}
+
+.menu-list__link
+{
+    text-decoration: none;
+    color: blue;
+}
+
+.suggestions
+{
+    height: 100px;
+    padding: 10px;
+    background: #fff;
+    width: 280px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.main
+{
+    min-width: 500px;
+    margin-left: 50px;
+}
+
+.items
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item
+{
+    width: 228px;
+    background: #fff;
+    border: 1px solid #bbb;
+    padding: 20px;
+}
+
+.item__image
+{
+    width: 90%;
+}
+
+.item__title
+{
+    padding: 5px 0;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.3em;
+}
+
+.item__price
+{
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.rating
+{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__rate
+{
+    display: inline-block;
+    background: #359c00;
+    padding: 6px;
+}
+
+.order-form
+{
+    background: #fff;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px 100px;
+}
+
+.form-input-line
+{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons-line
+{
+    display: flex;
+    justify-content: space-between;
+}
