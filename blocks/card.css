@@ -1,0 +1,104 @@
+.card
+{
+    width: 250px;
+    display: grid;
+    /*noinspection Stylelint*/
+    grid-template-areas:
+        'image image  image  image'
+        'title title  title  title'
+        'price price    .      .  '
+        'label review   .      .  ';
+
+    grid-template-rows: 8fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    padding: 1em;
+    background: white;
+}
+
+.card__image
+{
+    grid-area: image;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+.card__title
+{
+    grid-area: title;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #4a00cf;
+    height: 1.5em;
+    line-height: 1.5em;
+
+}
+
+.card__label[data-value^='5.']
+{
+    --label-color: #007d0e;
+}
+
+.card__label[data-value^='4.']
+{
+    --label-color: #307d00;
+}
+
+.card__label[data-value^='3.']
+{
+    --label-color: #607d00;
+}
+
+.card__label[data-value^='2.']
+{
+    --label-color: #7d6f00;
+}
+
+.card__label[data-value^='1.']
+{
+    --label-color: #8b4200;
+}
+
+.card__label[data-value^='0.']
+{
+    --label-color: #7d0005;
+}
+
+.card__label
+{
+    width: 2em;
+    color: white;
+    background-color: var(--label-color);
+    height: 1.5em;
+    grid-area: label;
+    font-size: .8em;
+    position: relative;
+    align-self: center;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.card__label::after
+{
+    content: '\A';
+    height: 0;
+    border: .75em solid transparent;
+    border-left-color: var(--label-color);
+    position: absolute;
+    right: -1.5em;
+}
+
+.card__price
+{
+    grid-area: price;
+    font-size: 1.3em;
+    font-weight: bold;
+    align-self: center;
+}
+
+.card__review
+{
+    color: darkgray;
+    grid-area: review;
+    align-self: center;
+}

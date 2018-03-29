@@ -1,0 +1,35 @@
+.head
+{
+    display: grid;
+    grid-template-areas: 'title . input button';
+    grid-template-columns: max-content 1em auto max-content;
+    padding: 2em;
+
+}
+
+.head__title
+{
+    grid-area: title;
+    font-weight: lighter;
+    font-size: 33pt;
+    text-wrap: none;
+}
+
+.head__input
+{
+    grid-area: input;
+    border: solid #e8e8e8;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.head__button
+{
+    grid-area: button;
+    width: max-content;
+    background-color: #e8e8e8;
+    border: solid #e8e8e8;
+    border-radius: 0 .25rem .25rem 0;
+    font-size: 20pt;
+
+}
+

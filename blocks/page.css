@@ -1,0 +1,49 @@
+.page
+{
+    display: grid;
+    /*noinspection Stylelint*/
+    grid-template-areas:
+        'head head head  head head'
+        ' .   menu items hint  .  '
+        ' .    .    form   .   .  ';
+    grid-template-rows: max-content auto 3fr;
+    grid-template-columns: 1em 1fr minmax(auto, 554px) 1fr 1em;
+    height: 100vh;
+    grid-gap: 1em;
+    background: #f6f6f6;
+    margin: 0;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+.page__items
+{
+    grid-area: items;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.page__hint
+{
+    grid-area: hint;
+    background: white;
+}
+
+.page__menu
+{
+    grid-area: menu;
+    background: white;
+}
+
+.page__head
+{
+    grid-area: head;
+    background: white;
+}
+
+.page__form
+{
+    grid-area: form;
+    background: white;
+}

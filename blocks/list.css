@@ -1,0 +1,28 @@
+.list
+{
+    padding: 1em;
+    height: max-content;
+}
+
+.list__title
+{
+    display: block;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: black;
+    height: 1.5em;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+
+}
+
+.list__item
+{
+    display: block;
+    text-decoration: none;
+    color: #4a00cf;
+    font-size: 1.3em;
+    margin-left: .4em;
+    margin-bottom: .3em;
+
+}
