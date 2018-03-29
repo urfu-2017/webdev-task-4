@@ -4,6 +4,8 @@
     flex-direction: column;
     background-color: #fff;
     padding: 20px;
+    grid-area: o;
+    box-sizing: border-box;
 }
 
 .order__title
@@ -30,4 +32,12 @@
 {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 600px)
+{
+    .order
+    {
+        width: 300px;
+    }
 }

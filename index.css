@@ -2,6 +2,7 @@
 @import 'suggest.css';
 @import 'navigation.css';
 @import 'order.css';
+@import 'items.css';
 @import 'item.css';
 
 body
@@ -13,7 +14,11 @@ body
 
 main
 {
+    display: grid;
     padding: 20px;
+    grid-row-gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .link
@@ -22,12 +27,19 @@ main
     text-decoration: none;
 }
 
-@media screen
+@media screen and (min-width: 601px) and (max-width: 850px)
 {
     main
     {
-        display: grid;
-        grid-template-areas: 's';
-        grid-row-gap: 10px;
+        grid-template-areas: 'n' 'l' 's' 'o';
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    main
+    {
+        grid-template-areas: 's' 'l' 'o';
+        justify-items: center;
     }
 }

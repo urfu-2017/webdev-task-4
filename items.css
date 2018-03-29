@@ -1,0 +1,23 @@
+.items
+{
+    grid-area: l;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px)
+{
+    .items
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .items
+    {
+        flex-direction: column;
+    }
+}
