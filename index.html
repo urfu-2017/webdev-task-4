@@ -4,16 +4,17 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="./index-phone.css" />
-    <link rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="./index-pad.css"/>
+    <link rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="./index-pad.css"
+    />
     <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./index-desktop.css" />
-    <link rel="stylesheet" href="./css/popular.css"/>    
-    <link rel="stylesheet" href="./css/item-list.css"/>    
-    <link rel="stylesheet" href="./css/order-form.css"/>      
+    <link rel="stylesheet" href="./css/popular.css" />
+    <link rel="stylesheet" href="./css/item-list.css" />
+    <link rel="stylesheet" href="./css/order-form.css" />
     <title>Задача «Тим слишком занят»</title>
 </head>
 
 <body>
-    <img class="phone-sandwich" src="./static/menu.png"/>
+    <img class="phone-sandwich" src="./static/menu.png" />
     <div class="body">
         <header class="search-bar white-block">
             <div class="search-bar__logo">Билли.Маркет</div>
@@ -23,7 +24,7 @@
             <button class="search-bar__button">Найти</button>
         </header>
         <nav class="nav white-block center hidden">
-            <img class="nav__close" src="./static/close.png"/>
+            <img class="nav__close" src="./static/close.png" />
             <div class="nav__category link">Морские ракушки</div>
             <div class="nav__category link">Сувениры из Тайланда</div>
             <div class="nav__category link">Автомобили Тесла</div>
@@ -38,7 +39,10 @@
                 <div class="item__name link">Ракушка морское дно</div>
                 <div class="item__price">290 ₽</div>
                 <div class="item__users-review">
-                    <div class="item__rating good-rating">4.0</div>
+                    <div class="rating-container">
+                        <div class="item__rating good-rating">4.0</div>
+                        <div class="arrow-good-rating"></div>
+                    </div>
                     <div class="item__reviews">111 отзывов</div>
                 </div>
             </article>
@@ -49,7 +53,10 @@
                 <div class="item__name link">Термокружкус "Батарейка"</div>
                 <div class="item__price">404 ₽</div>
                 <div class="item__users-review">
-                    <div class="item__rating better-rating">4.5</div>
+                    <div class="rating-container">
+                        <div class="item__rating better-rating">4.5</div>
+                        <div class="arrow-better-rating"></div>
+                    </div>
                     <div class="item__reviews">290 отзывов</div>
                 </div>
             </article>
@@ -60,7 +67,10 @@
                 <div class="item__name link">Автомобиль "Тесла"</div>
                 <div class="item__price">359 900 ₽</div>
                 <div class="item__users-review">
-                    <div class="item__rating better-rating">4.5</div>
+                    <div class="rating-container">
+                        <div class="item__rating better-rating">4.5</div>
+                        <div class="arrow-better-rating"></div>
+                    </div>
                     <div class="item__reviews">1 отзыв</div>
                 </div>
             </article>
@@ -71,7 +81,10 @@
                 <div class="item__name link">Чесалка для спины</div>
                 <div class="item__price">195 ₽</div>
                 <div class="item__users-review">
-                    <div class="item__rating good-rating">4.0</div>
+                    <div class="rating-container">
+                        <div class="item__rating good-rating">4.0</div>
+                        <div class="arrow-good-rating"></div>
+                    </div>
                     <div class="item__reviews">29 отзывов</div>
                 </div>
             </article>

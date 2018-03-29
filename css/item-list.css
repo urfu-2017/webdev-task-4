@@ -1,3 +1,9 @@
+:root
+{
+    --good: #92d42e;
+    --better: #099709;
+}
+
 .item__price
 {
     font-weight: bold;
@@ -8,25 +14,51 @@
     display: flex;
 }
 
-.item__rating
+.rating-container
 {
-    margin-right: 10px;
+    display: flex;
+    margin-bottom: 2px;
 }
 
 .good-rating
-{
-    background-color: #92d42e;
+{    
+    background-color: var(--good);
 }
 
 .better-rating
 {
-    background-color: #099709;
+    background-color: var(--better);
+}
+
+.arrow-good-rating
+{
+    background: #fff;
+    height: inherit; 
+    position: relative;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 5px solid var(--good);
+}
+
+.arrow-better-rating
+{
+    background: #fff;
+    height: inherit; 
+    position: relative;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 5px solid var(--better);
 }
 
 .item__reviews
 {
     font-size: 90%;
+    margin-left: 10px;
     color: #b3adad;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
 }
 
 .item__img

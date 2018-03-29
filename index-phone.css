@@ -10,6 +10,12 @@
     --linkColor: #00f;
 }
 
+.noScroll
+{
+    overflow: hidden;
+    position: fixed;
+}
+
 .body
 {
     background-color: var(--mainColor);    
