@@ -93,13 +93,13 @@ nav label
         flex: 100%;
     }
     
-    nav[role='navigation'] ul
+    nav ul
     {
         display: none;
         height: 100%;
     }
     
-    nav[role='navigation'] label
+    nav label
     {
         position: relative;
         display: block;
@@ -111,7 +111,7 @@ nav label
         border: .15em solid rgba(60, 60, 60, .2);
     }
     
-    nav[role='navigation'] label:after
+    nav label:after
     {
         position: absolute;
         right: .25em;
@@ -120,24 +120,24 @@ nav label
         font-size: 1.8em;
     }
     
-    nav[role='navigation'] input[type='checkbox']:checked ~ label:after
+    nav input[type='checkbox']:checked ~ label:after
     {
         color: #222;
     }
     
-    nav[role='navigation'] input[type='checkbox']:checked ~ ul
+    nav input[type='checkbox']:checked ~ ul
     {
         display: block;
     }
     
-    nav[role='navigation'] input[type='checkbox']:checked ~ ul > li
+    nav input[type='checkbox']:checked ~ ul > li
     {
         width: 100%;
         opacity: .8;
         text-align: left;
     }
     
-    nav[role='navigation'] input[type='checkbox']:checked ~ ul > li:after
+    nav input[type='checkbox']:checked ~ ul > li:after
     {
         position: absolute;
         right: .25em;
