@@ -1,0 +1,71 @@
+@import './public/css/menu.css';
+@import './public/css/items.css';
+@import './public/css/form.css';
+@import './public/css/head.css';
+@import './public/css/popular.css';
+
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    src: url('./public/fonts/YandexSansDisplay-Regular.ttf');
+}
+
+body
+{
+    font-family: 'Yandex Sans Display Regular';
+    padding: 0;
+    margin: 0;
+    background: rgb(246, 246, 246);
+}
+
+.content-wrap
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 1px auto 600px 130px 350px;
+    grid-row-gap: 60px;
+    grid-column-gap: 13px;
+    grid-template-areas: ' 🐕 🐕 🐕'
+        'menu main pop'
+        '. main .'
+        '. form .'
+        'sp sp sp';
+    margin: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width : 768px)
+{
+    .content-wrap
+    {
+        grid-template-rows: auto auto auto 110px;
+        grid-template-columns: auto;
+        grid-template-areas: 'menu'
+            'main'
+            'pop'
+            'form';
+
+    }
+}
+
+@media screen and (max-width : 576px)
+{
+    .content-wrap
+    {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 'pop'
+            'main'
+            'forms';
+    }
+
+}
