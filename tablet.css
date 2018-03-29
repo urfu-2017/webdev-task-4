@@ -1,0 +1,81 @@
+@media (min-width: 630px) and (max-width: 869px)
+{
+    .search__input
+    {
+        outline: none;
+        border-color: rgba(37, 133, 251, .6);
+    }
+
+    .search__input:not(.search__input_activated)
+    {
+        visibility: hidden;
+    }
+
+    .search__button
+    {
+        width: 10px;
+        position: relative;
+        visibility: hidden;
+    }
+
+    .search__button:after
+    {
+        visibility: visible;
+        content: '\f002';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.2em;
+        color: #218bfb;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .layout
+    {
+        grid-template: 'menu'
+            'goods'
+            'popular'
+            'order';
+        max-width: 604px;
+    }
+
+    .menu,
+    .popular
+    {
+        padding-bottom: 10px;
+    }
+
+    .menu,
+    .goods,
+    .order,
+    .popular
+    {
+        margin: 0 0 20px;
+    }
+
+    .menu-list,
+    .popular__list
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-list__item
+    {
+        padding: 0 50px;
+    }
+
+    .menu__item-order
+    {
+        text-align: center;
+    }
+
+    .order__row label
+    {
+        min-width: 200px;
+    }
+}

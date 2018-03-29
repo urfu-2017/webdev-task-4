@@ -1,0 +1,33 @@
+@media (min-width: 870px)
+{
+    .layout
+    {
+        grid-template: 'menu goods popular'
+            'menu order popular';
+        grid-template-columns: 1fr 2fr 1fr;
+        padding-top: 50px;
+    }
+
+    .menu,
+    .goods,
+    .popular
+    {
+        margin: 0 15px;
+    }
+
+    .menu-list,
+    .popular__list
+    {
+        flex-direction: column;
+    }
+
+    .order
+    {
+        max-width: 604px;
+    }
+
+    .order__row label
+    {
+        min-width: 200px;
+    }
+}
