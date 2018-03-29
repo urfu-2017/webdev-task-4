@@ -48,6 +48,7 @@ select
 .order__city
 {
     position: relative;
+    z-index: 0;
 }
 
 .order__city::after
