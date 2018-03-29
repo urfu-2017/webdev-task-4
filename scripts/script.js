@@ -1,51 +1,48 @@
-
+const DOM = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchActivator = document.querySelector('.header__search-activator');
-    searchActivator.onclick = showSearchInput;
+    init();
 
-    const sandwich = document.querySelector('.sandwich');
-    sandwich.onclick = showNav;
+    DOM.searchActivator.onclick = showSearchInput;
+    DOM.sandwich.onclick = showNav;
+    DOM.closeButton.onclick = closeNav;
+    DOM.input.onblur = resetSearchDisplay;
 
-    const closeButton = document.querySelector('.nav__close-button');
-    closeButton.onclick = closeNav;
-
-
-    const body = document.querySelector('body');
     // eslint-disable-next-line
-    const bodyHammer = new Hammer(body);
+    const bodyHammer = new Hammer(DOM.body);
     bodyHammer.on('swipeleft', showNav);
 
 });
 
-function showSearchInput(event) {
-    const searchActivator = event.target;
-    const search = document.querySelector('.header__search');
-    const input = search.querySelector('.header__search-input');
+function init() {
+    DOM.body = document.querySelector('body');
+    DOM.searchActivator = document.querySelector('.header__search-activator');
+    DOM.sandwich = document.querySelector('.sandwich');
+    DOM.closeButton = document.querySelector('.nav__close-button');
+    DOM.search = document.querySelector('.header__search');
+    DOM.input = DOM.search.querySelector('.header__search-input');
+    DOM.nav = document.querySelector('.nav');
+}
 
-    search.style.display = 'flex';
-    searchActivator.style.display = 'none';
+function showSearchInput() {
+    DOM.search.style.display = 'flex';
+    DOM.searchActivator.style.display = 'none';
+    DOM.input.focus();
+}
 
-    input.focus();
-    input.onblur = () => {
-        search.style.display = '';
-        searchActivator.style.display = '';
-    };
+function resetSearchDisplay() {
+    DOM.search.style.display = '';
+    DOM.searchActivator.style.display = '';
 }
 
 function showNav() {
-    const nav = document.querySelector('.nav');
-    if (getComputedStyle(nav).display === 'none') {
-        nav.style.display = 'block';
-
-        const body = document.querySelector('body');
-        body.style.overflowY = 'hidden';
+    if (getComputedStyle(DOM.nav).display === 'none') {
+        DOM.nav.style.display = 'block';
+        DOM.body.style.overflowY = 'hidden';
     }
 }
 
 function closeNav() {
-    const body = document.querySelector('body');
-    const nav = document.querySelector('.nav');
-    nav.style.display = '';
-    body.style.overflowY = '';
+    DOM.nav.style.display = '';
+    DOM.body.style.overflowY = '';
 }

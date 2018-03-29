@@ -29,7 +29,8 @@
     text-decoration: none;
 }
 
-@media screen and (min-device-width: 1260px)
+@media
+    screen and (min-device-width: 1260px)
 {
     .popular
     {
@@ -41,7 +42,8 @@
     }
 }
 
-@media screen and (min-device-width: 721px) and (max-device-width: 1260px)
+@media
+    screen and (min-device-width: 721px) and (max-device-width: 1260px)
 {
     .popular
     {
@@ -64,7 +66,8 @@
     }
 }
 
-@media screen and (max-device-width: 720px)
+@media
+    screen and (max-device-width: 720px)
 {
     .popular
     {

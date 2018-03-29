@@ -18,7 +18,8 @@ main
     background: #f6f6f6;
 }
 
-@media screen and (max-device-width: 1260px)
+@media
+    screen and (max-device-width: 1260px)
 {
     main 
     {
