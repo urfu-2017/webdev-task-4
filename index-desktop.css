@@ -4,64 +4,67 @@
 @import url('./css/desktop/item-list.css');
 @import url('./css/desktop/order-form.css');
 
-.body
+@media (min-width:800px)
 {
-    display: grid;
-    background: #f06b6b;
-    width: fit-content;
-}
+    .body
+    {
+        display: grid;
+        background: #c9dff5;
+        width: fit-content;
+    }
 
-.phone-sandwich
-{
-    display: none;
-}
+    .phone-sandwich
+    {
+        display: none;
+    }
 
-.link
-{
-    color: #00f;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: block;
-    overflow: hidden;
-}
+    .link
+    {
+        color: #00f;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+    }
 
-.link:hover
-{
-    cursor: pointer;
-}
+    .link:hover
+    {
+        cursor: pointer;
+    }
 
-.search-bar
-{
-    grid-column: 1 / 5;
-    grid-row: 1;
-}
+    .search-bar
+    {
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
 
-.nav
-{
-    grid-column: 1;
-    grid-row: 2 / 5;
-}
+    .nav
+    {
+        grid-column: 1;
+        grid-row: 2 / 5;
+    }
 
-.popular
-{
-    grid-column: 4;
-    grid-row: 2 / 5;
-}
+    .popular
+    {
+        grid-column: 4;
+        grid-row: 2 / 5;
+    }
 
-.item-list
-{
-    grid-column: 2 / 4;
-    grid-row: 2 / 5;
-}
+    .item-list
+    {
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+    }
 
-.order-form
-{
-    grid-column: 2 / 4;
-    grid-row: 6;
-}
+    .order-form
+    {
+        grid-column: 2 / 4;
+        grid-row: 6;
+    }
 
-.white-block
-{
-    background-color: #fff;
-    border: 2px solid #afaeae;
+    .white-block
+    {
+        background-color: #fff;
+        border: 2px solid #afaeae;
+    }
 }

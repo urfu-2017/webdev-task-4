@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="./index-phone.css" />
-    <link rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 800px)" href="./index-pad.css"
-    />
-    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./index-desktop.css" />
-    <link rel="stylesheet" href="./css/popular.css" />
-    <link rel="stylesheet" href="./css/item-list.css" />
-    <link rel="stylesheet" href="./css/order-form.css" />
+    <link rel="stylesheet" href="./index-desktop.css">
+    <link rel="stylesheet" href="./index-pad.css">
+    <link rel="stylesheet" href="./index-phone.css">
+    <link rel="stylesheet" href="./css/popular.css">
+    <link rel="stylesheet" href="./css/item-list.css">
+    <link rel="stylesheet" href="./css/order-form.css">
+    <script src="./date-polifill.js"></script>
     <title>Задача «Тим слишком занят»</title>
 </head>
 
 <body>
-    <img class="phone-sandwich" src="./static/menu.png" />
+    <img class="phone-sandwich" src="./static/menu.png" alt="sandwich menu icon">
     <div class="body">
         <header class="search-bar white-block">
             <div class="search-bar__logo">Билли.Маркет</div>
@@ -24,15 +24,15 @@
             <button class="search-bar__button">Найти</button>
         </header>
         <nav class="nav white-block center hidden">
-            <img class="nav__close" src="./static/close.png" />
+            <img class="nav__close" src="./static/close.png" alt="nav closing icon">
             <div class="nav__category link">Морские ракушки</div>
             <div class="nav__category link">Сувениры из Тайланда</div>
             <div class="nav__category link">Автомобили Тесла</div>
             <div class="nav__category link">Марки из разных стран</div>
             <div class="nav__category link">Заказать сувенир</div>
         </nav>
-        <section class="item-list center">
-            <article class="item white-block">
+        <div class="item-list center">
+            <div class="item white-block">
                 <div class="item__img-container">
                     <img class="item__img" src="./static/seashell.jpg" alt="seashell image">
                 </div>
@@ -45,8 +45,8 @@
                     </div>
                     <div class="item__reviews">111 отзывов</div>
                 </div>
-            </article>
-            <article class="item white-block">
+            </div>
+            <div class="item white-block">
                 <div class="item__img-container">
                     <img class="item__img" src="./static/thermokruzhkus.jpg" alt="thermokruzhkus image">
                 </div>
@@ -59,8 +59,8 @@
                     </div>
                     <div class="item__reviews">290 отзывов</div>
                 </div>
-            </article>
-            <article class="item white-block">
+            </div>
+            <div class="item white-block">
                 <div class="item__img-container">
                     <img class="item__img" src="./static/tesla.jpg" alt="tesla car image">
                 </div>
@@ -73,8 +73,8 @@
                     </div>
                     <div class="item__reviews">1 отзыв</div>
                 </div>
-            </article>
-            <article class="item white-block">
+            </div>
+            <div class="item white-block">
                 <div class="item__img-container">
                     <img class="item__img" src="./static/back-scratcher.jpg" alt="backscratcher image">
                 </div>
@@ -87,17 +87,17 @@
                     </div>
                     <div class="item__reviews">29 отзывов</div>
                 </div>
-            </article>
-        </section>
-        <section class="popular white-block center">
+            </div>
+        </div>
+        <div class="popular white-block center">
             <header class="popular__header">Популярные товары</header>
             <div class="popular-items">
                 <div class="popular__item link">Ракушка морская</div>
                 <div class="popular__item link">Чесалка для спины</div>
                 <div class="popular__item link">Чётки</div>
             </div>
-        </section>
-        <section class="order-form white-block center">
+        </div>
+        <div class="order-form white-block center">
             <header class="order-form__header">Заказать сувенир</header>
             <div class="order-form__container">
                 <div class="order-form__name">Количество:</div>
@@ -133,7 +133,7 @@
                 <button class="order-form__reset">Сбросить заказ</button>
                 <button class="order-form__post">Заказать</button>
             </div>
-        </section>
+        </div>
     </div>
     <script src="./dist/bundle.js"></script>
 </body>

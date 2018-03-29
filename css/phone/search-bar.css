@@ -1,26 +1,28 @@
-.search-bar__logo
-{
-    font-size: 36px;
-    float: left;
-}
+@media (max-width: 480px) {
+    .search-bar__logo
+    {
+        font-size: 36px;
+        float: left;
+    }
 
-.search-bar__button
-{
-    display: none;
-}
+    .search-bar__button
+    {
+        display: none;
+    }
 
-.search-bar__form
-{
-    width: 100%;
-}
+    .search-bar__form
+    {
+        width: 100%;
+    }
 
-.search-bar__input
-{
-    font-size: 20px;
-    border: 2px solid yellow;
-    height: 50px;
-    clear: both;
-    width: 90%;
-    margin: 4%;
-    margin-top: 20px;
+    .search-bar__input
+    {
+        font-size: 20px;
+        border: 2px solid #ffff00;
+        height: 50px;
+        clear: both;
+        width: 90%;
+        margin: 4%;
+        margin-top: 20px;
+    }
 }

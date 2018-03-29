@@ -1,24 +1,26 @@
-.item-list
-{
-    margin: auto;
-    width: 50%;
-}
-
-.item
-{
-    padding: 1%;
-    margin: 0;
-    width: 45%;
-    display: inline-block;
-}
-
-.item__img-container
-{
-    height: 100px;
-}
-
-.item__img
-{
-    max-width: 100%;
-    max-height: 100%;
+@media (min-width:800px) {
+    .item-list
+    {
+        margin: auto;
+        width: 50%;
+    }
+    
+    .item
+    {
+        padding: 1%;
+        margin: 0;
+        width: 45%;
+        display: inline-block;
+    }
+    
+    .item__img-container
+    {
+        height: 100px;
+    }
+    
+    .item__img
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }    
 }

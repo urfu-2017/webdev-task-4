@@ -3,34 +3,38 @@
 @import url('./css/pad/popular.css');
 @import url('./css/pad/item-list.css');
 
-.body
+@media (min-width: 480px) and (max-width: 800px)
 {
-    background: #c1f177;
-}
+    .body
+    {
+        background: #c9dff5;
+    }
 
-.phone-sandwich
-{
-    display: none;
-}
+    .phone-sandwich
+    {
+        display: none;
+    }
 
-.link
-{
-    color: #00f;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: block;
-    overflow: hidden;
-}
+    .link
+    {
+        color: #00f;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+    }
 
-.white-block
-{
-    background-color: #fff;
-    border: 2px solid #afaeae;
-}
+    .white-block
+    {
+        background-color: #fff;
+        border: 2px solid #afaeae;
+    }
 
-.center
-{
-    padding: 5px;
-    width: 50%;
-    margin: 20px auto;
+    .center
+    {
+        padding: 5px;
+        width: 50%;
+        margin: 20px auto;
+    }
+
 }

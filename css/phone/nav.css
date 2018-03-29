@@ -1,15 +1,17 @@
-.nav
-{
-    right: 2%;
-    top: -12px;
-    width: 50%;
-}
+@media (max-width: 480px) {
+    .nav
+    {
+        right: 2%;
+        top: -12px;
+        width: 50%;
+    }
 
-.nav__close
-{
-    position: fixed;    
-    width: 30px;
-    height: 30px;
-    right: 5%;
-    z-index: 1;
+    .nav__close
+    {
+        position: fixed;    
+        width: 30px;
+        height: 30px;
+        right: 5%;
+        z-index: 1;
+    }
 }

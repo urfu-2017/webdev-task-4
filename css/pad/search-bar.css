@@ -1,33 +1,35 @@
-.search-bar
-{
-    display: flex;
-}
+@media (min-width: 480px) and (max-width: 800px) {
+    .search-bar
+    {
+        display: flex;
+    }
 
-.search-bar__logo
-{
-    padding: 0 10px 0 10px;
-    font-size: 42px;
-    float: left;
-}
+    .search-bar__logo
+    {
+        padding: 0 10px 0 10px;
+        font-size: 42px;
+        float: left;
+    }
 
-.search-bar__form
-{
-    width: 70%;   
-}
+    .search-bar__form
+    {
+        width: 70%;   
+    }
 
-.search-bar__button
-{
-    margin: 5px;
-    margin-left: 10px;
-    width: 60px;
-    float: right;
-    height: 50px;
-}
+    .search-bar__button
+    {
+        margin: 5px;
+        margin-left: 10px;
+        width: 60px;
+        float: right;
+        height: 50px;
+    }
 
-.search-bar__input
-{
-    font-size: 24px;
-    width: 100%;
-    height: 75%;    
-    margin: 5px;    
+    .search-bar__input
+    {
+        font-size: 24px;
+        width: 100%;
+        height: 75%;    
+        margin: 5px;    
+    }
 }
