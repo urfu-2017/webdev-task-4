@@ -2,15 +2,15 @@
 
 .products-list
 {
+    display: flex;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    display: flex;
     flex-wrap: wrap;
+    margin-bottom: var(--margin-for-blocks);
+    border-width: .2vmax 0 0 .2vmax;
     border-style: solid;
     border-color: var(--color-theme-dark);
-    border-width: .2vmax 0 0 .2vmax;
     background-color: #fff;
-    margin-bottom: var(--margin-for-blocks);
 }
 
 .products-list__title

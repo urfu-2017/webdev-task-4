@@ -1,11 +1,11 @@
 .product
 {
-    margin: 0;
     box-sizing: border-box;
     width: 50%;
+    margin: 0;
+    border-width: 0 .2vmax .2vmax 0;
     border-style: solid;
     border-color: var(--color-theme-dark);
-    border-width: 0 .2vmax .2vmax 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--standard-font-size);
     text-decoration: none;
@@ -20,20 +20,20 @@
 
 .product__photo
 {
-    margin: 5% 5% 0;
     width: 90%;
+    margin: 5% 5% 0;
 }
 
 .product__title
 {
     width: 100%;
-    text-align: center;
-    font-size: var(--standard-font-size);
-    text-decoration: none;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     color: #00f;
+    font-size: var(--standard-font-size);
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .product__title_par
@@ -53,28 +53,28 @@
 
 .product__other-info
 {
-    margin: 10%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin: 10%;
 }
 
 .product__price
 {
     width: 100%;
+    margin-bottom: 5%;
     font-family: 'Yandex Sans Text Bold', sans-serif;
     font-size: 200%;
-    margin-bottom: 5%;
 }
 
 .product__rating
 {
-    margin-right: 10%;
-    font-size: var(--standard-font-size);
-    color: #fff;
-    background-color: #c4ca26;
-    padding: calc(var(--standard-font-size)*.5);
     height: var(--standard-font-size);
+    margin-right: 10%;
+    padding: calc(var(--standard-font-size)*.5);
+    background-color: #c4ca26;
+    color: #fff;
+    font-size: var(--standard-font-size);
 }
 
 .product__rating::after
@@ -108,7 +108,7 @@
 {
     .product
     {
-        font-size: calc(var(--standard-font-size)*.8);
         width: 100%;
+        font-size: calc(var(--standard-font-size)*.8);
     }
 }

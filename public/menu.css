@@ -7,11 +7,11 @@
 {
     grid-column: 1 / 2;
     grid-row: 1 / 1;
-    background-color: #fff;
-    margin-left: var(--margin-for-blocks);
     height: calc(var(--device-independet-font-size) * 15);
+    margin-left: var(--margin-for-blocks);
     border: .3vmax solid var(--color-theme-dark);
     border-radius: .3vmax;
+    background-color: #fff;
 }
 
 .menu_show-button
@@ -21,12 +21,12 @@
 
 .menu__item
 {
+    display: block;
+    margin: .8vmax 0;
+    color: #00f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
     text-decoration: none;
-    color: #00f;
-    display: block;
-    margin: .8vmax 0;
 }
 
 .menu__category-items,
@@ -51,8 +51,8 @@
     {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        margin: var(--margin-for-blocks) 0;
         height: auto;
+        margin: var(--margin-for-blocks) 0;
     }
 
     .menu__category-items
@@ -69,8 +69,8 @@
     .menu__item
     {
         width: 50%;
-        text-align: center;
         font-size: calc(var(--device-independet-font-size)*1.4);
+        text-align: center;
     }
 }
 
@@ -80,9 +80,9 @@
     {
         display: none;
         position: absolute;
+        top: 0;
         width: 50%;
         margin: 0;
-        top: 0;
     }
 
     .menu__category-items
@@ -93,8 +93,8 @@
     .menu__item
     {
         width: 100%;
-        text-align: center;
         font-size: calc(var(--device-independet-font-size)*2);
+        text-align: center;
     }
 
     .menu_show-button
@@ -104,9 +104,9 @@
         grid-row: 1 / 2;
         justify-self: center;
         align-self: center;
-        margin: calc(var(--header-font-size)*.3);
-        height: var(--header-font-size);
         width: var(--header-font-size);
+        height: var(--header-font-size);
+        margin: calc(var(--header-font-size)*.3);
         cursor: pointer;
         
     }

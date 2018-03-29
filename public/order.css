@@ -3,9 +3,9 @@
     grid-column: 2 / 3;
     margin-bottom: var(--margin-for-blocks);
     padding: 1.5vmax 7vmax;
+    border-width: .2vmax;
     border-style: solid;
     border-color: var(--color-theme-dark);
-    border-width: .2vmax;
     background-color: #fff;
 }
 
@@ -19,15 +19,15 @@
 
 .order__info
 {
+    /* работает только в Firefox, Safari (частично) */
+    display: grid; 
+    /* работает только в Firefox, Safari (частично) */
+    grid-template-columns: 5fr 4fr;
     margin: 2vmax 0 0;
     padding: 0;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--standard-font-size);
-    /* работает только в Firefox, Safari (частично) */
-    display: grid; 
-    /* работает только в Firefox, Safari (частично) */
-    grid-template-columns: 5fr 4fr;
 }
 
 .order__info_append-title
@@ -37,11 +37,11 @@
 
 .order__input
 {
-    width: 100%;
     display: block;
-    margin: 0 0 1vmax;
     /* работает только в Firefox, Safari (частично) */
     grid-column: 2 / 3;
+    width: 100%;
+    margin: 0 0 1vmax;
 }
 
 .order__buttons
@@ -54,8 +54,8 @@
 .order_reset,
 .order_submit
 {
-    background-color: white;
     border-radius: .5vmax;
+    background-color: white;
 }
 
 @media screen and (max-width: 768px) 
