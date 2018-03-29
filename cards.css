@@ -1,0 +1,65 @@
+.market__card
+{
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    margin: 1px;
+}
+
+.market__cards
+{
+    grid-area: cards;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.market__card-img
+{
+    width: 300px;
+}
+
+.market__card-block-img
+{
+    margin-left: 25px;
+    margin-top: 70px; 
+}
+
+.market__card-block-info
+{
+    margin-left: 25px;
+    margin-top: 30px; 
+}
+
+.market__card-price
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.market__card-rating
+{
+    display: inline-block;
+    background-color: green;
+}
+
+.market__card-comments
+{
+    display: inline-block;
+    margin-left: 20px;
+    color: gray;
+}
+
+@media screen and (max-width: 720px)
+{ 
+    .market__cards
+    {
+        flex-direction: column;
+        margin: 0 auto;   
+    }
+}
