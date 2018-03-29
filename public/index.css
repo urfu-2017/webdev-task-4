@@ -1,37 +1,40 @@
 @import 'main.css';
 
-body {
+body
+{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: stretch;
-
     margin: 0;
-
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 300;
     color: #111;
 }
 
-.blue {
+.blue
+{
     text-decoration: none;
     color: #3a4eff;
 }
 
-.booking {
+.booking
+{
     display: flex;
     justify-content: flex-end;
     flex-flow: row;
 }
 
-.header {
+.header
+{
     display: grid;
     grid-gap: 16px;
 
     padding: 16px 24px;
 }
 
-.logo {
+.logo
+{
     grid-area: l;
 
     margin: 0 24px 0 0;
@@ -39,7 +42,8 @@ body {
     font-size: 24px;
 }
 
-.search {
+.search
+{
     grid-area: s;
 
     display: flex;
@@ -53,7 +57,8 @@ body {
     outline: none;
 }
 
-.search__input {
+.search__input
+{
     font-size: 20px;
 
     flex-grow: 2;
@@ -61,7 +66,8 @@ body {
     border: 1px solid #ddd;
 }
 
-.search__button {
+.search__button
+{
     background: #ddd;
 
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -71,7 +77,8 @@ body {
     border: 0;
 }
 
-.search__icon {
+.search__icon
+{
     background: transparent;
 
     box-shadow: 0 0 0;
@@ -85,14 +92,16 @@ body {
     outline: none;
 }
 
-.search__icon {
+.search__icon
+{
     color: #aaa;
 
     height: 24px;
     width: 24px;
 }
 
-.header__bars-icon {
+.header__bars-icon
+{
     grid-area: b;
 
     color: #aaa;
@@ -103,8 +112,35 @@ body {
     margin: auto 0 auto auto;
 }
 
-@media screen and (min-width: 1000px) {
-    .header {
+@media screen and (min-width: 1000px)
+{
+    .header
+    {
+        grid-template-columns: min-content auto;
+        grid-template-areas: 'l s';
+    }
+
+    .header__bars-icon
+    {
+        display: none;
+    }
+
+    .search__icon
+    {
+        display: none;
+    }
+
+    .search__input,
+    .search__button
+    {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px)
+{
+    .header
+    {
         grid-template-columns: min-content auto;
         grid-template-areas: 'l s';
     }
@@ -113,53 +149,35 @@ body {
         display: none;
     }
 
-    .search__icon {
-        display: none;
-    }
-
-    .search__input,
-    .search__button {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 999px) {
-    .header {
-        grid-template-columns: min-content auto;
-        grid-template-areas: 'l s';
-    }
-
-    .header__bars-icon {
-        display: none;
-    }
-
-    .search__icon {
-        display: block;
-    }
-
-    .header:hover {
+    .search__icon
+    {
         display: block;
     }
 
     .search__input,
-    .search__button {
+    .search__button
+    {
         display: none;
     }
 }
 
-@media screen and (max-width: 599px) {
-    .header {
+@media screen and (max-width: 599px)
+{
+    .header
+    {
         grid-template-columns: auto min-content;
         grid-template-areas: 'l b'
         's s';
     }
 
-    .search__icon {
+    .search__icon
+    {
         display: none !important;
     }
 
     .search__input,
-    .search__button {
+    .search__button
+    {
         display: block !important;
     }
 }
