@@ -4,7 +4,132 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" media="(max-width: 1100px)" href="./indexTablet.css">
+    <link rel="stylesheet" media="(max-width: 700px)" href="./indexPhone.css">
 </head>
 <body>
+    <header class="header">
+        <a href="#" class="logo">
+             Мяу.Маркет
+        </a>
+        <div class="sandwich">W</div>
+        <div class="search">
+            <button class="search__reveal">S</button>
+            <form action="#">
+                <input class="search__input">
+                <button class="search__submit">Search!</button>
+            </form>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="menu">
+            <a class="menu__close" href="#">X</a>
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">1</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="items">
+                <div class="item">
+                    <img class="item__image" alt="item" src="./i.png" >
+                    <a href="#" class="item__title">Title</a>
+                    <div class="item__price">100$</div>
+                    <div class="rating">
+                        <span class="item__rate">4</span>
+                        <span class="item__reviews">111 reviews</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="item__image" alt="item" src="./i.png" >
+                    <a href="#" class="item__title">Title</a>
+                    <div class="item__price">100$</div>
+                    <div class="rating">
+                        <span class="item__rate">4</span>
+                        <span class="item__reviews">111 reviews</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="item__image" alt="item" src="./i.png" >
+                    <a href="#" class="item__title">Title</a>
+                    <div class="item__price">100$</div>
+                    <div class="rating">
+                        <span class="item__rate">4</span>
+                        <span class="item__reviews">111 reviews</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="item__image" alt="item" src="./i.png" >
+                    <a href="#" class="item__title">Title</a>
+                    <div class="item__price">100$</div>
+                    <div class="rating">
+                        <div class="item__rate">4</div>
+                        <span class="item__reviews">111 reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-form">
+                <form action="#">
+                    <div class="form-input-line">
+                        <label class="form-input-line__label" for="count">Количество</label>
+                        <input class="form-input-line__input" id="count" type="number" >
+                    </div>
+                    <div class="form-input-line">
+                        <label class="form-input-line__label" for="city">Город</label>
+                        <input class="form-input-line__input" id="city" type="number" >
+                    </div>
+                    <div class="form-input-line">
+                        <label class="form-input-line__label" for="email">Email</label>
+                        <input class="form-input-line__input" id="email" type="email" >
+                    </div>
+                    <div class="form-input-line">
+                        <label class="form-input-line__label" for="phone">Телефон</label>
+                        <input class="form-input-line__input" id="phone" type="tel" >
+                    </div>
+                    <div class="form-input-line">
+                        <label class="form-input-line__label" for="date">Дата доставки</label>
+                        <input class="form-input-line__input" id="date" type="date" >
+                    </div>
+                    <div class="form-buttons-line">
+                        <input type="reset" class="form-buttons-line__button" value="Reset" >
+                        <input type="submit" class="form-buttons-line__button" value="Submit" >
+                    </div>
+                </form>
+            </div>
+        </main>
+        <aside class="suggestions">
+            <h3 class="suggestions__title">Popular</h3>
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a class="menu-list__link" href="#">1</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <script>
+        document.getElementsByClassName('sandwich')[0].addEventListener('click', function (e) {
+            document.getElementsByClassName('menu')[0].style.display = 'block';
+        });
+        document.getElementsByClassName('menu__close')[0].addEventListener('click', function (e) {
+            document.getElementsByClassName('menu')[0].style.display = 'none';
+        });
+        document.getElementsByClassName('search__reveal')[0].addEventListener('click', function (e) {
+            document.getElementsByClassName('search__input')[0].style.display = 'block';
+            document.getElementsByClassName('search__input')[0].focus();
+            document.getElementsByClassName('search__submit')[0].style.display = 'block';
+            document.getElementsByClassName('search__reveal')[0].style.display = 'none';
+        });
+        document.getElementsByClassName('search__input')[0].addEventListener('focusout', function (e) {
+            document.getElementsByClassName('search__input')[0].style.display = 'none';
+            document.getElementsByClassName('search__submit')[0].style.display = 'none';
+            document.getElementsByClassName('search__reveal')[0].style.display = 'block';
+        });
+
+    </script>
 </body>
 </html>

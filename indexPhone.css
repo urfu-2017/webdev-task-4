@@ -1,0 +1,70 @@
+body
+{
+    font-size: 1.2em;
+}
+
+.header
+{
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 120px;
+}
+
+.search__reveal
+{
+    display: none;
+}
+
+.sandwich
+{
+    display: block;
+    flex-basis: 300px;
+    text-align: right;
+}
+
+.search__input
+{
+    display: block;
+}
+
+.search__submit
+{
+    display: block;
+}
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    display: none;
+}
+
+.suggestions
+{
+    order: 1;
+}
+
+.main
+{
+    width: 480px;
+    order: 2;
+}
+
+.item
+{
+    width: 468px;
+}
+
+.item__image
+{
+    width: 99%;
+}
+
+.order-form
+{
+    width: 440px;
+    padding: 10px 30px;
+}
