@@ -363,6 +363,7 @@ body {
 @media (min-width: 1025px) {
     .main {
         display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 'nav goods popular' '. order .';
         grid-gap: 50px;
         padding-top: 50px;
