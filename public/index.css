@@ -169,7 +169,7 @@ body
     {
         grid-template-columns: auto min-content;
         grid-template-areas: 'l b'
-                             's s';
+            's s';
     }
 
     .search__icon
