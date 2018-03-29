@@ -109,7 +109,6 @@
     grid-area: el1;
 }
 
-
 .element2
 {
     grid-area: el2;
@@ -125,13 +124,12 @@
     grid-area: el4;
 }
 
-
 @media screen and (min-width: 600px)
 {
     .elements
     {
         grid-template-areas: 'el1 el2'
-        'el3 el4';
+                             'el3 el4';
     }
 
 }
@@ -141,9 +139,9 @@
     .elements
     {
         grid-template-areas: 'el1'
-        'el2'
-        'el3'
-        'el4';
+           'el2'
+           'el3'
+           'el4';
     }
 }
 
@@ -307,10 +305,11 @@
     {
         grid-template-columns: auto auto min-content auto auto;
         grid-template-areas: '. n el s .'
-                             '. n f s .';
+           '. n f s .';
     }
 
-    body {
+    body
+    {
         overflow: visible !important;
     }
 }
@@ -321,9 +320,9 @@
     {
         grid-template-columns: auto min-content auto;
         grid-template-areas: '. n .'
-                             '. el .'
-                             '. s .'
-                             '. f .';
+           '. el .'
+           '. s .'
+           '. f .';
     }
 
     body
@@ -338,8 +337,8 @@
     {
         grid-template-columns: auto min-content auto;
         grid-template-areas: '. s .'
-                             '. el .'
-                             '. f .';
+           '. el .'
+           '. f .';
     }
 }
 
