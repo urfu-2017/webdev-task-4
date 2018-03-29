@@ -6,10 +6,101 @@ body
 
 .heading
 {
+    padding: 20px 60px;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 img
 {
-    max-width: 400px;
+    max-width: 300px;
+}
+
+.heading__service-name
+{
+    font-size: 35px;
+    display: inline-block;
+}
+
+.heading__search
+{
+    display: inline-block;
+}
+
+.heading__search-btn
+{
+    border: none;
+    height: 100%;
+    width: 60px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #c9c9c9;
+}
+
+.heading__search
+{
+    display: flex;
+    width: 75%;
+}
+
+.heading__search-line
+{
+    font-size: 23px;
+    height: 40px;
+    border: 2px solid #c9c9c9;
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    padding: 20px;
+    outline: none;
+}
+
+.order,
+.popular,
+.navigation
+{
+    background-color: #fff;
+}
+
+.popular__link,
+.navigation__link
+{
+    text-decoration: none;
+}
+
+.popular__list,
+.navigation__list
+{
+    list-style: none;
+}
+
+.popular__list li,
+.navigation__list li
+{
+    margin-bottom: 10px;
+}
+
+.card-title
+{
+    display: block;
+}
+
+.card
+{
+    display: inline-block;
+    background-color: #fff;
+    width: 320px;
+}
+
+.cards
+{
+    width: 50%;
+}
+
+.order__form-btns,
+.order__param
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
