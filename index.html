@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" media="(max-width: 1100px)" href="./indexTablet.css">
@@ -111,25 +112,6 @@
         </aside>
     </div>
 
-    <script>
-        document.getElementsByClassName('sandwich')[0].addEventListener('click', function (e) {
-            document.getElementsByClassName('menu')[0].style.display = 'block';
-        });
-        document.getElementsByClassName('menu__close')[0].addEventListener('click', function (e) {
-            document.getElementsByClassName('menu')[0].style.display = 'none';
-        });
-        document.getElementsByClassName('search__reveal')[0].addEventListener('click', function (e) {
-            document.getElementsByClassName('search__input')[0].style.display = 'block';
-            document.getElementsByClassName('search__input')[0].focus();
-            document.getElementsByClassName('search__submit')[0].style.display = 'block';
-            document.getElementsByClassName('search__reveal')[0].style.display = 'none';
-        });
-        document.getElementsByClassName('search__input')[0].addEventListener('focusout', function (e) {
-            document.getElementsByClassName('search__input')[0].style.display = 'none';
-            document.getElementsByClassName('search__submit')[0].style.display = 'none';
-            document.getElementsByClassName('search__reveal')[0].style.display = 'block';
-        });
-
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

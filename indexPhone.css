@@ -8,6 +8,7 @@ body
     flex-wrap: wrap;
     justify-content: center;
     height: 120px;
+    min-width: 500px;
 }
 
 .search__reveal
@@ -42,8 +43,14 @@ body
     display: none;
 }
 
+.menu__close
+{
+    display: block;
+}
+
 .suggestions
 {
+    width: 480px;
     order: 1;
 }
 
