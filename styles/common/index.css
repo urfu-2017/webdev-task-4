@@ -1,0 +1,44 @@
+.body
+{
+    margin: 0;
+    min-width: 360px;
+    background: #f6f6f6;
+}
+
+.h1
+{
+    margin-top: 0;
+}
+
+.header
+{
+    background: #fff;
+    padding: 20px;
+}
+
+.footer__about-service
+{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footer__left-part
+{
+    padding-left: 15px;
+    float: left;
+}
+
+.footer__right-part
+{
+    padding-right: 15px;
+    float: right;
+}
+
+.search_menu_mobile,
+.search_right-part_triangle,
+.search_button_desktop,
+.search_button_tablet,
+.navigation__close
+{
+    display: none;
+}

@@ -1,0 +1,63 @@
+.order
+{
+    padding: 15px 10px 45px 35px;
+    position: relative;
+}
+
+.order__title
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.order__form
+{
+    padding-top: 30px;
+}
+
+.form_part_left,
+.form_part_right
+{
+    display: inline-block;
+}
+
+.form_part_left
+{
+    width: 160px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.form_part_right
+{
+    padding: 5px;
+    width: calc(100% - 200px);
+}
+
+.form__field
+{
+    padding-bottom: 20px;
+}
+
+.field__select
+{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.order__submit
+{
+    position: absolute;
+    right: 10px;
+}
+
+.order__reset,
+.order__submit
+{
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
