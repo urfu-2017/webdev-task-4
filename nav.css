@@ -1,0 +1,44 @@
+.nav
+{
+    grid-area: nav;
+    background-color: white;
+    padding: 30px;
+}
+
+.nav div
+{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 720px)
+{
+    .nav
+    {
+        margin: 0 125px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .nav div
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .nav__order
+    {
+        position: absolute;
+        bottom: 5px;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .nav
+    {
+        display: none;
+    }
+}
