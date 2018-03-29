@@ -1,18 +1,24 @@
 .item-list
 {
     margin: auto;
-    width: 515px;
+    width: 50%;
 }
 
 .item
 {
+    padding: 1%;
     margin: 0;
-    width: 250px;
+    width: 45%;
     display: inline-block;
+}
+
+.item__img-container
+{
+    height: 100px;
 }
 
 .item__img
 {
-    width: 190px;
-    height: 190px;
+    max-width: 100%;
+    max-height: 100%;
 }

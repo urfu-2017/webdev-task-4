@@ -1,0 +1,10 @@
+.item__img
+{
+    width: 80%;
+    margin: 0 9%;
+}
+
+.item__name, .item__price, .item__users-review
+{
+    margin: 0 9%;
+}

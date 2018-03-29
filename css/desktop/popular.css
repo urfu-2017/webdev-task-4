@@ -1,25 +1,15 @@
 .popular
 {
-    margin-left: 30%;
     padding-left: 10px;
+    margin-right: 3%;
     height: 200px;
-    width: 60%;
-}
-
-.popular__header
-{
-    margin-top: 10px;
-    font-weight: bold;
+    max-width: 100%;
 }
 
 .popular-items
 {
+    padding-left: 10px;
     height: 80%;
     display: flex;
     flex-direction: column;
-}
-
-.popular__item
-{
-    margin-top: 10px;
 }

@@ -1,9 +1,13 @@
 .nav
 {
-    /* padding-left: 10px; */
     height: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.nav__close
+{
+    display: none;
 }

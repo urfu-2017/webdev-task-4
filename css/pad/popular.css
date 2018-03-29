@@ -1,13 +1,6 @@
 .popular
 {
-    /* padding-left: 10px; */
     height: 200px;
-}
-
-.popular__header
-{
-    margin-top: 10px;
-    font-weight: bold;
 }
 
 .popular-items

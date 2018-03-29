@@ -13,5 +13,9 @@
     "mocha": "3.1.0",
     "stylelint": "7.3.1",
     "stylelint-config-hrundel": "1.0.3"
+  },
+  "devDependencies": {
+    "webpack": "4.3.0",
+    "webpack-cli": "2.0.13"
   }
 }

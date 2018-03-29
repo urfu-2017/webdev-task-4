@@ -2,12 +2,24 @@
 @import url("./css/pad/nav.css");
 @import url("./css/pad/popular.css");
 @import url("./css/pad/item-list.css");
-@import url("./css/pad/order-form.css");
 
-body
+.body
 {
-    /* background: #dbd8d8; */
     background: #c1f177;
+}
+
+.phone-sandwich
+{
+    display: none;
+}
+
+.link
+{
+    color: #00f;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
 }
 
 .white-block

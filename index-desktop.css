@@ -4,10 +4,30 @@
 @import url("./css/desktop/item-list.css");
 @import url("./css/desktop/order-form.css");
 
-body
+.body
 {
     display: grid;
     background: #f06b6b;
+    width: fit-content;
+}
+
+.phone-sandwich
+{
+    display: none;
+}
+
+.link
+{
+    color: #00f;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.link:hover
+{
+    cursor: pointer;
 }
 
 .search-bar

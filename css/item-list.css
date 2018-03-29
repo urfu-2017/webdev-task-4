@@ -1,0 +1,41 @@
+.item__price
+{
+    font-weight: bold;
+}
+
+.item__users-review
+{
+    display: flex;
+}
+
+.item__rating
+{
+    margin-right: 10px;
+}
+
+.good-rating
+{
+    background-color: #92d42e;
+}
+
+.better-rating
+{
+    background-color: #099709;
+}
+
+.item__reviews
+{
+    font-size: 90%;
+    color: #b3adad;
+}
+
+.item__img
+{
+    width: 80%;
+    margin: 0 9%;
+}
+
+.item__name, .item__price, .item__users-review
+{
+    margin: 0 9%;
+}
