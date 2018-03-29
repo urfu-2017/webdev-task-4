@@ -1,0 +1,521 @@
+@font-face
+{
+    font-family: YandexSans;
+    font-style: normal;
+    src: url(fonts/YandexSans.ttf);
+}
+
+body
+{
+    font-family: YandexSans, Arial, sans-serif;
+    font-size: 12px;
+    width: 80%;
+    padding: 10px;
+    background-color: #f6f6f6;
+    margin: auto;
+}
+
+.marketName
+{
+    font-size: 25px;
+}
+
+.inputField input
+{
+    padding-right: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inputField .searchButton
+{
+    background: #e8e8e8;
+    padding: 0;
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.searchField
+{
+    border: 1px solid #e8e8e8;
+    height: 30px;
+    width: 300px;
+}
+
+.main-head div
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px;
+}
+
+.wrapper
+{
+    min-width: 800px;
+}
+
+.wrapper .main-head
+{
+    border: 1px solid #faeff3;
+    background-color: #fff;
+}
+
+.popular
+{
+    border: 1px solid #faeff3;
+    background-color: #fff;
+    height: 120px;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.popular ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.popular h3
+{
+    margin: 0;
+}
+
+.main-nav
+{
+    height: 150px;
+    padding-left: 5px;
+    margin-top: 10px;
+    border: 1px solid #faeff3;
+    background-color: #fff;
+}
+
+.main-nav ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 289px);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 'firsttile secondtile'
+        'thirdtile fourthtile';
+}
+
+.tile
+{
+    background-color: #fff;
+    border: 1px solid #faeff3;
+    width: 289px;
+}
+
+.firstTile
+{
+    grid-area: firsttile;
+}
+
+.secondTile
+{
+    grid-area: secondtile;
+}
+
+.thirdTile
+{
+    grid-area: thirdtile;
+}
+
+.fourthTile
+{
+    grid-area: fourthtile;
+}
+
+.tile img
+{
+    width: 100%;
+}
+
+.order
+{
+    border: 1px solid #faeff3;
+    background-color: #fff;
+    margin: auto;
+}
+
+.order div
+{
+    margin: 10px;
+}
+
+.count div,
+.count input,
+.town div,
+.town input,
+.email div,
+.email input,
+.phone div,
+.phone input,
+.date div,
+.date input
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.count div,
+.town div,
+.email div,
+.phone div,
+.date div
+{
+    width: 130px;
+}
+
+.main-head
+{
+    grid-area: header;
+}
+
+.content
+{
+    grid-area: content;
+}
+
+.feedback,
+.feedbackBorder
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.feedback
+{
+    background: #32cd32;
+}
+
+.feedbackBorder
+{
+    border: 7px solid transparent;
+    border-left: 7px solid #32cd32;
+}
+
+.main-nav
+{
+    grid-area: nav;
+}
+
+.popular
+{
+    grid-area: popular;
+}
+
+.order
+{
+    grid-area: order;
+    font-size: 16px;
+}
+
+.order input
+{
+    width: 350px;
+}
+
+.order input[type='reset'],
+.order input[type='submit']
+{
+    margin: 10px 20px;
+}
+
+.order input[type='reset']
+{
+    width: 150px;
+}
+
+.order input[type='submit']
+{
+    width: 100px;
+    margin-left: 85px;
+}
+
+.order h2
+{
+    margin: 30px;
+}
+
+@media screen and (min-width: 980px) /* Desktop */
+{
+    .content
+    {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .order
+    {
+        width: 578px;
+    }
+
+    .wrapper
+    {
+        min-width: 800px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: .2fr 1.5fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: 'header header header'
+            'nav content popular'
+            'nav order popular';
+    }
+}
+
+@media screen and (max-width: 979px) /* Tablet */
+{
+    body
+    {
+        width: 500px;
+    }
+
+    .wrapper
+    {
+        min-width: 500px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 'header'
+            'nav'
+            'content'
+            'popular'
+            'order';
+    }
+
+    .content
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content .tile
+    {
+        width: 250px;
+    }
+
+    .main-nav
+    {
+        margin-left: 0;
+    }
+
+    .main-nav ul
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .main-nav li:nth-child(2n+1)
+    {
+        margin-bottom: 15px;
+        float: left;
+        width: 50%;
+    }
+
+    .main-nav li:nth-child(2n)
+    {
+        float: right;
+        margin-bottom: 15px;
+        width: 50%;
+        text-align: right;
+    }
+
+    .main-nav li:last-child
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .popular,
+    .order,
+    .main-nav
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .popular h3
+    {
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+
+    .popular li:first-child
+    {
+        float: left;
+        text-align: center;
+        width: 33%;
+    }
+
+    .popular li:nth-child(2n)
+    {
+        float: left;
+        text-align: center;
+        width: 33%;
+    }
+
+    .popular li:last-child
+    {
+        float: right;
+        width: 33%;
+        text-align: center;
+    }
+
+    .main-nav,
+    .main-head,
+    .popular,
+    .order    
+    {
+        width: 100%;
+    }
+
+    .content
+    {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .inputBorder,
+    .inputField input,
+    .inputField .searchButton
+    {
+        display: none;
+    }
+
+    .inputField .searchicon
+    {
+        margin-left: 180px;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        background: url('./static/pictures/svg/search.svg');
+    }
+
+    .main-head div
+    {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) /* Mobile */
+{
+    body
+    {
+        width: 320px;
+    }
+
+    .main-head div
+    {
+        padding: 10px;
+    }
+
+    .order input
+    {
+        width: 290px;
+    }
+
+    .inputField .searchButton
+    {
+        display: none;
+    }
+
+    .wrapper
+    {
+        min-width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header'
+            'popular'
+            'content'
+            'order';
+    }
+
+    .main-nav,
+    .main-head,
+    .popular,
+    .order    
+    {
+        width: 320px;
+    }
+
+    .content .tile
+    {
+        width: 320px;
+    }
+
+    .main-nav
+    {
+        display: none;
+    }
+
+    .wrapper .content
+    {
+        margin: 0;
+    }
+
+    .content
+    {
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin: 10px;
+        grid-template-areas: 'firsttile'
+            'secondtile'
+            'thirdtile'
+            'fourthtile';
+    }
+
+    .orderForm input
+    {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .order .orderForm input[type='submit']
+    {
+        width: 90px;
+        margin-left: 0;
+    }
+    
+    .order .orderForm input[type='reset']
+    {
+        width: 110px;
+    }
+
+    .main-head .inputField .inputBorder
+    {
+        padding: 0;
+        border: 18px solid transparent;
+        border-left: 12px solid #ffdb4d;
+    }
+
+    .inputField input,
+    .inputField .inputBorder
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .inputField .searchField
+    {
+        border: 1px solid #ffdb4d;
+        width: 260px;
+    }
+
+    .inputField .searchicon,
+    .inputField .searchButton
+    {
+        display: none;
+    }
+}
