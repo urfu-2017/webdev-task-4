@@ -7,9 +7,9 @@
 {
     grid-column: 1 / 2;
     grid-row: 1 / 1;
-    background-color: #FFFF;
+    background-color: #fff;
     margin-left: var(--margin-for-blocks);
-    height: calc(var(--device-independet-font-size)*15);
+    height: calc(var(--device-independet-font-size) * 15);
     border: .3vmax solid var(--color-theme-dark);
     border-radius: .3vmax;
 }
@@ -24,7 +24,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
     text-decoration: none;
-    color: #00F;
+    color: #00f;
     display: block;
     margin: .8vmax 0;
 }
@@ -46,14 +46,12 @@
 }
 
 @media screen and (max-width: 768px) 
-{ 
+{
     .menu
     {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        /* margin: 0; */
         margin: var(--margin-for-blocks) 0;
-        /* height: calc(var(--device-independet-font-size)*11); */
         height: auto;
     }
 

@@ -7,9 +7,8 @@
     --color-theme: #e8e8e8;
     --color-theme-dark: #c8c8c8;
     --margin-for-blocks: 4vmax;
-    --color-anchor-hover: #F00C;
-    --color-anchor-active: #F00;
-    /* --standard-font-size: 1.3vmax; */
+    --color-anchor-hover: #f00c;
+    --color-anchor-active: #f00;
     --standard-font-size: 1.1em;
     --device-independet-font-size: 1.3vmax;
     margin: 0;

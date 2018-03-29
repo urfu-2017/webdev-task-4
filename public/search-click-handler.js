@@ -35,7 +35,7 @@ function showMenu(e) {
         body.style['overflow-y'] = 'auto';
     });
     menu.addEventListener('click', (eMenu) => {
-        eMenu.stopPropagation()
+        eMenu.stopPropagation();
     });
 }
 
@@ -47,21 +47,19 @@ sandwich.addEventListener('click', (e) => {
         menu.style.display = 'none';
         body.style['overflow-y'] = 'auto';
     }
-    showMenu(e)
+    showMenu(e);
 });
 
 const touchMoveHandler = e => {
     if (e.changedTouches[0].pageX > (currentWidth / 2)) {
-        let offsetX = (e.changedTouches[0].pageX / currentWidth)*100;
+        let offsetX = (e.changedTouches[0].pageX / currentWidth) * 100;
         menu.style.left = `${offsetX}%`;
         let width = 100 - offsetX;
-        menu.style.width = `${width}%`
-        // alert(document.body.clientWidth)
+        menu.style.width = `${width}%`;
     }
-}
+};
 
 const touchEndHandler = e => {
-    const unTapPlaceX = e.changedTouches[0].pageX;
     if (e.changedTouches[0].pageX < currentWidth / 2) {
         menu.style.display = 'block';
         body.style['overflow-y'] = 'hidden';
@@ -69,19 +67,20 @@ const touchEndHandler = e => {
         menu.style.display = 'none';
         body.style['overflow-y'] = 'auto';
     }
-    showMenu(e)
-    document.removeEventListener('touchend', touchEndHandler)
-}
+    showMenu(e);
+    document.removeEventListener('touchmove', touchMoveHandler);
+    document.removeEventListener('touchend', touchEndHandler);
+};
 
 if (currentWidth <= 576) {
     document.addEventListener('touchstart', e => {
-        e.stopPropagation();   
+        e.stopPropagation();
         const tapPlaceX = e.changedTouches[0].pageX;
         if ((tapPlaceX / currentWidth) > 0.95) {
             menu.style.height = `${height}px`;
             menu.style['overflow-x'] = 'hidden';
             menu.style.display = 'block';
-            menu.style.width = '0%'
+            menu.style.width = '0%';
             menu.style.left = '100%';
             menu.style.border = 'none';
             document.addEventListener('touchmove', touchMoveHandler);

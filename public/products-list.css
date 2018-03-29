@@ -9,7 +9,7 @@
     border-style: solid;
     border-color: var(--color-theme-dark);
     border-width: .2vmax 0 0 .2vmax;
-    background-color: #FFFF;
+    background-color: #fff;
     margin-bottom: var(--margin-for-blocks);
 }
 
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 768px) 
-{ 
+{
     .products-list
     {
         grid-column: 1 / 2;
@@ -27,3 +27,4 @@
         margin: 0;
     }
 }
+

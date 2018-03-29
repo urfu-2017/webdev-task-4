@@ -7,15 +7,14 @@
 {
     display: grid;
     grid-template-columns: 3fr 7fr 3fr;
-    margin-top: var(--margin-for-blocks);
     grid-column-gap: var(--margin-for-blocks);
+    margin-top: var(--margin-for-blocks);
 }
 
 @media screen and (max-width: 768px) 
-{ 
+{
     .main
     {
-        /* background: yellow; */
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto 3fr 8fr;
         margin: 0 calc(var(--margin-for-blocks)*5);
@@ -26,7 +25,6 @@
 {
     .main
     {
-        /* background: tomato; */
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto 6fr;
         margin: auto calc(var(--margin-for-blocks));

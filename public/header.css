@@ -5,7 +5,7 @@
     --header-height: 5vmax;
     --header-font-size: 3vmax;
     display: flex;
-    background-color: #FFF;    
+    background-color: #fff;
     box-shadow: 0 0 2vmin 1vmin var(--color-theme-dark);
     z-index: 1;
 }
@@ -13,7 +13,7 @@
 .header__title
 {
     font-family: 'Yandex Sans Display Thin', sans-serif;
-    font-size: calc(var(--header-font-size)*1.4);
+    font-size: calc(var(--header-font-size) * 1.4);
     transform: scale(.8, 1.2);
     margin: calc(var(--header-font-size) / 7) 0;
 }
@@ -25,7 +25,7 @@
 
 .header__title::first-letter
 {
-    color: #F00;
+    color: #f00;
 }
 
 @media screen and (max-width: 768px) 
@@ -33,8 +33,8 @@
     .header
     {
         display: grid;
-        grid-template-columns: 4fr 4fr 6fr 4fr; 
-        grid-template-rows: calc(var(--header-font-size)*1.3 + 2.6vmax) auto;
+        grid-template-columns: 4fr 4fr 6fr 4fr;
+        grid-template-rows: calc(var(--header-font-size) * 1.3 + 2.6vmax) auto;
     }
 
     .header__title
@@ -50,8 +50,8 @@
     .header
     {
         display: grid;
-        grid-template-columns: 4fr 1fr; 
-        grid-template-rows: calc(var(--header-font-size)*1.3 + 2.6vmax) auto;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: calc(var(--header-font-size) * 1.3 + 2.6vmax) auto;
     }
 
     .header__title

@@ -6,7 +6,7 @@
     border-style: solid;
     border-color: var(--color-theme-dark);
     border-width: .2vmax;
-    background-color: #FFFF;
+    background-color: #fff;
 }
 
 .order__title
@@ -24,9 +24,9 @@
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--standard-font-size);
-    /* работает только в Firefox */
+    /* работает только в Firefox, Safari (частично) */
     display: grid; 
-    /* работает только в Firefox */
+    /* работает только в Firefox, Safari (частично) */
     grid-template-columns: 5fr 4fr;
 }
 
@@ -40,7 +40,7 @@
     width: 100%;
     display: block;
     margin: 0 0 1vmax;
-    /* работает только в Firefox */
+    /* работает только в Firefox, Safari (частично) */
     grid-column: 2 / 3;
 }
 
@@ -59,10 +59,9 @@
 }
 
 @media screen and (max-width: 768px) 
-{ 
+{
     .order
     {
-
         grid-column: 1 / 2;
         grid-row: 4 / 5;
     }

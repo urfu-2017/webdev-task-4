@@ -33,7 +33,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #00F;
+    color: #00f;
 }
 
 .product__title_par
@@ -71,7 +71,7 @@
 {
     margin-right: 10%;
     font-size: var(--standard-font-size);
-    color: #FFF;
+    color: #fff;
     background-color: #c4ca26;
     padding: calc(var(--standard-font-size)*.5);
     height: var(--standard-font-size);
@@ -93,11 +93,11 @@
 
 .product__feedback
 {
-    color: #7F7F7F;
+    color: #7f7f7f;
 }
 
 @media screen and (max-width: 768px) 
-{ 
+{
     .product
     {
         font-size: calc(var(--standard-font-size)*.8);
@@ -105,7 +105,7 @@
 }
 
 @media screen and (max-width: 576px) 
-{ 
+{
     .product
     {
         font-size: calc(var(--standard-font-size)*.8);
