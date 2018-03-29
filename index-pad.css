@@ -1,7 +1,7 @@
-@import url("./css/pad/search-bar.css");
-@import url("./css/pad/nav.css");
-@import url("./css/pad/popular.css");
-@import url("./css/pad/item-list.css");
+@import url('./css/pad/search-bar.css');
+@import url('./css/pad/nav.css');
+@import url('./css/pad/popular.css');
+@import url('./css/pad/item-list.css');
 
 .body
 {
@@ -24,8 +24,8 @@
 
 .white-block
 {
-    background-color: #fff;    
-    border: 2px solid #afaeae;    
+    background-color: #fff;
+    border: 2px solid #afaeae;
 }
 
 .center

@@ -2,6 +2,7 @@
 {
     --good: #92d42e;
     --better: #099709;
+    --white: #fff;
 }
 
 .item__price
@@ -21,7 +22,7 @@
 }
 
 .good-rating
-{    
+{
     background-color: var(--good);
 }
 
@@ -32,8 +33,8 @@
 
 .arrow-good-rating
 {
-    background: #fff;
-    height: inherit; 
+    background: var(--white);
+    height: inherit;
     position: relative;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -42,8 +43,8 @@
 
 .arrow-better-rating
 {
-    background: #fff;
-    height: inherit; 
+    background: var(--white);
+    height: inherit;
     position: relative;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -67,7 +68,9 @@
     margin: 0 9%;
 }
 
-.item__name, .item__price, .item__users-review
+.item__name,
+.item__price,
+.item__users-review
 {
     margin: 0 9%;
 }
