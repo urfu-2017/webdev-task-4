@@ -1,0 +1,22 @@
+.promotes
+{
+    align-self: start;
+    padding: 30px 20px;
+}
+
+.promotes
+{
+    grid-area: promotes;
+}
+
+.promotes__list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.promotes__item
+{
+    margin-bottom: 10px;
+}

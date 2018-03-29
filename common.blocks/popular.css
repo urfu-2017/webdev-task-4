@@ -1,0 +1,28 @@
+.popular
+{
+    align-self: start;
+    padding: 30px 20px;
+}
+
+.popular__list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.popular
+{
+    grid-area: popular;
+    padding-top: 15px;
+}
+
+.popular__title
+{
+    margin: 0 0 20px;
+}
+
+.popular__item
+{
+    margin-bottom: 5px;
+}
