@@ -13,104 +13,106 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-    <header class="header">
-        <h2 class="header__title">Билли.Маркет</h2>
-        <div class="search">
-            <input type="checkbox" class="search__show-button" id="search__show-button" checked>
-            <input class="search__input" id="search__input">
-            <button class="search__button">Найти</button>
-            <label class="search__loupe" for="search__show-button">🔎</label>
-        </div>
-    </header>
-    <menu class="menu">
-        <a class="menu__item" href="#">Морские ракушки</a>
-        <a class="menu__item" href="#">Сувениры из Тайланда</a>
-        <a class="menu__item" href="#">Автомобили Тесла</a>
-        <a class="menu__item" href="#">Марки из разных стран</a>
-        <a class="menu__item" href="#order">Заказать сувенир</a>
-    </menu>
-    <menu class="popular">
-        <h2 class="popular__title">Популярные товары</h2>
-        <div class="popular__items">
-            <a class="popular__item" href="#">Ракушка морская</a>
-            <a class="popular__item" href="#">Чесалка для спины</a>
-            <a class="popular__item" href="#">Четки</a>
-        </div>
-    </menu>
-    <article class="content">
-        <div class="good">
-            <figure class="good__picture">
-                <img class="good__image" src="./static/img/dno.png" alt="DNIWE">
-                <figcaption class="good__name"><a href="#">Ракушка "Морское дно"</a></figcaption>
-            </figure>
-            <span class="good__price">290</span>
-            <div class="good__info">
-                <div class="good__raiting">4.0</div>
-                <div class="good__comments">111 отзывов</div>
+    <main>
+        <header class="header">
+            <h2 class="header__title">Билли.Маркет</h2>
+            <div class="search">
+                <input type="checkbox" class="search__show-button" id="search__show-button" checked>
+                <input class="search__input" id="search__input">
+                <button class="search__button">Найти</button>
+                <label class="search__loupe" for="search__show-button">🔎</label>
             </div>
-        </div>
-        <div class="good">
-            <figure class="good__picture">
-                <img class="good__image" src="./static/img/cup.png" alt="cup">
-                <figcaption class="good__name"><a href="#">Термокружка</a></figcaption>
-            </figure>
-            <span class="good__price">404</span>
-            <div class="good__info">
-                <div class="good__raiting">4.0</div>
-                <div class="good__comments">290 отзывов</div>
+        </header>
+        <article class="menu">
+            <a class="menu__item" href="#">Морские ракушки</a>
+            <a class="menu__item" href="#">Сувениры из Тайланда</a>
+            <a class="menu__item" href="#">Автомобили Тесла</a>
+            <a class="menu__item" href="#">Марки из разных стран</a>
+            <a class="menu__item" href="#order">Заказать сувенир</a>
+        </article>
+        <article class="popular">
+            <h2 class="popular__title">Популярные товары</h2>
+            <div class="popular__items">
+                <a class="popular__item" href="#">Ракушка морская</a>
+                <a class="popular__item" href="#">Чесалка для спины</a>
+                <a class="popular__item" href="#">Четки</a>
             </div>
-        </div>
-        <div class="good">
-            <figure class="good__picture">
-                <img class="good__image" src="./static/img/car.png" alt="car">
-                <figcaption class="good__name"><a href="#">Автомобиль "Тесла"</a></figcaption>
-            </figure>
-            <span class="good__price">999 999</span>
-            <div class="good__info">
-                <div class="good__raiting">4.0</div>
-                <div class="good__comments">1 отзыв</div>
+        </article>
+        <article class="content">
+            <div class="good">
+                <figure class="good__picture">
+                    <img class="good__image" src="./static/img/dno.png" alt="DNIWE">
+                    <figcaption class="good__name"><a href="#">Ракушка "Морское дно"</a></figcaption>
+                </figure>
+                <span class="good__price">290</span>
+                <div class="good__info">
+                    <div class="good__raiting">4.0</div>
+                    <div class="good__comments">111 отзывов</div>
+                </div>
             </div>
-        </div>
-        <div class="good">
-            <figure class="good__picture">
-                <img class="good__image" src="./static/img/back.png" alt="back">
-                <figcaption class="good__name"><a href="#">Чесалка для спины</a></figcaption>
-            </figure>
-            <span class="good__price">195</span>
-            <div class="good__info">
-                <div class="good__raiting">4.0</div>
-                <div class="good__comments">29 отзывов</div>
+            <div class="good">
+                <figure class="good__picture">
+                    <img class="good__image" src="./static/img/cup.png" alt="cup">
+                    <figcaption class="good__name"><a href="#">Термокружка</a></figcaption>
+                </figure>
+                <span class="good__price">404</span>
+                <div class="good__info">
+                    <div class="good__raiting">4.0</div>
+                    <div class="good__comments">290 отзывов</div>
+                </div>
             </div>
-        </div>
-    </article>
-    <article class="order" id="order">
-        <h2 class="order__title">Заказать сувенир</h2>
-        <form class="order-form">
-            <div class="order-form__item">
-                <label class="order-form__label" for="count-input">Количество</label>
-                <input class="order-form__input" id="count-input" type="number">
+            <div class="good">
+                <figure class="good__picture">
+                    <img class="good__image" src="./static/img/car.png" alt="car">
+                    <figcaption class="good__name"><a href="#">Автомобиль "Тесла"</a></figcaption>
+                </figure>
+                <span class="good__price">999 999</span>
+                <div class="good__info">
+                    <div class="good__raiting">4.0</div>
+                    <div class="good__comments">1 отзыв</div>
+                </div>
             </div>
-            <div class="order-form__item">
-                <label class="order-form__label" for="city-input">Город</label>
-                <input class="order-form__input" id="city-input">
+            <div class="good">
+                <figure class="good__picture">
+                    <img class="good__image" src="./static/img/back.png" alt="back">
+                    <figcaption class="good__name"><a href="#">Чесалка для спины</a></figcaption>
+                </figure>
+                <span class="good__price">195</span>
+                <div class="good__info">
+                    <div class="good__raiting">4.0</div>
+                    <div class="good__comments">29 отзывов</div>
+                </div>
             </div>
-            <div class="order-form__item">
-                <label class="order-form__label" for="email-input">Email</label>
-                <input class="order-form__input" id="email-input" type="email">
-            </div>
-            <div class="order-form__item">
-                <label class="order-form__label" for="phone-input">Телефон</label>
-                <input class="order-form__input" id="phone-input" type="tel">
-            </div>
-            <div class="order-form__item">
-                <label class="order-form__label" for="date-input">Дата доставки</label>
-                <input class="order-form__input" id="date-input" type="date">
-            </div>
-            <div class="order-form__buttons">
-                <button class="order-form__reset" type="reset">Сбросить Заказ</button>
-                <button class="order-form__submit" type="submit">Заказать!</button>
-            </div>
-        </form>
-    </article>
+        </article>
+        <article class="order" id="order">
+            <h2 class="order__title">Заказать сувенир</h2>
+            <form class="order-form">
+                <div class="order-form__item">
+                    <label class="order-form__label" for="count-input">Количество</label>
+                    <input class="order-form__input" id="count-input" type="number">
+                </div>
+                <div class="order-form__item">
+                    <label class="order-form__label" for="city-input">Город</label>
+                    <input class="order-form__input" id="city-input">
+                </div>
+                <div class="order-form__item">
+                    <label class="order-form__label" for="email-input">Email</label>
+                    <input class="order-form__input" id="email-input" type="email">
+                </div>
+                <div class="order-form__item">
+                    <label class="order-form__label" for="phone-input">Телефон</label>
+                    <input class="order-form__input" id="phone-input" type="tel">
+                </div>
+                <div class="order-form__item">
+                    <label class="order-form__label" for="date-input">Дата доставки</label>
+                    <input class="order-form__input" id="date-input" type="date">
+                </div>
+                <div class="order-form__buttons">
+                    <button class="order-form__reset" type="reset">Сбросить Заказ</button>
+                    <button class="order-form__submit" type="submit">Заказать!</button>
+                </div>
+            </form>
+        </article>
+    </main>
 </body>
 </html>
