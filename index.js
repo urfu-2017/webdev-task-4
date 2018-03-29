@@ -20,7 +20,10 @@ window.onload = () => {
     };
 
     searchInput.onblur = () => {
-        search.style.display = 'none';
-        searchIcon.classList.add('fa-search');
+        const width = document.documentElement.clientWidth;
+        if (width > 600 && width <= 850) {
+            search.style.display = 'none';
+            searchIcon.classList.add('fa-search');
+        }
     };
 };
