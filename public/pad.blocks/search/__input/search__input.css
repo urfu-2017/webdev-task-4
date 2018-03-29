@@ -1,0 +1,6 @@
+.search__input,
+.search__input:not(:focus),
+.search__input:not(:focus) + .search__button
+{
+    display: none;
+}

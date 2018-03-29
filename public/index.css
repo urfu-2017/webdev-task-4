@@ -1,0 +1,67 @@
+@import './desktop.blocks/header/header.css';
+@import './desktop.blocks/header/__title/header__title.css';
+@import './desktop.blocks/header/__nav-toggle/header__nav-toggle.css';
+
+@import './desktop.blocks/search/search.css';
+@import './desktop.blocks/search/__input/search__input.css';
+@import './desktop.blocks/search/__button/search__button.css';
+@import './desktop.blocks/search/__start-button/search__start-button.css';
+
+@import './desktop.blocks/container/container.css';
+
+@import './desktop.blocks/products-list/products-list.css';
+@import './desktop.blocks/products-list/__row/products-list__row.css';
+
+@import './desktop.blocks/popular-products/popular-products.css';
+@import './desktop.blocks/popular-products/__title/popular-products__title.css';
+
+@import './desktop.blocks/navigation/navigation.css';
+@import url(
+    ./desktop.blocks/navigation/__close-button/navigation__close-button.css
+);
+
+@import './desktop.blocks/product/product.css';
+@import './desktop.blocks/product/__image/product__image.css';
+@import './desktop.blocks/product/__rating/product__rating.css';
+@import './desktop.blocks/product/__price/product__price.css';
+@import './desktop.blocks/product/__opinions/product__opinions.css';
+
+@import './desktop.blocks/rating/rating.css';
+@import './desktop.blocks/rating/__corner/rating__corner.css';
+@import './desktop.blocks/rating/__triangle/rating__triangle.css';
+
+@import './desktop.blocks/order-form/order-form.css';
+@import './desktop.blocks/order-form/__row/order-form__row.css';
+@import './desktop.blocks/order-form/__input/order-form__input.css';
+
+@import url(
+    ./desktop.blocks/order-form/__submit-button/order-form__submit-button.css
+);
+
+@import url(
+    ./desktop.blocks/order-form/__reset-button/order-form__reset-button.css
+);
+
+@import './pad.blocks/container/container.css';
+
+@import './pad.blocks/popular-products/popular-products.css';
+@import './pad.blocks/popular-products/__title/popular-products__title.css';
+
+@import './pad.blocks/navigation/navigation.css';
+@import './pad.blocks/products-list/products-list.css';
+@import './pad.blocks/order-form/order-form.css';
+
+/* @import './pad.blocks/search/__input/search__input.css';
+@import './pad.blocks/search/__button/search__button.css';
+@import './pad.blocks/search/__start-button/search__start-button.css'; */
+
+@import './phone.blocks/header/__nav-toggle/header__nav-toggle.css';
+@import './phone.blocks/products-list/products-list.css';
+@import './phone.blocks/search/search.css';
+@import './phone.blocks/order-form/order-form.css';
+@import './phone.blocks/navigation/navigation.css';
+@import './phone.blocks/navigation/__close-button/navigation__close-button.css';
+@import './phone.blocks/popular-products/popular-products.css';
+@import './phone.blocks/header/header.css';
+@import './phone.blocks/header/__title/header__title.css';
+

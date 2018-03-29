@@ -1,0 +1,24 @@
+.rating__corner
+{
+    position: absolute;
+    top: -4px;
+    right: -11px;
+    bottom: -4px;
+    clip: rect(0,13px,26px,1px);
+    width: 12px;
+}
+
+.rating__corner:after
+{
+    top: -1px;
+    right: -1px;
+    width: 22px;
+    height: 25px;
+    -webkit-transform: scaleX(.5) rotate(45deg);
+    -ms-transform: scaleX(.5) rotate(45deg);
+    transform: scaleX(.5) rotate(45deg);
+    border-width: 5px 5px 0 0;
+    border-color: transparent;
+    background-color: #359e00;
+    background-clip: content-box;
+}
