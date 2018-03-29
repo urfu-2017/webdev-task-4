@@ -2,8 +2,8 @@
 {
     grid-area: form;
     background-color: white;
-    padding: 0px 30px 30px;
-    margin: 10px 10px 0px;
+    padding: 0 30px 30px;
+    margin: 10px 10px 0;
 }
 
 .field
@@ -31,10 +31,4 @@ label
         margin: 0 125px;
     }
     
-}
-
-
-@media screen and (max-width: 720px)
-{
-
 }

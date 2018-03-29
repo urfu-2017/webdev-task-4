@@ -18,29 +18,28 @@ body
 a
 {
     text-decoration: none;
-    color: #4169E0;
+    color: #4169e0;
 }
 
 .wrapper
 {
-    margin: 20px 0 60px 0;
-    background-color: #DCDCDC;
-    padding: 45px 0px;
+    margin: 20px 0 60px;
+    background-color: #dcdcdc;
+    padding: 45px 0;
     display: grid;
 }
 
-
 @media screen and (min-width: 1200px)
 {
+
     .wrapper
     {
         grid-template-columns: 30px 230px auto 230px 30px;
         grid-template-rows: auto;
         grid-gap: 15px;
-        grid-template-areas:
-        '. nav items popular .'
-        '. . items . .'
-        '. . form . .';
+        grid-template-areas: '. nav items popular .'
+            '. . items . .'
+            '. . form . .';
     }
 }
 
@@ -51,11 +50,10 @@ a
         grid-template-columns: 15px auto 15px;
         grid-template-rows: auto;
         grid-gap: 30px;
-        grid-template-areas:
-        '. nav .'
-        '. items .'
-        '. popular .'
-        '. form .';
+        grid-template-areas: '. nav .'
+            '. items .'
+            '. popular .'
+            '. form .';
     }
 
 }
@@ -67,9 +65,8 @@ a
         grid-template-columns: 1fr 450px 1fr;
         grid-template-rows: auto;
         grid-gap: 30px;
-        grid-template-areas:
-        '. popular .'
-        '. items .'
-        '. form .';
+        grid-template-areas: '. popular .'
+            '. items .'
+            '. form .';
     }
 }

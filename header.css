@@ -24,7 +24,7 @@
     width: 85%;
     height: 35px;
     outline: none;
-    border: 2px solid #DCDCDC;
+    border: 2px solid #dcdcdc;
 }
 
 .input__button
@@ -32,7 +32,7 @@
     height: 41px;
     width: 10%;
     margin-left: -5px;
-    background-color: #DCDCDC;
+    background-color: #dcdcdc;
     outline: none;
     box-shadow: 0;
 }
@@ -63,7 +63,7 @@
 
     .input__search:focus
     {
-        border: 2px solid #DCDCDC;
+        border: 2px solid #dcdcdc;
     }
 }
 

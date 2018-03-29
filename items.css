@@ -10,7 +10,7 @@
 }
 
 .item
-{    
+{
     background-color: white;
     padding: 70px 30px;
     margin: 1px;
@@ -35,7 +35,7 @@
 
 .item__price
 {
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .item__rating
@@ -89,11 +89,13 @@
     border-width: 3px;
 }
 
-.rating__corner:after, .rating__triangle:after, .rating_outline_yes:before
+.rating__corner:after,
+.rating__triangle:after,
+.rating_outline_yes:before
 {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     border-style: solid;
 }
 
