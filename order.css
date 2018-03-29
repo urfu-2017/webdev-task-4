@@ -1,0 +1,51 @@
+.order
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    grid-area: o;
+    box-sizing: border-box;
+}
+
+.order__title
+{
+    margin: 0 0 10px;
+    font-weight: normal;
+}
+
+.order__row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.order__input
+{
+    box-sizing: border-box;
+    min-width: 100px;
+    flex-basis: 50%;
+}
+
+.order__buttons
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 851px)
+{
+    .order
+    {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .order
+    {
+        width: 300px;
+    }
+}

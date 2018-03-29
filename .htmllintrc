@@ -30,7 +30,6 @@
   "spec-char-escape": true,
   "tag-bans": [
     "b",
-    "i",
     "u",
     "center",
     "style",

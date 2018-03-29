@@ -1,0 +1,56 @@
+@import 'header.css';
+@import 'suggest.css';
+@import 'navigation.css';
+@import 'order.css';
+@import 'items.css';
+@import 'item.css';
+
+body
+{
+    margin: 0;
+    font: 17px sans-serif;
+    background-color: #f6f6f6;
+}
+
+main
+{
+    display: grid;
+    padding: 20px;
+    grid-row-gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.link
+{
+    color: #3072c4;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 851px)
+{
+    main
+    {
+        grid-template-areas: 'n l s' '. l .' '. o .';
+        grid-column-gap: 5px;
+        justify-items: center;
+
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px)
+{
+    main
+    {
+        grid-template-areas: 'n' 'l' 's' 'o';
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    main
+    {
+        grid-template-areas: 's' 'l' 'o';
+        justify-items: center;
+    }
+}

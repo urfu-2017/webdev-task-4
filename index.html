@@ -2,9 +2,119 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+          crossorigin="anonymous">
+    <script src="index.js"></script>
 </head>
 <body>
+<header class="header">
+    <h2 class="header__title">Билли.Маркет</h2>
+    <i class="fas fa-bars header__burger"></i>
+    <div class="search">
+        <input class="search__input" type="text" title="search">
+        <button class="search__button">Найти</button>
+    </div>
+    <i class="header__search-icon fas fa-search"></i>
+</header>
+<main>
+    <nav class="navigation">
+        <span class="navigation__close">✕</span>
+        <a class="link navigation__link" href="">Морские ракушки</a>
+        <a class="link navigation__link" href="">Сувениры из Тайланда</a>
+        <a class="link navigation__link" href="">Автомобили Tesla</a>
+        <a class="link navigation__link" href="">Марки из разных стран</a>
+        <a class="link navigation__order" href="">Заказать сувенир</a>
+    </nav>
+    <section class="items">
+        <div class="item">
+            <img src="./static/thermokruzhkus.jpg" width="200" alt="Термокружкус" class="item__image">
+            <div class="item__description">
+                <a class="link item__name">Термокружкус «Батарейка»</a>
+                <span class="item__price">799 ₽</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.5</span>
+                    <span class="item__rating-reviews">123 отзыва</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./static/chesalka.jpg" width="200" alt="Чесалка" class="item__image">
+            <div class="item__description">
+                <a class="link item__name">Чесалка</a>
+                <span class="item__price">1000 ₽</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">3.0</span>
+                    <span class="item__rating-reviews">2 отзыва</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./static/rozetkus.jpg" width="200" alt="Розеткус" class="item__image">
+            <div class="item__description">
+                <a class="link item__name">Удлиннитель «Розеткус»</a>
+                <span class="item__price">2000 ₽</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">4.0</span>
+                    <span class="item__rating-reviews">1321 отзыв</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./static/tesla.jpeg" width="200" alt="Tesla X" class="item__image">
+            <div class="item__description">
+                <a class="link item__name">Tesla X</a>
+                <span class="item__price">1231232 ₽</span>
+                <div class="item__rating">
+                    <span class="item__rating-value">5.0</span>
+                    <span class="item__rating-reviews">1 отзыв</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="suggest">
+        <h4 class="suggest__title">Популярные товары</h4>
+        <div class="suggest__items">
+            <a class="link" href="">Tesla X</a>
+            <a class="link" href="">Tesla S</a>
+            <a class="link" href="">Falcon Heavy</a>
+        </div>
+    </aside>
+    <form class="order">
+        <h3 class="order__title">Заказать сувенир</h3>
+        <label for="count" class="order__row">
+            <span class="order__row-title">Количество</span>
+            <input type="text" class="order__input" id="count">
+        </label>
+        <label for="city" class="order__row">
+            <span class="order__row-title">Город</span>
+            <select class="order__input" id="city">
+                <option>-</option>
+                <option>Москва</option>
+                <option>Екатеринбург</option>
+                <option>Териберка</option>
+            </select>
+        </label>
+        <label for="email" class="order__row">
+            <span class="order__row-title">E-mail</span>
+            <input type="email" class="order__input" id="email">
+        </label>
+        <label for="telephone" class="order__row">
+            <span class="order__row-title">Телефон</span>
+            <input type="tel" class="order__input" id="telephone">
+        </label>
+        <label for="date" class="order__row">
+            <span class="order__row-title">Дата</span>
+            <input type="date" class="order__input" id="date">
+        </label>
+        <div class="order__buttons">
+            <button class="order__button">Сбросить</button>
+            <button class="order__button">Заказать</button>
+        </div>
+    </form>
+</main>
 </body>
 </html>

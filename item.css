@@ -1,0 +1,50 @@
+.item
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    align-items: center;
+    margin: 2px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 320px;
+    justify-content: space-between;
+}
+
+.item__description
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.item__price
+{
+    font-weight: bold;
+}
+
+.item__rating-value
+{
+    position: relative;
+    background-color: #569f20;
+    padding: 1px;
+    width: 35px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.item__rating-reviews
+{
+    font-size: .7em;
+    color: #9d9d9d;
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px)
+{
+    .item
+    {
+        flex-grow: 1;
+    }
+}
