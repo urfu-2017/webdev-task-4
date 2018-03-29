@@ -17,5 +17,9 @@ window.onload = () => {
         input.focus();
     };
 
-    input.onblur = () => checkbox.click();
+    input.onblur = () => {
+        if (window.innerWidth <= 850) {
+            checkbox.click();
+        }
+    };
 };

@@ -5,6 +5,7 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .popular__title
@@ -24,7 +25,12 @@
     .popular__items
     {
         flex-direction: row;
-        margin: 10px;
+        margin: 5px;
         justify-content: space-between;
+    }
+
+    .popular
+    {
+        padding: 10px;
     }
 }
