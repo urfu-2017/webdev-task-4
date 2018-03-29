@@ -1,0 +1,257 @@
+@import 'common.blocks/header.css';
+@import 'common.blocks/item.css';
+@import 'common.blocks/order-form.css';
+@import 'common.blocks/popular.css';
+@import 'common.blocks/promotes.css';
+@import 'common.blocks/hamburger.css';
+@import 'common.blocks/search-icon.css';
+@import 'common.blocks/cross.css';
+
+.page
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
+    background: #f6f6f6;
+    display: grid;
+}
+
+.order-form
+{
+    justify-self: center;
+}
+
+.content-box
+{
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.link
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: #04b;
+}
+
+.items
+{
+    grid-area: items;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2px;
+    background: #ddd;
+}
+
+.page_mode_large,
+.page_mode_medium,
+.page_mode_small
+{
+    display: none;
+}
+
+@media screen and (min-width: 1250px)
+{
+    .page
+    {
+        grid-gap: 40px;
+        grid-template-columns: 1fr 250px 600px 250px 1fr;
+        grid-template-areas: 'head head head head head' 
+            '. promotes items popular .' 
+            '. . order . .';
+    }
+    
+    .promotes
+    {
+        display: block;
+    }
+
+    .page_mode_large
+    {
+        display: flex;
+    }
+
+    .header__search-field,
+    .header__search-button
+    {
+        box-sizing: border-box;
+        height: 40px;
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .header__search-field
+    {
+        width: 100%;
+        border: 3px solid #d9d9d9;
+        border-radius: 3px 0 0 3px;
+        font-size: 20px;
+        border-right: 0;
+    }
+
+    .header__search-button
+    {
+        background: #d9d9d9;
+        border-radius: 0 3px 3px 0;
+        margin-left: -4px;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1250px)
+{
+    .page
+    {
+        grid-gap: 20px;
+        grid-template-columns: 1fr 600px 1fr;
+        grid-template-areas: 'head head head' 
+            '. promotes .' 
+            '. items .' 
+            '. popular .' 
+            '. order .';
+    }
+
+    .header__wrapper
+    {
+        width: 600px;
+    }
+
+    .header__search-icon
+    {
+        position: absolute;
+        right: 5px;
+        top: 23px;
+    }
+
+    .header__search-field
+    {
+        display: none;
+        height: 30px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .header__search
+    {
+        width: 300px;
+        height: 100%;
+        position: relative;
+    }
+
+    .page_mode_medium
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .promotes
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .promotes__list
+    {
+        margin: 0 40px;
+        column-count: 2;
+        column-gap: 40px;
+        text-align: left;
+    }
+
+    .popular__list
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+
+    .order-form
+    {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .page
+    {
+        grid-gap: 20px;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-areas: 'head head head' 
+            '. popular .' 
+            '. items .' 
+            '. order .';
+    }
+
+    .page_mode_small
+    {
+        display: flex;
+    }
+
+    .header__wrapper
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .header__logo
+    {
+        margin: 5px 0;
+    }
+
+    .header__search
+    {
+        margin: 0;
+    }
+
+    .header__search-field
+    {
+        font-size: 20px;
+        width: 100%;
+        height: 30px;
+        border: 4px solid #fc0;
+        border-right: 0;
+    }
+
+    .header__search-button
+    {
+        content: '';
+        width: 29px;
+        height: 29px;
+        display: inline-block;
+        border: 4px solid #fc0;
+        border-bottom: 0;
+        border-left: 0;
+        background: transparent;
+        transform: scaleX(.7) rotate(45deg);
+        position: relative;
+        right: 14px;
+        top: 5px;
+    }
+
+    .header__hamburger,
+    .promotes__close
+    {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    .items
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .promotes
+    {
+        display: none;
+        padding-top: 50px;
+        position: fixed;
+        height: 100%;
+        width: 200px;
+        right: 0;
+        top: 0;
+    }
+}

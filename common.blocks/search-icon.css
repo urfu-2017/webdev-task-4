@@ -1,0 +1,31 @@
+.search-icon
+{
+    color: #007abb;
+    position: relative;
+    width: 35px;
+    padding: 10px 0;
+}
+
+.search-icon:hover
+{
+    cursor: pointer;
+}
+
+.search-icon__circle
+{
+    width: 20px;
+    height: 20px;
+    border: 3px solid currentColor;
+    border-radius: 20px;
+}
+
+.search-icon__handle
+{
+    background: currentColor;
+    position: absolute;
+    width: 8px;
+    right: 3px;
+    bottom: 8px;
+    border: 2px solid currentColor;
+    transform: rotate(45deg);
+}
