@@ -1,6 +1,6 @@
 .market
 {
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     display: grid;
     grid-template-columns: 30px 210px auto 210px 30px;
     grid-template-rows: 120px 30px 200px auto 30px 380px 30px;
@@ -14,10 +14,10 @@
         '. . . . .';
 }
 
-a 
-{ 
+a
+{
     text-decoration: none;
-} 
+}
 
 @media screen and (max-width: 1150px) and (min-width: 720px)
 {

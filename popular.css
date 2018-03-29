@@ -3,14 +3,14 @@
     background-color: white;
     width: 210px;
     height: 230px;
-    grid-area: popular;   
+    grid-area: popular;
 }
 
 .market__popular-caption
 {
     margin-top: 10px;
     margin-left: 25px;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .market__popular-product
@@ -31,7 +31,7 @@
 
     .market__popular-product
     {
-        margin: 0px;
+        margin: 0;
     }
 
     .market__popular-products

@@ -26,13 +26,13 @@
 .market__card-block-img
 {
     margin-left: 25px;
-    margin-top: 70px; 
+    margin-top: 70px;
 }
 
 .market__card-block-info
 {
     margin-left: 25px;
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .market__card-price
@@ -56,10 +56,10 @@
 }
 
 @media screen and (max-width: 720px)
-{ 
+{
     .market__cards
     {
         flex-direction: column;
-        margin: 0 auto;   
+        margin: 0 auto;
     }
 }
