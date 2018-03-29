@@ -4,9 +4,15 @@
 @import url("./css/phone/item-list.css");
 @import url("./css/phone/order-form.css");
 
+:root
+{
+    --mainColor: #9ec8f3;
+    --linkColor: #00f;
+}
+
 .body
 {
-    background-color: #9ec8f3;
+    background-color: var(--mainColor);    
     display: flex;
     flex-direction: column;
 }
@@ -26,7 +32,7 @@
 
 .link
 {
-    color: #00f;
+    color: var(--linkColor);
     white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
