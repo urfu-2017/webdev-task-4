@@ -19,7 +19,7 @@ a
 .popular,
 .order-form
 {
-    background: white;
+    background: #fff;
 }
 
 .header
@@ -86,9 +86,11 @@ a
     background: #f6f6f6;
 }
 
+.items,
 .navigation,
 .popular,
-.order-form
+.order-form,
+.order-form__button
 {
     border: 1px #e8e8e8 solid;
 }
@@ -111,8 +113,6 @@ a
 
 .items
 {
-    border: 1px #e8e8e8 solid;
-
     grid-area: items;
 }
 
@@ -172,12 +172,11 @@ a
 
 .order-form__button
 {
-    border: 1px #e8e8e8 solid;
     border-radius: 5px;
     background: #fff;
 }
 
-.hidden-menu-ticker
+.navigation-ticker
 {
     display: none;
 }
@@ -389,7 +388,7 @@ a
         backface-visibility: hidden;
     }
 
-    .btn-menu
+    .sandwich
     {
         position: absolute;
         z-index: 3;
@@ -406,7 +405,7 @@ a
         background-color: #666;
     }
 
-    .btn-menu span
+    .sandwich span
     {
         position: relative;
 
@@ -420,40 +419,35 @@ a
         background-color: #fff;
     }
 
-    .btn-menu span.first
+    .sandwich span.first
     {
         margin-top: 0;
     }
 
-    .hidden-menu-ticker:checked ~ .btn-menu
+    .navigation-ticker:checked ~ .sandwich
     {
         position: fixed;
         right: 200px;
     }
 
-    .hidden-menu-ticker:checked ~ .page-wrapper
-    {
-        overflow-y: hidden;
-    }
-
-    .hidden-menu-ticker:checked ~ .page-wrapper .navigation
+    .navigation-ticker:checked ~ .content .navigation
     {
         right: 0;
     }
 
-    .hidden-menu-ticker:checked ~ .btn-menu span.first
+    .navigation-ticker:checked ~ .sandwich span.first
     {
         top: 10px;
 
         transform: rotate(45deg);
     }
 
-    .hidden-menu-ticker:checked ~ .btn-menu span.second
+    .navigation-ticker:checked ~ .sandwich span.second
     {
         opacity: 0;
     }
 
-    .hidden-menu-ticker:checked ~ .btn-menu span.third
+    .navigation-ticker:checked ~ .sandwich span.third
     {
         top: -10px;
 
