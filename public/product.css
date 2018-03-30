@@ -109,6 +109,6 @@
     .product 
     {
         width: 100%;
-        font-size: calc(var(--standard-font-size)); 
+        font-size: calc(var(--standard-font-size));
     }
 }
