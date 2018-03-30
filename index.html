@@ -4,7 +4,130 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div class="title">
+                <span>Билли.Маркет</span>
+                <img class="title__btn" src="./public/images/menu-button.png" alt="Меню">
+            </div>
+            <div class="search">
+                <input class="search__input">
+                <div class="search__button">
+                    <span class="search__button-text">Найти</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="rows">
+            <div class="rows__first-row">
+                <div class="first-row__menu">
+                    <span class="first-row__close">X</span>
+                    <div class="first-row__menu-body">
+                        <span>Морские ракушки из Анапы</span>
+                        <span>Сувениры из Тайланда</span>
+                        <span>Автомобили Ferrari из Италии</span>
+                        <span>Марки из разных стран</span>
+                    </div>
+                    <span>Заказать сувенир</span>
+                </div>
+            </div>
+            <div class="rows__second-row">
+                <div class="second-row__cards">
+                    <div class="second-row__card">
+                        <div class="second-row__card-body">
+                            <img class="card__photo" src="./public/images/shell.jpg" alt="Изобрадение товара">
+                            <span class="card__title">Ракушка "Морское дно"</span>
+                            <span class="card__price">290₽</span>
+                            <div class="card__reports">
+                                <div class="card__ball-reports">4.9</div>
+                                <span class="card__count-reports">100 отзывов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row__card">
+                        <div class="second-row__card-body">
+                            <img class="card__photo" src="./public/images/termo.jpg" alt="Изобрадение товара">
+                            <span class="card__title">Термокружка "Простая"</span>
+                            <span class="card__price">290₽</span>
+                            <div class="card__reports">
+                                <div class="card__ball-reports">4.9</div>
+                                <span class="card__count-reports">100 отзывов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row__card">
+                        <div class="second-row__card-body">
+                            <img class="card__photo" src="./public/images/fire.jpg" alt="Изобрадение товара">
+                            <span class="card__title">Спички "Балабановские"</span>
+                            <span class="card__price">5₽</span>
+                            <div class="card__reports">
+                                <div class="card__ball-reports">4.9</div>
+                                <span class="card__count-reports">100 отзывов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-row__card">
+                        <div class="second-row__card-body">
+                            <img class="card__photo" src="./public/images/back.jpg" alt="Изобрадение товара">
+                            <span class="card__title">Чесалка для спины</span>
+                            <span class="card__price">290₽</span>
+                            <div class="card__reports">
+                                <div class="card__ball-reports">4.9</div>
+                                <span class="card__count-reports">100 отзывов</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rows__third-row">
+                <div class="third-row__menu">
+                        <h4>Популярные товары</h4>
+                        <div class="third-row__menu-body">
+                            <span>Ракушка морская</span>
+                            <span>Чесалка для спины</span>
+                            <span>Четки</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="rows__order-form">
+                <div class="order-form__title">
+                    <h2>Заказать сувенир</h2>
+                </div>
+                <div class="order-form__main">
+                    <div class="order-form__count">
+                        <span>Количество:</span>
+                        <input type="text">
+                    </div>
+                    <div class="order-form__city">
+                        <span>Город:</span>
+                        <select>
+                            <option>Майами</option>
+                        </select>
+                    </div>
+                    <div class="order-form__email">
+                        <span>Email:</span>
+                        <input type="text">
+                    </div>
+                    <div class="order-form__phone-number">
+                        <span>Телефон:</span>
+                        <input type="text">
+                    </div>
+                    <div class="order-form__date">
+                        <span>Дата доставки:</span>
+                        <input placeholder="дд.мм.гг" type="text">
+                    </div>
+                    <div class="order-form__buttons">
+                        <button>Сбросить заказ</button>
+                        <button>Заказать!</button>
+                    </div>
+                </div>
+            </div>
+    </main>
 </body>
 </html>
