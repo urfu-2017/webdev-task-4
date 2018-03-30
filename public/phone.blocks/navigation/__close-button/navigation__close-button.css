@@ -1,5 +1,6 @@
 .navigation__close-button
 {
+    display: block;
     background: white;
     border: white;
     position: absolute;

@@ -1,0 +1,13 @@
+@import './pad.blocks/container/container.css';
+
+@import './pad.blocks/popular-products/popular-products.css';
+@import './pad.blocks/popular-products/__title/popular-products__title.css';
+
+@import './pad.blocks/navigation/navigation.css';
+@import './pad.blocks/products-list/products-list.css';
+@import './pad.blocks/order-form/order-form.css';
+
+@import './pad.blocks/search/__input/search__input.css';
+@import './pad.blocks/search/__button/search__button.css';
+@import './pad.blocks/search/__start-button/search__start-button.css';
+
