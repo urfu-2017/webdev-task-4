@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
     integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
     crossorigin="anonymous">
+    <script src="index.js"></script>
 </head>
 <body>
     <main>
@@ -29,6 +31,7 @@
         <input class="menu-control" type="checkbox" name="menu" id="menu">
         <section class="products">
             <nav class="products__nav nav">
+                <label class="nav__control" for="menu"><i class="fas fa-times"></i></label>
                 <a class="nav__link link" href="#">Морские ракушки</a>
                 <a class="nav__link link" href="#">Сувениры из Тайланда</a>
                 <a class="nav__link link" href="#">Автомобили Тесла</a>
@@ -39,36 +42,36 @@
                 <article class="product">
                     <img class="product__image" src="./public/images/img.png" alt="img">
                     <h3 class="product__name"><a class="link" href="#">Ракушка морское дно</a></h3>
-                    <span class="product__price">290</span>
+                    <strong class="product__price">290</strong>
                     <div class="product__rewiev">
-                        <div class="rewiev-stars">4.0</div>
+                        <div class="rewiev-stars rewiev-stars_mark_good">4.0</div>
                         <div class="rewiev-count">111 отзывов</div>
                     </div>
                 </article>
                 <article class="product">
                     <img class="product__image" src="./public/images/img.png" alt="img">
                     <h3 class="product__name"><a class="link" href="#">Термокружка "Батарейка"</a></h3>
-                    <span class="product__price">404</span>
+                    <strong class="product__price">404</strong>
                     <div class="product__rewiev">
-                        <div class="rewiev-stars">4.5</div>
+                        <div class="rewiev-stars rewiev-stars_mark_very-good">4.5</div>
                         <div class="rewiev-count">290 отзывов</div>
                     </div>
                 </article>
                 <article class="product">
                     <img class="product__image" src="./public/images/img.png" alt="img">
                     <h3 class="product__name"><a class="link" href="#">Автомобиль Тесла</a></h3>
-                    <span class="product__price">359900</span>
+                    <strong class="product__price">359900</strong>
                     <div class="product__rewiev">
-                        <div class="rewiev-stars">4.5</div>
+                        <div class="rewiev-stars rewiev-stars_mark_very-good">4.5</div>
                         <div class="rewiev-count">1 отзыв</div>
                     </div>
                 </article>
                 <article class="product">
                     <img class="product__image" src="./public/images/img.png" alt="img">
                     <h3 class="product__name"><a class="link" href="#">Чесалка для спины</a></h3>
-                    <span class="product__price">195</span>
+                    <strong class="product__price">195</strong>
                     <div class="product__rewiev">
-                        <div class="rewiev-stars">4.0</div>
+                        <div class="rewiev-stars rewiev-stars_mark_good">4.0</div>
                         <div class="rewiev-count">29 отзывов</div>
                     </div>
                 </article>
