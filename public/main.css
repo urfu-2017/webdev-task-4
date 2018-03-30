@@ -3,7 +3,7 @@
 @import 'products-list.css';
 @import 'order.css';
 
-.main
+.main 
 {
     display: grid;
     grid-template-columns: 3fr 7fr 3fr;
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 768px) 
 {
-    .main
+    .main 
     {
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto 3fr 8fr;
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 576px) 
 {
-    .main
+    .main 
     {
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto 6fr;

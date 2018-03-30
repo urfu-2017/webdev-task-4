@@ -9,13 +9,13 @@
 }
 
 .search_hide,
-.search_hide-checkbox
+.search_hide-checkbox 
 {
     display: none;
 }
 
 .search__input,
-.search__button
+.search__button 
 {
     box-sizing: border-box;
     height: calc(var(--header-font-size) * 1.3);
@@ -25,14 +25,14 @@
     font-size: 2vmax;
 }
 
-.search__input
+.search__input 
 {
     flex-grow: 7;
     border-right: none !important;
     border-radius: .5vmax 0 0 .5vmax;
 }
 
-.search__button
+.search__button 
 {
     flex-grow: 1;
     border-left: none !important;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.search__button:hover
+.search__button:hover 
 {
     background: radial-gradient(var(--color-theme-dark), var(--color-theme));
 }
@@ -50,27 +50,26 @@
 .search__button:focus,
 .search__button:active,
 .search__button:focus + .search__input,
-.search__button:active + .search__input
+.search__button:active + .search__input 
 {
     border: .3vmax solid #4d90fe;
 }
 
-.search__input:focus
+.search__input:focus 
 {
     border: .3vmax solid #4d90fe !important;
 }
 
 @media screen and (max-width: 768px) 
 {
-    .search
+    .search 
     {
         display: none;
         grid-column: 2 / 4;
         grid-row: 2 / 3;
         margin: 1.3vmax 0;
     }
-
-    .search_hide
+    .search_hide 
     {
         display: block;
         grid-column: 3 / 4;
@@ -84,13 +83,11 @@
         background-size: 100%;
         cursor: pointer;
     }
-    
-    .search_hide-checkbox
+    .search_hide-checkbox 
     {
         display: none;
     }
-
-    .order__title
+    .order__title 
     {
         font-size: calc(var(--device-independet-font-size) * 2.8);
     }
@@ -98,22 +95,21 @@
 
 @media screen and (max-width: 576px) 
 {
-    .search
+    .search 
     {
         display: flex;
         grid-column: 1 / end;
+        grid-row: 2 / end;
         height: calc(var(--header-font-size) * 1.8);
         margin: 1.3vmax 5.3vmax;
     }
-
     .search__input,
-    .search__button
+    .search__button 
     {
         height: calc(var(--header-font-size) * 1.8);
         font-size: 4vw;
     }
-
-    .search_hide
+    .search_hide 
     {
         display: none;
     }
