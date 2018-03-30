@@ -11,7 +11,7 @@
 .popular__title 
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(1.5vw * 1.1);
+    font-size: calc(1.5vw * 1.2);
     font-weight: bold;
     text-align: center;
 }
@@ -45,15 +45,18 @@
 {
     .popular 
     {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         height: auto;
         margin: var(--margin-for-blocks) 0;
+        padding: 5%;
     }
     .popular__title 
     {
-        margin: 1.6vmax;
-        font-size: calc(var(--device-independet-font-size) * 1.5);
+        margin: 0 0 1.6vmax;
+        font-size: 2.4vw;
         text-align: left;
     }
     .popular__items 
@@ -64,7 +67,9 @@
     }
     .popular__item 
     {
-        font-size: calc(var(--device-independet-font-size) * 1.4);
+        flex-basis: 50%;
+        font-size: 2vw;
+        text-align: center;
     }
 }
 
@@ -72,13 +77,14 @@
 {
     .popular 
     {
+        display: block;
         grid-row: 1 / 2;
         height: auto;
         margin: var(--margin-for-blocks) 0;
     }
     .popular__title 
     {
-        font-size: calc(var(--device-independet-font-size) * 2.5);
+        font-size: calc(var(--device-independet-font-size) * 2);
     }
     .popular__items 
     {
