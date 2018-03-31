@@ -1,0 +1,36 @@
+.order
+{
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    grid-area: order;
+    width: 504px;
+    margin: 0 auto;
+}
+
+.order__cancel
+{
+    width: 120px;
+    margin-right: calc(100% - 209px);
+}
+
+.order__submit
+{
+    width: 85px;
+}
+
+@media screen and (max-width: 1110px) and (min-width: 650px)
+{
+    .order
+    {
+        width: 504px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .order
+    {
+        width: 202px;
+    }
+}

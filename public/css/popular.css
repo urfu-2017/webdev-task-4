@@ -1,0 +1,38 @@
+.popular
+{
+    padding: 20px;
+    background-color: #fff;
+    width: 150px;
+    border: 1px solid #e9e9e9;
+    grid-area: popular;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1110px) and (min-width: 650px)
+{
+    .popular
+    {
+        width: 564px;
+    }
+
+    .popular .list
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .popular .list__item
+    {
+        flex-basis: 30%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .popular
+    {
+        width: 262px;
+    }
+}

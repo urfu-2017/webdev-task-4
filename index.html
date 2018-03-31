@@ -2,38 +2,68 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header class="header">
         <span class="header__caption">Билли.Маркет</span>
+        <div class="header__menu"></div>
+        <div class="header__loupe"></div>
         <input class="header__input" type="text" name="search">
         <button class="header__button">Поиск</button>
     </header>
     <nav class="navigation">
-        <ul>
-            <li>Морские ракушки</li>
-            <li>Сувениры из тайланда</li>
-            <li>Автомобили Тесла</li>
-            <li>Марки из Голландии</li>
+        <ul class="list">
+            <li class="list__item"><a href="#">Морские ракушки</a></li>
+            <li class="list__item"><a href="#">Сувениры из тайланда</a></li>
+            <li class="list__item"><a href="#">Автомобили Тесла</a></li>
+            <li class="list__item"><a href="#">Марки из Голландии</a></li>
         </ul>
+        <a href="#" class="navigation__order">Заказать сувенир</a>
+        <div class="navigation__close"></div>
     </nav>
     <div class="cards">
         <div class="card">
-
+            <img class="card__image" src="public/images/conch.png" alt="Ракушка">
+            <a class="card__name" href="#">Ракушка &laquo;Морское дно&raquo;</a>
+            <span class="card__price">290 &#8381;</span>
+            <span class="card__mark card__mark_bg-color_4">4.0</span>
+            <span class="card__feedback">111 отзывов</span>
+        </div>
+        <div class="card">
+            <img class="card__image" src="public/images/cup.png" alt="Кружка">
+            <a class="card__name" href="#">Термокружка &laquo;Батарейка&raquo;</a>
+            <span class="card__price">290 &#8381;</span>
+            <span class="card__mark card__mark_bg-color_4half">4.5</span>
+            <span class="card__feedback">290 отзывов</span>
+        </div>
+        <div class="card">
+            <img class="card__image" src="public/images/tesla.png" alt="Тесла">
+            <a class="card__name" href="#">Автомобиль &laquo;Тесла&raquo;</a>
+            <span class="card__price">359 900 &#8381;</span>
+            <span class="card__mark card__mark_bg-color_4half">4.5</span>
+            <span class="card__feedback">1 отзывов</span>
+        </div>
+        <div class="card">
+            <img class="card__image" src="public/images/comb.png" alt="Кружка">
+            <a class="card__name" href="#">Чесалка для спины</a>
+            <span class="card__price">195 &#8381;</span>
+            <span class="card__mark card__mark_bg-color_4">4.0</span>
+            <span class="card__feedback">290 отзывов</span>
         </div>
     </div>
     <div class="popular">
-        <h3>Популярные товары</h3>
-        <ul>
-            <li>Ракушка морская</li>
-            <li>Чесалка для спины</li>
-            <li>Чётки</li>
+        <h4 class="popular__caption">Популярные товары</h4>
+        <ul class="list">
+            <li class="list__item"><a href="#">Ракушка морская</a></li>
+            <li class="list__item"><a href="#">Чесалка для спины</a></li>
+            <li class="list__item"><a href="#">Чётки</a></li>
         </ul>
     </div>
     <div class="order">
-        <h2>Заказать сувенир</h2>
+        <h1 class="order__caption">Заказать сувенир</h1>
         <label class="order-info">
             <span class="order-info__label">Количество</span>
             <input class="order-info__input" type="number" name="amount">
@@ -54,6 +84,9 @@
             <span class="order-info__label">Дата</span>
             <input class="order-info__input" type="date" name="date">
         </label>
+        <button class="order__cancel">Сбросить заказ</button>
+        <button class="order__submit">Заказать!</button>
     </div>
+    <script src="public/js/generic.js"></script>
 </body>
 </html>

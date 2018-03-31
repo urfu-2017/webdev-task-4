@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test",
+    "stylus": "node_modules/.bin/stylus -o public/css/ stylus/",
     "lint": "eslint . && stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
   },
   "dependencies": {
@@ -13,5 +14,6 @@
     "mocha": "3.1.0",
     "stylelint": "7.3.1",
     "stylelint-config-hrundel": "1.0.3"
-  }
+  },
+  "devDependencies": {}
 }

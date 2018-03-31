@@ -1,0 +1,98 @@
+.card
+{
+    width: 220px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+}
+
+.card__name,
+.card__price
+{
+    display: block;
+    margin: 6px 0;
+}
+
+.card__price
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card__image
+{
+    max-width: 220px;
+    height: 220px;
+}
+
+.card__mark
+{
+    padding: 0 13px 0 5px;
+    color: #fff;
+    line-height: 22px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card__mark::after,
+.card__mark::before
+{
+    content: '';
+    height: 21px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+}
+
+.card__mark::before
+{
+    top: 0;
+    right: 0;
+    transform-origin: left top;
+    transform: rotate(-33deg);
+}
+
+.card__mark::after
+{
+    top: 0;
+    right: 0;
+    transform-origin: left bottom;
+    transform: rotate(33deg);
+}
+
+.card__feedback
+{
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.card__mark_bg-color_4
+{
+    background-color: rgb(140, 181, 18);
+}
+
+.card__mark_bg-color_4half
+{
+    background-color: rgb(82, 159, 6);
+}
+
+.cards
+{
+    grid-area: cards;
+    display: flex;
+    flex-wrap: wrap;
+    width: 604px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 650px)
+{
+    .cards
+    {
+        width: 302px;
+    }
+}
