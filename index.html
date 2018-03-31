@@ -98,7 +98,7 @@
             <div class="order__form">
                 <h2 class="order__form_title">Заказать сувенир</h2>
                 <form class="order__form__body">
-                    <p>Количество <input title="count" type="text"></p>
+                    <p>Количество <input title="count" type="number"></p>
                     <p>Город
                         <select title="city">
                             <option selected>Екатеринбург</option>
@@ -109,6 +109,10 @@
                     <p>Email <input type="email" placeholder="Email"></p>
                     <p>Телефон <input type="tel" placeholder="Номер телефона"></p>
                     <p>Дата доставки <input title="date" type="date"></p>
+                    <div class="order__form__body__controls">
+                        <button type="reset">Очистить</button>
+                        <button type="submit">Заказать</button>
+                    </div>
                 </form>
             </div>
         </footer>

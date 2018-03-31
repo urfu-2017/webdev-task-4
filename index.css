@@ -274,6 +274,15 @@ select
     padding: 10px;
 }
 
+.order__form__body__controls
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px dashed #e5e5e5;
+}
+
 @media only
     screen and (max-device-width: 1024px),
     screen and (max-width: 1024px)
