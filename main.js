@@ -25,3 +25,19 @@ categoriesClose.addEventListener('click', () => {
     categories.classList.remove('categories--open');
     page.classList.remove('page--fixed');
 });
+
+let swipeStart = 0;
+
+page.addEventListener('touchstart', event => {
+    swipeStart = event.changedTouches[0].screenX;
+}, false);
+
+page.addEventListener('touchend', event => {
+    const swipeEnd = event.changedTouches[0].screenX;
+
+    if (swipeStart - swipeEnd > 100) {
+        categories.classList.add('categories--open');
+        page.classList.add('page--fixed');
+        swipeStart = 0;
+    }
+}, false);

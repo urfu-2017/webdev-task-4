@@ -109,19 +109,18 @@
 .categories {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -250px;
 
     display: flex;
     flex-direction: column;
     width: 250px;
     height: 100%;
 
-    transform: translateX(250px);
     transition: all 300ms ease-in-out;
 }
 
 .categories--open {
-    transform: translateX(0);
+    right: 0;
 }
 
 .categories__close {
@@ -268,7 +267,6 @@
         flex-flow: row wrap;
         justify-content: center;
         text-align: center;
-        transform: translateX(0);
     }
 
     .categories__close {
