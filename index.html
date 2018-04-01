@@ -2,9 +2,104 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script defer type="text/javascript" src="model.js"></script>
 </head>
 <body>
+    <input type="checkbox" id="sandwich" class="categories_ticker">
+    <label class="categories_button" for="sandwich">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+    </label>
+    <main>
+        <header class="header">
+            <span class="header__text">Билли.Маркет</span>
+            <div class="searchlabel" onclick="openSearch()"></div>
+            <div class="header__searchbar" id="header__searchbar">
+                <input type="text" class="header__inputtext" id="header__inputtext" onblur="hiddenSearch()">
+                <button class="header__button">Найти</button>
+            </div>
+        </header>
+        <div class="mainPart">
+            <div class="categories">
+                <a href="">Морские ракушки</a>
+                <a href="">Сувениры из тайланда</a>
+                <a href="">Автомобили Тесла</a>
+                <a href="">Марки из разных стран</a>
+                <a href="">Заказать сувенир</a>
+            </div>
+            <section class="items">
+                <div class="item">
+                    <img  class="item__image" src="images/shell.png" alt="shell">
+                    <a href="" class="item__name">Ракушка "Морское дно"</a>
+                    <span class="item__price">290 P</span>
+                    <span class="item__info">
+                        <span class="item__rating middle">4.0</span>
+                        <span class="item__review">111 отзывов</span>
+                    </span>
+                </div>
+                <div class="item">
+                    <img  class="item__image" src="images/tesla.png" alt="tesla">
+                    <a href="" class="item__name">Автомобиль "Тесла"</a>
+                    <span class="item__price">359 900 P</span>
+                    <span class="item__info">
+                        <span class="item__rating middle">4.5</span>
+                        <span class="item__review">1 отзыв</span>
+                    </span>
+                </div>
+                <div class="item">
+                    <img  class="item__image" src="images/headphones.png" alt="headphones">
+                    <a href="" class="item__name">Наушники "Skullcandy"</a>
+                    <span class="item__price">3 490 P</span>
+                    <span class="item__info">
+                        <span class="item__rating low">3.2</span>
+                        <span class="item__review">53 отзыва</span>
+                    </span>
+                </div>
+                <div class="item">
+                    <img  class="item__image" src="images/miband.png" alt="miband">
+                    <a href="" class="item__name">Фитнес-браслет "Xiaomi mi band 2"</a>
+                    <span class="item__price">1800 P</span>
+                    <span class="item__info">
+                        <span class="item__rating hight">5.0</span>
+                        <span class="item__review">1523 отзывов</span>
+                    </span>
+                </div>
+            </section>
+            <div class="popular">
+                <header>
+                    Популярные товары
+                </header>
+                <a href="">Ракушка морская</a>
+                <a href="">Mi band 2</a>
+                <a href="">Четки</a>
+            </div>
+        </div>
+        <footer>
+            <div class="order">
+                <h1 class="order__head">Заказать сувенир</h1>
+                <span class="order__number__text">Количество:</span>
+                <input class="order__number__input" type="text">
+                <span class="order__city__text">Город</span>
+                <select name="city" class="order__city__select" size="1">
+                    <option value="first">Екатеринбург</option>
+                    <option value="second">Москва</option>
+                    <option value="third">Уфа</option>
+                    <option value="fourth">Новосибирск</option>
+                </select>
+                <span class="order__email__text">Email</span>
+                <input class="order__email__input" type="email">
+                <span class="order__phone__text">Телефон</span>
+                <input class="order__phone__input" type="tel">
+                <span class="order__date__text">Дата доставки</span>
+                <input class="order__date__input" type="date">
+                <button class="order__button_reset">Сбросить заказ</button>
+                <button class="order__button_post">Заказать!</button>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
