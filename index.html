@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Задача «Тим слишком занят»</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="js/mobile.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo">Билли.Маркет</div>
+            <div class="header__menu-btn">
+                <span class="fas fa-bars header__menu-btn"></span>
+            </div>
+            <div class="search">
+                <input type="text" class="search__input">
+                <button class="search__button">Найти</button>
+                <div class="search__button_touch">
+                    <span class="fas fa-search"></span>
+                </div>
+            </div>
+        </header>
+        <div class="page">
+            <main class="goods">
+                <article class="good" id="shell">
+                    <a href="#">
+                        <figure class="good-figure">
+                            <img src="images/shell.png" alt="shell" class="good-figure__img">
+
+                            <figcaption class="good-figure__title">Ракушка морское дно</figcaption>
+                        </figure>
+                    </a> <span class="good__price">290 &#x20bd;</span>
+                    <div class="rating">
+                        <span class="rating__mark">4.5 	&#x2605;</span>
+                        <span class="rating__reviews">35 отзывов</span>
+                    </div>
+                </article>
+                <article class="good" id="kremlin">
+                    <a href="#">
+                        <figure class="good-figure">
+                            <img src="images/kremlin.jpg" alt="shell" class="good-figure__img">
+
+                            <figcaption class="good-figure__title">Кремль</figcaption>
+                        </figure>
+                    </a>
+                    <span class="good__price">3500 &#x20bd;</span>
+                    <div class="rating">
+                        <span class="rating__mark">4.3 	&#x2605;</span>
+                        <span class="rating__reviews">49 отзывов</span>
+                    </div>
+                </article>
+                <article class="good">
+                    <a href="#">
+                        <figure class="good-figure">
+                            <img src="images/car.jpg" alt="shell" class="good-figure__img">
+                            <figcaption class="good-figure__title">Автомобиль &laquo;Тесла&raquo;
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <span class="good__price">15000 &#x20bd;</span>
+                    <div class="rating">
+                        <span class="rating__mark">4.8 	&#x2605;</span>
+                        <span class="rating__reviews">26 отзывов</span>
+                    </div>
+                </article>
+                <article class="good">
+                    <a href="#">
+                        <figure class="good-figure">
+                            <img src="images/katana.jpg" alt="shell" class="good-figure__img">
+
+                            <figcaption class="good-figure__title">Катана</figcaption>
+                        </figure>
+                    </a>
+                    <span class="good__price">240 &#x20bd;</span>
+                    <div class="rating">
+                        <span class="rating__mark">4.1 &#x2605;</span>
+                        <span class="rating__reviews">8 отзывов</span>
+                    </div>
+                </article>
+            </main>
+            <nav class="nav">
+                <span class="nav__close">&times;</span>
+                <a href="#shell" class="nav__link">Морские ракушки</a>
+                <a href="#kremlin" class="nav__link">Сувениры из Москвы</a>
+                <a href="" class="nav__link">Автомобили</a>
+                <a href="" class="nav__link">Мечи</a>
+                <a href="#order" class="nav__link">Заказать сувенир</a>
+            </nav>
+            <aside class="popular">
+                <h2 class="popular__title">Популярные товары</h2>
+                <a href="#" class="popular__link">Ракушка морская</a>
+                <a href="#" class="popular__link">Кремль</a>
+            </aside>
+            <div class="order" id="order">
+                <h2 class="order__caption">Заказать сувенир</h2>
+                <form class="order-form">
+                    <div class="form-row">
+                        <label for="quantity" class="order-form__label">Количество</label>
+                        <input type="text" class="order-form__input" id="quantity">
+                    </div>
+                    <div class="form-row">
+                        <label for="city" class="order-form__label">Город</label>
+                        <select name="city" id="city" class="order-form__input">
+                            <option value="Yekaterinburg">Екатеринбург</option>
+                            <option value="Moscow">Москва</option>
+                            <option value="London">Лондон</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="order-form__label">Email</label>
+                        <input class="order-form__input" type="email" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="tel" class="order-form__label">Телефон</label>
+                        <input class="order-form__input" type="tel" id="tel">
+                    </div>
+                    <div class="form-row">
+                        <label for="date" class="order-form__label">Дата доставки</label>
+                        <input class="order-form__input" type="date" id="date">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="order-form__submit">
+                        <input type="reset" class="order-form__reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

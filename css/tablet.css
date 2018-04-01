@@ -1,0 +1,54 @@
+@media (max-width: 768px) and (min-width: 500px)
+{
+    .page
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'nav' 'goods' 'popular' 'order';
+    }
+
+    .search__input,
+    .search__button
+    {
+        display: none;
+    }
+
+    .search__button_touch
+    {
+        display: block;
+        margin-left: 80%;
+    }
+
+    .search__button_touch_hidden
+    {
+        display: none;
+    }
+
+    .search__input_hidden
+    {
+        display: none;
+    }
+
+    .search__input_visible
+    {
+        display: block;
+    }
+
+    .search
+    {
+        width: 60%;
+    }
+
+    .nav
+    {
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .nav__link
+    {
+        flex-basis: 50%;
+    }
+}

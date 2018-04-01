@@ -1,0 +1,57 @@
+@media (max-width: 500px)
+{
+    .good
+    {
+        flex-basis: 100%;
+    }
+
+    .header
+    {
+        flex-wrap: wrap;
+    }
+
+    .search
+    {
+        width: 100%;
+    }
+
+    .page
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'popular' 'goods' 'order';
+        padding-top: 100px;
+    }
+
+    .header__menu-btn
+    {
+        display: block;
+    }
+
+    .nav
+    {
+        display: none;
+    }
+
+    .nav_mobile
+    {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        margin: 0;
+    }
+
+    .nav__close
+    {
+        display: block;
+    }
+
+    .page_fixed
+    {
+        height: 100%;
+        overflow: hidden;
+    }
+}
