@@ -53,3 +53,11 @@
         padding: 5px 15px;
     }
 }
+
+@media(max-width: 550px)
+{
+    .order-form__input
+    {
+        width: 100px;
+    }
+}

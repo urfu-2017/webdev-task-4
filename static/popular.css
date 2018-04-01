@@ -34,3 +34,17 @@
         padding: 10px;
     }
 }
+
+@media(max-width: 550px)
+{
+    .popular__items
+    {
+        flex-direction: column;
+        margin: 5px 15px;
+    }
+
+    .popular
+    {
+        padding: 10px;
+    }
+}

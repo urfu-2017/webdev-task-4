@@ -59,9 +59,9 @@
 {
     content: '';
     position: absolute;
-    right: -18px;
-    border: 9px solid transparent;
-    border-left: 9px solid green;
+    right: -16px;
+    border: 8px solid transparent;
+    border-left: 8px solid seagreen;
 }
 
 @media(max-width: 850px)
@@ -77,5 +77,14 @@
         padding: 0;
         width: 100%;
         max-width: 150px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    .good
+    {
+        padding: 10px;
+        width: calc(100% - 22px);
     }
 }

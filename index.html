@@ -12,18 +12,26 @@
     <script src="./static/js/index.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
+<body class="body__mobile-menu-hide">
     <main>
         <header class="header">
             <h2 class="header__title">Билли.Маркет</h2>
-            <div class="search">
-                <input type="checkbox" class="search__show-button" id="search__show-button" checked>
-                <input class="search__input" id="search__input">
-                <button class="search__button">Найти</button>
-                <label class="search__loupe" for="search__show-button">🔎</label>
+            <img class="header__menu-button" src="./static/img/menu.png" alt="menu" id="header__menu-button">
+            <div class="search-desktop">
+                <input class="search-desktop__input" id="search-desktop__input">
+                <button class="search-desktop__button">Найти</button>
+            </div>
+            <div class="search-tablet">
+                <input type="checkbox" class="search-tablet__show" id="search-tablet__show" checked>
+                <input class="search-tablet__input" id="search-tablet__input">
+                <label class="search-tablet__loupe" for="search-tablet__show">🔎</label>
+            </div>
+            <div class="search-mobile">
+                <input class="search-mobile__input" id="search-mobile__input" placeholder="Искать товары">
             </div>
         </header>
-        <article class="menu">
+        <article class="menu menu__mobile-menu-hide" id="menu">
+            <button class="menu__mobile-close" id="menu__mobile-close">Х</button>
             <a class="menu__item" href="#">Морские ракушки</a>
             <a class="menu__item" href="#">Сувениры из Тайланда</a>
             <a class="menu__item" href="#">Автомобили Тесла</a>
@@ -41,8 +49,8 @@
         <article class="content">
             <div class="good">
                 <figure class="good__picture">
-                    <img class="good__image" src="./static/img/dno.png" alt="DNIWE">
-                    <figcaption class="good__name"><a href="#">Ракушка "Морское дно"</a></figcaption>
+                    <img class="good__image" src="./static/img/dno.png" alt="Ракушка морская">
+                    <figcaption class="good__name"><a href="#">Ракушка морская</a></figcaption>
                 </figure>
                 <span class="good__price">290</span>
                 <div class="good__info">
@@ -52,7 +60,7 @@
             </div>
             <div class="good">
                 <figure class="good__picture">
-                    <img class="good__image" src="./static/img/cup.png" alt="cup">
+                    <img class="good__image" src="./static/img/cup.png" alt="Термокружка">
                     <figcaption class="good__name"><a href="#">Термокружка</a></figcaption>
                 </figure>
                 <span class="good__price">404</span>
@@ -63,7 +71,7 @@
             </div>
             <div class="good">
                 <figure class="good__picture">
-                    <img class="good__image" src="./static/img/car.png" alt="car">
+                    <img class="good__image" src="./static/img/car.png" alt="Автомобиль 'Тесла'">
                     <figcaption class="good__name"><a href="#">Автомобиль "Тесла"</a></figcaption>
                 </figure>
                 <span class="good__price">999 999</span>
@@ -74,7 +82,7 @@
             </div>
             <div class="good">
                 <figure class="good__picture">
-                    <img class="good__image" src="./static/img/back.png" alt="back">
+                    <img class="good__image" src="./static/img/back.png" alt="Чесалка для спины">
                     <figcaption class="good__name"><a href="#">Чесалка для спины</a></figcaption>
                 </figure>
                 <span class="good__price">195</span>
