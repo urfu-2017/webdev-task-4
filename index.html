@@ -9,14 +9,14 @@
     </head>
     <body class="container">
         <header class="header">
-            <h1 class="header_title">Билли.Маркет</h1>
+            <h1 class="header__title">Билли.Маркет</h1>
             <form onsubmit="alert('Tim, what are you doing, motherfucker?')" class="header__search">
-                <input class="header__search_input" title="search" type="search">
-                <div class="header__search_triangle"></div>
-                <button class="header__search_button" type="submit">Найти</button>
+                <input class="header__search__input searchInput" title="search" type="search">
+                <div class="header__search__triangle"></div>
+                <button class="header__search__button" type="submit">Найти</button>
             </form>
-            <span class="header__search_icon-tablet"></span>
-            <span class="header__search_icon-nav"></span>
+            <span class="header__search__icon-tablet searchTabletIcon"></span>
+            <span class="header__search__icon-nav navigationIcon"></span>
         </header>
         <main class="content">
             <nav class="content__block box navigation">
@@ -32,54 +32,54 @@
             <div class="content__block">
                 <div class="content__block__grid">
                     <article class="product">
-                        <img class="product_img"
+                        <img class="product__img"
                              src="public/rakovina.jpg"
                              alt="Ракушка Морское дно">
-                        <div class="product__info">
-                            <h3><a href="#" class="product_info_name">Ракушка "Морское дно"</a></h3>
-                            <p class="product__info_price">290 ₽</p>
-                            <div class="product__info__rating">
-                                <span class="product__info__rating_value">4.0</span>
-                                <span class="product__info__rating_reviews">111 отзывов</span>
+                        <div class="product__body">
+                            <h3><a href="#" class="product_body__link">Ракушка "Морское дно"</a></h3>
+                            <p class="product__body__price">290 ₽</p>
+                            <div class="product__rating">
+                                <span class="product__rating__value">4.0</span>
+                                <span class="product__rating__reviews">111 отзывов</span>
                             </div>
                         </div>
                     </article>
                     <article class="product">
-                        <img class="product_img"
+                        <img class="product__img"
                              src="public/kruzhka.jpg"
                              alt="Термокружкус Батарейка">
-                        <div class="product__info">
-                            <h3><a href="#" class="product_info_name">Термокружкус "Батарейка"</a></h3>
-                            <span class="product__info_price">404 ₽</span>
-                            <div class="product__info__rating">
-                                <span class="product__info__rating_value">4.5</span>
-                                <span class="product__info__rating_reviews">290 отзывов</span>
+                        <div class="product__body">
+                            <h3><a href="#" class="product_body__link">Термокружкус "Батарейка"</a></h3>
+                            <span class="product__body__price">404 ₽</span>
+                            <div class="product__rating">
+                                <span class="product__rating__value">4.5</span>
+                                <span class="product__rating__reviews">290 отзывов</span>
                             </div>
                         </div>
                     </article>
                     <article class="product">
-                        <img class="product_img"
+                        <img class="product__img"
                              src="public/tesla.jpg"
                              alt="Автомобиль Тесла">
-                        <div class="product__info">
-                            <h3><a href="#" class="product_info_name">Автомобиль "Тесла"</a></h3>
-                            <span class="product__info_price">359 900 ₽</span>
-                            <div class="product__info__rating">
-                                <span class="product__info__rating_value">4.5</span>
-                                <span class="product__info__rating_reviews">1 отзыв</span>
+                        <div class="product__body">
+                            <h3><a href="#" class="product_body__link">Автомобиль "Тесла"</a></h3>
+                            <span class="product__body__price">359 900 ₽</span>
+                            <div class="product__rating">
+                                <span class="product__rating__value">4.5</span>
+                                <span class="product__rating__reviews">1 отзыв</span>
                             </div>
                         </div>
                     </article>
                     <article class="product">
-                        <img class="product_img"
+                        <img class="product__img"
                              src="public/palka.jpg"
                              alt="Чесалка для спины">
-                        <div class="product__info">
-                            <h3><a href="#" class="product_info_name">Чесалка для спины</a></h3>
-                            <span class="product__info_price">195 ₽</span>
-                            <div class="product__info__rating">
-                                <span class="product__info__rating_value">4.0</span>
-                                <span class="product__info__rating_reviews">29 отзывов</span>
+                        <div class="product__body">
+                            <h3><a href="#" class="product_body__link">Чесалка для спины</a></h3>
+                            <span class="product__body__price">195 ₽</span>
+                            <div class="product__rating">
+                                <span class="product__rating__value">4.0</span>
+                                <span class="product__rating__reviews">29 отзывов</span>
                             </div>
                         </div>
                     </article>
@@ -87,7 +87,7 @@
             </div>
 
             <aside class="content__block box trending">
-                <h2 class="trending_title">Популярные товары</h2>
+                <h2 class="trending__title">Популярные товары</h2>
                 <ul class="trending__list">
                     <li><a href="#">Ракушка морская</a></li>
                     <li><a href="#">Чесалка для спины</a></li>
@@ -95,11 +95,11 @@
                 </ul>
             </aside>
         </main>
-        <footer class="order">
-            <div class="order__form">
-                <h2 class="order__form_title">Заказать сувенир</h2>
-                <form class="order__form__body">
-                    <p>Количество <input title="count" type="number"></p>
+        <footer class="footer">
+            <div class="order-form">
+                <h2 class="order-form__title">Заказать сувенир</h2>
+                <form class="order-form__body">
+                    <p>Количество <input title="count" type="number" min="1"></p>
                     <p>Город
                         <select title="city">
                             <option selected>Екатеринбург</option>
@@ -110,7 +110,7 @@
                     <p>Email <input type="email" placeholder="Email"></p>
                     <p>Телефон <input type="tel" placeholder="Номер телефона"></p>
                     <p>Дата доставки <input title="date" type="date"></p>
-                    <div class="order__form__body__controls">
+                    <div class="order-form__controls">
                         <button type="reset">Очистить</button>
                         <button type="submit">Заказать</button>
                     </div>

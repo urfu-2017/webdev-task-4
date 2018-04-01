@@ -69,7 +69,7 @@ select
     background-color: white;
 }
 
-.header_title
+.header__title
 {
     flex: 1;
     font-family: Arial Narrow, sans-serif;
@@ -79,7 +79,7 @@ select
     margin: 0;
 }
 
-.header_title:first-letter
+.header__title:first-letter
 {
     color: red;
 }
@@ -91,19 +91,19 @@ select
     align-items: center;
 }
 
-.header__search_input
+.header__search__input
 {
     width: 100%;
     padding: 15px;
     font-size: 14pt;
 }
 
-.header__search_input:focus
+.header__search__input:focus
 {
     background-color: #fff;
 }
 
-.header__search_button
+.header__search__button
 {
     outline: none;
     border-width: 1px 1px 1px 0;
@@ -114,7 +114,7 @@ select
     font-size: 10pt;
 }
 
-.header__search_button:active
+.header__search__button:active
 {
     border-top: none;
     padding-top: 4px;
@@ -122,7 +122,7 @@ select
     box-shadow: inset 2px 2px 4px #ededed;
 }
 
-.header__search_icon-tablet
+.header__search__icon-tablet
 {
     display: none;
     width: 40px;
@@ -132,7 +132,7 @@ select
     background-position-y: 50%;
 }
 
-.header__search_icon-tablet img
+.header__search__icon-tablet img
 {
     width: 40px;
     height: 40px;
@@ -156,7 +156,7 @@ select
     margin: 10px;
 }
 
-.trending_title
+.trending__title
 {
     font-weight: bold;
     padding: 0 0 10px;
@@ -186,32 +186,32 @@ select
     border-width: 1px 0 0 1px;
 }
 
-.product_img
+.product__img
 {
     width: 100%;
     height: 60%;
     object-fit: contain;
 }
 
-.product__info
+.product__body
 {
     padding: 20px;
 }
 
-.product_info_name
+.product_body__link
 {
     font-size: 16pt;
     font-weight: 200;
     line-height: 1.4;
 }
 
-.product__info_price
+.product__body__price
 {
     font-size: 14pt;
     font-weight: bold;
 }
 
-.product__info__rating_value
+.product__rating__value
 {
     display: inline-block;
     position: relative;
@@ -220,7 +220,7 @@ select
     padding: 0 10px;
 }
 
-.product__info__rating_value:after
+.product__rating__value:after
 {
     content: '';
     border-width: 12px 0 12px 5px;
@@ -232,18 +232,18 @@ select
     bottom: 0;
 }
 
-.product__info__rating_reviews
+.product__rating__reviews
 {
     color: #969696;
     margin-left: 10px;
 }
 
-.order
+.footer
 {
     background-color: white;
 }
 
-.order__form
+.order-form
 {
     width: 44%;
     box-sizing: border-box;
@@ -251,13 +251,13 @@ select
     padding: 20px;
 }
 
-.order__form_title
+.order-form__title
 {
     font-size: 16pt;
     font-weight: 200;
 }
 
-.order__form__body p
+.order-form__body p
 {
     display: flex;
     justify-content: space-between;
@@ -265,8 +265,8 @@ select
     margin: 8px 0;
 }
 
-.order__form__body input,
-.order__form__body select
+.order-form__body input,
+.order-form__body select
 {
     width: 50%;
     box-sizing: border-box;
@@ -274,7 +274,7 @@ select
     padding: 10px;
 }
 
-.order__form__body__controls
+.order-form__controls
 {
     display: flex;
     justify-content: space-between;
@@ -294,18 +294,18 @@ select
         width: 100%;
     }
 
-    .header__search_icon-tablet
+    .header__search__icon-tablet
     {
         display: inline-flex;
         align-items: center;
     }
 
-    .header__search_button
+    .header__search__button
     {
         display: none;
     }
 
-    .header__search_input
+    .header__search__input
     {
         display: none;
         margin-right: 15px;
@@ -334,7 +334,7 @@ select
         flex-wrap: wrap;
     }
 
-    .order__form
+    .order-form
     {
         width: 100%;
     }
@@ -368,19 +368,19 @@ select
         justify-content: space-between;
     }
 
-    .header__search_icon-tablet
+    .header__search__icon-tablet
     {
         display: none;
     }
 
-    .header__search_input
+    .header__search__input
     {
         display: block;
         margin: 0;
         border: 4px solid #fdde3e;
     }
 
-    .header__search_triangle
+    .header__search__triangle
     {
         width: 0;
         height: 0;
@@ -389,7 +389,7 @@ select
         border-color: transparent transparent transparent #fdde3d;
     }
 
-    .header__search_icon-nav
+    .header__search__icon-nav
     {
         position: absolute;
         top: 20px;
@@ -406,13 +406,14 @@ select
     .navigation
     {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         margin: 0;
         text-align: left;
         box-shadow: 0 0 0 1000px #0000005e;
+        z-index: 1;
     }
 
     .navigation__list
