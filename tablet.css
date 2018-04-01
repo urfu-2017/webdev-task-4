@@ -33,7 +33,8 @@
     border-bottom: 2px solid transparent;
 }
 
-.header-searchbar-input:focus
+.header-searchbar-input:focus,
+.header-searchbar-input:valid
 {
     border-bottom: 2px solid #f4e946;
     outline: none;

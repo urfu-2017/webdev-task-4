@@ -45,7 +45,8 @@ p
     width: calc(100% - 200px);
 }
 
-.bread
+.bread,
+.nav-close-btn
 {
     display: none;
 }
@@ -236,4 +237,9 @@ p
 .header-searchbar-input::placeholder
 {
     visibility: hidden;
+}
+
+.display
+{
+    visibility: visible !important;
 }

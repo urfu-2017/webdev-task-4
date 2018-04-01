@@ -18,7 +18,6 @@
 }
 
 .header,
-.nav,
 .nav-popular,
 .items,
 .order-form,
@@ -26,11 +25,6 @@
 {
     border-left: 0;
     border-right: 0;
-}
-
-.nav
-{
-    display: none;
 }
 
 .bread
@@ -68,4 +62,24 @@
 .header-searchbar-input::placeholder
 {
     visibility: visible;
+}
+
+.nav
+{
+    position: fixed;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    top: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    visibility: hidden;
+}
+
+.nav-close-btn
+{
+    display: initial;
+    float: right;
+    cursor: pointer;
 }
