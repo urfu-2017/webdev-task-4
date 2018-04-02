@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+
+<body class="page">
+    <header class="header page__header">
+        <div class="container header__container">
+            <h1 class="header__title">Билли.Маркет</h1>
+            <span class="header__trigger menu-trigger">Hamburger</span>
+            <span class="header__trigger search-trigger">Search</span>
+            <form class="search-form header__search-form">
+                <input id="search" type="search" class="search-form__input" placeholder="Искать товары">
+                <button class="search-form__button">Найти</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="container content page__content">
+        <nav class="card categories content__categories">
+            <a href="#" class="categories__close">&#x2a2f;</a>
+            <a href="#" class="categories__link link">Морские ракушки</a>
+            <a href="#" class="categories__link link">Сувениры из Тайланда</a>
+            <a href="#" class="categories__link link">Автомобили Тесла</a>
+            <a href="#" class="categories__link link">Марки из разных стран</a>
+            <a href="#" class="categories__link link">Заказать сувенир</a>
+        </nav>
+
+        <nav class="card fire-goods content__fire-goods">
+            <h3 class="fire-goods__title">Популярные товары</h3>
+            <a href="#" class="fire-goods__link link">Ракушка морская</a>
+            <a href="#" class="fire-goods__link link">Чесалка для спины</a>
+            <a href="#" class="fire-goods__link link">Чётки</a>
+        </nav>
+
+        <section class="content__products">
+
+            <article class="product">
+                <div>
+                    <img
+                        class="product__thumb"
+                        src="./images/seashell.png"
+                        alt=""
+                    >
+                    <h3 class="product__name "><a class="link" href="#">Ракушка "Морское дно"</a></h3>
+                    <span class="product__price">290Р</span>
+                    <span class="product__rating">4.0</span>
+                    <span class="product__responses">111 отзывов</span>
+                </div>
+            </article>
+
+            <article class="product">
+                <div>
+                    <img class="product__thumb" src="./images/img8277_37601_big.jpg" alt="">
+                    <h3 class="product__name "><a class="link" href="#">Коляска "Рефакторинг"</a></h3>
+                    <span class="product__price">18000Р</span>
+                    <span class="product__rating">3.0</span>
+                    <span class="product__responses">13 отзывов</span>
+                </div>
+            </article>
+
+            <article class="product">
+                <div>
+                    <img
+                        class="product__thumb"
+                        src="./images/big_ca9390e7-c4ec-4eab-b68b-10527cc14e1a.jpg"
+                        alt=""
+                    >
+                    <h3 class="product__name "><a class="link" href="#">Велосипед "Весёлый код"</a></h3>
+                    <span class="product__price">29000Р</span>
+                    <span class="product__rating">5.0</span>
+                    <span class="product__responses">12313 отзывов</span>
+                </div>
+            </article>
+
+            <article class="product">
+                <div>
+                    <img class="product__thumb" src="./images/809c982b18898eda8127478b74dec9fe.jpg" alt="">
+                    <h3 class="product__name "><a class="link" href="#">Костыли "И так сойдёт"</a></h3>
+                    <span class="product__price">Бесплатно</span>
+                    <span class="product__rating">5.0</span>
+                    <span class="product__responses">1 отзыв</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="card content__order-form">
+            <h3 class="order-form__title">Заказать сувенир</h3>
+            <form action="#" class="order-form">
+                <label class="order-form__field">
+                    <span class="order-form__field-label">Количество:</span>
+                    <input class="order-form__field-input" type="number">
+                </label>
+
+                <label class="order-form__field">
+                    <span class="order-form__field-label">Город:</span>
+                    <select class="order-form__field-input">
+                        <option value="none" selected disabled>-</option>
+                        <option value="ekb">Екатеринбург</option>
+                        <option value="msk">Москва</option>
+                    </select>
+                </label>
+
+                <label class="order-form__field">
+                    <span class="order-form__field-label">Email:</span>
+                    <input class="order-form__field-input" type="email" placeholder="Email">
+                </label>
+
+                <label class="order-form__field">
+                    <span class="order-form__field-label">Телефон:</span>
+                    <input class="order-form__field-input" type="tel" placeholder="Номер телефона">
+                </label>
+
+                <label class="order-form__field">
+                    <span class="order-form__field-label">Дата доставки:</span>
+                    <input class="order-form__field-input" type="date">
+                </label>
+
+                <div class="order-form__actions">
+                    <button type="reset" class="order-form__action">Сбросить заказ</button>
+                    <button class="order-form__action">Заказать!</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="./main.js"></script>
 </body>
+
 </html>
