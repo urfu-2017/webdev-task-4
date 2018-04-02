@@ -2,8 +2,67 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>Задача «Тим слишком занят»</title>
         <link rel="stylesheet" href="./index.css">
+        <script>
+          window.onload = () => {
+            let search = document.querySelector('.header-content__search');
+            let input = document.querySelector('.header-content__text-input');
+            search.addEventListener('click', function () {
+              search.classList.add('hidden');
+              document.querySelector('.header-content__header').classList.add('hidden');
+              document.querySelector('.header-content__form').classList.add('display');
+              input.focus();
+            });
+            document.querySelector('.header-content__text-input').addEventListener('focusout', function () {
+              document.querySelector('.header-content__form').classList.remove('display');
+              document.querySelector('.header-content__header').classList.remove('hidden');
+              search.classList.remove('hidden');
+            });
+            document.querySelector('.navigation-cancel').addEventListener('click', function () {
+              document.querySelector('.navigation__wrapper').classList.remove('display');
+              document.querySelector('body').classList.remove('scroll-hidden');
+            });
+            document.querySelector('.header__hamburger').addEventListener('click', function () {
+              document.querySelector('.navigation__wrapper').classList.add('display');
+              document.querySelector('body').classList.add('scroll-hidden');
+            });
+
+            document.addEventListener('touchstart', handleTouchStart, false);
+            document.addEventListener('touchmove', handleTouchMove, false);
+
+            let xDown = null;
+            let yDown = null;
+
+            function handleTouchStart(evt) {
+              xDown = evt.touches[0].clientX;
+              yDown = evt.touches[0].clientY;
+            }
+
+            function handleTouchMove(evt) {
+              if (!xDown || !yDown) {
+                return;
+              }
+
+              let xUp = evt.touches[0].clientX;
+              let yUp = evt.touches[0].clientY;
+
+              let xDiff = xDown - xUp;
+              let yDiff = yDown - yUp;
+
+              if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+                if (xDiff > 0) {
+                  document.querySelector('.navigation__wrapper').classList.add('display');
+                  document.querySelector('body').classList.add('scroll-hidden');
+                }
+              }
+              xDown = null;
+              yDown = null;
+            }
+
+          }
+        </script>
     </head>
     <body>
         <header class="header">
@@ -15,19 +74,24 @@
                     <input type="submit" value="Найти"
                             class="header-content__submit-button header-content__element">
                 </form>
+                <span class="header-content__search"></span>
             </div>
+            <span class="header__hamburger"></span>
         </header>
         <div class="page-wrapper">
             <main>
-                <nav class="navigation">
-                    <div class="navigation__elements">
-                        <a class="navigation__element">Морские ракушки</a>
-                        <a class="navigation__element">Сувениры из тайланда</a>
-                        <a class="navigation__element">Автомобили Тесла</a>
-                        <a class="navigation__element">Марки из разных стран</a>
-                    </div>
-                    <a class="navigation__order navigation__element">Заказать сувенир</a>
-                </nav>
+                <div class="navigation__wrapper">
+                    <span class="navigation-cancel"></span>
+                    <nav class="navigation">
+                        <div class="navigation__elements">
+                            <a class="navigation__element">Морские ракушки</a>
+                            <a class="navigation__element">Сувениры из тайланда</a>
+                            <a class="navigation__element">Автомобили Тесла</a>
+                            <a class="navigation__element">Марки из разных стран</a>
+                        </div>
+                        <a class="navigation__order navigation__element">Заказать сувенир</a>
+                    </nav>
+                </div>
                 <div class="souvenir-panel">
                     <div class="souvenir-panel__souvenir-box">
                         <div class="souvenir-panel__image-wrapper">
@@ -88,9 +152,11 @@
                 </div>
                 <aside class="popular-items">
                     <h2 class="popular-items__header">Популярные товары</h2>
-                    <a class="popular-items__element">Ракушка мораская</a>
-                    <a class="popular-items__element">Чесалка для спины</a>
-                    <a class="popular-items__element">Чётки</a>
+                    <div class="popular-items__elements">
+                        <a class="popular-items__element">Ракушка мораская</a>
+                        <a class="popular-items__element">Чесалка для спины</a>
+                        <a class="popular-items__element">Чётки</a>
+                    </div>
                 </aside>
             </main>
             <div class="order-box">
