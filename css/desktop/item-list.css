@@ -8,7 +8,6 @@
     .item
     {
         padding: 1%;
-        margin: 0;
         width: 45%;
         display: inline-block;
     }
@@ -16,6 +15,8 @@
     .item__img-container
     {
         height: 100px;
+        width: 70%;
+        margin: auto;
     }
     
     .item__img

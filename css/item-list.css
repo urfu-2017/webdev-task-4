@@ -64,8 +64,8 @@
 
 .item__img
 {
-    width: 80%;
-    margin: 0 9%;
+    width: auto;
+    height: 80%;
 }
 
 .item__name,

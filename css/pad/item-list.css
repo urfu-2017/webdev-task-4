@@ -10,6 +10,8 @@
     .item__img-container
     {
         height: 100px;
+        width: 65%;
+        margin: auto;
     }
 
     .item__img
