@@ -2,6 +2,8 @@ body
 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .menu-control,
@@ -317,11 +319,11 @@ body
     {
         margin: 0;
         box-sizing: border-box;
-        width: 400px;
-        position: absolute;
+        width: 65vw;
+        position: fixed;
         top: 0;
         bottom: 0;
-        right: -400px;
+        right: -65vw;
         transition: transform .4s;
         overflow: hidden;
     }
@@ -337,7 +339,7 @@ body
 
     .menu-control:checked + .products > .products__nav
     {
-        transform: translateX(-400px);
+        transform: translateX(-65vw);
     }
 
     .products__recommendations
