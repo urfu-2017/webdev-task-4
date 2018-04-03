@@ -61,9 +61,9 @@ main
     grid-area: ord;
 }
 
-img
+.card__image
 {
-    max-width: 300px;
+    width: 100%;
 }
 
 .heading__service-name
