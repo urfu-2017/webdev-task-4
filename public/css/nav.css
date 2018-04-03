@@ -41,14 +41,6 @@
     margin: 20px 0;
 }
 
-.nav_opened {
-    display: block;
-}
-
-.nav_closed {
-    display: none;
-}
-
 @media (min-resolution: 192dpi),
     (min-resolution: 2dppx)
 {
@@ -89,5 +81,15 @@
         position: fixed;
         top: 15px;
         right: 20px;
+    }
+
+    .nav_opened
+    {
+        display: block;
+    }
+
+    .nav_closed
+    {
+        display: none;
     }
 }

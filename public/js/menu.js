@@ -1,16 +1,12 @@
 
 const menu = document.querySelector('.header__menu');
 const menuClose = document.querySelector('.nav__close');
-var initialPoint;
-var finalPoint;
+let initialPoint;
+let finalPoint;
 
-menu.addEventListener('mouseup', function () {
-    openMenu();
-});
+menu.addEventListener('mouseup', openMenu);
 
-menuClose.addEventListener('mouseup', function () {
-    closeMenu();
-});
+menuClose.addEventListener('mouseup', closeMenu);
 
 document.addEventListener('touchstart', function (event) {
     if (event.view.innerWidth <= 480) {
@@ -20,12 +16,11 @@ document.addEventListener('touchstart', function (event) {
 
 document.addEventListener('touchend', function (event) {
     if (event.view.innerWidth > 480) {
-
         return;
     }
     finalPoint = event.changedTouches[0];
-    var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-    var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+    const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+    const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
     if (xAbs > 20 || yAbs > 20) {
         if (xAbs > yAbs) {
             direction();
@@ -43,12 +38,14 @@ function direction() {
 
 function openMenu() {
     const nav = document.querySelector('.nav');
-    nav.style.display = 'block';
+    nav.classList.remove('nav_closed');
+    nav.classList.add('nav_opened');
     document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
     const nav = document.querySelector('.nav');
-    nav.style.display = 'none';
+    nav.classList.remove('nav_opened');
+    nav.classList.add('nav_closed');
     document.body.style.overflow = 'auto';
 }
