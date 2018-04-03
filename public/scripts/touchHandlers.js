@@ -26,6 +26,25 @@ class NavigationPanel {
         this.element = document.querySelector('.navigation');
         this.openButton = document.querySelector('.header__nav-toggle');
         this.closeButton = document.querySelector('.navigation__close-button');
+        this.touchstartX = undefined;
+    }
+
+    handleTouchStart(event) {
+        event.preventDefault();
+
+        if (event.touches.length !== 1) {
+            return;
+        }
+
+        this.touchstartX = event.touches[0].pageX;
+    }
+
+    handleTouchEnd(event) {
+        const moveOffset = this.touchstartX - event.changedTouches[0].pageX;
+
+        if (moveOffset > this.element.offsetWidth / 2) {
+            this.element.style.display = 'flex';
+        }
     }
 
     toggleVisibility() {
@@ -42,8 +61,12 @@ async function main() {
 
     navigationPanel.openButton.onclick = () => navigationPanel.toggleVisibility();
     navigationPanel.closeButton.onclick = () => navigationPanel.toggleVisibility();
+    navigationPanel.closeButton.addEventListener('touchend',
+        () => navigationPanel.toggleVisibility());
 
-    // eslint-disable-next-line no-undef
-    const hammer = new Hammer(document.querySelector('.container'), { preventDefault: true });
-    hammer.on('swipeleft', () => navigationPanel.toggleVisibility());
+    const container = document.querySelector('.container');
+    container.addEventListener('touchstart',
+        (event) => navigationPanel.handleTouchStart(event), false);
+    container.addEventListener('touchend',
+        (event) => navigationPanel.handleTouchEnd(event), false);
 }
