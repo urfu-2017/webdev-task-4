@@ -142,8 +142,6 @@
         position: relative;
         top: 5px;
         left: -12px;
-        -webkit-transform: scaleX(.5) rotate(45deg);
-        -ms-transform: scaleX(.5) rotate(45deg);
         transform: scaleX(.5) rotate(45deg);
         display: block;
     }

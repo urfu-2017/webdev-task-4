@@ -16,7 +16,7 @@
     margin: 0 20px 20px;
 }
 
-.form__string
+.form__row
 {
     display: flex;
     flex-direction: row;
@@ -37,18 +37,15 @@
     border: 1px solid rgba(0,0,0,.2);
 }
 
-select
+.order__city-select
 {
     padding-right: 25px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
 
 .order__city
 {
     position: relative;
-    z-index: 0;
 }
 
 .order__city::after
