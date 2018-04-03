@@ -13,22 +13,24 @@ searchButton.onclick = function () {
     }
 };
 
-const sandwitchButton = document.getElementsByClassName('sandwitch')[0];
+const sandwichButton = document.getElementsByClassName('sandwich')[0];
 const exitButton = document.getElementsByClassName('menu_exit')[0];
 const menu = document.getElementsByClassName('menu')[0];
+const body = document.querySelector('body');
 
 exitButton.onclick = function () {
     menu.style.display = 'none';
+    body.style.overflow = 'scroll';
 };
 
-sandwitchButton.onclick = function () {
+sandwichButton.onclick = function () {
     menu.style.display = 'block';
     exitButton.style.display = 'block';
+    body.style.overflow = 'hidden';
 };
 
-const main = document.querySelector('.main');
 // eslint-disable-next-line no-undef
-var hammer = new Hammer(main, { preventDefault: true });
+var hammer = new Hammer(body, { preventDefault: true });
 hammer.on('swipeleft', () => {
     menu.style.display = 'block';
     exitButton.style.display = 'block';

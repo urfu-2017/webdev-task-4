@@ -6,7 +6,7 @@
     margin-right: 7%;
 }
 
-.sandwitch 
+.sandwich 
 {
     display: none;
 }
@@ -31,10 +31,10 @@
     .menu
     {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 120px;
+        justify-content: space-around;
+        padding-right: 0%;
+        padding-bottom: 0%;
         margin-right: 0%;
     }
     .menu_item
@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 500px)
 {
     .menu
     {
@@ -64,7 +64,7 @@
         margin-top: 10%;
     }
 
-    .sandwitch
+    .sandwich
     {
         display: block;
         position: absolute;
@@ -74,7 +74,7 @@
         height: 15px;
     }
 
-    .sandwitch:checked ~ .menu > .menu_exit
+    .sandwich:checked ~ .menu > .menu_exit
     {
         display: block;
     }
