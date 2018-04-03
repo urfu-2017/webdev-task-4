@@ -35,3 +35,12 @@ hammer.on('swipeleft', () => {
     menu.style.display = 'block';
     exitButton.style.display = 'block';
 });
+
+const souvenirsRatings = document.getElementsByClassName('souvenirs_item_info_rating');
+for (let i = 0; i < souvenirsRatings.length; i++) {
+    if (Number(souvenirsRatings[i].innerHTML) > 4) {
+        souvenirsRatings[i].style.backgroundColor = 'green';
+    } else {
+        souvenirsRatings[i].style.backgroundColor = 'yellowgreen';
+    }
+}
