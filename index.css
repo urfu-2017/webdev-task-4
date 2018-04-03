@@ -29,11 +29,13 @@ main
 
 .navigation-wrapper
 {
+    padding: 0 30px;
     grid-area: nav;
 }
 
 .popular-wrapper
 {
+    padding: 0 30px;
     grid-area: pops;
 }
 
@@ -51,6 +53,8 @@ main
 
 .card
 {
+    display: inline-block;
+    background-color: #fff;
     width: 50%;
     font-size: 16px;
 }
@@ -91,7 +95,7 @@ main
 .heading__search
 {
     display: flex;
-    width: 75%;
+    width: calc(100% - 250px);
 }
 
 .heading__search-line
@@ -135,12 +139,7 @@ main
 .card-title
 {
     display: block;
-}
-
-.card
-{
-    display: inline-block;
-    background-color: #fff;
+    text-decoration: none;
 }
 
 .order__form-btns,
@@ -160,12 +159,6 @@ main
     border: 1px solid #c4c4c4;
 }
 
-.popular,
-.navigation
-{
-    margin: 0 30px;
-}
-
 .popular h4
 {
     text-align: center;
@@ -180,4 +173,83 @@ main
 .card-title
 {
     margin-bottom: 10px;
+}
+
+@media (max-width:800px)
+{
+    main
+    {
+        padding: 0 43px;
+        grid-template-areas: 'nav' 'cards' 'pops' 'ord';
+        grid-template-columns: 1fr;
+    }
+
+    .popular-wrapper,
+    .navigation-wrapper,
+    .cards,
+    .order-wrapper
+    {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .heading__search
+    {
+        width: calc(100% - 200px);
+    }
+
+    .heading__search-line
+    {
+        opacity: 0;
+        border: none;
+    }
+
+    .heading__search-line:focus
+    {
+        opacity: 1;
+        box-shadow: 0 2px 0 #007fff;
+    }
+
+    .heading
+    {
+        padding: 20px;
+    }
+
+    .heading__service-name
+    {
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading__search-btn
+    {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        align-self: center;
+        color: transparent;
+        background: transparent url(img/search.svg) no-repeat;
+        background-size: contain;
+    }
+
+    .popular__list,
+    .navigation__list
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .popular h4
+    {
+        text-align: left;
+    }
+
+    .navigation__list li
+    {
+        text-align: center;
+        width: 50%;
+    }
 }
