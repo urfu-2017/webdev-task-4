@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./index.css">
         <script src="index.js"></script>
     </head>
-    <body>
+    <body class="layout">
         <header class="header">
             <div class="header-content">
                 <h1 class="header-content__header header-content__element">Билли.Маркет</h1>
@@ -22,17 +22,18 @@
             <span class="header__hamburger"></span>
         </header>
         <div class="page-wrapper">
-            <main>
+            <main class="main-content">
                 <div class="navigation__wrapper">
                     <span class="navigation-cancel"></span>
                     <nav class="navigation">
                         <div class="navigation__elements">
-                            <a class="navigation__element">Морские ракушки</a>
-                            <a class="navigation__element">Сувениры из тайланда</a>
-                            <a class="navigation__element">Автомобили Тесла</a>
-                            <a class="navigation__element">Марки из разных стран</a>
+                            <a class="navigation__element href">Морские ракушки</a>
+                            <a class="navigation__element href">Сувениры из тайланда</a>
+                            <a class="navigation__element href">Автомобили Тесла</a>
+                            <a class="navigation__element href">Марки из разных стран</a>
                         </div>
-                        <a class="navigation__order navigation__element">Заказать сувенир</a>
+                        <a class="navigation__order navigation__element href">Заказать
+                            сувенир</a>
                     </nav>
                 </div>
                 <div class="souvenir-panel">
@@ -42,11 +43,14 @@
                                     alt="ракушка">
                         </div>
                         <div class="souvenir-panel__description-block">
-                            <a class="souvenir-panel__title">Ракушка "Морское дно"</a>
+                            <a class="souvenir-panel__title href">Ракушка "Морское дно"</a>
                             <span class="souvenir-panel__price">290 Р</span>
                             <div class="souvenir-panel__grade-block">
-                                <span class="souvenir-panel__grade-block__grade">4.0</span>
-                                <a class="souvenir-panel__grade-block__comments">111 отзывов</a>
+                                <div class="souvenir-panel__grade-wrapper four">
+                                    <span class="souvenir-panel__grade">4.0</span>
+                                </div>
+                                <span class="souvenir-panel__arrow four-arrow"></span>
+                                <a class="souvenir-panel__comments href">111 отзывов</a>
                             </div>
                         </div>
                     </div>
@@ -56,11 +60,14 @@
                                     alt="кружка">
                         </div>
                         <div class="souvenir-panel__description-block">
-                            <a class="souvenir-panel__title">Тремокружкус "Батарейка"</a>
+                            <a class="souvenir-panel__title href">Тремокружкус "Батарейка"</a>
                             <span class="souvenir-panel__price">404 Р</span>
                             <div class="souvenir-panel__grade-block">
-                                <span class="souvenir-panel__grade-block__grade">4.5</span>
-                                <a class="souvenir-panel__grade-block__comments">290 отзывов</a>
+                                <div class="souvenir-panel__grade-wrapper four-half">
+                                    <span class="souvenir-panel__grade">4.5</span>
+                                </div>
+                                <span class="souvenir-panel__arrow four-half-arrow"></span>
+                                <a class="souvenir-panel__comments href">290 отзывов</a>
                             </div>
                         </div>
                     </div>
@@ -70,11 +77,14 @@
                                     alt="тесла">
                         </div>
                         <div class="souvenir-panel__description-block">
-                            <a class="souvenir-panel__title">Автомобиль "Тесла"</a>
+                            <a class="souvenir-panel__title href">Автомобиль "Тесла"</a>
                             <span class="souvenir-panel__price">359 900 Р</span>
                             <div class="souvenir-panel__grade-block">
-                                <span class="souvenir-panel__grade-block__grade">4.5</span>
-                                <a class="souvenir-panel__grade-block__comments">1 отзыв</a>
+                                <div class="souvenir-panel__grade-wrapper four-half">
+                                    <span class="souvenir-panel__grade">4.5</span>
+                                </div>
+                                <span class="souvenir-panel__arrow four-half-arrow"></span>
+                                <a class="souvenir-panel__comments href">1 отзыв</a>
                             </div>
                         </div>
                     </div>
@@ -84,11 +94,14 @@
                                     class="souvenir-panel__souvenir-image" alt="чесалка">
                         </div>
                         <div class="souvenir-panel__description-block">
-                            <a class="souvenir-panel__title">Чесалка для спины</a>
+                            <a class="souvenir-panel__title href">Чесалка для спины</a>
                             <span class="souvenir-panel__price">195 Р</span>
                             <div class="souvenir-panel__grade-block">
-                                <span class="souvenir-panel__grade-block__grade">4.0</span>
-                                <a class="souvenir-panel__grade-block__comments">29 отзывов</a>
+                                <div class="souvenir-panel__grade-wrapper four">
+                                    <span class="souvenir-panel__grade">4.0</span>
+                                </div>
+                                <span class="souvenir-panel__arrow four-arrow"></span>
+                                <a class="souvenir-panel__comments href">29 отзывов</a>
                             </div>
                         </div>
                     </div>
@@ -96,9 +109,9 @@
                 <aside class="popular-items">
                     <h2 class="popular-items__header">Популярные товары</h2>
                     <div class="popular-items__elements">
-                        <a class="popular-items__element">Ракушка мораская</a>
-                        <a class="popular-items__element">Чесалка для спины</a>
-                        <a class="popular-items__element">Чётки</a>
+                        <a class="popular-items__element href">Ракушка мораская</a>
+                        <a class="popular-items__element href">Чесалка для спины</a>
+                        <a class="popular-items__element href">Чётки</a>
                     </div>
                 </aside>
             </main>
@@ -106,35 +119,34 @@
                 <h2 class="order-box__header">Заказать сувенир</h2>
                 <form class="order-box__form">
                     <div class="order-box__form-line">
-                        <p class="order-box__form-line__title">Количество</p>
-                        <input type="text" name="count" class="order-box__form-line__input">
+                        <p class="order-box__title">Количество</p>
+                        <input type="number" min="0" name="count" class="order-box__input">
                     </div>
                     <div class="order-box__form-line">
-                        <p class="order-box__form-line__title">Город</p>
-                        <select name="Cities" class="order-box__form-line__input">
+                        <p class="order-box__title">Город</p>
+                        <select name="Cities" class="order-box__input order-box__select">
                             <option value="Екатеринбург">Екатеринбург</option>
                             <option value="Москва">Моска</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
                     </div>
                     <div class="order-box__form-line">
-                        <p class="order-box__form-line__title">Email</p>
-                        <input type="text" name="email" placeholder="email"
-                                class="order-box__form-line__input">
+                        <p class="order-box__title">Email</p>
+                        <input type="email" name="email" placeholder="email"
+                                class="order-box__input">
                     </div>
                     <div class="order-box__form-line">
-                        <p class="order-box__form-line__title">Телефон</p>
-                        <input type="text" name="phone" placeholder="Номер телефона*"
-                                class="order-box__form-line__input">
+                        <p class="order-box__title">Телефон</p>
+                        <input type="number" name="phone" placeholder="Номер телефона*"
+                                class="order-box__input">
                     </div>
                     <div class="order-box__form-line">
-                        <p class="order-box__form-line__title">Дата доставки</p>
-                        <input type="text" name="date" placeholder="дд.мм.гггг"
-                                class="order-box__form-line__input">
+                        <p class="order-box__title">Дата доставки</p>
+                        <input type="date" name="date" class="order-box__input">
                     </div>
                     <div class="order-box__form-line order-box__inputs">
-                        <input type="button" name="cancel" value="Сбросить заказ">
-                        <input type="button" name="order" value="Заказать">
+                        <input type="reset" name="cancel" value="Сбросить заказ">
+                        <input type="submit" name="order" value="Заказать">
                     </div>
                 </form>
             </div>
