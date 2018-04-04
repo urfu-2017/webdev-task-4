@@ -1,0 +1,92 @@
+.content
+{
+    grid-area: c;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.good
+{
+    padding: 25px;
+    border: 1px solid whitesmoke;
+    width: calc(50% - 52px);
+}
+
+.good__picture
+{
+    text-align: center;
+}
+
+.good__image
+{
+    padding: 25px;
+    width: calc(100% - 50px);
+}
+
+.good__name
+{
+    text-align: left;
+}
+
+.good__price
+{
+    font-weight: 900;
+    margin: 5px 0;
+    display: block;
+}
+
+.good__price::after
+{
+    content: ' ₽';
+}
+
+.good__info
+{
+    display: flex;
+}
+
+.good__raiting
+{
+    background: seagreen;
+    color: white;
+    padding-left: 5px;
+    position: relative;
+    margin-right: 15px;
+    box-sizing: border-box;
+    height: 16px;
+}
+
+.good__raiting::after
+{
+    content: '';
+    position: absolute;
+    right: -16px;
+    border: 8px solid transparent;
+    border-left: 8px solid seagreen;
+}
+
+@media(max-width: 850px)
+{
+    .good
+    {
+        padding: 10px;
+        width: calc(50% - 22px);
+    }
+
+    .good__image
+    {
+        padding: 0;
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    .good
+    {
+        padding: 10px;
+        width: calc(100% - 22px);
+    }
+}

@@ -1,0 +1,64 @@
+.order
+{
+    grid-area: o;
+    background: white;
+    padding: 10px 30px;
+}
+
+.order-form__item
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px 0;
+}
+
+.order-form__label
+{
+    width: 115px;
+    font-size: 16px;
+}
+
+.order-form__input
+{
+    width: 200px;
+    padding: 0;
+}
+
+.order__title
+{
+    margin-bottom: 15px;
+}
+
+.order-form__buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.order-form__reset,
+.order-form__submit
+{
+    border-radius: 10px;
+    padding: 5px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+@media(max-width: 850px)
+{
+    .order
+    {
+        padding: 5px 15px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    .order-form__input
+    {
+        width: 130px;
+    }
+}

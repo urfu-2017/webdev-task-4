@@ -1,0 +1,72 @@
+html
+{
+    background: whitesmoke;
+    height: 100vh;
+    font: 14px sans-serif;
+}
+
+body
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+.body__mobile-menu-hide
+{
+    overflow: auto;
+}
+
+main
+{
+    display: grid;
+    grid-template-rows: 100px 25px auto auto 25px auto;
+    grid-template-columns: 180px 25px 1fr 25px 180px;
+    grid-template-areas: 'h h h h h' '. . . . .' 'm . c . p' '. . c . .' 
+        '. . . . .' '. . o . .';
+    width: 825px;
+    margin: auto;
+}
+
+h1,
+h2,
+menu,
+figure
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    margin: 4px 0;
+    color: blue;
+}
+
+input,
+button
+{
+    outline: none;
+    box-sizing: border-box;
+}
+
+@media(max-width: 850px) 
+{
+    main 
+    {
+        grid-template-rows: 50px 5px auto 5px auto 5px auto 5px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'h' '.' 'm' '.' 'c' '.' 'p' '.' 'o';
+        width: 90vw;
+    }
+}
+
+@media(max-width: 550px)
+{
+    main
+    {
+        grid-template-rows: 100px 5px auto 5px auto 5px auto 5px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'h' '.' 'p' '.' 'c' '.' 'o' '.' 'm';
+        width: 275px;
+    }
+}

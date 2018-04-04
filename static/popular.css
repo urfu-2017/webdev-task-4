@@ -1,0 +1,50 @@
+.popular
+{
+    grid-area: p;
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.popular__title
+{
+    font-size: 1rem;
+}
+
+.popular__items
+{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+@media(max-width: 850px)
+{
+    .popular__items
+    {
+        flex-direction: row;
+        margin: 5px;
+        justify-content: space-between;
+    }
+
+    .popular
+    {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    .popular__items
+    {
+        flex-direction: column;
+        margin: 5px 15px;
+    }
+
+    .popular
+    {
+        padding: 10px;
+    }
+}
