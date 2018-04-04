@@ -40,12 +40,14 @@ function openMenu() {
     const nav = document.querySelector('.nav');
     nav.classList.remove('nav_closed');
     nav.classList.add('nav_opened');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.remove('scroll_auto');
+    document.body.classList.add('scroll_hidden');
 }
 
 function closeMenu() {
     const nav = document.querySelector('.nav');
     nav.classList.remove('nav_opened');
     nav.classList.add('nav_closed');
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('scroll_hidden');
+    document.body.classList.add('scroll_auto');
 }
