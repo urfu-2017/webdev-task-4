@@ -26,6 +26,7 @@
     width: 50%;
     padding: 0 20px;
     overflow: hidden;
+    grid-area: items;
 }
 
 .inner_div
@@ -41,6 +42,7 @@
     width: 20%;
     padding: 10px 15px;
     margin-top: 7px;
+    grid-area: menu;
 }
 
 nav input[type='checkbox']
@@ -68,8 +70,10 @@ nav label
     
     .right
     {
-        width: 100%;
+        width: 427px;
         display: flex;
+        margin-left: 22%;
+        margin-bottom: 22px;
     }
     
     .right p
@@ -85,12 +89,51 @@ nav label
     .main,
     .right
     {
-        width: 100%;
+        width: 100% !important;
+    }
+    
+    main
+    {
+        display: grid;
+        grid-template-areas: 'nav' 'top' 'middle' 'bottom';
+    }
+    
+    .nav
+    {
+        grid-area: nav;
+    }
+    
+    .right
+    {
+        grid-area: top;
+        margin-left: 0 !important;
+    }
+    
+    .main
+    {
+        grid-area: middle;
+    }
+    
+    form
+    {
+        grid-area: bottom;
+        margin-left: 0 !important;
     }
     
     .inner_div
     {
         flex: 100%;
+    }
+    
+    input[type='search']
+    {
+        border: .35em solid rgb(240, 237, 0);
+        min-width: 70%;
+    }
+    
+    .header
+    {
+        display: flex;
     }
     
     nav ul
@@ -181,3 +224,22 @@ form
     margin-left: 22%;
     
 }
+
+nav
+{
+    grid-area: nav;
+}
+
+.mobile-menu
+{
+    display: flex;
+    background-color: #fff;
+    float: left;
+}
+
+p > label
+{
+    position: static;
+    float: right;
+}
+
