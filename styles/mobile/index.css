@@ -1,10 +1,5 @@
 @media (max-width: 767px)
 {
-    header
-    {
-        background: cornflowerblue !important;
-    }
-
     .header__search
     {
         width: 100%;
@@ -23,14 +18,14 @@
         outline-offset: 0;
     }
 
-    .search_right-part_triangle
+    .search__right-part_triangle
     {
         display: block;
         border: 16px solid transparent;
         border-left: 10px solid #ff0;
     }
 
-    .search_right-part_triangle:after
+    .search__right-part_triangle:after
     {
         content: '';
         position: absolute;
@@ -40,7 +35,7 @@
         border-left: 10px solid #fff;
     }
 
-    .search_menu_mobile
+    .search__hamburger
     {
         display: block;
         position: absolute;
@@ -71,14 +66,15 @@
 
     .navigation
     {
-        display: none;
         position: fixed;
-        width: 50%;
-        top: 30px;
-        height: 300px;
-        right: -50px;
+        right: 0;
+        top: 0;
+        width: 65%;
+        height: 100%;
+        background: #fff;
         border: solid 1px #e0e0e0;
         padding: 20px 20px 0;
+        z-index: 1;
     }
 
     .navigation__close
@@ -86,7 +82,7 @@
         display: block;
         position: absolute;
         top: 10px;
-        right: 25px;
+        right: 10px;
         width: 18px;
         height: 18px;
         background: url(../../pictures/cross.ico) no-repeat;
@@ -118,7 +114,6 @@
         cursor: pointer;
     }
 
-    .navigation,
     .popular-block,
     .main-block,
     .order
@@ -241,14 +236,14 @@
         font-size: 12px;
     }
 
-    .form_part_left
+    .form__left-part
     {
         width: 45px;
         font-size: 12px;
         padding-right: 20px;
     }
 
-    .form_part_right
+    .form__right-part
     {
         padding: 5px;
         width: calc(100% - 90px);

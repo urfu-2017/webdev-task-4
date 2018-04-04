@@ -17,10 +17,10 @@
         <h1 class="header__service-name h1">Билли.Маркет</h1>
         <div class="header__search">
             <input class="search__input" type="text" placeholder="Искать товары">
-            <div class="search_right-part_triangle"></div>
-            <img class="search_menu_mobile" src="pictures/hamburger.png" alt="Меню">
-            <input class="search_button_desktop" type="submit" value="Найти">
-            <input class="search_button_tablet" type="submit" value="">
+            <div class="search__right-part_triangle"></div>
+            <img class="search__hamburger" src="pictures/hamburger.png" alt="Меню">
+            <input class="search__desktop" type="submit" value="Найти">
+            <input class="search__tablet" type="submit" value="">
         </div>
     </header>
     <main class="main">
@@ -32,7 +32,7 @@
                 <div class="product-links__element">Марки из разных стран</div>
             </div>
             <div class="navigation__order">Заказать сувенир</div>
-            <input class="navigation__close" type="button" value="close">
+            <input class="navigation__close navigation__close_display_none" type="button">
         </div>
         <div class="popular-block">
             <div class="popular-block__title">Популярные товары</div>
@@ -103,36 +103,38 @@
         </div>
         <div class="order">
             <div class="order__title">Заказать сувенир</div>
-            <div class="order__form">
-                <div class="form__field">
-                    <div class="form_part_left">Количество:</div>
-                    <input class="form_part_right" type="text">
+            <form>
+                <div class="order__form">
+                    <div class="form__field">
+                        <div class="form__left-part">Количество:</div>
+                        <input class="form__right-part" type="number" min="1">
+                    </div>
+                    <div class="form__field">
+                        <div class="form__left-part">Город</div>
+                        <select class="form__right-part field__select">
+                            <option>-</option>
+                            <option>Верхняя Пышма</option>
+                            <option>Екатеринбург</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__left-part">Email</div>
+                        <input class="form__right-part" type="email" placeholder="email">
+                    </div>
+                    <div class="form__field">
+                        <div class="form__left-part">Телефон</div>
+                        <input class="form__right-part" type="tel" placeholder="Номер телефона*">
+                    </div>
+                    <div class="form__field">
+                        <div class="form__left-part">Дата доставки:</div>
+                        <input class="form__right-part" type="date">
+                    </div>
                 </div>
-                <div class="form__field">
-                    <div class="form_part_left">Город</div>
-                    <select class="form_part_right field__select">
-                        <option>-</option>
-                        <option>Верхняя Пышма</option>
-                        <option>Екатеринбург</option>
-                        <option>Москва</option>
-                        <option>Санкт-Петербург</option>
-                    </select>
-                </div>
-                <div class="form__field">
-                    <div class="form_part_left">Email</div>
-                    <input class="form_part_right" type="email" placeholder="email">
-                </div>
-                <div class="form__field">
-                    <div class="form_part_left">Телефон</div>
-                    <input class="form_part_right" type="tel" placeholder="Номер телефона*">
-                </div>
-                <div class="form__field">
-                    <div class="form_part_left">Дата доставки:</div>
-                    <input class="form_part_right" type="date">
-                </div>
-            </div>
-            <input class="order__reset" type="reset" value="Сбросить заказ">
-            <input class="order__submit" type="submit" value="Заказать!">
+                <input class="order__reset" type="reset" value="Сбросить заказ">
+                <input class="order__submit" type="submit" value="Заказать!">
+            </form>
         </div>
     </main>
     <footer class="footer`">
