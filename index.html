@@ -5,6 +5,114 @@
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body class="page">
+    <header class="header">
+        <p class="header__title">Билли.Маркет</p>
+        <img class="header__burger" src=
+        "https://icon-icons.com/icons2/916/PNG/32/Menu_icon_icon-icons.com_71858.png" alt="Бургер">
+        <input class="header__input"  type="text">
+        <img class="header__img" src=
+        "http://s1.iconbird.com/ico/2013/6/280/w64h641371488687searchpointer64.png" alt="Поиск">
+        <button class="header__search">Найти</button>
+    </header>
+
+    <nav class="nav">
+        <img class="nav__img" src="http://s1.iconbird.com/ico/2013/9/448/w24h24138044427114Delete24x24.png"
+        alt="крест">
+        <a class="nav__link" href="">Морские ракушки</a>
+        <a class="nav__link" href="">Сувениры из Тайланда</a>
+        <a class="nav__link" href="">Автомобили Тесла</a>
+        <a class="nav__link" href="">Марки из разных стран</a>
+        <a class="nav__link" href="">Заказать сувенир</a>
+    </nav>
+    <main class="main">
+        <div class="main-product">
+            <div class="image-wrapper">
+                <img class="main-product__img" src="./images/sea.jpg" alt="">
+            </div>
+            <a class="main-product__link" href="">Ракушка "Морское дно"</a>
+            <p class="main-product__name">290 Р</p>
+            <div class="rating-wrapper">
+                <div class="main-product__rating">5.0</div>
+                <div class="main-product__rating-triangle"></div>
+                <p class="main-product__response">100 отзывов</p>
+            </div>
+        </div>
+
+        <div class="main-product">
+            <div class="image-wrapper">
+                <img class="main-product__img" src="./images/cup.jpg" alt="">
+            </div>
+            <a class="main-product__link" href="">Термокружка "Батарейка"</a>
+            <p class="main-product__name">420 Р</p>
+            <div class="rating-wrapper">
+                <div class="main-product__rating">5.0</div>
+                <div class="main-product__rating-triangle"></div>
+                <p class="main-product__response">100 отзывов</p>
+            </div>
+        </div>
+
+        <div class="main-product">
+            <div class="image-wrapper">
+                <img class="main-product__img" src="./images/car.jpg" alt="">
+            </div>
+            <a class="main-product__link" href="">Тесла</a>
+            <p class="main-product__name">666 Р</p>
+            <div class="rating-wrapper">
+                <div class="main-product__rating rating_low">4.5</div>
+                <div class="main-product__rating-triangle rating-triangle_low"></div>
+                <p class="main-product__response">99 отзывов</p>
+            </div>
+        </div>
+
+        <div class="main-product">
+            <div class="image-wrapper">
+                <img class="main-product__img" src="./images/body.png" alt="">
+            </div>
+            <a class="main-product__link" href="">Чесалка для спины</a>
+            <p class="main-product__name">290 Р</p>
+            <div class="rating-wrapper">
+                <div class="main-product__rating rating_low">4.5</div>
+                <div class="main-product__rating-triangle rating-triangle_low"></div>
+                <p class="main-product__response">3 отзыва</p>
+            </div>
+        </div>
+    </main>
+
+    <form class="order">
+        <h1 class="order__head">Заказать сувенир</h1>
+        <div class="order-data">
+            <p>Количество</p>
+            <input class="order-data__input" type="text">
+        </div>
+        <div class="order-data">
+            <p>Город</p>
+            <input class="order-data__input" type="text">
+        </div>
+        <div class="order-data">
+            <p>Email</p>
+            <input class="order-data__input" type="email">
+        </div>
+        <div class="order-data">
+            <p>Телефон</p>
+            <input class="order-data__input" type="tel">
+        </div>
+        <div class="order-data">
+            <p>Дата доставки:</p>
+            <input class="order-data__input" type="date">
+        </div>
+
+    </form>
+
+    <aside class="aside">
+        <p class="aside__p">Популярные товары</p>
+        <div class="link-wrapper">
+            <a class="link-wrapper__link" href="">Ракушка морская</a>
+            <a class="link-wrapper__link" href="">Чесалка для спины</a>
+            <a class="link-wrapper__link" href="">Чётки</a>
+        </div>
+
+    </aside>
+    <script src="./index.js"></script>
 </body>
 </html>
