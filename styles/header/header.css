@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
+.header
+{
+    background: white;
+}
+
+.sandwich
+{
+    display: none;
+}
+
+.header__title
+{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.header__search
+{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input
+{
+    border: 3px solid #f6f6f6;
+    height: 36px;
+    font-size: 26px;
+}
+
+.header__search-button
+{
+    background: #f6f6f6;
+    border: none;
+    color: black;
+    height: 44px;
+}
+
+.header__search-activator
+{
+    display: none;
+}
+
+@media 
+    screen and (min-width: 1260px)
+{
+    .header
+    {
+        grid-area: 👻;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__search
+    {
+        margin-left: 30px;
+    }
+
+    .header__title
+    {
+        position: relative;
+        right: 20px;
+    }
+
+    .header__search-input
+    {
+        width: 760px;
+    }
+
+    .header__search-button
+    {
+        width: 150px;
+        
+    }
+}
+
+@media 
+    screen and (min-width: 721px) and (max-width: 1260px)
+{
+    .header
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .header__search
+    {
+        display: none;
+    }
+
+    .header__search-button
+    {
+        display: none;
+    }
+
+    .header__search-activator
+    {
+        display: inline-block;
+        margin: 30px 0 20px;
+        background-color: white;
+        border: white;
+    }
+}
+
+@media 
+    screen and (max-width: 720px)
+{
+    .header
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto min-content;
+        grid-template-areas: 'tt sd'
+            'sr sr';
+        grid-column-gap: 20px;
+
+    }
+
+    .header__search
+    {
+        grid-area: sr;
+        width: 100%;
+    }
+
+    .header__title
+    {
+        grid-area: tt;
+    }
+
+    .sandwich
+    {
+        display: inline-block;
+        grid-area: sd;
+        font-size: 40px;
+        background-color: white;
+        border: none;
+    }
+
+    .header__search-button
+    {
+        display: none;
+    }
+
+    .header__search-input
+    {
+        border-color: #fddd3c;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

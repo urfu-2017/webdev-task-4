@@ -3,8 +3,165 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/swipe.js"></script>
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
+    <main>
+
+        <header class="header">
+            <h1 class="header__title">Билли.Маркет</h1>
+            <button class="sandwich" type="button">&#9776;</button>
+            <button class="header__search-activator" type="button">
+                <img src="images/search.svg" alt="Лупа" width="50">
+            </button>
+            <form class="header__search">
+                <input type="text" class="header__search-input">
+                <button class="header__search-button">Найти</button>
+            </form>
+        </header>
+
+        <nav class="nav">
+            <button class="nav__close-button">&#10006;</button>
+            <ul class="nav__list">
+                <li class="nav__list-element">
+                    <a href="#" class="nav__list-link">Морские ракушки</a>
+                </li>
+                <li class="nav__list-element">
+                    <a href="#" class="nav__list-link">Сувениры из тайланда</a>
+                </li>
+                <li class="nav__list-element">
+                    <a href="#" class="nav__list-link">Автомобили тесла</a>
+                </li>
+                <li class="nav__list-element">
+                    <a href="#" class="nav__list-link">Марки из разных стран</a>
+                </li>
+            </ul>
+            <div class="nav__order">
+                <a href="#" class="nav__order-link">Заказать сувенир</a>
+            </div>
+        </nav>
+
+        <section class="popular">
+            <h2 class="popular__header">Популярные товары</h2>
+            <ul class="popular__list">
+                <li class="popular__list-element">
+                    <a href="#" class="popular__list-link">Ракушка морская</a>
+                </li>
+                <li class="popular__list-element">
+                    <a href="#" class="popular__list-link">Чесалка для спины</a>
+                </li>
+                <li class="popular__list-element">
+                    <a href="#" class="popular__list-link">Чётки</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="souvenirs">
+            <article class="souvenirs__souvenir">
+                <div class="souvenirs__img-wrapper">
+                    <img src="./images/shell.jpg" alt="ракушка" width="275">
+                </div>
+                <h2 class="souvenirs__name">
+                    <a href="#" class="souvenirs__link">Ракушка "Морское дно"</a>
+                </h2>
+                <div class="souvenirs__price">
+                    290 &#8381;
+                </div>
+                <div class="souvenirs__rating low-rated">
+                    4.0
+                </div>
+                <div class="souvenirs__triangle triangle-low-rated"></div>
+                <div class="souvenirs__reviews">
+                    111 отзывов
+                </div>
+            </article>
+            <article class="souvenirs__souvenir">
+                <div class="souvenirs__img-wrapper">
+                    <img src="./images/cup.jpg" alt="термокружка" width="275">
+                </div>
+                <h2 class="souvenirs__name">
+                    <a href="#" class="souvenirs__link">Термокружкус "Батарейка"</a>
+                </h2>
+                <div class="souvenirs__price">
+                    404 &#8381;
+                </div>
+                <div class="souvenirs__rating high-rated">
+                    4.5
+                </div>
+                <div class="souvenirs__triangle triangle-high-rated"></div>
+                <div class="souvenirs__reviews">
+                    290 отзывов
+                </div>
+            </article>
+            <article class="souvenirs__souvenir">
+                <div class="souvenirs__img-wrapper">
+                    <img src="./images/tesla.png" alt="Автомобиль" width="275">
+                </div>
+                <h2 class="souvenirs__name">
+                    <a href="#" class="souvenirs__link">Автомобиль "Тесла"</a>
+                </h2>
+                <div class="souvenirs__price">
+                    359 900 &#8381;
+                </div>
+                <div class="souvenirs__rating high-rated">
+                    4.5
+                </div>
+                <div class="souvenirs__triangle triangle-high-rated"></div>
+                <div class="souvenirs__reviews">
+                    1 отзывов
+                </div>
+            </article>
+            <article class="souvenirs__souvenir">
+                <div class="souvenirs__img-wrapper">
+                    <img src="./images/stick.jpeg" alt="Чесалка" width="275">
+                </div>
+                <h2 class="souvenirs__name">
+                    <a href="#" class="souvenirs__link">Чесалка для спины</a>
+                </h2>
+                <div class="souvenirs__price">
+                    195 &#8381;
+                </div>
+                <div class="souvenirs__rating low-rated">
+                    4.0
+                </div>
+                <div class="souvenirs__triangle triangle-low-rated"></div>
+                <div class="souvenirs__reviews">
+                    29 отзывов
+                </div>
+            </article>
+        </section>
+
+        <form class="order">
+            <h2 class="order__header">Заказать сувенир</h2>
+            <div class="order__input-wrapper">
+                <label for="number" class="order__label">Количество:</label>
+                <input type="number" class="order__input" id="number">
+            </div>
+            <div class="order__input-wrapper">
+                <label for="text" class="order__label">Город</label>
+                <input type="text" class="order__input" id="text">
+            </div>
+            <div class="order__input-wrapper">
+                <label for="email" class="order__label">Email</label>
+                <input type="email" class="order__input" id="email">
+            </div>
+            <div class="order__input-wrapper">
+                <label for="tel" class="order__label">Телефон</label>
+                <input type="tel" class="order__input" id="tel" placeholder="Номер телефона*">
+            </div>
+            <div class="order__input-wrapper">
+                <label for="date" class="order__label">Дата доставки</label>
+                <input type="date" class="order__input" id="date">
+            </div>
+            <div class="order__buttons">
+                <button type="reset" class="order__reset-button order__button">Сбросить заказ</button>
+                <button class="order__submit-button order__button">Заказать!</button>
+            </div>
+        </form>
+
+    </main>
 </body>
 </html>

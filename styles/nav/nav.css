@@ -1,0 +1,120 @@
+.nav 
+{
+    background: white;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #f0f0f0;
+}
+
+.nav__close-button
+{
+    display: none;
+}
+
+.nav__list 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__list-link 
+{
+    text-decoration: none;
+}
+
+.nav__order-link 
+{
+    text-decoration: none;
+}
+
+@media
+    screen and (min-width: 1260px)
+{
+    .nav 
+    {
+        grid-area: 😈;
+        width: 200px;
+        margin-right: 0;
+        margin-left: auto;
+        padding: 30px 20px;
+    }
+
+    .nav__list-element 
+    {
+        margin-bottom: 15px;
+    }
+
+    .nav__order 
+    {
+        margin-top: 50px;
+    }
+}
+
+@media
+    screen and (min-width: 721px) and (max-width: 1260px)
+{
+    .nav
+    {
+        margin-top: 20px;
+        width: 80%;
+        padding: 0;
+    }
+
+    .nav__list
+    {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .nav__list-element 
+    {
+        text-align: center;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .nav__order 
+    {
+        margin: 20px 0 30px;
+        text-align: center;
+    }
+}
+
+@media
+    screen and (max-width: 720px)
+{
+    .nav
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        height: 100vh;
+        align-self: flex-end;
+        width: 50vw;
+    }
+
+    .nav__close-button
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        font-size: 30px;
+        color: grey;
+        background-color: white;
+        border: none;
+    }
+
+    .nav__list-element 
+    {
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+
+    .nav__order 
+    {
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
