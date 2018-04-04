@@ -44,8 +44,8 @@
 
 .search-desktop__button
 {
-    height: 46px;
-    width: 92px;
+    height: 40px;
+    width: 80px;
     background: lightgray;
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
 .header__menu-button
 {
     display: none;
-    width: 32px;
+    width: 26px;
     cursor: pointer;
 }
 
@@ -134,5 +134,10 @@
     .search-mobile
     {
         display: flex;
+    }
+
+    .header__title
+    {
+        height: 37px;
     }
 }

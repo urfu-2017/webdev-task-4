@@ -14,7 +14,8 @@
 
 .order-form__label
 {
-    width: 100px;
+    width: 115px;
+    font-size: 16px;
 }
 
 .order-form__input
@@ -58,6 +59,6 @@
 {
     .order-form__input
     {
-        width: 100px;
+        width: 130px;
     }
 }
