@@ -30,7 +30,7 @@
 }
 
 @media
-    screen and (min-device-width: 1260px)
+    screen and (min-width: 1260px)
 {
     .popular
     {
@@ -43,7 +43,7 @@
 }
 
 @media
-    screen and (min-device-width: 721px) and (max-device-width: 1260px)
+    screen and (min-width: 721px) and (max-width: 1260px)
 {
     .popular
     {
@@ -67,7 +67,7 @@
 }
 
 @media
-    screen and (max-device-width: 720px)
+    screen and (max-width: 720px)
 {
     .popular
     {

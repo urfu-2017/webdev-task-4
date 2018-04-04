@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     DOM.input.onblur = resetSearchDisplay;
 
     // eslint-disable-next-line
-    const bodyHammer = new Hammer(DOM.body);
-    bodyHammer.on('swipeleft', showNav);
-
+    onSwipeLeft(DOM.body, showNav);
 });
 
 function init() {
