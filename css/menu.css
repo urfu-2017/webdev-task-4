@@ -11,12 +11,26 @@
     display: none;
 }
 
+.sandwich_img
+{
+    width: 30px;
+    height: 30px;
+}
+
 .menu_exit
 {
     display: none;
+    width: 0px;
+    height: 0px;
+    float: right;
+}
+
+.menu_exit_img {
     width: 20px;
     height: 20px;
-    float: right;
+    position: relative;
+    top: -3px;
+    left: -10px;
 }
 
 .menu_item
@@ -70,8 +84,17 @@
         position: absolute;
         top: 5%;
         left: 90%;
-        width: 15px;
-        height: 15px;
+        width: 0px;
+        height: 0px;
+    }
+
+    .sandwich_img
+    {
+        position: absolute;
+        top: -150%;
+        left: -70%;
+        width: 30px;
+        height: 30px;
     }
 
     .sandwich:checked ~ .menu > .menu_exit

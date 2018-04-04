@@ -30,11 +30,11 @@ sandwichButton.onclick = function () {
 };
 
 // eslint-disable-next-line no-undef
-var hammer = new Hammer(body, { preventDefault: true });
-hammer.on('swipeleft', () => {
-    menu.style.display = 'block';
-    exitButton.style.display = 'block';
-});
+// var hammer = new Hammer(body, { preventDefault: true });
+// hammer.on('swipeleft', () => {
+//    menu.style.display = 'block';
+//    exitButton.style.display = 'block';
+// });
 
 const souvenirsRatings = document.getElementsByClassName('souvenirs_item_info_rating');
 for (let i = 0; i < souvenirsRatings.length; i++) {
@@ -42,5 +42,24 @@ for (let i = 0; i < souvenirsRatings.length; i++) {
         souvenirsRatings[i].style.backgroundColor = 'green';
     } else {
         souvenirsRatings[i].style.backgroundColor = 'yellowgreen';
+    }
+}
+
+var touchstartX = 0;
+var touchendX = 0;
+
+body.ontouchstart = function (event) {
+    touchstartX = event.changedTouches[0].screenX;
+};
+
+body.ontouchend = function (event) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesure();
+};
+
+function handleGesure() {
+    if (touchendX < touchstartX) {
+        menu.style.display = 'block';
+        exitButton.style.display = 'block';
     }
 }
