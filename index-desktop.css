@@ -10,7 +10,7 @@
     {
         display: grid;
         background: #c9dff5;
-        width: fit-content;
+        width: 100%;
     }
 
     .phone-sandwich
