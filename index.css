@@ -1,0 +1,103 @@
+body
+{
+    padding: 5%;
+}
+
+main
+{
+    grid-area: b;
+    display: grid;
+    grid-template-areas: 'h c e'
+        'l d m';
+    grid-template-columns: 25% 50% 25%;
+    background-color: rgb(238, 237, 237);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.search
+{
+    margin-bottom: 2%;
+}
+
+.search_name
+{
+    display: inline;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.search_input
+{
+    margin-left: 3%;
+    height: 30px;
+}
+
+.search_button
+{
+    height: 36px;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 979px)  /* Tablet */
+{
+    main
+    {
+        grid-template-areas: 'h h'
+            'c c'
+            'e e'
+            'd d';
+        grid-template-columns: 50% 50%;
+    }
+
+    main > div
+    {
+        margin-bottom: 5%;
+    }
+
+    .search_name
+    {
+        display: inline;
+        font-size: 2em;
+        font-weight: 100;
+    }
+
+    .search_input
+    {
+        visibility: hidden;
+        width: 350px;
+    }
+
+    .popular_wrapper
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    main
+    {
+        grid-template-areas: 'h'
+            'e'
+            'c'
+            'd';
+        grid-template-columns: 100%;
+    }
+
+    .search_input
+    {
+        visibility: visible;
+        width: 250px;
+        margin-left: 0%;
+    }
+
+    .search_button
+    {
+        visibility: hidden;
+    }
+}
