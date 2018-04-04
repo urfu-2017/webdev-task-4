@@ -1,0 +1,17 @@
+@media (min-width:800px) {
+
+    .order-form
+    {
+        width: 50%;
+        margin: auto;
+        padding-left: 30px;
+        margin-top: 30px;
+        overflow: hidden;
+        
+    }
+
+    .order-form__input
+    {
+        max-width: 100%;
+    }
+}

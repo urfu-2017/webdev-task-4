@@ -1,0 +1,112 @@
+@import url('./css/phone/search-bar.css');
+@import url('./css/phone/nav.css');
+@import url('./css/phone/popular.css');
+@import url('./css/phone/item-list.css');
+@import url('./css/phone/order-form.css');
+
+@media (max-width: 480px)
+{
+    body
+    {
+        margin: 0;
+    }
+
+    :root
+    {
+        --mainColor: #c9dff5;
+        --linkColor: #00f;
+    }
+    
+    .noScroll
+    {
+        overflow: hidden;
+        position: fixed;
+    }
+    
+    .body
+    {
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .white-block
+    {
+        background-color: #fff;
+        border: 2px solid #afaeae;
+    }
+    
+    .center
+    {
+        padding: 5px;
+        width: 50%;
+        margin: 20px auto;
+    }
+    
+    .link
+    {
+        color: var(--linkColor);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .search-bar
+    {
+        width: 99%;
+        order: 1;
+    }
+    
+    .nav
+    {
+        top: -20px;
+        flex-direction: column;
+        padding-right: 40px;
+        height: 100vh;
+        position: fixed;
+    }
+    
+    .visible
+    {
+        display: flex;
+    }
+    
+    .hidden
+    {
+        display: none;
+    }
+    
+    .item-list
+    {
+        width: 90%;
+        order: 3;
+    }
+    
+    .popular
+    {
+        padding: 10px;
+        width: 90%;
+        order: 2;
+    }
+    
+    .order-form
+    {
+        width: 90%;
+        order: 4;
+    }
+    
+    .phone-sandwich
+    {
+        padding: 3%;
+        position: absolute;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .nav__category
+    {
+        padding: 20px 0 0 20px;
+    }
+}

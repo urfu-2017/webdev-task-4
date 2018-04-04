@@ -1,0 +1,22 @@
+@media (min-width: 480px) and (max-width: 800px) {
+    .item
+    {
+        width: 45%;
+        height: 150px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .item__img-container
+    {
+        height: 100px;
+        width: 65%;
+        margin: auto;
+    }
+
+    .item__img
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

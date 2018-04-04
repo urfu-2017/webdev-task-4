@@ -1,0 +1,37 @@
+@media (min-width:800px) {
+    .search-bar
+    {
+        display: flex;
+        padding: 5px 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .search-bar__logo
+    {
+        padding: 0 10px;
+        margin: auto 0;
+        font-size: 5vh;
+        float: left;
+    }
+
+    .search-bar__form
+    {
+        width: 100%;
+    }
+
+    .search-bar__button
+    {
+        margin: 5px 5px 0 10px;
+        width: 60px;
+        float: right;
+        height: 85%;
+    }
+
+    .search-bar__input
+    {
+        font-size: 2vw;        
+        width: 100%;
+        height: 85%;    
+        margin: 5px;    
+    }
+}

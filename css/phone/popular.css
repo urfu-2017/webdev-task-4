@@ -1,0 +1,12 @@
+@media (max-width: 480px) {
+    .popular__header
+    {
+        font-weight: bold;
+    }
+
+    .popular-items
+    {
+        padding-bottom: 10px;
+        margin-left: 5%;
+    }
+}

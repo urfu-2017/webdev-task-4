@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    .item__img-container
+    {        
+        height: auto;
+        width: 240px;
+        margin: auto;
+    }
+
+    .item__img
+    {
+        width:240px;
+    }
+
+    .item__name, .item__price, .item__users-review
+    {
+        margin: 0 9%;
+    }
+}
