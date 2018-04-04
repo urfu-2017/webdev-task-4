@@ -3,8 +3,130 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/desktop.css">
+    <link rel="stylesheet" href="./public/pad.css">
+    <link rel="stylesheet" href="./public/phone.css">
+    <script src="./public/scripts/touchHandlers.js"></script>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__title">Билли.Маркет</h1>
+        <div class="search">
+                <input class="search__start-button"
+                type="image" src="./public/images/search.svg" alt="magnifier">
+            <input class="search__input" type="text">
+            <button class="search__button">Найти</button>
+        </div>
+        <button class="header__nav-toggle"></button>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <a href="#cat">Манэки-нэко</a>
+            <a href="#lollipop">Леденец</a>
+            <a href="#syrup">Кленовый сироп</a>
+            <a href="#fog">Консервированный туман</a>
+            <a href="#buyForm">Заказать сувенир</a>
+            <button class="navigation__close-button"></button>
+        </nav>
+
+        <div class="products-list">
+            <div class="products-list__row">
+                <div class="product" id="cat">
+                    <img class="product__image" src="./public/images/cat.jpg" alt="cat">
+                    <a class="product__name" href="">Манэки-нэко</a>
+                    <p class="product__price">199 ₽</p>
+                    <div>
+                        <div class="rating rate5">
+                            <div class="rating__value">4.5</div>
+                            <div class="rating__corner"><div class="rating__triangle"></div></div>
+                        </div>
+                        <span class="product__opinions">94 отзыва</span>
+                    </div>
+                </div>
+
+                <div class="product" id="lollipop">
+                        <img class="product__image" src="./public/images/lollipop.jpg" alt="lollipop">
+                        <a class="product__name" href="">Леденцовая конфета Scorpion Toffee</a>
+                        <p class="product__price">513 ₽</p>
+                        <div>
+                            <div class="rating rate4">
+                                <div class="rating__value">4.0</div>
+                                <div class="rating__corner"><div class="rating__triangle"></div></div>
+                            </div>
+                            <span class="product__opinions">53 отзыва</span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="products-list__row">
+                <div class="product" id="syrup">
+                        <img class="product__image" src="./public/images/mapleSyrup.jpg" alt="maple syrup">
+                        <a class="product__name" href="">Кленовый сироп L.B. Maple Treat</a>
+                        <p class="product__price">1399 ₽</p>
+                        <div>
+                            <div class="rating rate5">
+                                <div class="rating__value">5.0</div>
+                                <div class="rating__corner"><div class="rating__triangle"></div></div>
+                            </div>
+                            <span class="product__opinions">163 отзыва</span>
+                        </div>
+                </div>
+
+                <div class="product" id="fog">
+                        <img class="product__image" src="./public/images/fog.jpg" alt="fog can">
+                        <a class="product__name" href="">Консервированный туман</a>
+                        <p class="product__price">100 ₽</p>
+                        <div>
+                            <div class="rating rate2">
+                                2.0
+                                <div class="rating__corner"><div class="rating__triangle"></div></div>
+                            </div>
+                            <span class="product__opinions">10 отзывов</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="popular-products">
+            <p class="popular-products__title">Популярные товары</p>
+            <a href="">брелки</a>
+            <a href="">магниты</a>
+            <a href="">алкашка из duty free</a>
+        </aside>
+
+        <form class="order-form" method="post" id="buyForm">
+            <h1>Заказать сувенир</h1>
+            <div class="order-form__row">
+                <p>Количество:</p>
+                <input class="order-form__input" type="number">
+            </div>
+
+            <div class="order-form__row">
+                <p>Город:</p>
+                <input class="order-form__input" type="text">
+            </div>
+
+            <div class="order-form__row">
+                <p>Email:</p>
+                <input class="order-form__input" type="email" placeholder="email">
+            </div>
+
+            <div class="order-form__row">
+                <p>Телефон:</p>
+                <input class="order-form__input" type="tel" placeholder="Номер телефона">
+            </div>
+
+            <div class="order-form__row">
+                <p>Дата доставки:</p>
+                <input class="order-form__input" type="date">
+            </div>
+            <div class="order-form__row">
+                <input class="order-form__reset-button" type="reset" value="Сбросить заказ">
+                <input class="order-form__submit-button" type="submit" value="Заказать!">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
