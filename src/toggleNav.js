@@ -16,8 +16,5 @@ const hideNav = () => {
 
 const sandwichButton = document.querySelector('.phone-sandwich');
 const closeButton = document.querySelector('.nav__close');
-sandwichButton.addEventListener('click', showNav);
 sandwichButton.addEventListener('touchend', showNav);
-closeButton.addEventListener('click', hideNav);
 closeButton.addEventListener('touchend', hideNav);
-
