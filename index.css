@@ -1,0 +1,362 @@
+body
+{
+    background-color: #ebebeb;
+    font-family: 'Arial', sans-serif;
+}
+
+ul,
+h4,
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.heading
+{
+    padding: 20px 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+main
+{
+    display: grid;
+    grid-template-areas: 'nav cards pops' '. ord .';
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.navigation-wrapper
+{
+    padding: 0 30px;
+    grid-area: nav;
+}
+
+.popular-wrapper
+{
+    padding: 0 30px;
+    grid-area: pops;
+}
+
+.cards
+{
+    font-size: 0;
+    grid-area: cards;
+}
+
+.cards,
+.order-wrapper
+{
+    padding: 0 20px;
+}
+
+.card
+{
+    display: inline-block;
+    background-color: #fff;
+    width: 50%;
+    font-size: 16px;
+}
+
+.order-wrapper
+{
+    margin-top: 20px;
+    grid-area: ord;
+}
+
+.card__image
+{
+    width: 100%;
+}
+
+.heading__service-name
+{
+    font-size: 35px;
+    display: inline-block;
+}
+
+.heading__search
+{
+    display: inline-block;
+}
+
+.heading__search-btn
+{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 60px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #c9c9c9;
+}
+
+.heading__search
+{
+    display: flex;
+    width: calc(100% - 250px);
+}
+
+.heading__search-line
+{
+    font-size: 23px;
+    height: 40px;
+    border: 2px solid #c9c9c9;
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    padding: 20px;
+    outline: none;
+}
+
+.order,
+.popular,
+.navigation
+{
+    padding: 20px;
+    background-color: #fff;
+}
+
+.popular__link,
+.navigation__link
+{
+    text-decoration: none;
+}
+
+.popular__list,
+.navigation__list
+{
+    font-size: 18px;
+    list-style: none;
+}
+
+.popular__list li,
+.navigation__list li
+{
+    margin-bottom: 10px;
+}
+
+.card-title
+{
+    display: block;
+    text-decoration: none;
+}
+
+.order__form-btns,
+.order__param
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation,
+.popular,
+.card,
+.order
+{
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+}
+
+.popular h4
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card__description
+{
+    margin: 10px;
+}
+
+.card-title
+{
+    margin-bottom: 10px;
+}
+
+@media (min-width:600px)  and (max-width:800px)
+{
+    main
+    {
+        padding: 0 43px;
+        grid-template-areas: 'nav' 'cards' 'pops' 'ord';
+        grid-template-columns: 1fr;
+    }
+
+    .popular-wrapper,
+    .navigation-wrapper,
+    .cards,
+    .order-wrapper
+    {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .heading__search
+    {
+        width: calc(100% - 200px);
+    }
+
+    .heading__search-line
+    {
+        opacity: 0;
+        border: none;
+    }
+
+    .heading__search-line:focus
+    {
+        opacity: 1;
+        box-shadow: 0 2px 0 #007fff;
+    }
+
+    .heading
+    {
+        padding: 20px;
+    }
+
+    .heading__service-name
+    {
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading__search-btn
+    {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        align-self: center;
+        color: transparent;
+        background: transparent url(img/search.svg) no-repeat;
+        background-size: contain;
+    }
+
+    .popular__list,
+    .navigation__list
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .popular h4
+    {
+        text-align: left;
+    }
+
+    .navigation__list li
+    {
+        text-align: center;
+        width: 50%;
+    }
+}
+
+.navigaton__close-button,
+.sandwich
+{
+    display: none;
+}
+
+.navigaton__close-button
+{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 24px;
+    margin: 5px 5px 5px auto;
+}
+
+@media (max-width:600px)
+{
+    main
+    {
+        grid-template-areas: 'pops' 'cards' 'ord';
+        grid-template-columns: 1fr;
+    }
+
+    .popular
+    {
+        padding: 15px;
+    }
+
+    .card
+    {
+        width: 100%;
+    }
+
+    .popular-wrapper
+    {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .navigation-wrapper
+    {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        grid-area: none;
+        padding: 0;
+    }
+    
+    .navigation
+    {
+        height: 100%;
+        border: none;
+    }
+
+    .heading
+    {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .heading__search
+    {
+        width: 100%;
+    }
+
+    .heading__search-btn
+    {
+        display: none;
+    }
+
+    .sandwich
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .heading
+    {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .heading__search-line
+    {
+        margin-top: 10px;
+        border: 2px solid #e5fc1b;
+    }
+
+    .heading__service-name
+    {
+        font-size: 24px;
+    }
+
+    .sandwich__button
+    {
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 24px;
+    }
+
+}

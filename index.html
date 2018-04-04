@@ -4,7 +4,132 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js"
+    integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM"
+    crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js"
+    integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY"
+    crossorigin="anonymous"></script>
+    <script defer src="./index.js"></script>
 </head>
 <body>
+    <header class="heading">
+        <div class="heading__service-name">
+            <span>Билли.Маркет</span>
+        </div>
+        <div class="sandwich">
+            <button class="sandwich__button"><span class="fas fa-bars"></span></button>
+        </div>
+        <div class="heading__search">
+            <input type="text" class="heading__search-line"><button class="heading__search-btn">Найти</button>
+        </div>
+
+    </header>
+    <main>
+        <div class="navigation-wrapper">
+            <nav class="navigation">
+                <button class="navigaton__close-button"><span class="fas fa-times"></span></button>
+                <ul class="navigation__list">
+                    <li><a href="#" class="navigation__link">Морские ракушки</a></li>
+                    <li><a href="#" class="navigation__link">Сувениры из Тайланда</a></li>
+                    <li><a href="#" class="navigation__link">Автомобили Тесла</a></li>
+                    <li><a href="#" class="navigation__link">Марки из разных стран</a></li>
+                    <li><a href="#" class="navigation__link">Заказать сувенир</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img class="card__image" src="./img/seashell.jpg" alt="товар">
+                <div class="card__description">
+                    <a href="#" class="card-title">Ракушка «Морское дно»</a>
+                    <span class="card-price">290 ₽</span>
+                    <div class="card-opinion">
+                        <span class="card-rating">4.0</span>
+                        <span class="card-ratings-count">101 отзыв</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./img/seashell.jpg" alt="товар">
+                <div class="card__description">
+                    <a href="#" class="card-title">Ракушка «Морское дно»</a>
+                    <span class="card-price">290 ₽</span>
+                    <div class="card-opinion">
+                        <span class="card-rating">4.0</span>
+                        <span class="card-ratings-count">101 отзыв</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./img/seashell.jpg" alt="товар">
+                <div class="card__description">
+                    <a href="#" class="card-title">Ракушка «Морское дно»</a>
+                    <span class="card-price">290 ₽</span>
+                    <div class="card-opinion">
+                        <span class="card-rating">4.0</span>
+                        <span class="card-ratings-count">101 отзыв</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./img/seashell.jpg" alt="товар">
+                <div class="card__description">
+                    <a href="#" class="card-title">Ракушка «Морское дно»</a>
+                    <span class="card-price">290 ₽</span>
+                    <div class="card-opinion">
+                        <span class="card-rating">4.0</span>
+                        <span class="card-ratings-count">101 отзыв</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="popular-wrapper">
+            <aside class="popular">
+                <h4 class="popular__title">Популярные товары</h4>
+                <ul class="popular__list">
+                    <li><a href="#" class="popular__link">Ракушка морская</a></li>
+                    <li><a href="#" class="popular__link">Чесалка для спины</a></li>
+                    <li><a href="#" class="popular__link">Чётки</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="order-wrapper">
+            <div class="order">
+                <form method="post" action="/" class="order__form">
+                    <h4 class="order__form-title">Заказать сувенир</h4>
+                    <label class="order__param">
+                        Количество
+                        <input class="order__form-input" type="number">
+                    </label>
+                    <label class="order__param">
+                        Город
+                        <select class="order__form-input" name="town">
+                            <option disabled>Выберите город</option>
+                            <option value="Lisbon">Лисабон</option>
+                        </select>
+                    </label>
+                    <label class="order__param">
+                        Email
+                        <input class="order__form-input" type="email" placeholder="Email">
+                    </label>
+                    <label class="order__param">
+                        Телефон
+                        <input class="order__form-input" type="tel" placeholder="Номер телефона">
+                    </label>
+                    <label class="order__param">
+                        Дата доставки:
+                        <input class="order__form-input" type="date">
+                    </label>
+                    <div class="order__form-btns">
+                        <button class="order__form-reset" type="reset">Сбросить заказ</button>
+                        <button class="order__form-submit" type="submit">Заказать!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
