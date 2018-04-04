@@ -86,6 +86,11 @@ a
     background: #f6f6f6;
 }
 
+.page_overflow_hidden 
+{
+    overflow-y: hidden;
+}
+
 .items,
 .navigation,
 .popular,
