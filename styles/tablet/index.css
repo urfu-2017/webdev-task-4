@@ -157,7 +157,7 @@
         align-items: center;
     }
 
-    .picture-block__image
+    .product__image
     {
         width: 80%;
     }
@@ -175,19 +175,19 @@
         font-weight: 600;
     }
 
-    .review
+    .product__review
     {
         padding-top: 15px;
         display: flex;
         align-items: center;
     }
 
-    .review__rating
+    .product__review-rating
     {
         display: flex;
     }
 
-    .rating__rectangle
+    .product__rating-rectangle
     {
         background: #8cb512;
         color: #fff;
@@ -197,13 +197,13 @@
         align-items: center;
     }
 
-    .rating__triangle
+    .product__rating-triangle
     {
         border: 20px solid transparent;
         border-left: 6px solid #8cb512;
     }
 
-    .review__count
+    .product__review-count
     {
         color: grey;
     }

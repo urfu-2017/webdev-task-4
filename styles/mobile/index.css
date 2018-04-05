@@ -170,7 +170,7 @@
         align-items: center;
     }
 
-    .picture-block__image
+    .product__image
     {
         width: 80%;
     }
@@ -188,19 +188,19 @@
         font-weight: 600;
     }
 
-    .review
+    .product__review
     {
         padding-top: 15px;
         display: flex;
         align-items: center;
     }
 
-    .review__rating
+    .product__review-rating
     {
         display: flex;
     }
 
-    .rating__rectangle
+    .product__rating-rectangle
     {
         background: #8cb512;
         color: #fff;
@@ -210,13 +210,13 @@
         align-items: center;
     }
 
-    .rating__triangle
+    .product__rating-triangle
     {
         border: 20px solid transparent;
         border-left: 6px solid #8cb512;
     }
 
-    .review__count
+    .product__review-count
     {
         color: grey;
     }
@@ -227,20 +227,20 @@
         border: solid 1px #e0e0e0;
     }
 
-    .order__reset,
-    .order__submit
+    .order__form-reset,
+    .order__form-submit
     {
         font-size: 12px;
     }
 
-    .form__left-part
+    .order__left-part-field
     {
         width: 45px;
         font-size: 12px;
         padding-right: 20px;
     }
 
-    .form__right-part
+    .order__right-part-field
     {
         padding: 5px;
         width: calc(100% - 90px);

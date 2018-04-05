@@ -15,26 +15,26 @@
     padding-top: 30px;
 }
 
-.form__left-part,
-.form__right-part
+.order__left-part-field,
+.order__right-part-field
 {
     display: inline-block;
 }
 
-.form__left-part
+.order__left-part-field
 {
     width: 160px;
     font-size: 20px;
     padding-right: 20px;
 }
 
-.form__right-part
+.order__right-part-field
 {
     padding: 5px;
     width: calc(100% - 200px);
 }
 
-.form__field
+.order__form-field
 {
     padding-bottom: 20px;
 }
@@ -45,16 +45,17 @@
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     border-radius: 5px;
+    -webkit-appearance: none;
 }
 
-.order__submit
+.order__form-submit
 {
     position: absolute;
     right: 10px;
 }
 
-.order__reset,
-.order__submit
+.order__form-reset,
+.order__form-submit
 {
     font-size: 20px;
     border-radius: 5px;
