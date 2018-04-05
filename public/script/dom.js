@@ -32,9 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         contentMenu.style.height = `${height}px`;
         contentMenu.classList.add('content-menu_block');
         buttonClose.classList.add('content_close_block');
+        document.querySelector('body').classList.add('scroll-hidden');
         buttonClose.addEventListener('click', () => {
             buttonClose.classList.add('content_close_none');
             contentMenu.classList.add('content-menu_none');
+            document.querySelector('body').classList.remove('scroll-hidden');
         });
     };
 

@@ -81,4 +81,9 @@
     {
         display: none;
     }
+
+    .scroll-hidden
+    {
+        overflow: hidden;
+    }
 }
