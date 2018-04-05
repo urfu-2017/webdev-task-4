@@ -10,12 +10,14 @@
 <body>
     <header class="header">
         <span class="header__title">Билли.Маркет</span>
-        <div class="header__search">
-            <input type="text" class="header__search__input">
-            <input type="button" class="header__search__button" value="Найти">
-        </div>
-        <i class="header__search-icon fas fa-search"></i>
         <div class="header__menu-btn"><i class="fas fa-bars"></i></div>
+        <div class="header-search">
+            <input type="text" class="header-search__input">
+            <input type="button" class="header-search__button" value="Найти">
+        </div>
+        <div class="header__search-icon header__search-icon_hidden">
+            <i class="fas fa-search"></i>
+        </div>
     </header>
     <div class="content">
         <div class="main-content">
@@ -32,36 +34,36 @@
                     <img alt="Кружка" class="thing__image" src="./cup.png">
                     <h4 class="thing__name"><a href="#">Ракушка "Морское дно"</a></h4>
                     <p class="thing__price">290 &#8381;</p>
-                    <div class="thing__rating">
-                        <span class="thing__rating__score">4.0</span>
-                        <span class="thing__rating__count">111 отзывов</span>
+                    <div class="thing-rating">
+                        <span class="thing-rating__score thing-rating__score_normal">4.0</span>
+                        <span class="thing-rating__count">111 отзывов</span>
                     </div>
                 </article>
                 <article class="thing">
                     <img alt="Термокружкус 'Батарейка'" class="thing__image" src="./cup.png">
                     <h4 class="thing__name"><a href="#">Термокружкус 'Батарейка'</a></h4>
                     <p class="thing__price">404 &#8381;</p>
-                    <div class="thing__rating">
-                        <span class="thing__rating__score">4.5</span>
-                        <span class="thing__rating__count">290 отзывов</span>
+                    <div class="thing-rating">
+                        <span class="thing-rating__score thing-rating__score_good">4.5</span>
+                        <span class="thing-rating__count">290 отзывов</span>
                     </div>
                 </article>
                 <article class="thing">
                     <img alt="Автомобиль 'Тесла'" class="thing__image" src="./cup.png">
                     <h4 class="thing__name"><a href="#">Автомобиль 'Тесла'</a></h4>
                     <p class="thing__price">359 900 &#8381;</p>
-                    <div class="thing__rating">
-                        <span class="thing__rating__score">4.5</span>
-                        <span class="thing__rating__count">1 отзыв</span>
+                    <div class="thing-rating">
+                        <span class="thing-rating__score thing-rating__score_good">4.5</span>
+                        <span class="thing-rating__count">1 отзыв</span>
                     </div>
                 </article>
                 <article class="thing">
                     <img alt="Чесалка для спины" class="thing__image" src="./cup.png">
                     <h4 class="thing__name"><a href="#">Чесалка для спины</a></h4>
                     <p class="thing__price">195 &#8381;</p>
-                    <div class="thing__rating">
-                        <span class="thing__rating__score">4.0</span>
-                        <span class="thing__rating__count">29 отзывов</span>
+                    <div class="thing-rating">
+                        <span class="thing-rating__score thing-rating__score_normal">4.0</span>
+                        <span class="thing-rating__count">29 отзывов</span>
                     </div>
                 </article>
             </main>
@@ -77,7 +79,7 @@
         <div class="order-form">
             <h3 class="order-form__title">Заказать сувенир</h3>
             <div class="order-form__fields">
-                <div class="order-form__row"><span>Количество:</span><input type="text"></div>
+                <div class="order-form__row"><span>Количество:</span><input type="number"></div>
                 <div class="order-form__row"><span>Город:</span><input type="text"></div>
                 <div class="order-form__row"><span>Email:</span><input type="email" placeholder="email"></div>
                 <div class="order-form__row">

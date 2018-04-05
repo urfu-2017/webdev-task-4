@@ -1,9 +1,13 @@
-.header__search
+.header-search
 {
     font-size: 0;
     display: flex;
     width: 70%;
+}
 
+.header-search_hidden
+{
+    display: none;
 }
 
 .header
@@ -16,7 +20,7 @@
     box-sizing: border-box;
 }
 
-.header__search__button
+.header-search__button
 {
     background: #eee;
     border: none;
@@ -24,7 +28,7 @@
     width: 10%;
 }
 
-.header__search__input
+.header-search__input
 {
     border: 3px solid #eee;
     width: 90%;
@@ -75,6 +79,11 @@ body
     font-size: 1.2em;
 }
 
+.menu_hidden
+{
+    display: none;
+}
+
 .menu__close-icon
 {
     display: none;
@@ -97,9 +106,9 @@ body
     border: 1px solid #ddd;
 }
 
-.header__search-icon
+.header__search-icon_hidden
 {
-    visibility: hidden;
+    display: none;
 }
 
 .thing
@@ -136,14 +145,23 @@ body
     font-size: 1.5em;
 }
 
-.thing__rating__score
+.thing-rating__score
 {
-    background: green;
     padding: 5px 10px;
     color: white;
 }
 
-.thing__rating__count
+.thing-rating__score_good
+{
+    background: green;
+}
+
+.thing-rating__score_normal
+{
+    background: greenyellow;
+}
+
+.thing-rating__count
 {
     color: gray;
     margin-left: 10px;
@@ -166,28 +184,34 @@ body
         flex-wrap: wrap;
     }
 
+    .header-search__input
+    {
+        width: 100%;
+    }
+
+    .header-search__button
+    {
+        display: none;
+    }
+
+    .header-search
+    {
+        width: 50%;
+        justify-content: space-between;
+    }
+
     .popular,
     .menu,
     .things,
     .order-form
     {
+        margin: 10px 0;
         width: 100%;
-    }
-
-    .header__search
-    {
-        display: none;
-    }
-
-    .header__search-icon
-    {
-        visibility: visible;
     }
 }
 
 @media (max-width: 500px)
 {
-
     .main-content
     {
         display: flex;
@@ -196,7 +220,6 @@ body
 
     .menu
     {
-        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -216,6 +239,12 @@ body
         width: 100%;
     }
 
+    .things,
+    .popular
+    {
+        margin: 10px 0;
+    }
+
     .thing
     {
         display: block;
@@ -226,13 +255,30 @@ body
         display: inline;
     }
 
-    .header__search
-    {
-        display: none;
-    }
-
     .header__menu-btn
     {
         display: block;
+    }
+
+    .header
+    {
+        flex-wrap: wrap;
+    }
+
+    .header-search
+    {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .header-search__input
+    {
+        border-color: yellow;
+        width: 100%;
+    }
+
+    .header-search__button
+    {
+        display: none;
     }
 }
