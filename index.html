@@ -5,6 +5,8 @@
     <title>Задача «Тим слишком занят»</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./public/index.css">
+    <script defer src="./public/actions.js"></script>
+    <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -27,40 +29,48 @@
         <a class="blue" href="">Заказать сувенир</a>
     </div>
     <main class="elements">
-        <a class="element element1">
-            <img class="element__photo" width="150" src="matreshka.jpg" alt="matreshka">
+        <a class="element" id="1">
+            <img class="element__photo" src="matreshka.jpg" alt="matreshka">
+            <div class="element__info">
             <span class="element__name blue">Матрешка</span>
             <span class="element__price">290 &#8381;</span>
             <div class="element__rating">
                 <span class="element__rating-value">4.8</span>
                 <span class="element__reviews">74 отзывов</span>
             </div>
+            </div>
         </a>
-        <a class="element element2">
-            <img class="element__photo" width="150" src="matreshka2.png" alt="matreshka">
+        <a class="element" id="2">
+            <img class="element__photo" src="matreshka2.png" alt="matreshka">
+            <div class="element__info">
             <span class="element__name blue">Матрешка</span>
             <span class="element__price">100 &#8381;</span>
             <div class="element__rating">
                 <span class="element__rating-value">4.0</span>
                 <span class="element__reviews">111 отзывов</span>
             </div>
+            </div>
         </a>
-        <a class="element element3">
-            <img class="element__photo" width="150" src="matreshka3.jpg" alt="matreshka">
+        <a class="element" id="3">
+            <img class="element__photo" src="matreshka3.jpg" alt="matreshka">
+            <div class="element__info">
             <span class="element__name blue">Матрешка</span>
             <span class="element__price">100 &#8381;</span>
             <div class="element__rating">
                 <span class="element__rating-value">5.0</span>
                 <span class="element__reviews">92 отзывов</span>
             </div>
+            </div>
         </a>
-        <a class="element element4">
-            <img class="element__photo" width="150" src="matreshka4.png" alt="matreshka">
+        <a class="element" id="4">
+            <img class="element__photo" src="matreshka4.png" alt="matreshka">
+            <div class="element__info">
             <span class="element__name blue">Матрешка</span>
             <span class="element__price">100 &#8381;</span>
             <div class="element__rating">
                 <span class="element__rating-value">4.2</span>
                 <span class="element__reviews">84 отзывов</span>
+            </div>
             </div>
         </a>
     </main>
@@ -74,7 +84,7 @@
         <h3 class="form__header">Заказать сувенир</h3>
         <label class="form__row">
             <span>Количество</span>
-            <input class="form__input" type="number">
+            <input class="form__input" type="number" min="1">
         </label>
         <label class="form__row">
             <span>Город</span>
@@ -91,14 +101,14 @@
         </label>
         <label class="form__row">
             <span>Телефон</span>
-            <input class="form__input" type="tel" placeholder="Номер телефона*">
+            <input class="form__input" type="tel" placeholder="Номер телефона">
         </label>
         <label class="form__row">
             <span>Дата доставки</span>
             <input class="form__input" type="date">
         </label>
         <div class="booking">
-        <button class="cancel__booking">Сбросить заказ</button>
+        <button type="reset" class="cancel__booking">Сбросить заказ</button>
         <button class="confirm__booking">Заказать!</button>
         </div>
     </form>
