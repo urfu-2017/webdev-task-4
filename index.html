@@ -2,9 +2,122 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+    integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+    integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+    crossorigin="anonymous">
+    <script src="./index.js"></script>
 </head>
 <body>
+    <main>
+        <header class="header">
+            <h1 class="header__title">Билли.Маркет</h1>
+            <label class="header__menu-icon" for="menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="search">
+                <input class="search__field" type="text" name="search" id="search">
+                <label class="search__icon" for="search">
+                    <i class="fas fa-search"></i>
+                </label>
+                <button class="search__button">Найти</button>
+            </div>
+        </header>
+        <input class="menu-control" type="checkbox" name="menu" id="menu">
+        <section class="products">
+            <nav class="products__nav nav">
+                <label class="nav__control" for="menu"><i class="fas fa-times"></i></label>
+                <a class="nav__link link" href="#">Морские ракушки</a>
+                <a class="nav__link link" href="#">Сувениры из Тайланда</a>
+                <a class="nav__link link" href="#">Автомобили Тесла</a>
+                <a class="nav__link link" href="#">Марки из разных стран</a>
+                <a class="nav__link link" href="#">Заказать сувенир</a>
+            </nav>
+            <section class="products__gallery">
+                <article class="product">
+                    <img class="product__image" src="./public/images/img.png" alt="img">
+                    <h3 class="product__name"><a class="link" href="#">Ракушка морское дно</a></h3>
+                    <strong class="product__price">290</strong>
+                    <div class="product__rewiev">
+                        <div class="rewiev-stars rewiev-stars_mark_good">4.0</div>
+                        <div class="rewiev-count">111 отзывов</div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img class="product__image" src="./public/images/img.png" alt="img">
+                    <h3 class="product__name"><a class="link" href="#">Термокружка "Батарейка"</a></h3>
+                    <strong class="product__price">404</strong>
+                    <div class="product__rewiev">
+                        <div class="rewiev-stars rewiev-stars_mark_very-good">4.5</div>
+                        <div class="rewiev-count">290 отзывов</div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img class="product__image" src="./public/images/img.png" alt="img">
+                    <h3 class="product__name"><a class="link" href="#">Автомобиль Тесла</a></h3>
+                    <strong class="product__price">359900</strong>
+                    <div class="product__rewiev">
+                        <div class="rewiev-stars rewiev-stars_mark_very-good">4.5</div>
+                        <div class="rewiev-count">1 отзыв</div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img class="product__image" src="./public/images/img.png" alt="img">
+                    <h3 class="product__name"><a class="link" href="#">Чесалка для спины</a></h3>
+                    <strong class="product__price">195</strong>
+                    <div class="product__rewiev">
+                        <div class="rewiev-stars rewiev-stars_mark_good">4.0</div>
+                        <div class="rewiev-count">29 отзывов</div>
+                    </div>
+                </article>
+            </section>
+            <aside class="products__recommendations">
+                <header class="recommendation-header">
+                    <h3 class="recommendation-header__title">Популярные товары</h3>
+                </header>
+                <section class="recommendation-links">
+                    <a class="recommendation-links__link link" href="#">Ракушка морская</a>
+                    <a class="recommendation-links__link link" href="#">Чесалка для спины</a>
+                    <a class="recommendation-links__link link" href="#">Чётки</a>
+                </section>
+            </aside>
+            <form class="products__order-form">
+                <h2>Заказать сувенир</h2>
+                <div class="row">
+                    <label for="quantity">Количество:</label>
+                    <input type="text" name="order" id="quantity">
+                </div>
+                <div class="row">
+                    <label for="city">Город</label>
+                    <select name="order" id="city">
+                        <option value="-">-</option>
+                        <option value="Izhevsk">Izhevsk</option>
+                        <option value="Ekb">Ekb</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" name="order" id="email" placeholder="email">
+                </div>
+                <div class="row">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="order" id="tel" placeholder="Номер телефона*" required>
+                </div>
+                <div class="row">
+                    <label for="date">Дата доставки:</label>
+                    <input type="date" name="order" id="date">
+                </div>
+                <div class="row">
+                    <button type="reset">Сбросить поля</button>
+                    <button type="submit">Заказать!</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
