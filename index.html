@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="styles/common/index.css">
+    <link rel="stylesheet" href="styles/common/order.css">
+    <link rel="stylesheet" href="styles/desktop/index.css">
+    <link rel="stylesheet" href="./styles/mobile/index.css">
+    <link rel="stylesheet" href="styles/tablet/index.css">
+    <script src="styles/tablet/searchHandler.js"></script>
+    <script src="styles/mobile/swipe.js"></script>
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <h1 class="header__service-name h1">Билли.Маркет</h1>
+        <div class="header__search">
+            <input class="search__input" type="text" placeholder="Искать товары">
+            <div class="search__right-part_triangle"></div>
+            <img class="search__hamburger" src="pictures/hamburger.png" alt="Меню">
+            <input class="search__desktop" type="submit" value="Найти">
+            <input class="search__tablet" type="submit" value="">
+        </div>
+    </header>
+    <main class="main">
+        <div class="navigation">
+            <div class="navigation__product-links">
+                <div class="product-links__element">Морские ракушки</div>
+                <div class="product-links__element">Сувениры из Тайланда</div>
+                <div class="product-links__element">Автомобили Тесла</div>
+                <div class="product-links__element">Марки из разных стран</div>
+            </div>
+            <div class="navigation__order">Заказать сувенир</div>
+            <img class="navigation__close" src="pictures/cross.ico" alt="Закрыть">
+        </div>
+        <div class="popular-block">
+            <div class="popular-block__title">Популярные товары</div>
+            <div class="popular-block__products">
+                <div class="products__element">Ракушка морская</div>
+                <div class="products__element">Чесалка для спины</div>
+                <div class="products__element">Чётки</div>
+            </div>
+        </div>
+        <div class="main-block">
+            <div class="main-block__product">
+                <div class="product__picture-block">
+                    <img class="product__image" src="pictures/seashell.png" alt="Ракушка">
+                </div>
+                <div class="product__name">Ракушка &laquo;Морское дно&raquo;</div>
+                <div class="product__price">290&nbsp;&#8381;</div>
+                <div class="product__review">
+                    <div class="product__review-rating">
+                        <div class="product__rating-rectangle">4.0</div>
+                        <div class="product__rating-triangle"></div>
+                    </div>
+                    <div class="product__review-count">111 отзывов</div>
+                </div>
+            </div>
+            <div class="main-block__product">
+                <div class="product__picture-block">
+                    <img class="product__image" src="pictures/cup_battery.jpg" alt="Кружка">
+                </div>
+                <div class="product__name">Термокружкус &laquo;батарейка&raquo;</div>
+                <div class="product__price">404&nbsp;&#8381;</div>
+                <div class="product__review">
+                    <div class="product__review-rating">
+                        <div class="product__rating-rectangle">4.5</div>
+                        <div class="product__rating-triangle"></div>
+                    </div>
+                    <div class="product__review-count">290 отзывов</div>
+                </div>
+            </div>
+            <div class="main-block__product">
+                <div class="product__picture-block">
+                    <img class="product__image" src="pictures/tesla_car.png" alt="Тесла автомобиль">
+                </div>
+                <div class="product__name">Автомобиль &laquo;Тесла&raquo;</div>
+                <div class="product__price">359&nbsp;900&nbsp;&#8381;</div>
+                <div class="product__review">
+                    <div class="product__review-rating">
+                        <div class="product__rating-rectangle">4.5</div>
+                        <div class="product__rating-triangle"></div>
+                    </div>
+                    <div class="product__review-count">1 отзыв</div>
+                </div>
+            </div>
+            <div class="main-block__product">
+                <div class="product__picture-block">
+                    <img class="product__image" src="pictures/scab_for_back.jpg"
+                         alt="Чесалка для спины">
+                </div>
+                <div class="product__name">Чесалка для спины</div>
+                <div class="product__price">195&nbsp;&#8381;</div>
+                <div class="product__review">
+                    <div class="product__review-rating">
+                        <div class="product__rating-rectangle">4.0</div>
+                        <div class="product__rating-triangle"></div>
+                    </div>
+                    <div class="product__review-count">29 отзывов</div>
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <div class="order__title">Заказать сувенир</div>
+            <form>
+                <div class="order__form">
+                    <div class="order__form-field">
+                        <div class="order__left-part-field">Количество:</div>
+                        <input class="order__right-part-field" type="number" min="1">
+                    </div>
+                    <div class="order__form-field">
+                        <div class="order__left-part-field">Город</div>
+                        <select class="order__right-part-field field__select">
+                            <option>-</option>
+                            <option>Верхняя Пышма</option>
+                            <option>Екатеринбург</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <div class="order__form-field">
+                        <div class="order__left-part-field">Email</div>
+                        <input class="order__right-part-field" type="email" placeholder="email">
+                    </div>
+                    <div class="order__form-field">
+                        <div class="order__left-part-field">Телефон</div>
+                        <input class="order__right-part-field" type="tel" placeholder="Номер телефона*">
+                    </div>
+                    <div class="order__form-field">
+                        <div class="order__left-part-field">Дата доставки:</div>
+                        <input class="order__right-part-field" type="date">
+                    </div>
+                </div>
+                <input class="order__form-reset" type="reset" value="Сбросить заказ">
+                <input class="order__form-submit" type="submit" value="Заказать!">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__about-service footer__left-part">© graf-m-96</div>
+        <div class="footer__about-service footer__right-part">2018</div>
+    </footer>
 </body>
 </html>

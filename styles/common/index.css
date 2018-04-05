@@ -1,0 +1,64 @@
+.body
+{
+    overflow-x: hidden;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+.h1
+{
+    margin-top: 0;
+}
+
+.header
+{
+    background: #fff;
+    padding: 20px;
+}
+
+.footer__about-service
+{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footer__left-part
+{
+    padding-left: 15px;
+    float: left;
+}
+
+.footer__right-part
+{
+    padding-right: 15px;
+    float: right;
+}
+
+.search__right-part_triangle,
+.search__hamburger,
+.search__desktop,
+.search__tablet,
+.navigation__close
+{
+    display: none;
+}
+
+.search__input_hidden
+{
+    visibility: hidden;
+}
+
+.search__tablet_hidden
+{
+    visibility: hidden;
+}
+
+.navigation__display_none
+{
+    display: none;
+}
+
+.body__overflow_hidden
+{
+    overflow: hidden;
+}

@@ -1,0 +1,64 @@
+.order
+{
+    padding: 15px 10px 45px 35px;
+    position: relative;
+}
+
+.order__title
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.order__form
+{
+    padding-top: 30px;
+}
+
+.order__left-part-field,
+.order__right-part-field
+{
+    display: inline-block;
+}
+
+.order__left-part-field
+{
+    width: 160px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.order__right-part-field
+{
+    padding: 5px;
+    width: calc(100% - 200px);
+}
+
+.order__form-field
+{
+    padding-bottom: 20px;
+}
+
+.field__select
+{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+
+.order__form-submit
+{
+    position: absolute;
+    right: 10px;
+}
+
+.order__form-reset,
+.order__form-submit
+{
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
