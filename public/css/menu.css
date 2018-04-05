@@ -6,10 +6,9 @@
 .content-menu
 {
     background: white;
-    grid-area: menu;
+    grid-area: 🦍 ;
     border: 2px solid rgb(232, 232, 232);
     justify-content: center;
-    /* width: 23vmin; */
     padding: 20px;
     line-height: 2;
 }
@@ -23,7 +22,7 @@
 {
     .content-menu
     {
-        grid-area: menu;
+        grid-area: 🦍 ;
         display: flex;
         width: 675px;
         flex-direction: row;
@@ -40,12 +39,18 @@
 
 @media screen and (max-width : 576px)
 {
-    .content_close
+    .content_close_block
     {
         position: absolute;
         top: 10px;
         right: 10px;
         z-index: 5;
+        display: block;
+    }
+
+    .content_close_none
+    {
+        display: none;
     }
 
     .content-menu__icon
@@ -59,11 +64,10 @@
         margin: 0;
     }
 
-    .content-menu
+    .content-menu_block
     {
         z-index: 3;
         padding-top: 70px;
-        display: none;
         flex-direction: column;
         justify-content: flex-start;
         top: 0;
@@ -71,5 +75,10 @@
         width: 50%;
         position: absolute;
         right: 0;
+    }
+
+    .content-menu_none
+    {
+        display: none;
     }
 }

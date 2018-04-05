@@ -1,7 +1,7 @@
 .order
 {
     background: white;
-    grid-area: form;
+    grid-area: 🦔;
     height: 400px;
     border: 1px solid rgb(232, 232, 232);
     width: 720px;
@@ -30,6 +30,11 @@
     width: 200px;
 }
 
+.order-item_select
+{
+    width: 214px;
+}
+
 .form__inputs__items
 {
     justify-content: center;
@@ -40,8 +45,7 @@
 .order__buttons
 {
     display: flex;
-    margin-left: 120px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .order__buttons_order,
@@ -57,7 +61,7 @@
 {
     .order
     {
-        grid-area: forms;
+        grid-area: 🦔;
         padding: 30px;
         width: 292px;
         font-size: 13px;
@@ -68,5 +72,6 @@
     .form__inputs__items
     {
         width: 290px;
+        margin-left: 4px;
     }
 }

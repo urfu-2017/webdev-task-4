@@ -1,38 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let contentMenu = document.getElementsByClassName('content-menu')[0];
-    let closeBtn = document.getElementsByClassName('content_close')[0];
-    let menu = document.getElementsByClassName('menu__icon')[0];
+    let contentMenu = document.querySelector('.content-menu');
+    let buttonClose = document.querySelector('.content_close');
     let height = document.body.scrollHeight;
-    let search = document.getElementsByClassName('search-form__content')[0];
-    let pic = document.getElementsByClassName('search-form__icon')[0];
+    let search = document.querySelector('.search-form__content');
+    let pic = document.querySelector('.search-form__icon');
+
     Array.prototype.forEach.call(document.getElementsByClassName('item-feature__mark'), el => {
         let markNumber = Number(el.childNodes[0].data);
-        let color = markNumber > 4.5 ? 'green' : '#67e34e';
-        el.style.background = color;
-        el.style['border-left-color'] = color;
+        if (markNumber < 4.5) {
+            el.classList.add('item-feature__mark_bad');
+        }
     });
-    pic.addEventListener('click', () => {
-        search.style.display = 'flex';
-        pic.style.display = 'none';
-        document.getElementsByClassName('search-form__input')[0].focus();
-        document.getElementsByClassName('search-form__input')[0].onblur = () => {
-            pic.style.display = 'block';
-            search.style.display = 'none';
-        };
 
+    pic.addEventListener('click', () => {
+        search.classList.add('search-form__content_focus');
+        pic.classList.add('search-form__icon_clicked');
+        document.querySelector('.search-form__input').focus();
     });
+
+    document.querySelector('.search-form__input').addEventListener('focusout', () => {
+        search.classList.remove('search-form__content_focus');
+        search.classList.add('search-form__content');
+        pic.classList.remove('search-form__icon_clicked');
+        pic.classList.add('search-form__icon');
+    });
+
 
     const openMenu = () => {
+        buttonClose.classList.remove('content_close_none');
+        contentMenu.classList.remove('content-menu_none');
         contentMenu.style.height = `${height}px`;
-        contentMenu.style.display = 'flex';
-        closeBtn.style.display = 'block';
-        closeBtn.addEventListener('click', () => {
-            contentMenu.style.display = 'none';
-            closeBtn.style.display = 'none';
+        contentMenu.classList.add('content-menu_block');
+        buttonClose.classList.add('content_close_block');
+        buttonClose.addEventListener('click', () => {
+            buttonClose.classList.add('content_close_none');
+            contentMenu.classList.add('content-menu_none');
         });
     };
 
-    menu.addEventListener('click', () => {
+    document.querySelector('.menu__icon').addEventListener('click', () => {
         openMenu();
     });
 

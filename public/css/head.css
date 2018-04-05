@@ -61,10 +61,20 @@
         display: none;
     }
 
+    .search-form__content_focus
+    {
+        display: flex;
+    }
+
     .search-form__icon
     {
         display: block;
         margin-left: 100px;
+    }
+
+    .search-form__icon_clicked
+    {
+        display: none;
     }
 
     .search-form__input:focus
