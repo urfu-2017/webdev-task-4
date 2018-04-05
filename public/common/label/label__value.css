@@ -1,0 +1,6 @@
+.label__value
+{
+    width: 200px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}

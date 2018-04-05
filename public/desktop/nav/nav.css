@@ -1,0 +1,7 @@
+.nav
+{
+    max-width: 160px;
+    height: 220px;
+    grid-area: n;
+    justify-self: center;
+}

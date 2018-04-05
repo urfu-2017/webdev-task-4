@@ -1,0 +1,18 @@
+@import './product__name.css';
+@import './product__price.css';
+@import './product__reviews.css';
+@import './__preview/product__preview.css';
+@import './__preview/product__preview_icon.css';
+@import './__rating/product__rating.css';
+@import './__rating/product__rating_4.css';
+@import './__rating/product__rating_4-5.css';
+
+.product
+{
+    width: 50%;
+    max-height: 560px;
+    padding: 6%;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #f6f6f6;
+}

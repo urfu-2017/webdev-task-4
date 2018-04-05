@@ -1,0 +1,16 @@
+.link
+{
+    display: block;
+    color: #6767d9;
+    text-decoration: none;
+}
+
+.link:visited
+{
+    color: #6767d9;
+}
+
+.link:hover
+{
+    color: red;
+}

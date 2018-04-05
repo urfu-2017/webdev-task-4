@@ -1,0 +1,8 @@
+@import './top__link.css';
+@import './top__name.css';
+
+.top
+{
+    padding: 0 20px;
+    background-color: white;
+}

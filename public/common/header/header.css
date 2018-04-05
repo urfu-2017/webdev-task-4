@@ -1,0 +1,8 @@
+@import './header__name.css';
+
+.header
+{
+    display: flex;
+    padding: 26px 3% 26px 1.4%;
+    justify-content: space-between;
+}

@@ -1,0 +1,7 @@
+@import './order__buttons.css';
+@import './order__title.css';
+
+.order
+{
+    background-color: white;
+}

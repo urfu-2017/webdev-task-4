@@ -1,0 +1,9 @@
+.main
+{
+    display: grid;
+    padding: 40px 4%;
+    grid-column-gap: 4%;
+    grid-template-columns: 19% 52% 21%;
+    grid-template-areas: 'n p t'
+                         'n o t';
+}

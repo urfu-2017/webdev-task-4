@@ -1,0 +1,9 @@
+.order__buttons
+{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
