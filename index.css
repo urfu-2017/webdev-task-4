@@ -1,0 +1,69 @@
+@import './public/css/menu.css';
+@import './public/css/items.css';
+@import './public/css/form.css';
+@import './public/css/head.css';
+@import './public/css/popular.css';
+
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    src: url('./public/fonts/YandexSansDisplay-Regular.ttf');
+}
+
+body
+{
+    font-family: 'Yandex Sans Display Regular';
+    padding: 0;
+    margin: 0;
+    background: rgb(246, 246, 246);
+}
+
+.content-wrap
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto 600px 130px;
+    grid-row-gap: 60px;
+    grid-column-gap: 100px;
+    grid-template-areas: '🦍 🐫 🐕'
+        '.  🐫 .'
+        '.  🦔 .';
+    margin: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width : 768px)
+{
+    .content-wrap
+    {
+        grid-template-rows: auto auto auto 110px;
+        grid-template-columns: auto;
+        grid-template-areas: '🦍'
+            '🐫'
+            '🐕'
+            '🦔';
+
+    }
+}
+
+@media screen and (max-width : 576px)
+{
+    .content-wrap
+    {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: '🐕'
+            '🐫'
+            '🦔';
+    }
+
+}

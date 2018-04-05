@@ -2,9 +2,118 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <main class="main">
+        <section class="head">
+            <div class="header">
+                <div class="head__logo">Билли.Маркет</div>
+                <input type="image" src="public/pic/menu.png" class="menu__icon" alt="menu">
+            </div>
+            <div class="head__search">
+                <div class="search-form__content_mobile">
+                    <input class="search-form__input_mobile" type="text">
+                </div>
+                <div class="search-form__content">
+                    <input class="search-form__input">
+                    <input  type="submit" value="Найти" class="search-form__button">
+                </div>
+                <input type="image" src="public/pic/search.svg" class="search-form__icon" alt="search">
+            </div>
+        </section>
+        <div class="content-wrap">
+            <input type="image" src="public/pic/close.png" class="content_close" alt="close">
+            <nav class="content-menu">
+                <div><a href="#" class="content-menu__item">Морские ракушки</a></div>
+                <div><a href="#" class="content-menu__item">Сувениры из Тайланда</a></div>
+                <div><a href="#" class="content-menu__item">Автомобили Тесла</a></div>
+                <div><a href="#" class="content-menu__item">Марки из разных стран</a></div>
+                <div><a href="#" class="content-menu__item">Заказать сувенир</a></div>
+            </nav>
+            <section class="content-block">
+                <article class="content-block__item">
+                    <img src="public/pic/dog.png" class="content-block__img" alt="good">
+                    <div class="content-block__name"><a href="#">Собака</a></div>
+                    <div class="item-feature">
+                        <div class="item-feature__price">300 &#8381;</div>
+                        <div class="item-feature__mark">4.2</div>
+                        <div class="item-feature__comment">111 отзывов</div>
+                    </div>
+                </article>
+                <article class="content-block__item">
+                    <img src="public/pic/dog.png" class="content-block__img" alt="good">
+                    <div class="content-block__name"><a href="#">Собака</a></div>
+                    <div class="item-feature">
+                        <div class="item-feature__price">300 &#8381;</div>
+                        <div class="item-feature__mark">4.9</div>
+                        <div class="item-feature__comment">111 отзывов</div>
+                    </div>
+                </article>
+                <article class="content-block__item">
+                    <img src="public/pic/dog.png" class="content-block__img" alt="good">
+                    <div class="content-block__name"><a href="#">Собака</a></div>
+                    <div class="item-feature">
+                        <div class="item-feature__price">300 &#8381;</div>
+                        <div class="item-feature__mark">4.9</div>
+                        <div class="item-feature__comment">111 отзывов</div>
+                    </div>
+                </article>
+                <article class="content-block__item">
+                    <img src="public/pic/dog.png" class="content-block__img" alt="good">
+                    <div class="content-block__name"><a href="#">Собака</a></div>
+                    <div class="item-feature">
+                        <div class="item-feature__price">300 &#8381;</div>
+                        <div class="item-feature__mark">4.9</div>
+                        <div class="item-feature__comment">111 отзывов</div>
+                    </div>
+                </article>
+
+            </section>
+            <section class="content-list">
+                <div class="content-list__header">Популярные товары</div>
+                <div class="content-list__items">
+                    <div class="content-list__item"><a href="#">Ракушка морская</a></div>
+                    <div class="content-list__item"><a href="#">Чесалка для спины</a></div>
+                    <div class="content-list__item"><a href="#">Четки</a></div>
+                </div>
+            </section>
+            <form class="order">
+                <h1 class="order__header">Заказать сувенир</h1>
+                <fieldset class="form__inputs">
+                    <div class="form__inputs__items">
+                        <div class="inputs-header">Количество:</div>
+                        <input type="text" class="order-item"><br>
+                    </div>
+                    <div class="form__inputs__items">
+                        <div class="inputs-header">Город:</div>
+                        <select name="сities" class="order-item order-item_select">
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Москва">Моска</option>
+                        </select>
+                    </div>
+                    <div class="form__inputs__items">
+                        <div class="inputs-header">Email:</div>
+                        <input type="email" placeholder="email" class="order-item"><br>
+                    </div>
+                    <div class="form__inputs__items">
+                        <div class="inputs-header">Телефон:</div>
+                        <input type="tel" placeholder="Номер телефона*" class="order-item"><br>
+                    </div>
+                    <div class="form__inputs__items">
+                        <div class="inputs-header">Дата доставки:</div>
+                        <input type="date" class="order-item"><br>
+                    </div>
+                </fieldset>
+                <div class="order__buttons">
+                    <input  type="submit" value="Сбросить заказ" class="order__buttons_order">
+                    <input  type="submit" value="Заказать" class="order__buttons_cancel">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="public/script/dom.js"></script>
 </body>
 </html>
