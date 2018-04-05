@@ -52,3 +52,4 @@ function switchNavigationDrawer(collapse = false) {
     document.body.style.overflow = collapse ? 'visible' : 'hidden';
     navigation.wrapper.style.display = collapse ? 'none' : 'flex';
 }
+
