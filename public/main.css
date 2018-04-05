@@ -125,21 +125,25 @@
     display: grid;
 }
 
+/* eslint-disable-next-line selector-no-id */
 #1
 {
     grid-area: el1;
 }
 
+/* eslint-disable-next-line selector-no-id */
 #2
 {
     grid-area: el2;
 }
 
+/* eslint-disable-next-line selector-no-id */
 #3
 {
     grid-area: el3;
 }
 
+/* eslint-disable-next-line selector-no-id */
 #4
 {
     grid-area: el4;
