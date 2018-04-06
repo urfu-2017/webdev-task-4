@@ -2,9 +2,111 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
 </head>
 <body>
+    <div class="header">
+        <div class="header__logo">Билли.Маркет</div>
+        <div class="burger">📶</div>
+        <form class="header__search">
+            <input class="header__input" type="text">
+            <input class="header__button" type="submit">
+        </form>
+        <div class="header__search-logo">🔍</div>
+    </div>
+    <div class="main">
+        <div class="navigation">
+            <a class="navigation__el" href="#">Морские ракушки</a>
+            <a class="navigation__el" href="#">Сувениры из Тайланда</a>
+            <a class="navigation__el" href="#">Автомобили Тесла</a>
+            <a class="navigation__el" href="#">Марки из разных стран</a>
+            <a class="navigation__el" href="#">Заказать сувенир</a>
+        </div>
+        <div class="shop">
+            <div class="shop__item">
+                <img class="shop__item-img" alt="rakushka"
+                src="http://cliparts.co/cliparts/ATb/reM/ATbreMxpc.png">
+                <a href="/" class="shop__item-title">Ракушка "Морское дно"</a>
+                <span class="shop__item-price">290 Р</span>
+                <div class="shop__item-values">
+                    <div class="shop__item-mark">4.0</div>
+                    <span class="shop__item-voices">87 отзывов</span>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img class="shop__item-img" alt="termo"
+                src="https://store.artlebedev.ru/products/images/pa5akgzn.jpg">
+                <a href="/" class="shop__item-title">Термокружкус "Батарейка"</a>
+                <span class="shop__item-price">404 Р</span>
+                <div class="shop__item-values">
+                    <div class="shop__item-mark">4.5</div>
+                    <span class="shop__item-voices">290 отзывов</span>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img class="shop__item-img" alt="tesla"
+                src="http://futurerider.ru/wp-content/uploads/2016/05/tesla-model-s-70d.jpg">
+                <a href="/" class="shop__item-title">Автомобиль "Тесла"</a>
+                <span class="shop__item-price">359 900 Р</span>
+                <div class="shop__item-values">
+                    <div class="shop__item-mark">4.5</div>
+                    <span class="shop__item-voices">1 отзыв</span>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img class="shop__item-img" alt="neck"
+                src="http://robinstore.ru/images/28/chesalka_37sm_mojjevelnik.jpg">
+                <a href="/" class="shop__item-title">Чесалка для спины</a>
+                <span class="shop__item-price">195 Р</span>
+                <div class="shop__item-values">
+                    <div class="shop__item-mark">4.0</div>
+                    <span class="shop__item-voices">29 отзывов</span>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <div class="popular__title">
+                Популярные товары
+            </div>
+            <a class="popular__el" href="#">Ракушка морская</a>
+            <a class="popular__el" href="#">Чесалка для спины</a>
+            <a class="popular__el" href="#">Чётки</a>
+        </div>
+        <form class="order">
+            <span class="order__title">Заказать сувенир</span>
+            <div class="order__el">
+                <label for="num">Количество</label>
+                <input class="order__el-input" id="num" type="number" min="1">
+            </div>
+            <div class="order__el">
+                <label for="city">Город:</label>
+                <select class="order__el-input" id="city">
+                    <option>Екатеринбург</option>
+                </select>
+            </div>
+            <div class="order__el">
+                <label for="email">Email</label>
+                <input class="order__el-input" id="email" type="email">
+            </div>
+            <div class="order__el">
+                <label for="phone">Телефон</label>
+                <input class="order__el-input" id="phone" type="tel">
+            </div>
+            <div class="order__el">
+                <label for="date">Дата доставки</label>
+                <input class="order__el-input" id="date" type="date">
+            </div>
+            <div class="order__el">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <div class="right-bar">
+        <div class="right-bar__close">❌</div>
+    </div>
 </body>
 </html>
