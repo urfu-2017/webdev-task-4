@@ -2,18 +2,17 @@ function showMenu() {
     const menu = document.getElementsByClassName('first-row__menu')[0];
     const body = document.body;
     body.style.overflow = 'hidden';
-    menu.style.display = 'flex';
+    menu.classList.add('visibility_visible');
 }
 
 function closeMenu() {
-    const menu = document.getElementsByClassName('first-row__menu')[0];
+    const menu = document.querySelector('.first-row__menu');
     const body = document.body;
     body.style.overflow = 'scroll';
-    menu.style.display = 'none';
+    menu.classList.remove('visibility_visible');
 }
 
 window.onload = async () => {
-    // const Hammer = await document.createElement('script');
 
     const menuBtn = document.getElementsByClassName('title__btn')[0];
     menuBtn.addEventListener('click', showMenu, false);
@@ -22,14 +21,22 @@ window.onload = async () => {
     menuClose.addEventListener('click', closeMenu, false);
 
     const body = document.body;
+    let axis = 0;
 
-    // eslint-disable-next-line no-undef
-    const swipe = new Hammer(body);
-    swipe.on('swipeleft', () => {
-        showMenu();
+    body.addEventListener('touchstart', (e) => {
+        axis = e.changedTouches[0].clientX;
     });
-    swipe.on('swiperight', () => {
-        closeMenu();
+
+    body.addEventListener('touchend', (e) => {
+        if (window.innerWidth <= 600) {
+            if (e.changedTouches[0].clientX + 60 < axis) {
+                showMenu();
+            }
+
+            if (e.changedTouches[0].clientX > axis + 60) {
+                closeMenu();
+            }
+        }
     });
 };
 
