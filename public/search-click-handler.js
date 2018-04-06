@@ -54,8 +54,8 @@ const touchMoveHandler = e => {
     if (e.changedTouches[0].pageX > (currentWidth / 2)) {
         let offsetX = (e.changedTouches[0].pageX / currentWidth) * 100;
         menu.style.left = `${offsetX}%`;
-        let width = 100 - offsetX;
-        menu.style.width = `${width}%`;
+        let left = offsetX;
+        menu.style.left = `${left}%`;
     }
 };
 
@@ -80,7 +80,7 @@ if (currentWidth <= 576) {
             menu.style.height = `${height}px`;
             menu.style['overflow-x'] = 'hidden';
             menu.style.display = 'block';
-            menu.style.width = '0%';
+            // menu.style.width = '0%';
             menu.style.left = '100%';
             menu.style.border = 'none';
             document.addEventListener('touchmove', touchMoveHandler);
