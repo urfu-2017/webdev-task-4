@@ -2,67 +2,79 @@
 /* eslint no-undef: 0 new-cap: 0*/
 
 const onSearchBtnClick = function (e) {
-    const searchTab = document.getElementsByClassName('footer_search')[0];
-    searchTab.style.display = 'flex';
-    e.target.style.display = 'none';
-    const searchInput = document.getElementsByClassName('footer_input')[0];
+    const searchTab = document.querySelector('.header__search');
+    searchTab.classList.add('header__search_visible');
+    e.target.classList.add('header__search-logo_hide');
+
+    const searchInput = document.querySelector('.header__input');
     searchInput.focus();
 };
 
 const onSearchInputBlur = function () {
     if (window.innerWidth > 720 && window.innerWidth < 1200) {
-        const searchLogo = document.getElementsByClassName('footer_search-logo')[0];
-        const searchTab = document.getElementsByClassName('footer_search')[0];
-        searchLogo.style.display = 'flex';
-        searchTab.style.display = 'none';
+        const searchLogo = document.querySelector('.header__search-logo');
+        const searchTab = document.querySelector('.header__search');
+
+        searchTab.classList.remove('header__search_visible');
+        searchLogo.classList.remove('header__search-logo_hide');
     }
 };
 
 const onClickBurger = function () {
-    const rightBar = document.getElementsByClassName('right-bar')[0];
-    rightBar.style.display = 'block';
+    const rightBar = document.querySelector('.right-bar');
+    rightBar.classList.add('right-bar_show');
 
-    const body = document.getElementsByTagName('body')[0];
+    const body = document.body;
     body.style.overflow = 'hidden';
 };
 
 const onClickCloseBar = function () {
-    const rightBar = document.getElementsByClassName('right-bar')[0];
-    rightBar.style.display = 'none';
+    const rightBar = document.querySelector('.right-bar');
+    rightBar.classList.remove('right-bar_show');
 
-    const body = document.getElementsByTagName('body')[0];
+    const body = document.body;
     body.style.overflow = 'scroll';
 };
 
-function min720() {
+// Resize
+function resize() {
+    const navigation = document.querySelector('.navigation');
     if (window.innerWidth <= 720) {
-        const main = document.getElementsByClassName('main')[0];
-        const popular = document.getElementsByClassName('popular')[0];
-        main.prepend(popular);
-
-        const rightBar = document.getElementsByClassName('right-bar')[0];
-        const navigation = document.getElementsByClassName('navigation')[0];
+        const rightBar = document.querySelector('.right-bar');
         rightBar.prepend(navigation);
+    } else {
+        const main = document.querySelector('.main');
+        main.prepend(navigation);
     }
 }
 
-window.onload = () => {
-    const body = document.getElementsByTagName('body')[0];
-    Hammer(body).on('swipeleft', function () {
-        onClickBurger();
-    });
+let x = 0;
 
-    const searchBtn = document.getElementsByClassName('footer_search-logo')[0];
+window.onload = () => {
+    const body = document.body;
+    body.addEventListener('touchstart', (e) => {
+        x = e.clientX;
+    }, false);
+
+    body.addEventListener('touchend', (e) => {
+        if (e.clientX + 160 < x && window.innerWidth <= 720) {
+            onClickBurger();
+        }
+    }, false);
+
+    const searchBtn = document.querySelector('.header__search-logo');
     searchBtn.addEventListener('click', onSearchBtnClick, false);
 
-    const searchInput = document.getElementsByClassName('footer_input')[0];
+    const searchInput = document.querySelector('.header__input');
     searchInput.addEventListener('blur', onSearchInputBlur, false);
 
-    const burger = document.getElementsByClassName('burger')[0];
+    const burger = document.querySelector('.burger');
     burger.addEventListener('click', onClickBurger, false);
 
-    const closeBtn = document.getElementsByClassName('right-bar_close')[0];
+    const closeBtn = document.querySelector('.right-bar__close');
     closeBtn.addEventListener('click', onClickCloseBar, false);
+};
 
-    min720();
+window.onresize = () => {
+    resize();
 };

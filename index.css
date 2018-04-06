@@ -9,7 +9,7 @@ body
     background: rgb(246, 246, 246);
 }
 
-.footer
+.header
 {
     width: 100%;
     height: 80px;
@@ -20,12 +20,12 @@ body
     align-items: center;
 }
 
-.footer_logo
+.header__logo
 {
     font-size: 32px;
 }
 
-.footer_search
+.header__search
 {
     flex-direction: row;
     align-items: center;
@@ -33,7 +33,12 @@ body
     border-radius: 4px;
 }
 
-.footer_search > input
+.header__search.header__search_visible
+{
+    display: flex;
+}
+
+.header__input
 {
     width: 90%;
     height: 40px;
@@ -42,14 +47,21 @@ body
     margin: 4px;
 }
 
-.footer_button
+.header__button
 {
-    width: 110px;
-    font-size: 16px;
+    width: 80px;
+    border: 0;
+    font-size: 12px;
+    background: transparent;
     text-align: center;
 }
 
-.footer_search-logo
+.header__search-logo
+{
+    display: none;
+}
+
+.header__search-logo.header__search-logo_hide
 {
     display: none;
 }
@@ -62,6 +74,7 @@ body
 
 .main
 {
+    max-width: 1368px;
     padding: 32px;
     display: flex;
     align-items: center;
@@ -81,7 +94,7 @@ body
     box-shadow: 0 0 10px lightgray;
 }
 
-.navigation > a
+.navigation__el
 {
     text-align: left;
     text-decoration: none;
@@ -90,7 +103,7 @@ body
     color: #33c;
 }
 
-.navigation > a:last-child
+.navigation__el:last-child
 {
     margin-bottom: 0;
     margin-top: 16px;
@@ -106,14 +119,14 @@ body
     box-shadow: 0 0 10px lightgray;
 }
 
-.popular_title
+.popular__title
 {
     width: 148px;
     font-weight: 900;
     margin-bottom: 16px;
 }
 
-.popular > a
+.popular__el
 {
     text-align: left;
     text-decoration: none;
@@ -130,7 +143,7 @@ body
     box-shadow: 0 0 10px lightgray;
 }
 
-.shop_item
+.shop__item
 {
     background: white;
     display: flex;
@@ -139,14 +152,14 @@ body
     padding: 48px;
 }
 
-.shop_item > img
+.shop__item-img
 {
     width: 200px;
     height: 200px;
     margin-bottom: 32px;
 }
 
-.shop_item-title
+.shop__item-title
 {
     text-decoration: none;
     color: #33c;
@@ -154,7 +167,7 @@ body
     margin-bottom: 8px;
 }
 
-.shop_item-price
+.shop__item-price
 {
     color: black;
     font-weight: 900;
@@ -162,14 +175,14 @@ body
     margin-bottom: 8px;
 }
 
-.shop_item-values
+.shop__item-values
 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.shop_item-mark
+.shop__item-mark
 {
     background: green;
     color: whitesmoke;
@@ -178,7 +191,7 @@ body
     margin-right: 8px;
 }
 
-.shop_item-voices
+.shop__item-voices
 {
     font-size: 12px;
     color: grey;
@@ -194,12 +207,12 @@ body
     box-shadow: 0 0 10px lightgray;
 }
 
-.order > span
+.order__title
 {
     font-size: 28px;
 }
 
-.order > div
+.order__el
 {
     display: flex;
     flex-direction: row;
@@ -207,8 +220,7 @@ body
     margin: 16px 0;
 }
 
-.order input,
-select
+.order__el-input
 {
     width: 200px;
     height: 24px;
@@ -226,7 +238,12 @@ select
     height: 100%;
 }
 
-.right-bar_close
+.right-bar.right-bar_show
+{
+    display: block;
+}
+
+.right-bar__close
 {
     position: fixed;
     top: 16px;
@@ -254,7 +271,7 @@ select
         flex-direction: column;
     }
 
-    .footer_search
+    .header__search
     {
         display: flex;
         width: 800px;
@@ -270,7 +287,7 @@ select
         margin-bottom: 16px;
     }
 
-    .navigation > a
+    .navigation__el
     {
         text-align: center;
     }
@@ -282,18 +299,18 @@ select
         justify-content: space-around;
     }
 
-    .popular_title
+    .popular__title
     {
         width: 500px;
     }
 
-    .footer_search-logo
+    .header__search-logo
     {
         display: block;
         cursor: pointer;
     }
 
-    .footer_search
+    .header__search
     {
         display: none;
         width: 320px;
@@ -312,12 +329,13 @@ select
 
     .popular
     {
+        order: -1;
         width: 248px;
         margin-bottom: 16px;
         flex-direction: column;
     }
 
-    .footer
+    .header
     {
         height: 120px;
         flex-direction: column;
@@ -325,7 +343,7 @@ select
         align-items: left;
     }
 
-    .footer_search
+    .header__search
     {
         display: flex;
         width: 100%;
