@@ -39,7 +39,7 @@ function main() {
 }
 
 function switchSearchField(collapse = false) {
-    if (window.innerWidth < 600 || window.innerWidth >= 1024) {
+    if (window.innerWidth < 500 || window.innerWidth >= 1000) {
         return;
     }
 
