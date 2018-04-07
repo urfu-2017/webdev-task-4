@@ -131,18 +131,6 @@
     width: 150px;
 }
 
-@media screen and (min-width: 500px)
-{
-    .elements
-    {
-    }
-
-    .element
-    {
-    }
-
-}
-
 @media screen and (max-width: 500px)
 {
     .element
@@ -311,7 +299,7 @@
     {
         grid-template-columns: auto auto 400px auto auto;
         grid-template-areas: '. n el s .'
-        '. n f s .';
+            '. n f s .';
     }
 
     body
@@ -326,9 +314,9 @@
     {
         grid-template-columns: auto 400px auto;
         grid-template-areas: '. n .'
-        '. el .'
-        '. s .'
-        '. f .';
+            '. el .'
+            '. s .'
+            '. f .';
     }
 
     body
@@ -343,7 +331,7 @@
     {
         grid-template-columns: auto 270px auto;
         grid-template-areas: '. s .'
-        '. el .'
-        '. f .';
+            '. el .'
+            '. f .';
     }
 }
