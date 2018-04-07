@@ -1,6 +1,9 @@
 @import './search__input.css';
+@import './__button/search__button_text.css';
+@import './__button/search__button_icon.css';
 
 .search
 {
-    width: 75%;
+    width: 50%;
+    height: 40px;
 }

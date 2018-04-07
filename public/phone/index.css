@@ -1,1 +1,7 @@
-
+@import './header/header.css';
+@import './main/main.css';
+@import './nav/nav.css';
+@import './order/order.css';
+@import './product/product.css';
+@import './search/search.css';
+@import './top/top.css';

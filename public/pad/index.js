@@ -1,7 +1,7 @@
 'use strict';
 
 const searchButton = document.querySelector('.search__button_icon');
-const search = document.getElementById('search');
+const search = document.querySelector('.search__input');
 
 searchButton.onclick = () => {
     search.style.visibility = 'visible';

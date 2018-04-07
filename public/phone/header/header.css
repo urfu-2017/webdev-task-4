@@ -1,0 +1,8 @@
+@import './header__name.css';
+@import './header__menu.css';
+
+.header
+{
+    padding: 8px;
+    padding-bottom: 16px;
+}

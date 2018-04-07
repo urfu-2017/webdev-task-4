@@ -1,0 +1,8 @@
+.nav__close
+{
+    color: red;
+    position: relative;
+    left: 76%;
+    margin-bottom: 34px;
+    display: none;
+}

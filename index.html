@@ -5,14 +5,16 @@
     <title>Задача «Тим слишком занят»</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" media="(min-width: 1024px)" href="./index-desktop.css">
-    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 480px)" href="./index-pad.css">
-    <link rel="stylesheet" media="(max-width: 480px)" href="./index-phone.css">
+    <link rel="stylesheet" media="(max-width: 1023px) and (min-width: 426px)" href="./index-pad.css">
+    <link rel="stylesheet" media="(max-width: 425px)" href="./index-phone.css">
+    <script async src="./public/phone/index.js"></script>
 </head>
 <body>
     <header class="header">
         <h1 class="header__name">Билли.Маркет</h1>
+        <button class="header__menu button-default" type="button">☰</button>
         <div class="search">
-            <input class="search__input" type="text" id="search" placeholder="Искать товары">
+            <input class="search__input" type="text" placeholder="Искать товары">
             <button class="search__button_text button-default" type="button">Найти</button>
             <button class="search__button_icon button-default" type="button"></button>
         </div>
@@ -20,6 +22,7 @@
     </header>
     <main class="main">
         <nav class="nav">
+            <button class="nav__close button-default" type="button">🗙</button>
             <a class="link nav__link" href="#seashell">Морские ракушки</a>
             <a class="link nav__link" href="#hotmug">Термокружки</a>
             <a class="link nav__link" href="#tesla">Автомобили Тесла</a>
