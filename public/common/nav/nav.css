@@ -1,0 +1,8 @@
+@import './nav__link.css';
+@import './nav__close.css';
+
+.nav
+{
+    padding: 30px 24px;
+    background-color: white;
+}

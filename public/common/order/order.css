@@ -1,0 +1,8 @@
+@import './order__buttons.css';
+@import './order__title.css';
+
+.order
+{
+    padding: 10px 20%;
+    background-color: white;
+}

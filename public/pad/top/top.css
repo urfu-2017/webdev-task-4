@@ -1,0 +1,9 @@
+@import './top__link.css';
+@import './top__name.css';
+
+.top
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}

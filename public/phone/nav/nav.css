@@ -1,0 +1,11 @@
+@import './nav__close.css';
+
+.nav
+{
+    width: 46%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}

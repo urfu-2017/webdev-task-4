@@ -3,8 +3,117 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="(min-width: 1024px)" href="./index-desktop.css">
+    <link rel="stylesheet" media="(max-width: 1023px) and (min-width: 426px)" href="./index-pad.css">
+    <link rel="stylesheet" media="(max-width: 425px)" href="./index-phone.css">
+    <script async src="./public/phone/index.js"></script>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__name">Билли.Маркет</h1>
+        <button class="header__menu button-default" type="button">☰</button>
+        <div class="search">
+            <input class="search__input" type="text" placeholder="Искать товары">
+            <button class="search__button_text button-default" type="button">Найти</button>
+            <button class="search__button_icon button-default" type="button"></button>
+        </div>
+        <script async src="./public/pad/index.js"></script>
+    </header>
+    <main class="main">
+        <nav class="nav">
+            <button class="nav__close button-default" type="button">🗙</button>
+            <a class="link nav__link" href="#seashell">Морские ракушки</a>
+            <a class="link nav__link" href="#hotmug">Термокружки</a>
+            <a class="link nav__link" href="#tesla">Автомобили Тесла</a>
+            <a class="link nav__link" href="#scab">Чесалки для спины</a>
+            <a class="link nav__link" href="#order">Заказать сувенир</a>
+        </nav>
+        <div class="products">
+            <div class="product" id="seashell">
+                <div class="product__preview">
+                    <img class="product__preview_icon"
+                        src="https://pp.userapi.com/c845121/v845121790/1740f/1KujtDffzOQ.jpg"
+                        alt="preview">
+                </div>
+                <a class="link product__name" href="https://goo.gl/xAqz5x">
+                    Ракушка &quot;Морское дно&quot;
+                </a>
+                <div class="product__price">290 &#8381;</div>
+                <div class="product__rating product__rating_4">4.0</div>
+                <div class="product__reviews">111 отзывов</div>
+            </div>
+            <div class="product" id="hotmug">
+                <div class="product__preview">
+                    <img class="product__preview_icon"
+                        src="https://pp.userapi.com/c845121/v845121790/17420/k4VuVV6i6A8.jpg"
+                        alt="preview">
+                </div>
+                <a class="link product__name" href="https://goo.gl/WJBnfF">
+                    Термокружка &quot;для Камры&quot;
+                </a>
+                <div class="product__price">404 &#8381;</div>
+                <div class="product__rating product__rating_4-5">4.5</div>
+                <div class="product__reviews">290 отзывов</div>
+            </div>
+            <div class="product" id="tesla">
+                <div class="product__preview">
+                    <img class="product__preview_icon"
+                        src="https://pp.userapi.com/c845121/v845121790/17429/7hZ_ZkC8Gbs.jpg"
+                        alt="preview">
+                </div>
+                <a class="link product__name" href="https://goo.gl/s2u5bE">
+                    Атомобиль &quot;Тесла&quot;
+                </a>
+                <div class="product__price">359 900 &#8381;</div>
+                <div class="product__rating product__rating_4-5">4.5</div>
+                <div class="product__reviews">1 отзыв</div>
+            </div>
+            <div class="product" id="scab">
+                <div class="product__preview">
+                    <img class="product__preview_icon"
+                        src="https://pp.userapi.com/c845121/v845121790/17430/k559wn7slPA.jpg"
+                        alt="preview">
+                </div>
+                <a class="link product__name" href="https://goo.gl/2bnEX5">Чесалка для спины</a>
+                <div class="product__price">195 &#8381;</div>
+                <div class="product__rating product__rating_4">4.0</div>
+                <div class="product__reviews">29 отзывов</div>
+            </div>
+        </div>
+        <aside class="top">
+            <h3 class="top__name">Популярные товары</h3>
+            <a class="link top__link" href="https://goo.gl/xAqz5x">Ракушка морская</a>
+            <a class="link top__link" href="https://goo.gl/2bnEX5">Чесалка для спины</a>
+            <a class="link top__link" href="https://goo.gl/WJBnfF">Термокружка</a>
+        </aside>
+        <form class="order" id="order" name="post">
+            <h2 class="order__title">Заказать сувенир</h2>
+            <label class="label">
+                <span class="label__name">Количество:</span>
+                <input class="label__value" type="number">
+            </label>
+            <label class="label">
+                <span class="label__name">Город</span>
+                <input class="label__value" type="text">
+            </label>
+            <label class="label">
+                <span class="label__name">Email</span>
+                <input class="label__value" type="email">
+            </label>
+            <label class="label">
+                <span class="label__name">Телефон</span>
+                <input class="label__value" type="tel">
+            </label>
+            <label class="label">
+                <span class="label__name">Дата доставки:</span>
+                <input class="label__value" type="date">
+            </label>
+            <div class="order__buttons">
+                <button class="order__buttons-reset" type="reset">Сбросить заказ</button>
+                <button class="order__buttons-submit" type="submit">Заказать!</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

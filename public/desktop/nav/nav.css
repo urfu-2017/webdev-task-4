@@ -1,0 +1,10 @@
+@import './nav__link.css';
+
+.nav
+{
+    max-width: 160px;
+    height: 220px !important;
+    display: block !important;
+    grid-area: n;
+    justify-self: center;
+}

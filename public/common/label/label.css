@@ -1,0 +1,9 @@
+@import './label__name.css';
+@import './label__value.css';
+
+.label
+{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}

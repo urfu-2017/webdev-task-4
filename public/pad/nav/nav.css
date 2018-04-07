@@ -1,0 +1,11 @@
+@import './nav__link.css';
+
+.nav
+{
+    display: flex !important;
+    height: initial !important;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 14px 0;
+    margin-bottom: 30px;
+}

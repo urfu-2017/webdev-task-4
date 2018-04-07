@@ -1,0 +1,13 @@
+.button-default
+{
+    font-size: 22px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button-default:active
+{
+    background-color: #eee;
+}
