@@ -1,0 +1,337 @@
+.form
+{
+    grid-area: f;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    background: #fff;
+}
+
+.form__header
+{
+    margin: 0 0 8px;
+}
+
+.form__row
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.form__input
+{
+    min-width: 100px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}
+
+.form__input_select
+{
+    padding: 1px;
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 500px)
+{
+    .form__input
+    {
+        flex-basis: 55%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .form__input
+    {
+        flex-basis: 30%;
+    }
+}
+
+.element
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 24px;
+
+    border: 1px solid #eee;
+}
+
+.element__photo
+{
+    margin-bottom: 14px;
+}
+
+.element__name
+{
+    font-size: 16px;
+    margin: 8px 0 0;
+}
+
+.element__price
+{
+    margin: 8px 0 0;
+
+    font-weight: 500;
+}
+
+.element__rating
+{
+    margin: 2px 0 0;
+}
+
+.element__rating-value
+{
+    background: lightgreen;
+    padding: 4px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.element__rating-value:after
+{
+    position: absolute;
+    display: block;
+    content: '';
+    border-style: solid;
+    width: 12px;
+    height: 12px;
+    transform: scaleX(.3) rotate(45deg);
+    border-color: lightgreen;
+    background: lightgreen;
+    top: 4px;
+    left: 21px;
+    border-width: 3px;
+}
+
+.element__reviews
+{
+    margin-left: 40px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.elements
+{
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    grid-area: el;
+}
+
+.element > img
+{
+    width: 150px;
+}
+
+@media screen and (max-width: 500px)
+{
+    .element
+    {
+        width: 220px;
+    }
+}
+
+.suggest
+{
+    grid-area: s;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 16px 24px;
+
+    min-width: 170px;
+
+    background: #fff;
+}
+
+.suggest__header
+{
+    margin: 0 0 8px;
+
+    width: 100%;
+}
+
+.suggest > .blue
+{
+    margin: 8px 0;
+}
+
+@media screen and (max-width: 500px), screen and (min-width: 1000px)
+{
+    .suggest
+    {
+        flex-flow: column nowrap;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px)
+{
+    .suggest
+    {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .suggest__header
+    {
+        text-align: center;
+    }
+}
+
+.navigation
+{
+    grid-area: n;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 16px 24px;
+
+    min-width: 170px;
+
+    background: white;
+}
+
+.navigation__close-icon
+{
+    align-self: flex-end;
+
+    margin: 0 0 8px;
+
+    height: 28px;
+    width: 28px;
+
+    color: #aaa;
+}
+
+.navigation > .blue
+{
+    margin: 8px 0;
+}
+
+@media screen and (max-width: 500px), screen and (min-width: 1000px)
+{
+    .navigation
+    {
+        flex-flow: column nowrap;
+    }
+
+    .navigation__close-icon
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px)
+{
+
+    .navigation
+    {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .navigation__close-icon
+    {
+        display: none;
+    }
+
+    .navigation > .blue
+    {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .navigation
+    {
+        display: none;
+
+        flex-flow: column nowrap;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        height: 100%;
+
+        box-shadow: 0 0 10px #ccc;
+
+        z-index: 1;
+    }
+
+    .navigation__close-icon
+    {
+        display: block;
+    }
+}
+
+.page
+{
+    display: grid;
+    grid-gap: 24px;
+    justify-items: stretch;
+    align-items: flex-start;
+
+    padding: 24px;
+
+    background: #eee;
+}
+
+@media screen and (min-width: 1000px)
+{
+    .page
+    {
+        grid-template-columns: auto auto 400px auto auto;
+        grid-template-areas: '. n el s .'
+            '. n f s .';
+    }
+
+    body
+    {
+        overflow: visible !important;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px)
+{
+    .page
+    {
+        grid-template-columns: auto 400px auto;
+        grid-template-areas: '. n .'
+            '. el .'
+            '. s .'
+            '. f .';
+    }
+
+    body
+    {
+        overflow: visible !important;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .page
+    {
+        grid-template-columns: auto 270px auto;
+        grid-template-areas: '. s .'
+            '. el .'
+            '. f .';
+    }
+}

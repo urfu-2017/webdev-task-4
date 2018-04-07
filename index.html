@@ -3,8 +3,116 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./public/index.css">
+    <script defer src="./public/actions.js"></script>
+    <script defer src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+<header class="header">
+    <span class="logo">Билли.Маркет</span>
+    <a class="fas fa-bars fa-2x header__bars-icon"></a>
+    <div class="search">
+        <a class="fas fa-search fa-2x search__icon"></a>
+        <input type="text" class="search__input">
+        <input type="button" value="Найти" class="search__button">
+    </div>
+</header>
+<div class="page">
+    <div class="navigation">
+        <a class="fas fa-times fa-2x navigation__close-icon"></a>
+        <a class="blue" href="">Морские ракушки</a>
+        <a class="blue" href="">Сувениры из Тайланда</a>
+        <a class="blue" href="">Автомобили Tesla</a>
+        <a class="blue" href="">Марки из разных стран</a>
+        <a class="blue" href="">Заказать сувенир</a>
+    </div>
+    <main class="elements">
+        <div class="element">
+            <img class="element__photo" src="matreshka.jpg" alt="matreshka">
+            <div class="element__info">
+            <span class="element__name blue">Матрешка</span>
+            <span class="element__price">290 &#8381;</span>
+            <div class="element__rating">
+                <span class="element__rating-value">4.8</span>
+                <span class="element__reviews">74 отзывов</span>
+            </div>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__photo" src="matreshka2.png" alt="matreshka">
+            <div class="element__info">
+            <span class="element__name blue">Матрешка</span>
+            <span class="element__price">100 &#8381;</span>
+            <div class="element__rating">
+                <span class="element__rating-value">4.0</span>
+                <span class="element__reviews">111 отзывов</span>
+            </div>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__photo" src="matreshka3.jpg" alt="matreshka">
+            <div class="element__info">
+            <span class="element__name blue">Матрешка</span>
+            <span class="element__price">100 &#8381;</span>
+            <div class="element__rating">
+                <span class="element__rating-value">5.0</span>
+                <span class="element__reviews">92 отзывов</span>
+            </div>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__photo" src="matreshka4.png" alt="matreshka">
+            <div class="element__info">
+            <span class="element__name blue">Матрешка</span>
+            <span class="element__price">100 &#8381;</span>
+            <div class="element__rating">
+                <span class="element__rating-value">4.2</span>
+                <span class="element__reviews">84 отзывов</span>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div class="suggest">
+        <h4 class="suggest__header">Популярные товары</h4>
+        <a class="blue" href="">Матрешка</a>
+        <a class="blue" href="">Матрешка</a>
+        <a class="blue" href="">Матрешка</a>
+    </div>
+    <form class="form">
+        <h3 class="form__header">Заказать сувенир</h3>
+        <label class="form__row">
+            <span>Количество</span>
+            <input class="form__input" type="number" min="1">
+        </label>
+        <label class="form__row">
+            <span>Город</span>
+            <select class="form__input form__input_select">
+                <option>-</option>
+                <option>Москва</option>
+                <option>Питер</option>
+                <option>Екатеринбург</option>
+            </select>
+        </label>
+        <label class="form__row">
+            <span>E-mail</span>
+            <input class="form__input" type="email" placeholder="email">
+        </label>
+        <label class="form__row">
+            <span>Телефон</span>
+            <input class="form__input" type="tel" placeholder="Номер телефона">
+        </label>
+        <label class="form__row">
+            <span>Дата доставки</span>
+            <input class="form__input" type="date">
+        </label>
+        <div class="booking">
+        <button type="reset" class="cancel__booking">Сбросить заказ</button>
+        <button type="submit" class="confirm__booking">Заказать!</button>
+        </div>
+    </form>
+</div>
 </body>
+
 </html>
