@@ -1,0 +1,8 @@
+@import './__button/search__button_text.css';
+@import './__button/search__button_icon.css';
+@import './search__input.css';
+
+.search
+{
+    width: 50%;
+}

@@ -5,23 +5,24 @@
     <title>Задача «Тим слишком занят»</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" media="(min-width: 1024px)" href="./index-desktop.css">
-    <link rel="stylesheet" media="(max-width: 1024px)" href="./index-pad.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 480px)" href="./index-pad.css">
     <link rel="stylesheet" media="(max-width: 480px)" href="./index-phone.css">
 </head>
 <body>
     <header class="header">
         <h1 class="header__name">Билли.Маркет</h1>
         <div class="search">
-            <input class="search__input" type="text" placeholder="Искать товары">
-            <button class="search__button_text" type="button">Найти</button>
-            <button class="search__button_icon" type="button"></button>
+            <input class="search__input" type="text" id="search" placeholder="Искать товары">
+            <button class="search__button_text button-default" type="button">Найти</button>
+            <button class="search__button_icon button-default" type="button"></button>
         </div>
+        <script async src="./public/pad/index.js"></script>
     </header>
     <main class="main">
         <nav class="nav">
             <a class="link nav__link" href="#seashell">Морские ракушки</a>
             <a class="link nav__link" href="#hotmug">Термокружки</a>
-            <a class="link nav__link" href="#tesla">Автомобилы Тесла</a>
+            <a class="link nav__link" href="#tesla">Автомобили Тесла</a>
             <a class="link nav__link" href="#scab">Чесалки для спины</a>
             <a class="link nav__link" href="#order">Заказать сувенир</a>
         </nav>

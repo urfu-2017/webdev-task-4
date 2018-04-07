@@ -1,0 +1,10 @@
+@import './nav__link.css';
+
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 14px 0;
+    margin-bottom: 40px;
+}

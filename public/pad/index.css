@@ -1,6 +1,5 @@
+@import './header/header.css';
 @import './main/main.css';
 @import './nav/nav.css';
-@import './order/order.css';
-@import './products/products.css';
 @import './search/search.css';
 @import './top/top.css';

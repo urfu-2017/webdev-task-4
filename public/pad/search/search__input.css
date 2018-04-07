@@ -1,0 +1,9 @@
+.search__input
+{
+    visibility: hidden;
+}
+
+.search__input:focus ~ .search__button_icon
+{
+    display: none;
+}

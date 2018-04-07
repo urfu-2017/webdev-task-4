@@ -1,0 +1,11 @@
+.nav__link
+{
+    width: 50%;
+    text-align: center;
+}
+
+.nav__link:last-of-type
+{
+    width: 100%;
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+.button-default
+{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-default:active
+{
+    background-color: #eee;
+}

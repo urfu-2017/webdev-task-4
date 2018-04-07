@@ -1,3 +1,5 @@
+@import './nav__link.css';
+
 .nav
 {
     max-width: 160px;
