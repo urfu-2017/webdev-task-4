@@ -1,0 +1,78 @@
+.sandwich {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 35px;
+    right: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    height: 20px;
+    width: 20px;
+    border: none;
+
+    background: transparent;
+    outline: none;
+
+    transition: background-color .2s;
+}
+
+@media (max-width: 576px) {
+    .sandwich {
+        display: flex;
+    }
+}
+
+.sandwich_expanded {
+    position: fixed;
+}
+
+.sandwich_expanded .sandwich-bar:nth-child(1),
+.sandwich_expanded .sandwich-bar:nth-child(3) {
+    width: 25px;
+}
+
+.sandwich_expanded .sandwich-bar:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.sandwich_expanded .sandwich-bar:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.sandwich_expanded .sandwich-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.sandwich:hover .sandwich-bar {
+    background: #555;
+}
+
+.sandwich-bar {
+    width: 20px;
+    height: 2px;
+
+    background: #999;
+    border-radius: 3px;
+
+    transform-origin: 21px 1px;
+    transition: transform .2s, opacity .2s, width .2s;
+}
+
+.sandwich-bar:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.sandwich-bar:nth-child(1) {
+    top: 30%;
+}
+
+.sandwich-bar:nth-child(2) {
+    top: 50%;
+}
+
+.sandwich-bar:nth-child(3) {
+    top: 70%;
+}

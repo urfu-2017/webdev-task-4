@@ -1,0 +1,33 @@
+@import './styles/sandwich.css';
+@import './styles/header.css';
+@import './styles/categories.css';
+@import './styles/popular.css';
+@import './styles/lots.css';
+@import './styles/mainBlock.css';
+@import './styles/order.css';
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+.disable-touch {
+    touch-action: pan-x;
+}
+
+.link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #33c;
+
+    transition: color .2s;
+}
+
+.link:hover {
+    color: #337ecc;
+}
