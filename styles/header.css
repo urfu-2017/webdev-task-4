@@ -1,0 +1,143 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+@media (max-width: 576px) {
+    .header__search {
+        width: 100%;
+    }
+
+    .header__search-button {
+        display: none;
+    }
+}
+
+.header__heading {
+    margin: 0 0 10px;
+
+    font-weight: normal;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header__search {
+    border: 3px solid #fddd3c;
+    padding: 5px 10px;
+
+    outline: none;
+}
+
+.header__search::placeholder {
+    font-weight: bold;
+    color: rgba(0, 0, 0, .3);
+}
+
+.search-box {
+    display: flex;
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .header {
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__heading {
+        width: 40%;
+        margin: 0;
+    }
+
+    .search-box {
+        width: 60%;
+    }
+
+    .header__search-button {
+        border: none;
+        width: 30px;
+        height: 30px;
+        align-self: center;
+
+        color: transparent;
+        background: transparent url('../assets/icons/search.svg') no-repeat;
+        background-size: contain;
+        outline: none;
+    }
+
+    .header__search {
+        opacity: 0;
+        align-self: center;
+        padding: 5px;
+        border: none;
+        width: calc(100% - 40px);
+        pointer-events: none;
+        touch-action: none;
+
+        transition: box-shadow .2s;
+    }
+
+    .header__search:focus {
+        touch-action: auto;
+        pointer-events: auto;
+        opacity: 1;
+        box-shadow: 0 2px 0 #007fff;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: row;
+
+        line-height: 50px;
+    }
+
+    .header__heading {
+        width: 30%;
+        margin: 0;
+
+        font-size: 3rem;
+    }
+
+    .search-box {
+        width: 70%;
+    }
+
+    .header__search-button {
+        border: none;
+        background: #ccc;
+        width: 100px;
+
+        font-weight: bold;
+        text-transform: uppercase;
+
+        border-radius: 0 5px 5px 0;
+        outline: none;
+        cursor: pointer;
+
+        transition: background-color .2s;
+    }
+
+    .header__search-button:hover {
+        background: #bbb;
+    }
+
+    .header__search {
+        border: 2px solid #ccc;
+        border-right: none;
+        padding: 10px 25px;
+        width: calc(100% - 40px);
+
+        border-radius: 5px 0 0 5px;
+
+        font-size: 1rem;
+
+        transition: box-shadow .2s;
+    }
+
+    .header__search::placeholder {
+        color: transparent;
+    }
+}

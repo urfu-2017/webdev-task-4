@@ -1,0 +1,99 @@
+.lots {
+    display: flex;
+    flex-direction: column;
+}
+
+.lot {
+    padding: 50px;
+
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lots {
+    margin-bottom: 50px;
+}
+
+.lot__img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lot__link {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.lot__price {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+.lot__feedback {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+
+.lot__feedback-count {
+    align-self: center;
+    color: #999;
+}
+
+.lot__rating {
+    align-self: center;
+    padding: 3px 7px;
+    margin-right: 20px;
+
+    background: #8cb512;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .lot:not(:last-child) {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 577px) {
+    .lots {
+        margin-bottom: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .lot {
+        padding: 50px 40px;
+        width: 50%;
+        box-sizing: border-box;
+
+        font-size: 1rem;
+    }
+
+    .lot:nth-child(2n) {
+        border-left: none;
+    }
+
+    .lot__feedback-count {
+        font-size: .8rem;
+    }
+
+    .lot:not(:first-child):not(:nth-child(2)) {
+        border-top: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .lots {
+        order: 2;
+    }
+}
+
+@media (min-width: 1025px) {
+    .lots {
+        grid-area: goods;
+        margin-bottom: 0;
+    }
+}

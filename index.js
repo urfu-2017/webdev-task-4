@@ -1,11 +1,16 @@
-let searchButton = document.querySelector('.header__search-button');
-
-searchButton.addEventListener('click', function () {
-    this.previousElementSibling.focus();
-});
+if (window.innerWidth >= 577 && window.innerWidth <= 1024) {
+    setSearchAppearing();
+}
 
 if (window.innerWidth <= 576) {
     setTouch();
+}
+
+function setSearchAppearing() {
+    document.querySelector('.header__search-button')
+        .addEventListener('click', function () {
+            this.previousElementSibling.focus();
+        });
 }
 
 function setTouch() {
@@ -65,8 +70,8 @@ function setTouch() {
 
     function toggleCategories() {
         state.areCategoriesShown = !state.areCategoriesShown;
-        sandwich.classList.toggle('sandwich-expanded');
-        categories.classList.toggle('categories-expanded');
+        sandwich.classList.toggle('sandwich_expanded');
+        categories.classList.toggle('categories_expanded');
         body.classList.toggle('disable-touch');
     }
 }

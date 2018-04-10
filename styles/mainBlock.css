@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+
+    background: #f6f6f6;
+}
+
+.main__item {
+    border: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .main {
+        padding: 30px 100px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 'nav goods popular' '. order .';
+        grid-gap: 50px;
+        padding-top: 50px;
+    }
+}
