@@ -36,3 +36,11 @@
         width: 262px;
     }
 }
+
+@media screen and (max-width: 304px)
+{
+    .popular
+    {
+        width: calc(100% - 42px);
+    }
+}

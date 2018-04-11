@@ -5,6 +5,7 @@
         { className: 'navigation__close', handler: closeMenu }
     ];
 
+    const swipeLimit = 40;
 
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -17,26 +18,18 @@
                     handler.handler();
                 }
             });
-
-            if (!classes.contains('header__input') &&
-                !classes.contains('header__loupe')) {
-                defocusSearch();
-            }
         });
 
         document.addEventListener('touchstart', handleTouchStart, false);
-        document.addEventListener('touchmove', handleTouchMove, false);
+        document.addEventListener('touchend', handleTouchEnd, false);
 
     });
 
     function focusSearch() {
         let input = document.getElementsByClassName('header__input')[0];
+        console.info(input);
         input.classList.add('header__input_visible');
         input.focus();
-    }
-
-    function defocusSearch() {
-        let input = document.getElementsByClassName('header__input')[0];
         input.classList.remove('header__input_visible');
     }
 
@@ -58,21 +51,36 @@
     function handleTouchStart(evt) {
         xDown = evt.touches[0].clientX;
         yDown = evt.touches[0].clientY;
+
+        const clientWidth = document.documentElement.clientWidth;
+        const swipeWidthArea = Math.floor(clientWidth / 4);
+
+        let rightLimit = clientWidth - swipeWidthArea;
+        if (xDown < rightLimit) {
+            console.info('so far from right edge to swipe');
+            xDown = null;
+            yDown = null;
+        }
     }
 
-    function handleTouchMove(evt) {
+    function handleTouchEnd(evt) {
         if (!xDown || !yDown) {
             return;
         }
 
-        var xUp = evt.touches[0].clientX;
-        var yUp = evt.touches[0].clientY;
+        if (evt.changedTouches.length < 0) {
+            return;
+        }
 
-        var xDiff = xDown - xUp;
+        let touch = evt.changedTouches[0];
+        let xUp = touch.clientX;
+        let yUp = touch.clientY;
+
+        let xDiff = xDown - xUp;
         let yDiff = yDown - yUp;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (xDiff > 0) {
+            if (xDiff > swipeLimit) {
                 showMenu();
             } else {
                 closeMenu();

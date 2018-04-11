@@ -34,3 +34,12 @@
         width: 202px;
     }
 }
+
+@media screen and (max-width: 304px)
+{
+    .order
+    {
+        padding: 20px;
+        width: calc(100% - 42px);
+    }
+}

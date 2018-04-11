@@ -93,6 +93,29 @@
 {
     .cards
     {
-        width: 302px;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 304px)
+{
+    .cards
+    {
+        width: 100%;
+    }
+
+    .card
+    {
+        width: calc(100% - 82px);
+    }
+
+    .card__image
+    {
+        height: auto;
+        max-width: 100%;
     }
 }
