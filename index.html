@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
+<header>
+    <h1 class="store-name">Билли.Маркет</h1>
+    <div class="store-search" id="search">
+        <input type="search" class="store-search__search-input" id="search-input">
+        <button class="store-search__search-button">Найти</button>
+    </div>
+    <div class="search-icon" id="search-icon"></div>
+    <div class="menu-icon" id="menu-icon"></div>
+</header>
+<main>
+    <nav class="store-categories" id="categories">
+        <div class="close-icon" id="close"></div>
+        <a href="#" class="store-categories__category">Морские ракушки</a>
+        <a href="#" class="store-categories__category">Сувениры из Тайланда</a>
+        <a href="#" class="store-categories__category">Автомобили Тесла</a>
+        <a href="#" class="store-categories__category">Марки из разных стран</a>
+        <a href="#" class="store-categories__order">Заказать сувенир</a>
+    </nav>
+    <section class="store-souvenirs">
+        <div class="souvenir">
+            <img src="images/shell.png" alt="Ракушка" class="souvenir__image">
+            <a href="#" class="souvenir__name"><h3>Ракушка «Морское дно»</h3></a>
+            <span class="souvenir__price">290 Р</span>
+            <div class="souvenir__rating souvenir__rating_good">4.0</div>
+            <span class="souvenir__reviews-count">111 отзывов</span>
+        </div>
+        <div class="souvenir">
+            <img src="images/cup.png" alt="Кружка" class="souvenir__image">
+            <a href="#" class="souvenir__name"><h3>Термокружкус «Батарейка»</h3></a>
+            <span class="souvenir__price">404 Р</span>
+            <div class="souvenir__rating souvenir__rating_excellent">4.5</div>
+            <span class="souvenir__reviews-count">290 отзывов</span>
+        </div>
+        <div class="souvenir">
+            <img src="images/tesla.png" alt="Автомобиль" class="souvenir__image">
+            <a href="#" class="souvenir__name"><h3>Автомобиль «Тесла»</h3></a>
+            <span class="souvenir__price">359 900 Р</span>
+            <div class="souvenir__rating souvenir__rating_excellent">4.5</div>
+            <span class="souvenir__reviews-count">1 отзыв</span>
+        </div>
+        <div class="souvenir">
+            <img src="images/scab.png" alt="Чесалка" class="souvenir__image">
+            <a href="#" class="souvenir__name"><h3>Чесалка для спины</h3></a>
+            <span class="souvenir__price">195 Р</span>
+            <div class="souvenir__rating souvenir__rating_good">4.0</div>
+            <span class="souvenir__reviews-count">29 отзывов</span>
+        </div>
+    </section>
+    <form action="" class="store-order">
+        <h2 class="store-order__title">Заказать сувенир</h2>
+        <label for="count" class="store-order__count store-order__count_label">Количество</label>
+        <input type="number" min="1" id="count" class="store-order__count store-order__count_input">
+        <label for="city" class="store-order__city store-order__city_label">Город</label>
+        <select name="city" id="city" class="store-order__city store-order__city_select">
+            <option>Екатеринбург</option>
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+        </select>
+        <label for="email" class="store-order__email store-order__email_label">Email</label>
+        <input type="email" id="email" class="store-order__email store-order__email_input">
+        <label for="tel" class="store-order__tel store-order__tel_label">Телефон</label>
+        <input type="tel" id="tel" class="store-order__tel store-order__tel_input">
+        <label for="date" class="store-order__date store-order__date_label">Дата доставки</label>
+        <input type="date" id="date" class="store-order__date store-order__date_input">
+        <input type="reset" class="store-order__reset">
+        <input type="submit" class="store-order__submit">
+    </form>
+    <nav class="store-popular">
+        <h4 class="store-popular__title">Популярные товары</h4>
+        <a href="#" class="store-popular__souvenir">Ракушка морская</a>
+        <a href="#" class="store-popular__souvenir">Чесалка для спины</a>
+        <a href="#" class="store-popular__souvenir">Чётки</a>
+    </nav>
+</main>
 </body>
 </html>
