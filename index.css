@@ -138,7 +138,8 @@ main
     text-decoration: none;
     text-align: center;
     width: 100%;
-    font: 21px sans-serif;
+    font: 22px sans-serif;
+    margin: 5px 0;
 }
 
 .souvenir__price
