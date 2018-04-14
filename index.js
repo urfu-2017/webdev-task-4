@@ -21,7 +21,7 @@ searchInput.onblur = () => {
         search.style.display = 'none';
         document.querySelector('header').style['grid-template-columns'] = '80% 20%';
     }
-}
+};
 
 menuIcon.onclick = () => {
     categories.style.display = 'flex';
