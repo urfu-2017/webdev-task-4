@@ -1,24 +1,19 @@
-const ofClass = cls => document.querySelector(`.${cls}`);
-const searchButton = ofClass('header-searchbar-btn');
-const searchInput = ofClass('header-searchbar-input');
-const breadButton = ofClass('bread');
-const nav = ofClass('nav');
-const closeButton = ofClass('nav-close-btn');
+const $ = cls => document.querySelector(`.${cls}`);
+const searchButton = $('header-searchbar-btn');
+const searchInput = $('header-searchbar-input');
+const breadButton = $('bread');
+const nav = $('nav');
+const closeButton = $('nav-close-btn');
+const ENTER_KEYCODE = 13;
 
-const onEnter = (elem, promise) => {
-    elem.onkeydown = async e => {
-        if (e.keyCode === 13) {
-            await promise();
-        }
-    };
+searchInput.onkeydown = e => {
+    if (e.keyCode === ENTER_KEYCODE) {
+        searchButton.click();
+    }
 };
 
-onEnter(searchInput, async () => {
-    searchButton.click();
-});
-
 searchButton.onclick = () => {
-    if (!searchInput.value) {
+    if (!searchInput.value.trim()) {
         searchInput.focus();
     } else {
         console.info(`Searching for "${searchInput.value}"`);
