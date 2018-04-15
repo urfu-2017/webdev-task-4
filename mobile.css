@@ -1,0 +1,85 @@
+.body
+{
+    background: red;
+}
+
+.content-container
+{
+    margin: auto;
+    margin-bottom: 100px;
+    display: inline-grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto 20px auto 20px auto;
+    grid-template-areas: 'nav-popular'
+        '.'
+        'items'
+        '.'
+        'order-form';
+}
+
+.header,
+.nav-popular,
+.items,
+.order-form,
+.item
+{
+    border-left: 0;
+    border-right: 0;
+}
+
+.bread
+{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.header-logo
+{
+    display: block;
+}
+
+.header-searchbar
+{
+    width: 100%;
+}
+
+.item
+{
+    flex: 0 100%;
+}
+
+.header-searchbar-input
+{
+    border: 2px solid #f4e946;
+}
+
+.header-searchbar-btn
+{
+    display: none;
+}
+
+.header-searchbar-input::placeholder
+{
+    visibility: visible;
+}
+
+.nav
+{
+    position: fixed;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    top: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    visibility: hidden;
+}
+
+.nav-close-btn
+{
+    display: initial;
+    float: right;
+    cursor: pointer;
+}

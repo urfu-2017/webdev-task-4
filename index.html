@@ -3,8 +3,153 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:700px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width:700px) and (max-width:1300px)">
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                Билли.Маркет
+
+                <button class="bread">#</button>
+            </div>
+            <div class="header-searchbar">
+                <input class="header-searchbar-input" placeholder="Искать товары" required><!--
+                --><button class="header-searchbar-btn">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <nav class="nav">
+            <button class="nav-close-btn">✖</button>
+            <ul class="navlist">
+                <li class="navlist-item">
+                    <a href="#">Морские ракушки</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Сувениры из Тайланда</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Автомобили Тесла</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Марки</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Заказать сувенир</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav-popular">
+            <header class="nav-popular-header">Популярные товары</header>
+
+            <ul class="navlist">
+                <li class="navlist-item">
+                    <a href="#">Ракушка морская</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Чесалка для спины</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="#">Чётки</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="items">
+            <ul class="items-list">
+                <li class="item">
+                    <img src="https://goo.gl/3aA0w" alt="" class="item-img">
+                    <p>
+                        <a href="#" class="item-name">Ракушка "Морское дно"</a>
+                    </p>
+                    <p>
+                        <span class="item-price">290 ₽</span>
+                    </p>
+                    <p>
+                        <span class="item-score-40">4.0</span>
+                        <span class="item-reviews-count">123 отзывов</span>
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="https://goo.gl/UwtfEV" alt="" class="item-img">
+                    <p>
+                        <a href="#" class="item-name">Термокружка "Батарейка"</a>
+                    </p>
+                    <p>
+                        <span class="item-price">404 ₽</span>
+                    </p>
+                    <p>
+                        <span class="item-score-45">4.5</span>
+                        <span class="item-reviews-count">123 отзывов</span>
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="https://goo.gl/28RZma" alt="" class="item-img">
+                    <p>
+                        <a href="#" class="item-name">Автомобиль "Тесла"</a>
+                    </p>
+                    <p>
+                        <span class="item-price">290 000 ₽</span>
+                    </p>
+                    <p>
+                        <span class="item-score-30">3.0</span>
+                        <span class="item-reviews-count">1 отзыв</span>
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="https://goo.gl/dqoo8J" alt="" class="item-img" >
+                    <p>
+                        <a href="#" class="item-name">Чесалка для спины</a>
+                    </p>
+                    <p>
+                        <span class="item-price">111 ₽</span>
+                    </p>
+                    <p>
+                        <span class="item-score-35">3.5</span>
+                        <span class="item-reviews-count">29 отзывов</span>
+                    </p>
+                </li>
+            </ul>
+        </main>
+
+        <div class="order-form">
+            <form action="#" method="GET">
+                <header class="order-form-header">Заказать сувенир</header>
+                <table class="order-form-fields">
+                    <tr>
+                        <td>Количество</td>
+                        <td><input class="order-form-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Город</td>
+                        <td><input class="order-form-input" value="-"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input class="order-form-input" placeholder="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td><input class="order-form-input" placeholder="Номер телефона"></td>
+                    </tr>
+                    <tr>
+                        <td>Дата доставки</td>
+                        <td><input class="order-form-input" placeholder="дд.мм.гггг"></td>
+                    </tr>
+                </table>
+                <div class="order-form-controls">
+                    <input type="reset" class="order-form-controls-btn" value="Сбросить заказ">
+                    <button class="order-form-controls-btn">Заказать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

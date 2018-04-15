@@ -1,0 +1,55 @@
+.body
+{
+    background: blue;
+}
+
+.content-container
+{
+    margin: auto;
+    margin-bottom: 100px;
+    display: inline-grid;
+    grid-template-columns: 700px;
+    grid-template-rows: auto 20px auto 20px auto 20px auto;
+    grid-template-areas: 'nav'
+        '.'
+        'items'
+        '.'
+        'nav-popular'
+        '.'
+        'order-form';
+}
+
+.header-searchbar-btn
+{
+    text-indent: -9999px;
+    line-height: 0;
+    background: transparent;
+    border: 0;
+}
+
+.header-searchbar-input
+{
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.header-searchbar-input:focus,
+.header-searchbar-input:valid
+{
+    border-bottom: 2px solid #f4e946;
+    outline: none;
+}
+
+.header-searchbar-btn::after
+{
+    content: '🔎';
+    text-indent: 0;
+    display: block;
+    line-height: top;
+}
+
+.header-container
+{
+    width: 700px;
+    margin: auto;
+}
