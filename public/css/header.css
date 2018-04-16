@@ -59,19 +59,10 @@
         right: 32px;
     }
 
-    .header__button
-    {
-        display: none;
-    }
-
+    .header__button,
     .header__input
     {
         display: none;
-    }
-
-    .header__input:focus
-    {
-        display: block;
     }
 
     .header__input_visible

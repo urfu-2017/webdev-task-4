@@ -25,13 +25,14 @@
 
         document.addEventListener('touchstart', handleTouchStart, false);
         document.addEventListener('touchend', handleTouchEnd, false);
-
+        input.addEventListener('blur', () => {
+            input.classList.remove('header__input_visible');
+        });
     });
 
     function focusSearch() {
         input.classList.add('header__input_visible');
         input.focus();
-        input.classList.remove('header__input_visible');
     }
 
     function showMenu() {
