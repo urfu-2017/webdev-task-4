@@ -1,0 +1,31 @@
+.order-info
+{
+    display: block;
+    padding: 10px 0;
+    font-size: 0;
+}
+
+.order-info__label
+{
+    font-size: 14px;
+    width: calc(100% - 185px);
+    display: inline-block;
+}
+
+.order-info__input
+{
+    width: 180px;
+}
+
+@media screen and (max-width: 650px)
+{
+    .order-info__input
+    {
+        width: 100px;
+    }
+
+    .order-info__label
+    {
+        width: calc(100% - 105px);
+    }
+}

@@ -1,0 +1,10 @@
+.list__item
+{
+    list-style-type: none;
+    padding: 4px;
+}
+
+.list
+{
+    padding: 0 5px 0 0;
+}
