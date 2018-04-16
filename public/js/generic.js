@@ -7,6 +7,9 @@
 
     const swipeLimit = 40;
 
+    const input = document.querySelector('.header__input');
+    const nav = document.querySelector('.navigation');
+
     document.addEventListener('DOMContentLoaded', function () {
 
         document.addEventListener('click', function (event) {
@@ -26,21 +29,17 @@
     });
 
     function focusSearch() {
-        let input = document.getElementsByClassName('header__input')[0];
-        console.info(input);
         input.classList.add('header__input_visible');
         input.focus();
         input.classList.remove('header__input_visible');
     }
 
     function showMenu() {
-        let nav = document.getElementsByClassName('navigation')[0];
         nav.classList.add('navigation_visible');
         document.body.classList.add('stop-scrolling');
     }
 
     function closeMenu() {
-        let nav = document.getElementsByClassName('navigation')[0];
         nav.classList.remove('navigation_visible');
         document.body.classList.remove('stop-scrolling');
     }
@@ -57,7 +56,6 @@
 
         let rightLimit = clientWidth - swipeWidthArea;
         if (xDown < rightLimit) {
-            console.info('so far from right edge to swipe');
             xDown = null;
             yDown = null;
         }
