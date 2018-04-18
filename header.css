@@ -61,11 +61,13 @@
         display: inline-block;
     }
 
-    .market-info__search-field:not(:focus){
+    .market-info__search-field:not(:focus)
+    {
         opacity: 0;
     }
 
-    .market-info__search-field:focus{
+    .market-info__search-field:focus
+    {
         opacity: 1;
     }
 
