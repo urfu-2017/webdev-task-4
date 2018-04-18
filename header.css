@@ -61,6 +61,14 @@
         display: inline-block;
     }
 
+    .market-info__search-field:not(:focus){
+        opacity: 0;
+    }
+
+    .market-info__search-field:focus{
+        opacity: 1;
+    }
+
     .market-info__serach-button-img img
     {
         width: 30px;
