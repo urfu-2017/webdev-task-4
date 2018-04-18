@@ -1,0 +1,57 @@
+.market
+{
+    background-color: #d3d3d3;
+    display: grid;
+    grid-template-columns: 30px 210px auto 210px 30px;
+    grid-template-rows: 120px 30px 200px auto 30px 380px 30px;
+
+    grid-template-areas: 'header header header header header'
+        '. . . . .'
+        '. nav cards popular .'
+        '. . cards . .' 
+        '. . . . .'
+        '. . order . .'
+        '. . . . .';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 720px)
+{
+    .market
+    {
+        grid-template-rows: 70px 30px auto 20px auto 10px auto 30px 380px 30px;
+        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-areas: 'header header header header'
+            '. . . .'
+            '. nav nav .'
+            '. . . .'
+            '. cards cards .'
+            '. . . .'
+            '. popular popular .'
+            '. . . .'
+            '. order order .'
+            '. .    .    .';
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .market
+    {
+        grid-template-rows: 50px 60px 30px auto 20px auto 50px auto 30px ;
+        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-areas: 'header header header header'
+            'header header header header'
+            '. . . .'
+            '. popular popular .'
+            '. . . .'
+            '. cards cards .'
+            '. . . .'
+            '. order order .'
+            '. .    .    .';
+    }
+}

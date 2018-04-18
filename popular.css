@@ -1,0 +1,53 @@
+.market__popular
+{
+    background-color: white;
+    width: 210px;
+    height: 230px;
+    grid-area: popular;
+}
+
+.market__popular-caption
+{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.market__popular-product
+{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 720px)
+{
+    .market__popular
+    {
+        background-color: white;
+        margin: 0 auto;
+        width: 702px;
+        height: 100px;
+    }
+
+    .market__popular-product
+    {
+        margin: 0;
+    }
+
+    .market__popular-products
+    {
+        margin: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .market__popular
+    {
+        width: 350px;
+        height: 180px;
+        margin: 0 auto;
+    }
+}

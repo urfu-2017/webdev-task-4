@@ -1,0 +1,68 @@
+.market__souvenirs_order
+{
+    background-color: white;
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    grid-area: order;
+}
+
+.market__souvenirs-order-caption
+{
+    margin: 20px 50px;
+}
+
+.market__souvenirs-order-form
+{
+    margin-left: 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.market__souvenirs-order-form div
+{
+    margin: 7px 0;
+}
+
+.market__souvenirs-order-form label,
+.market__souvenirs-btn-reset
+{
+    float: left;
+}
+
+.market__souvenirs-order-form input,
+.market__souvenirs-btn-order
+{
+    float: right;
+}
+
+@media screen and (max-width: 720px)
+{
+    .market__souvenirs_order
+    {
+        background-color: white;
+        width: 350px;
+        height: 230px;
+        margin: 0 auto;
+        grid-area: order;
+    }
+
+    .market__souvenirs-order-caption
+    {
+        font-size: 10px;
+        margin: 20px 50px;
+    }
+
+    .market__souvenirs-order-form div
+    {
+        margin: 2px 0;
+    }
+
+    .market__souvenirs-order-form
+    {
+        margin-left: 30px;
+        width: 300px;
+    }
+}

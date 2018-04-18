@@ -1,10 +1,204 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./navigation.css">
+    <link rel="stylesheet" href="./popular.css">
+    <link rel="stylesheet" href="./order.css">
+    <script src="index.js"></script>
 </head>
+
 <body>
+    <main class="market">
+        <div class="market-info__header">
+            <div class="market-info__content">
+                <div class="market-info__logo">
+                    Билли.Маркет
+                </div>
+                <div class="market-info__menu">
+                    <img class="market-info__menu-img" src="burger.png" alt="бутерброд">
+                </div>
+            </div>
+            <div class="market-info__search">
+                <input class="market-info__search-field" type="text">
+                <button class="market-info__serach-button">Найти</button>
+                <div class="market-info__serach-button-img">
+                    <img src="loupe.png" alt="лупа">
+                </div>
+            </div>
+        </div>
+
+        <div class="market__navigation">
+            <div class="market__topics-close">
+                <img class="market__topics-close-img" src="close.png" alt="закрыть">
+            </div>
+            <div class="market__topics">
+                <div class="market__topic">
+                    <a href="#">Морские ракушки</a>
+                </div>
+                <div class="market__topic">
+                    <a href="#">Сувениры из Тайланда</a>
+                </div>
+                <div class="market__topic">
+                    <a href="#">Автомобили Тесла</a>
+                </div>
+                <div class="market__topic">
+                    <a href="#">Марки разных стран</a>
+                </div>
+            </div>
+            <div class="market__topic-order">
+                <a href="#">
+                    Заказать сувенир
+                </a>
+            </div>
+        </div>
+
+        <div class="market__cards">
+            <div class="market__card">
+                <div class="market__card-block-img">
+                    <img class="market__card-img" src="sea.png"
+                        alt="ракушка">
+                </div>
+                <div class="market__card-block-info">
+                    <div class="market__card-name">
+                        <a href="#">Ракушка "Морское дно"</a>
+                    </div>
+                    <div class="market__card-price">
+                        290р
+                    </div>
+                    <div class="market__card-info">
+                        <div class="market__card-rating">
+                            4,0
+                        </div>
+                        <div class="market__card-comments">
+                            111 отзывов
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="market__card">
+                <div class="market__card-block-img">
+                    <img class="market__card-img" src="cup.jpg"
+                        alt="кружка">
+                </div>
+                <div class="market__card-block-info">
+                    <div class="market__card-name">
+                        <a href="#">Термокружка "Батарейка"</a>
+                    </div>
+                    <div class="market__card-price">
+                        404р
+                    </div>
+                    <div class="market__card-info">
+                        <div class="market__card-rating">
+                            4,5
+                        </div>
+                        <div class="market__card-comments">
+                            290 отзывов
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="market__card">
+                <div class="market__card-block-img">
+                    <img class="market__card-img" src="car.jpg" alt="машина">
+                </div>
+                <div class="market__card-block-info">
+                    <div class="market__card-name">
+                        <a href="#">Ракушка "Морское дно"</a>
+                    </div>
+                    <div class="market__card-price">
+                        359 900р
+                    </div>
+                    <div class="market__card-info">
+                        <div class="market__card-rating">
+                            4,5
+                        </div>
+                        <div class="market__card-comments">
+                            1 отзыв
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market__card">
+                <div class="market__card-block-img">
+                    <img class="market__card-img" src="chess.jpg" alt="чесалка">
+                </div>
+                <div class="market__card-block-info">
+                    <div class="market__card-name">
+                        <a href="#">Чесалка для спины</a>
+                    </div>
+                    <div class="market__card-price">
+                        195р
+                    </div>
+                    <div class="market__card-info">
+                        <div class="market__card-rating">
+                            4,0
+                        </div>
+                        <div class="market__card-comments">
+                            29 отзывов
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="market__popular">
+            <div class="market__popular-caption">
+                Популярные товары
+            </div>
+            <div class="market__popular-products">
+                <div class="market__popular-product">
+                    <a href="#">Ракушка морская</a>
+                </div>
+                <div class="market__popular-product">
+                    <a href="#">Чесалка для спины</a>
+                </div>
+                <div class="market__popular-product">
+                    <a href="#">Чётки</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="market__souvenirs_order">
+            <div class="market__souvenirs-order-caption">
+                <h1>Заказать сувенир</h1>
+            </div>
+            <div class="market__souvenirs-order-form">
+                <div>
+                    <label for="count">Количество:</label>
+                    <input id="count" type="text">
+                </div>
+                <div>
+                    <label for="city">Город:</label>
+                    <input id="city" type="text">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" placeholder="email">
+                </div>
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" type="text" placeholder="Номер телефона*">
+                </div>
+                <div>
+                    <label for="date">Дата доставки:</label>
+                    <input id="date" type="text" placeholder="дд.мм.гггг">
+                </div>
+                <div>
+                    <button class="market__souvenirs-btn-reset" type="submit">Сборосить заказ</button>
+                    <button class="market__souvenirs-btn-order" type="submit">Заказать!</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
 </body>
+
 </html>

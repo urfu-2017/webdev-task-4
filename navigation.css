@@ -1,0 +1,82 @@
+.market__navigation
+{
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    grid-area: nav;
+}
+
+.market__topic
+{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.market__topic-order
+{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.market__topics-close
+{
+    display: none;
+    margin-left: 80%;
+}
+
+.market__topics-close-img
+{
+    margin-top: 15px;
+    width: 30px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 720px)
+{
+    .market__topic
+    {
+        margin: 10px;
+    }
+
+    .market__topic-order
+    {
+        margin-top: 10px;
+        margin-left: 285px;
+    }
+
+    .market__navigation
+    {
+        background-color: white;
+        margin: 0 auto;
+        width: 702px;
+        height: 130px;
+        position: relative;
+    }
+
+    .market__topics
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 0 auto;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .market__navigation
+    {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .market__topics-close
+    {
+        display: block;
+    }
+}
