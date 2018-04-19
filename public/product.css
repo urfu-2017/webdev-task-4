@@ -1,0 +1,115 @@
+.product 
+{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    border-width: 0 .2vmax .2vmax 0;
+    border-style: solid;
+    border-color: var(--color-theme-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--standard-font-size);
+    text-decoration: none;
+}
+
+.product__basic-feature 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__photo 
+{
+    width: 90%;
+    margin: 5% 5% 0;
+}
+
+.product__title 
+{
+    width: 100%;
+    overflow: hidden;
+    color: #00f;
+    font-size: var(--standard-font-size);
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product__title_par 
+{
+    width: 100%;
+}
+
+.product__title:hover 
+{
+    color: var(--color-anchor-hover);
+}
+
+.product__title:active 
+{
+    color: var(--color-anchor-active);
+}
+
+.product__other-info 
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 10%;
+}
+
+.product__price 
+{
+    width: 100%;
+    margin-bottom: 5%;
+    font-family: 'Yandex Sans Text Bold', sans-serif;
+    font-size: 200%;
+}
+
+.product__rating 
+{
+    height: var(--standard-font-size);
+    margin-right: 10%;
+    padding: calc(var(--standard-font-size)*.5);
+    background-color: #c4ca26;
+    color: #fff;
+    font-size: var(--standard-font-size);
+}
+
+.product__rating::after 
+{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: calc((var(--standard-font-size)*1.55));
+    left: calc((var(--standard-font-size)*2));
+    width: 0;
+    height: 0;
+    border: var(--standard-font-size) solid #0000;
+    border-left-width: calc(var(--standard-font-size)*.5);
+    border-left-color: #c4ca26;
+}
+
+.product__feedback 
+{
+    color: #7f7f7f;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .product 
+    {
+        font-size: calc(var(--standard-font-size)*.8);
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .product 
+    {
+        width: 100%;
+        font-size: calc(var(--standard-font-size));
+        margin: 0 auto;
+    }
+}

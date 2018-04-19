@@ -1,0 +1,122 @@
+.menu__title 
+{
+    display: none;
+}
+
+.menu 
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    height: calc(var(--device-independet-font-size) * 15);
+    margin-left: var(--margin-for-blocks);
+    border: .3vmax solid var(--color-theme-dark);
+    border-radius: .3vmax;
+    background-color: #fff;
+}
+
+.menu_show-button 
+{
+    display: none;
+}
+
+.menu__item 
+{
+    display: block;
+    margin: .8vmax 0;
+    color: #00f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.menu__category-items,
+.menu__side-items 
+{
+    margin: 1.5vmax;
+}
+
+.menu__item:hover 
+{
+    color: var(--color-anchor-hover);
+}
+
+.menu__item:active 
+{
+    color: var(--color-anchor-active);
+}
+
+@media screen and (max-width: 768px) 
+{
+    .menu 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: auto;
+        margin: var(--margin-for-blocks) 0;
+    }
+    .menu__category-items 
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu__side-items > .menu__item 
+    {
+        /* специфичность больше, применяется без переопределения */
+        width: 100%;
+    }
+    .menu__item 
+    {
+        width: 50%;
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .menu 
+    {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        margin: 0;
+        left: 100%;
+        border: none;
+    }
+    .menu__category-items 
+    {
+        display: flex;
+    }
+    .menu__item 
+    {
+        width: 100%;
+        font-size: calc(var(--device-independet-font-size)*2);
+        text-align: center;
+    }
+    .menu_show-button 
+    {
+        display: block;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: center;
+        width: var(--header-font-size);
+        height: var(--header-font-size);
+        margin: calc(var(--header-font-size)*.3);
+        cursor: pointer;
+    }
+}
+
+.menu_display_block
+{
+    display: block;
+}
+
+.menu_display_none
+{
+    display: none;
+}

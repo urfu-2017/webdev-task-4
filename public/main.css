@@ -1,0 +1,33 @@
+@import 'menu.css';
+@import 'popular.css';
+@import 'products-list.css';
+@import 'order.css';
+
+.main 
+{
+    display: grid;
+    grid-template-columns: 3fr 7fr 3fr;
+    grid-column-gap: var(--margin-for-blocks);
+    margin-top: var(--margin-for-blocks);
+}
+
+@media screen and (max-width: 768px) 
+{
+    .main 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        margin: 0 calc(var(--margin-for-blocks)*3);
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .main 
+    {
+        grid-template-columns: calc(100vw - 2 * var(--margin-for-blocks));
+        grid-template-rows: auto auto auto;
+        margin: auto calc(var(--margin-for-blocks)) 0;
+        width: calc(100vw - 2*var(--margin-for-blocks));
+    }
+}

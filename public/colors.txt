@@ -1,0 +1,22 @@
+/* 50 */
+background-color: #509e12;
+/* 45 */
+background-color: #8ab41c;
+/* 40 */
+background-color: #c4ca26;
+/* 35 */
+background-color: #fee030;
+/* 30 */
+background-color: #fff63a;
+/* 25 */
+background-color: #ffd444;
+/* 20 */
+background-color: #ffb23a;
+/* 15 */
+background-color: #ff9030;
+/* 10 */
+background-color: #ff6e26;
+/* 05 */
+background-color: #ff4c1c;
+/* 00 */
+background-color: #ff2a12;

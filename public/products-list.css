@@ -1,0 +1,29 @@
+@import 'product.css';
+
+.products-list 
+{
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    flex-wrap: wrap;
+    margin-bottom: var(--margin-for-blocks);
+    border-width: .2vmax 0 0 .2vmax;
+    border-style: solid;
+    border-color: var(--color-theme-dark);
+    background-color: #fff;
+}
+
+.products-list__title 
+{
+    display: none;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .products-list 
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0;
+    }
+}
