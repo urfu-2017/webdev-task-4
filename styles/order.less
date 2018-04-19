@@ -1,0 +1,32 @@
+.order {
+    grid-area: order;
+    background-color: white;
+    padding: 10px 0px 40px 100px;
+    &-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-right: 20px;
+        &__input{
+            width: 160px;
+        }
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .order {
+        margin: 0px 40px;
+        &-data {
+            &__p {
+                white-space: nowrap;
+            }
+            &__input {
+                width: 30vw;
+                margin-left: 5px;
+            }
+        }
+        
+    }
+
+}
