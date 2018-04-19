@@ -81,8 +81,11 @@
         display: none;
         position: fixed;
         top: 0;
+        bottom: 0;
         width: 50%;
         margin: 0;
+        left: 100%;
+        border: none;
     }
     .menu__category-items 
     {
@@ -106,4 +109,14 @@
         margin: calc(var(--header-font-size)*.3);
         cursor: pointer;
     }
+}
+
+.menu_display_block
+{
+    display: block;
+}
+
+.menu_display_none
+{
+    display: none;
 }

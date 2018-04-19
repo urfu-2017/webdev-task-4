@@ -110,5 +110,6 @@
     {
         width: 100%;
         font-size: calc(var(--standard-font-size));
+        margin: 0 auto;
     }
 }

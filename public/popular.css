@@ -80,7 +80,7 @@
         display: block;
         grid-row: 1 / 2;
         height: auto;
-        margin: var(--margin-for-blocks) 0;
+        margin: var(--margin-for-blocks) auto;
     }
     .popular__title 
     {

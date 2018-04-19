@@ -12,5 +12,11 @@
     --standard-font-size: 1.1em;
     --device-independet-font-size: 1.3vmax;
     margin: 0;
+    width: 100vw;
     background-color: var(--color-theme);
+}
+
+.body_scroll-lock
+{
+    overflow-y: hidden;
 }

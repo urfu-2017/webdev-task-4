@@ -79,8 +79,4 @@
         grid-row: 3 / 4;
         margin: var(--margin-for-blocks) 0;
     }
-    .order__title 
-    {
-        white-space: nowrap;
-    }
 }

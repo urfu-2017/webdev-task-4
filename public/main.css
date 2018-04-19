@@ -25,8 +25,9 @@
 {
     .main 
     {
-        grid-template-columns: 1fr;
+        grid-template-columns: calc(100vw - 2 * var(--margin-for-blocks));
         grid-template-rows: auto auto auto;
-        margin: auto calc(var(--margin-for-blocks));
+        margin: auto calc(var(--margin-for-blocks)) 0;
+        width: calc(100vw - 2*var(--margin-for-blocks));
     }
 }
