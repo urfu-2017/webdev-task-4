@@ -1,39 +1,41 @@
-const img = document.getElementsByClassName('header__img')[0];
-const search = img.previousElementSibling;
-const burger = document.getElementsByClassName('header__burger')[0];
-const nav = document.getElementsByClassName('nav')[0];
-const closeEl = document.getElementsByClassName('nav__img')[0];
+const img = document.querySelector('.header__img');
+const search = document.querySelector('.header__input');
+const burger = document.querySelector('.header__burger');
+const nav = document.querySelector('.nav');
+const closeEl = document.querySelector('.nav__img');
+const tabletMin = 700;
+const tabletMax = 1100;
 
 function click() {
-    search.style.visibility = 'visible';
+    search.classList.add('visibility_visible');
     search.focus();
-    img.style.visibility = 'hidden';
+    img.classList.add('visibility_hidden');
 }
 
 function blur() {
-    if (window.innerWidth > 700 && window.innerWidth < 1100) {
-        img.style.visibility = 'visible';
-        search.style.visibility = 'hidden';
+    if (window.innerWidth > tabletMin && window.innerWidth < tabletMax) {
+        search.classList.remove('visibility_visible');
+        img.classList.remove('visibility_hidden');
     }
 }
 
 function show() {
-    if (window.innerWidth < 700) {
-        nav.style.display = 'block';
+    if (window.innerWidth < tabletMin) {
+        nav.classList.add('display_block');
     }
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('overflow_hidden');
 }
 
 function close() {
-    if (window.innerWidth < 700) {
-        nav.style.display = 'none';
+    if (window.innerWidth < tabletMin) {
+        nav.classList.remove('display_block');
     }
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('overflow_hidden');
 }
 
 function touchMove() {
-    var initialPoint;
-    var finalPoint;
+    let initialPoint;
+    let finalPoint;
     document.addEventListener('touchstart', function (event) {
         event.stopPropagation();
         initialPoint = event.changedTouches[0];
@@ -41,8 +43,8 @@ function touchMove() {
     document.addEventListener('touchend', function (event) {
         event.stopPropagation();
         finalPoint = event.changedTouches[0];
-        var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-        var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+        let xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+        let yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
         if (xAbs > yAbs) {
             if (finalPoint.pageX < initialPoint.pageX) {
                 show();
