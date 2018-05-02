@@ -64,7 +64,7 @@ function switchSearchField(collapse = false) {
 }
 
 function switchNavigationDrawer(collapse = false) {
-    if (window.innerWidth > 425) {
+    if (window.innerWidth > 599) {
         return;
     }
 
