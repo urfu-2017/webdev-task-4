@@ -1,6 +1,7 @@
 'use strict';
 
 const FONT_AWESOME_TIMEOUT = 700;
+var touchstartX = 0;
 
 // DOM
 const header = {
@@ -37,8 +38,16 @@ function main() {
     );
 
     // eslint-disable-next-line no-undef
-    var hammer = new Hammer(page, { preventDefault: true });
-    hammer.on('swipeleft', () => switchNavigationDrawer());
+    page.addEventListener('touchstart', event => {
+        touchstartX = event.touches[0].pageX;
+    }, false);
+    page.addEventListener('touchend', event => {
+        if (touchstartX - event.changedTouches[0].pageX > 100) {
+            switchNavigationDrawer();
+        }
+
+        touchstartX = 0;
+    }, false);
 }
 
 // Switchers
@@ -50,10 +59,15 @@ function switchSearchField(collapse = false) {
 
     header.search.getIcon().style.display = collapse ? 'block' : 'none';
     header.search.input.style.display = collapse ? 'none' : 'block';
+    header.search.input.focus();
     header.search.button.style.display = collapse ? 'none' : 'block';
 }
 
 function switchNavigationDrawer(collapse = false) {
+    if (window.innerWidth > 425) {
+        return;
+    }
+
     document.body.style.overflow = collapse ? 'visible' : 'hidden';
     navigation.wrapper.style.display = collapse ? 'none' : 'flex';
 }
