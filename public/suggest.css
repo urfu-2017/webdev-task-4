@@ -1,0 +1,43 @@
+.suggest {
+    grid-area: s;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 16px 24px;
+
+    min-width: 170px;
+
+    background: #fff;
+}
+
+.suggest__header {
+    margin: 0 0 8px;
+
+    width: 100%;
+}
+
+.suggest > .link {
+    margin: 8px 0;
+}
+
+/* Desktop and mobile */
+@media screen and (max-width: 599px), screen and (min-width: 1024px) {
+    .suggest {
+        flex-flow: column nowrap;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .suggest {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .suggest__header {
+        text-align: center;
+    }
+}

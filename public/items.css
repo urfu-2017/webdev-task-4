@@ -1,0 +1,60 @@
+@import './item.css';
+
+.items {
+    grid-area: i;
+
+    display: grid;
+
+    background: #fff;
+}
+
+.item_1 {
+    grid-area: i1;
+}
+
+.item_1 > .item__photo {
+    filter: hue-rotate(-30deg);
+}
+
+.item_2 {
+    grid-area: i2;
+}
+
+.item_2 > .item__photo {
+    filter: hue-rotate(10deg);
+}
+
+.item_3 {
+    grid-area: i3;
+}
+
+.item_3 > .item__photo {
+    filter: hue-rotate(110deg);
+}
+
+.item_4 {
+    grid-area: i4;
+}
+
+.item_4 > .item__photo {
+    filter: hue-rotate(200deg);
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+    .items {
+        grid-template-areas: 'i1 i2'
+                             'i3 i4';
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+    .items {
+        grid-template-areas: 'i1'
+                             'i2'
+                             'i3'
+                             'i4';
+    }
+}

@@ -1,0 +1,138 @@
+.header {
+    display: grid;
+    grid-gap: 16px;
+
+    padding: 16px 24px;
+}
+
+.logo {
+    grid-area: l;
+
+    margin: 0 24px 0 0;
+
+    font-size: 24px;
+}
+
+.search {
+    grid-area: s;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.search__input:focus,
+.search__button:focus {
+    outline: none;
+}
+
+.search__input {
+    font-size: 20px;
+
+    flex-grow: 2;
+
+    border: 1px solid #ddd;
+}
+
+.search__button {
+    background: #ddd;
+
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+
+    box-shadow: 0 0 0;
+    border: 0;
+}
+
+.search__icon {
+    background: transparent;
+
+    box-shadow: 0 0 0;
+    border: 0;
+    
+    height: 24px;
+    width: 24px;
+
+    margin: auto 0 auto auto;
+
+    outline: none;
+}
+
+.search__icon {
+    color: #aaa;
+
+    height: 24px;
+    width: 24px;
+}
+
+.header__bars-icon {
+    grid-area: b;
+
+    color: #aaa;
+
+    height: 24px;
+    width: 24px;
+
+    margin: auto 0 auto auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .header {
+        grid-template-columns: min-content auto;
+        grid-template-areas: 'l s';
+    }
+
+    .header__bars-icon {
+        display: none;
+    }
+
+    .search__icon {
+        display: none;
+    }
+
+    .search__input,
+    .search__button {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .header {
+        grid-template-columns: min-content auto;
+        grid-template-areas: 'l s';
+    }
+
+    .header__bars-icon {
+        display: none;
+    }
+
+    .search__icon {
+        display: block;
+    }
+
+    .search__input,
+    .search__button {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+    .header {
+        grid-template-columns: auto min-content;
+        grid-template-areas: 'l b'
+                             's s';
+    }
+
+    .search__icon {
+        display: none !important;
+    }
+
+    .search__input,
+    .search__button {
+        display: block !important;
+    }
+}
