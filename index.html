@@ -2,9 +2,104 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__text">Билли.Маркет</h1>
+            <img src="imgs/menu.png" alt="Изображение иконки меню"
+                class="header__menu">
+            <input type="button" value="&#128269;" class="header__search">
+            <form class="search">
+                <input type="search" class="header__input">
+                <input type="submit" value="Найти" class="header__button">
+            </form>
+        </header>
+        <main class="main">
+            <nav class="menu">
+                <span class="menu_close">&#10006;</span>
+                <ul class="menu__list list">
+                    <li class="list__item"><a href="" class="list__link">Морские ракушки</a></li>
+                    <li class="list__item"><a href="" class="list__link">Сувениры из Тайланда</a></li>
+                    <li class="list__item"><a href="" class="list__link">Автомобили Тесла</a></li>
+                    <li class="list__item"><a href="" class="list__link">Марки из разных стран</a></li>
+                </ul>
+                <a href="" class="order">Заказать сувенир</a>
+            </nav>
+            <section class="goods">
+                <article class="card">
+                    <img src="imgs/shell.png" alt="Изображение ракушки" class="card__img">
+                    <a href="" class="card__text">Ракушка "Морское дно"</a>
+                    <span class="card__price">290 ₽</span>
+                    <div class="reviews">
+                        <span class="card__rating">4.0</span>
+                        <span class="reviews__text">111 отзывов</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imgs/thermoMug.jpg" alt="Изображение термокружки" class="card__img">
+                    <a href="" class="card__text">Термокружкус "Батарейка"</a>
+                    <span class="card__price">404 ₽</span>
+                    <div class="reviews">
+                        <span class="card__rating">4.5</span>
+                        <span class="reviews__text">290 отзывов</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imgs/car.png" alt="Изображение автомобиля" class="card__img">
+                    <a href="" class="card__text">Автомобиль "Тесла"</a>
+                    <span class="card__price">359 900 ₽</span>
+                    <div class="reviews">
+                        <span class="card__rating">4.5</span>
+                        <span class="reviews__text">1 отзыв</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imgs/backCuffs.jpg" alt="Изображение чесалки для спины" class="card__img">
+                    <a href="" class="card__text">Чесалки для спины</a>
+                    <span class="card__price">195 ₽</span>
+                    <div class="reviews">
+                        <span class="card__rating">4.0</span>
+                        <span class="reviews__text">29 отзывов</span>
+                    </div>
+                </article>
+            </section>
+            <form class="order-creator">
+                <h2 class="order-creator__text">Заказать сувенир</h2>
+                <label class="order-creator__item">
+                    Количество
+                    <input type="number" name="count" class="order-creator__input">
+                </label>
+                <label class="order-creator__item">
+                    Email
+                    <input type="email" name="email" class="order-creator__input" placeholder="email">
+                </label>
+                <label class="order-creator__item">
+                    Телефон
+                    <input type="tel" name="phone" class="order-creator__input" placeholder="Номер телефона*">
+                </label>
+                <label class="order-creator__item">
+                    Дата доставки
+                    <input type="datetime-local" name="delivery-date" class="order-creator__input">
+                </label>
+                <div class="buttons">
+                    <input type="submit" value="Сбросить заказ" class="order-creator__button">
+                    <input type="submit" value="Заказать!" class="order-creator__button">
+                </div>
+            </form>
+            <aside class="sidebar">
+                <h3 class="sidebar__text">Популярные товары</h3>
+                <ul class="popular-list list">
+                    <li class="popular-list__item"><a href="" class="list__link">Ракушка морская</a></li>
+                    <li class="popular-list__item"><a href="" class="list__link">Чесалка для спины</a></li>
+                    <li class="popular-list__item"><a href="" class="list__link">Четки</a></li>
+                </ul>
+            </aside>
+        </main>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
