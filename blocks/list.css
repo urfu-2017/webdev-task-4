@@ -1,16 +1,15 @@
 .list
 {
-    padding: 1em;
     height: max-content;
+    padding: 1em 2em;
 }
 
 .list__title
 {
-    display: block;
+    display: inline-block;
     font-weight: bold;
     font-size: 1.3em;
     color: black;
-    height: 1.5em;
     line-height: 1.3em;
     margin-bottom: 1em;
 
@@ -24,5 +23,37 @@
     font-size: 1.3em;
     margin-left: .4em;
     margin-bottom: .3em;
+}
 
+.list__item_centered
+{
+    column-span: all;
+}
+
+@media (min-width: 767px) and (max-width: 1023px)
+{
+    .list.list_mobile_columns
+    {
+        columns: 2;
+    }
+
+    .list.list_mobile_columns .list__item
+    {
+        text-align: center;
+    }
+
+    .list.list_mobile_rows
+    {
+        display: grid;
+    }
+
+    .list.list_mobile_rows .list__item
+    {
+        grid-row: 2/3;
+    }
+
+    .list.list_mobile_rows .list__title
+    {
+        grid-row: 1/2;
+    }
 }

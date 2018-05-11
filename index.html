@@ -3,73 +3,129 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="blocks/form.css">
     <link rel="stylesheet" href="blocks/card.css">
     <link rel="stylesheet" href="blocks/page.css">
     <link rel="stylesheet" href="blocks/list.css">
     <link rel="stylesheet" href="blocks/head.css">
+    <link rel="stylesheet" href="blocks/hamburger.css">
+    <script src="blocks/page.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
 <div class="head page__head">
     <label for="head__input" class="head__title">Билли.Маркет</label>
     <input id="head__input" type="text" class="head__input">
     <button class="head__button">Найти</button>
-
+    <div class="head__hamburger hamburger">
+        <div class="hamburger__box">
+            <div class="hamburger__inner"></div>
+        </div>
+    </div>
 </div>
-<nav class="list page__menu">
-    <a class="list__item">Ракушка морская</a>
-    <a class="list__item">Чесалка для спины</a>
-    <a class="list__item">Чётки</a>
+<nav class="list list_mobile_columns page__menu">
+    <div class="page__menu-close-button hamburger hamburger_active">
+        <div class="hamburger__box">
+            <div class="hamburger__inner"></div>
+        </div>
+    </div>
+    <a class="list__item">Морские Ракушки</a>
+    <a class="list__item">Автомобили Тела</a>
+    <a class="list__item">Сувениры из Тайланда</a>
+    <a class="list__item">Марки разных стран</a>
+    <a class="list__item list__item_centered" href="#form">Заказать сувенир</a>
 </nav>
-<div class="list page__hint">
+<div class="list list_mobile_rows page__hint">
     <div class="list__title">Популярные товары</div>
     <a class="list__item">Ракушка морская</a>
     <a class="list__item">Чесалка для спины</a>
     <a class="list__item">Чётки</a>
 </div>
-<div class="page__form"></div>
+<form class="form page__form" id="form">
+    <div class="form__title">Заказать сувенир</div>
+    <div class="form__row">
+        <label class="form__label">
+            <input type="number" class="form__input">
+            Количество
+        </label>
+
+    </div>
+    <div class="form__row">
+        <label class="form__label">Город
+            <select class="form__input">
+                <option>-</option>
+            </select>
+        </label>
+
+    </div>
+    <div class="form__row">
+        <label class="form__label">Email
+            <input type="email" class="form__input" placeholder="email">
+        </label>
+    </div>
+    <div class="form__row">
+        <label class="form__label">Телефон
+            <input type="tel" class="form__input" placeholder="Номер телефона">
+        </label>
+    </div>
+    <div class="form__row">
+        <label class="form__label">Дата доставки
+            <input type="text" class="form__input" placeholder="дд.мм.гггг">
+        </label>
+    </div>
+    <div class="form__row">
+        <button class="form__button" type="reset">Сбросить заказ</button>
+        <button class="form__button form__button_right" type="submit">Заказать</button>
+    </div>
+</form>
 <main class="page__items">
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
+        <img alt="pic" class="card__image"
+             src="https://www.ldoceonline.com/media/english/illustration/owl.jpg">
+        <a href="" class="card__title">Сова &laquo;На веточке&raquo;</a>
         <span class="card__price">290 &#8381;</span>
-        <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <span class="card__label" data-value="3.7">3.7</span>
+        <span class="card__review">17 отзывов</span>
     </div>
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
-        <span class="card__price">290 &#8381;</span>
-        <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <img alt="pic" class="card__image"
+             src="http://ashwellthorpepc.norfolkparishes.gov.uk/files/2011/03/Tawny-Owl.jpg">
+        <a href="" class="card__title">Серая неясыть</a>
+        <span class="card__price">1230 &#8381;</span>
+        <span class="card__label" data-value="4.0">4.0</span>
+        <span class="card__review">210 отзывов</span>
     </div>
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
-        <span class="card__price">290 &#8381;</span>
+        <img alt="pic" class="card__image"
+             src="https://cs8.pikabu.ru/post_img/big/2017/07/14/7/150003102518188894.jpg">
+        <a href="" class="card__title">Yoll с пером</a>
+        <span class="card__price">1170 &#8381;</span>
         <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <span class="card__review">91 отзыв</span>
     </div>
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
-        <span class="card__price">290 &#8381;</span>
-        <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <img alt="pic" class="card__image"
+             src="http://crosti.ru/patterns/00/04/e2/0ff931f3ed/picture.jpg">
+        <a href="" class="card__title">Просто филин карандашом</a>
+        <span class="card__price">175 &#8381;</span>
+        <span class="card__label" data-value="2.0">2.0</span>
+        <span class="card__review">5 отзывов</span>
     </div>
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
-        <span class="card__price">290 &#8381;</span>
+        <img alt="pic" class="card__image"
+             src="https://cs6.pikabu.ru/post_img/big/2017/08/04/6/1501834043184425404.jpg">
+        <a href="" class="card__title">Ёлка весенняя</a>
+        <span class="card__price">1990 &#8381;</span>
         <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <span class="card__review">231 отзыв</span>
     </div>
     <div class="card">
-        <img src="https://www.ldoceonline.com/media/english/illustration/owl.jpg" class="card__image">
-        <a href="" class="card__title">Ракушка &laquo;Морское дно&raquo;</a>
-        <span class="card__price">290 &#8381;</span>
+        <img alt="pic" class="card__image"
+             src="https://cs6.pikabu.ru/images/big_size_comm/2015-08_2/143888149211219631.jpg">
+        <a href="" class="card__title">Ёль и перо</a>
+        <span class="card__price">2290 &#8381;</span>
         <span class="card__label" data-value="5.0">5.0</span>
-        <span class="card__review">111 отзывов</span>
+        <span class="card__review">438 отзывов</span>
     </div>
 </main>
 </body>

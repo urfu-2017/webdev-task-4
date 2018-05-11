@@ -1,26 +1,41 @@
 .card
 {
-    width: 250px;
     display: grid;
+    width: 50%;
     /*noinspection Stylelint*/
-    grid-template-areas:
-        'image image  image  image'
+    grid-template-areas: 'image image  image  image'
         'title title  title  title'
         'price price    .      .  '
         'label review   .      .  ';
 
-    grid-template-rows: 8fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(8fr, auto) auto 1fr 1fr;
     grid-column-gap: 1em;
+    grid-row-gap: .5em;
     padding: 1em;
     background: white;
+    border: 1px solid #f6f6f6;
+    box-sizing: border-box;
 }
 
 .card__image
 {
     grid-area: image;
     object-fit: cover;
-    max-height: 100%;
+    max-height: 400px;
     width: 100%;
+}
+
+@media screen and (max-width: 767px)
+{
+    .card
+    {
+        width: 100%;
+    }
+
+    .card__image
+    {
+        max-height: unset;
+    }
 }
 
 .card__title
@@ -29,7 +44,6 @@
     font-size: 1.3em;
     text-decoration: none;
     color: #4a00cf;
-    height: 1.5em;
     line-height: 1.5em;
 
 }
@@ -71,7 +85,6 @@
     background-color: var(--label-color);
     height: 1.5em;
     grid-area: label;
-    font-size: .8em;
     position: relative;
     align-self: center;
     line-height: 1.5em;
