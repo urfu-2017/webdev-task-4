@@ -1,0 +1,302 @@
+.header-search
+{
+    font-size: 0;
+    display: flex;
+    width: 70%;
+}
+
+.header-search_hidden
+{
+    display: none;
+}
+
+.header
+{
+    display: flex;
+    font-size: 2.5em;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-search__button
+{
+    background: #eee;
+    border: none;
+    min-width: 5%;
+    width: 10%;
+}
+
+.header-search__input
+{
+    border: 3px solid #eee;
+    width: 90%;
+    font-size: 32px;
+}
+
+.main-content
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.content
+{
+    background: #eee;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header__menu-btn
+{
+    display: none;
+}
+
+.menu
+{
+    padding: 20px;
+    width: 240px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.menu_hidden
+{
+    display: none;
+}
+
+.menu__close-icon
+{
+    display: none;
+    right: 20px;
+    position: absolute;
+}
+
+.things
+{
+    width: 45%;
+    font-size: 0;
+}
+
+.popular
+{
+    padding: 20px;
+    width: 250px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.header__search-icon_hidden
+{
+    display: none;
+}
+
+.thing
+{
+    font-size: 14px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 50px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.thing__image
+{
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+}
+
+.order-form
+{
+    width: 45%;
+    padding: 10px 6%;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.thing__price
+{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.thing-rating__score
+{
+    padding: 5px 10px;
+    color: white;
+}
+
+.thing-rating__score_good
+{
+    background: green;
+}
+
+.thing-rating__score_normal
+{
+    background: greenyellow;
+}
+
+.thing-rating__count
+{
+    color: gray;
+    margin-left: 10px;
+}
+
+.order-form__row
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+@media (min-width: 500px) and (max-width: 950px)
+{
+    .menu,
+    .popular__rows
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .header-search__input
+    {
+        width: 100%;
+    }
+
+    .header-search__button
+    {
+        display: none;
+    }
+
+    .header-search
+    {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .popular,
+    .menu,
+    .things,
+    .order-form
+    {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .main-content
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .things
+    {
+        width: 100%;
+    }
+
+    .thing,
+    .order-form,
+    .popular
+    {
+        width: 100%;
+    }
+
+    .things,
+    .popular
+    {
+        margin: 10px 0;
+    }
+
+    .thing
+    {
+        display: block;
+    }
+
+    .menu__close-icon
+    {
+        display: inline;
+    }
+
+    .header__menu-btn
+    {
+        display: block;
+    }
+
+    .header
+    {
+        flex-wrap: wrap;
+    }
+
+    .header-search
+    {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .header-search__input
+    {
+        border-color: yellow;
+        width: 100%;
+    }
+
+    .header-search__button
+    {
+        display: none;
+    }
+
+    .order-form
+    {
+        margin-right: 0;
+    }
+
+    .order-form__row input
+    {
+        width: 50%;
+    }
+
+    .header__title
+    {
+        font-size: 30px;
+    }
+}
