@@ -24,7 +24,7 @@ changeMediaActions();
 
 window.onresize = function () {
     changeMediaActions();
-}
+};
 
 let touched = false;
 
@@ -84,7 +84,8 @@ function changeMediaActions() {
         hideMenu();
         document.querySelector('.menu').classList.remove('menu_hidden');
         document.querySelector('.header-search').classList.add('header-search_hidden');
-        document.querySelector('.header__search-icon').classList.remove('header__search-icon_hidden');
+        document.querySelector('.header__search-icon').classList
+            .remove('header__search-icon_hidden');
     } else {
         document.querySelector('.header-search').classList.remove('header-search_hidden');
         document.querySelector('.header__search-icon').classList.add('header__search-icon_hidden');
