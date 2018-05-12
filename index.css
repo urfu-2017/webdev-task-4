@@ -1,0 +1,98 @@
+body
+{
+    padding: 5%;
+}
+
+main
+{
+    grid-area: block;
+    display: grid;
+    grid-template-areas: 'head shop_el popular' 'l order m';
+    grid-template-columns: 25% 50% 25%;
+    background-color: rgb(238, 237, 237);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.search
+{
+    margin-bottom: 2%;
+}
+
+.search_name
+{
+    display: inline;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.search_input
+{
+    margin-left: 3%;
+    height: 30px;
+}
+
+.search_button
+{
+    height: 36px;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 979px)
+{
+    main
+    {
+        /* stylelint-disable max-line-length*/
+        grid-template-areas: 'head head' 'shop_el shop_el' 'popular popular' 'order order';
+        grid-template-columns: 50% 50%;
+        /* stylelint-enable */
+    }
+
+    main > div
+    {
+        margin-bottom: 5%;
+    }
+
+    .search_name
+    {
+        display: inline;
+        font-size: 2em;
+        font-weight: 100;
+    }
+
+    .search_input
+    {
+        visibility: hidden;
+        width: 350px;
+    }
+
+    .popular_wrapper
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    main
+    {
+        grid-template-areas: 'head' 'popular' 'shop_el' 'order';
+        grid-template-columns: 100%;
+    }
+
+    .search_input
+    {
+        visibility: visible;
+        width: 250px;
+        margin-left: 0%;
+    }
+
+    .search_button
+    {
+        visibility: hidden;
+    }
+}
