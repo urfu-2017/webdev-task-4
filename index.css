@@ -7,61 +7,65 @@
 .page {
     display: grid;
     grid-template-areas:
-        ". h h h ."
+        ". l s s ."
         ". n c t ."
         ". . f . .";
-
     grid-gap: 20px;
     grid-template-columns: auto 250px 600px 250px auto;
-
     grid-template-rows: auto min-content min-content;
-
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
-    margin-top: 20px;
+    background: #f8f8f8;
 }
 
-.header {
-    text-align: center;
-    grid-area: h;
+.logo {
+    grid-area: l;
+    margin: 0 auto;
+    height: 100px;
 }
 
-.header__logo {
-    display: inline-block;
-    height: 33px;
-    vertical-align: top;
+.search {
+    grid-area: s;
+    align-self: center;
+    width: 100%;
 }
 
-.header__search-string {
+.search__input {
     text-align: left;
-    font-size: 130%;
-    width: 911px;
-    display: inline-block;
+    font-size: 200%;
     white-space: nowrap;
     overflow: hidden;
-
+    float: left;
+    width: 85%;
+    background: #fff;
     border: 2px solid #ccc;
 }
 
-.header__search-string:focus {
+.search__input:focus {
     outline-width: 0;
 }
 
-.header__search-button {
-    font-size: 130%;
-    display: inline-block;
-    margin-left: -6px;
+.search__button {
+    font-size: 200%;
+    float: left;
     vertical-align: top;
-    background: #ccc;
-    width: 110px;
     text-align: center;
+    width: 15%;
+    background: #ccc;
     border: 2px solid #ccc;
 }
 
-.header__search-button:hover {
-    background: #aaa;
-    border-color: #aaa;
+.search__button:hover {
     cursor: pointer;
+}
+
+.search__button-tablet {
+    display: none;
+    cursor: pointer;
+    float: right;
+    background-image: url(./img/search.png);
+    width: 48px;
+    height: 48px;
 }
 
 .navigation {
@@ -70,13 +74,41 @@
 
 .navigation__wrapper {
     padding: 20px;
-    background: #f2f2f2;
+    background: #fff;
     border: 1px solid #ddd;
 }
 
 .navigation__item {
     display: block;
+    margin-bottom: 15px;
+    text-decoration: none; 
+}
+
+.navigation__item-order {
+    display: block;
+    text-decoration: none; 
+    margin-top: 30px;
+}
+
+.trends {
+    grid-area: t;
+}
+
+.trends__wrapper {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.trends__title {
+    font-size: 100%;
+    font-weight: 600;
     margin-bottom: 20px;
+}
+
+.trends__item {
+    display: block;
+    margin-bottom: 15px;
     text-decoration: none; 
 }
 
@@ -84,20 +116,6 @@
     grid-area: c;
     display: flex;
     flex-wrap: wrap;
-
-    border: 1px solid black;
-}
-
-.trends {
-    grid-area: t;
-
-    border: 1px solid black;
-}
-
-.order-form {
-    grid-area: f;
-
-    border: 1px solid black;
 }
 
 .card {
@@ -105,18 +123,16 @@
     flex-basis: 50%;
     height: 400px;
     padding: 20px;
-
-    background: #f2f2f2;
+    margin-left: -1px;
+    margin-top: -1px;
+    background: #fff;
     border: 1px solid #ddd;
 }
-
 
 .card__image-container {
     position:relative;
     width: 100%;
     height: 70%;
-
-    border: 1px solid black;
 }
 
 .card__image {
@@ -129,14 +145,10 @@
     left: 0;
     right: 0;
     margin:auto;
-
-    border: 1px solid black;
 }
 
 .card__title {
     height: 10%;
-
-    border: 1px solid black;
 }
 
 .card__link {
@@ -146,13 +158,10 @@
 .card__price {
     height: 10%;
     font-weight: 600;
-    border: 1px solid black;
 }
 
 .card__rating {
     height: 10%;
-
-    border: 1px solid black;
 }
 
 .card__rating-square {
@@ -209,8 +218,162 @@
     font-size: 70%;
 
     color: #888;
-
-    border: 1px solid black;
 }
 
+.order-form {
+    margin-bottom: 20px;
+    padding: 30px;
+    grid-area: f;
 
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.order-form__item {
+    padding-bottom: 20px;
+}
+
+.order-form__title {
+    font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.order-form__input {
+    float: right;
+    width: 200px;
+}
+
+.order-form__right-button {
+    float: right;
+    width: 100px;
+    vertical-align: top;
+}
+
+.order-form__left-button {
+    width: 100px;
+    vertical-align: top;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* tablets */
+@media (min-width : 700px) and (max-width : 1200px) {
+    .page {
+        grid-template-areas: 
+            ". l s s ."
+            ". n n n ."
+            ". c c c ."
+            ". t t t ."
+            ". f f f .";
+
+        grid-template-columns: auto 100px 250px 250px auto;
+    }
+
+    .search__input {
+        display: none;
+        width: calc(100% - 48px);
+    }
+
+    .search__input_visible {
+        display: block;
+    }
+
+    .search__button {
+        display: none;
+    }
+
+    .search__button-tablet {
+        display: block;
+    }
+
+    .navigation__item {
+        display: inline-block;
+        width: 49%;
+        padding-left: 10%;
+    }
+
+    .navigation__item-order {
+        text-align: center;
+    }
+
+    .trends__item {
+        display: inline-block;
+        width: 32%;
+    }
+}
+
+/* phones */
+@media (max-width : 699px) {
+    .page {
+        grid-template-areas: 
+            ". l ."
+            ". s ."
+            ". t ."
+            ". c ."
+            ". f .";
+
+        grid-template-columns: auto 280px auto;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+        flex-basis: 100%;
+    }
+
+    .logo {
+        height: 60px;
+        text-align: center;
+    }
+
+    .search__button {
+        display: none;
+    }
+
+    .search__input {
+        width: 100%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_visible {
+        position: fixed;
+        display: block;
+        z-index: 1000;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./img/menu.png)
+    }
+
+    .hamburger_open {
+        background-image: url(./img/close.png);
+    }
+
+    .navigation__wrapper {
+        height: 100%;
+    }
+
+    .order-form__item {
+        font-size: 80%;
+    }
+
+    .order-form__input {
+        width: 100px;
+    }
+}
