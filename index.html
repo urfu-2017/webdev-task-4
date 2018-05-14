@@ -4,7 +4,129 @@
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <meta name="viewport" content="initial-scale=1">
 </head>
 <body>
+    <div class="page">
+        <img class="logo" src="./img/logo.png" alt="">
+        <div class="search">
+            <input type="text" class="search__input">
+            <div class="search__button">Найти</div>
+            <div class="search__button-tablet"></div>
+        </div>
+        <div class="hamburger hamburger_closed"></div>
+        <nav class="navigation">
+            <div class="navigation__wrapper">
+                <a class="navigation__item" href="#">Морские ракушки</a>
+                <a class="navigation__item" href="#">Кружки с бегемотами</a>
+                <a class="navigation__item" href="#">Красные машины</a>
+                <a class="navigation__item" href="#">Не красные машины</a>
+                <a class="navigation__item-order" href="#">Заказать сувенир</a>
+            </div>
+        </nav>
+        <section class="cards">
+            <div class="card">
+                <div class="card__image-container">
+                    <img class="card__image" src="./img/1.png" alt="">
+                </div>
+                <div class="card__title">
+                    <a class="card__link" href="#">Ракушка ракушечка</a>
+                </div>
+                <div class="card__price">100&#x20bd;</div>
+                <div class="card__rating">
+                    <div class="card__rating-square card__rating-square_green">4.9</div>
+                    <div class="card__rating-triangle card__rating-triangle_green"></div>
+                    <div class="card__reviews">4 отзыва</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img class="card__image" src="./img/2.jpg" alt="">
+                </div>
+                <div class="card__title">
+                    <a class="card__link" href="#">Кружка с бегемотом</a>
+                </div>
+                <div class="card__price">200&#x20bd;</div>
+                <div class="card__rating">
+                    <div class="card__rating-square card__rating-square_red">0.1</div>
+                    <div class="card__rating-triangle card__rating-triange_red"></div>
+                    <div class="card__reviews">2 отзыва</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img class="card__image" src="./img/3.png" alt="">
+                </div>
+                <div class="card__title">
+                    <a class="card__link" href="#">Машина</a>
+                </div>
+                <div class="card__price">300&#x20bd;</div>
+                <div class="card__rating">
+                    <div class="card__rating-square card__rating-square_blue">99</div>
+                    <div class="card__rating-triangle card__rating-triange_blue"></div>
+                    <div class="card__reviews">1 отзыв</div>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <a class="card__link" href="#">Кружка с бегемотом</a>
+                    </div>
+                    <div class="card__price">200&#x20bd;</div>
+                    <div class="card__rating">
+                        <div class="card__rating-square card__rating-square_red">0.1</div>
+                        <div class="card__rating-triangle card__rating-triange_red"></div>
+                        <div class="card__reviews">2 отзыва</div>
+                    </div>
+                </div>
+        </section>
+        <section class="trends">
+            <div class="trends__wrapper">
+                <h1 class="trends__title">Популярные товары</h1>
+                <a class="trends__item" href="#">Морские ракушки</a>
+                <a class="trends__item" href="#">Морские машины</a>
+                <a class="trends__item" href="#">Кружки бегеможки</a>
+            </div>
+        </section>
+        <section class="order-form">
+            <h1 class="order-form__title">Форма заказа</h1>
+            <div class="order-form__item">
+                <label>Количество
+                    <input class="order-form__input" type="number">
+                </label>
+            </div>
+            <div class="order-form__item">
+                <label>Город
+                    <select class="order-form__input">
+                        <option>Москва</option>
+                        <option>Санк-Петербург</option>
+                        <option>Екатеринбург</option>
+                    </select>
+                </label>
+            </div>
+            <div class="order-form__item">
+                <label>Email
+                    <input class="order-form__input" type="email">
+                </label>
+            </div>
+            <div class="order-form__item">
+                <label>Телефон
+                    <input class="order-form__input" type="tel">
+                </label>
+            </div>
+            <div class="order-form__item">
+                <label>Дата доставки
+                    <input class="order-form__input" type="date">
+                </label>
+            </div>
+            <div class="order-form__buttons">
+                <button class="order-form__left-button">Сбросить заказ</button>
+                <button class="order-form__right-button">Заказать</button>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
