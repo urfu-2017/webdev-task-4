@@ -4,7 +4,7 @@ const state = {
     navigation: false,
     touchStartX: null,
     search: false
-}
+};
 
 window.onload = () => {
     const hamburger = document.querySelector('.hamburger');
@@ -18,7 +18,7 @@ window.onload = () => {
             navigation.classList.remove('navigation_visible');
             state.navigation = false;
         } else {
-            hamburger.classList.add('hamburger_open')
+            hamburger.classList.add('hamburger_open');
             navigation.classList.add('navigation_visible');
             state.navigation = true;
         }
@@ -26,7 +26,7 @@ window.onload = () => {
 
     hamburger.addEventListener('click', () => {
         toggleNavigation();
-    })
+    });
 
     window.addEventListener('touchstart', e => {
         state.touchStartX = e.changedTouches[0].screenX;
@@ -56,4 +56,4 @@ window.onload = () => {
         state.search = false;
         e.target.value = '';
     });
-}
+};
