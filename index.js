@@ -9,11 +9,13 @@ function showMenu() {
 }
 
 function showInput() {
-    document.getElementById('search-field').style.display = 'block';
+    document.getElementById('search-field').classList.remove('hide-inputs-tablet');
+    // document.getElementById('search-field').style.display = 'block';
 }
 
 function hideInput() {
-    document.getElementById('search-field').style.display = 'none';
+    document.getElementById('search-field').classList.add('hide-inputs-tablet');
+    // document.getElementById('search-field').style.display = 'none';
 }
 
 function closeMenu() {

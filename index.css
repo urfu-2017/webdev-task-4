@@ -31,7 +31,7 @@ body
 {
     outline: none;
     padding-right: 0;
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
 }
 
@@ -39,7 +39,7 @@ body
 {
     background: #e8e8e8;
     padding: 0;
-    height: 35px;
+    height: 30px;
     width: 70px;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(230, 110, 110, .2);
@@ -47,6 +47,7 @@ body
 
 .search-field
 {
+    display: block;
     width: 80%;
     border: 1px solid #e8e8e8;
     height: 26px;
@@ -280,6 +281,11 @@ body
 
 @media screen and (min-width: 980px) /* Desktop */
 {
+    .input-field input
+    {
+        display: inline-block;
+    }
+
     .first-tile
     {
         padding-top: 20px;
@@ -466,7 +472,7 @@ body
     }
 
     .input-border,
-    .input-field input,
+    .hide-inputs-tablet,
     .input-field .search-button
     {
         display: none;
