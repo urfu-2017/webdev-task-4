@@ -3,21 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
     <div class="wrapper">
         <header class="main-head">
-            <div class="marketName">Билли.Маркет</div>
-            <div class="inputField">
-                <input type="text" class="searchField"><!--
-                --><input type="button" class="searchButton" value="Найти"><!--
-                --><div class="inputBorder"></div>
-                <div class="searchicon"></div>
+            <div class="market-name">Билли.Маркет</div>
+            <div class="menu-icon" onclick="showMenu();"></div>
+            <div class="input-field">
+                <input type="text" id="search-field" class="search-field" onblur="hideInput()"><!--
+                --><input type="button" class="search-button" value="Найти"><!--
+                --><div class="input-border"></div>
+                <div class="search-icon" onclick="showInput();"></div>
             </div>
         </header>
-        <nav class="main-nav">
+        <div id="main-nav" class="main-nav">
             <ul>
                 <li><a href="">Морские ракушки</a></li>
                 <li><a href="">Сувениры из Тайланда</a></li>
@@ -25,7 +26,8 @@
                 <li><a href="">Марки из разных стран</a></li>
                 <li><a href="">Заказать сувенир</a></li>
             </ul>
-        </nav>
+            <div id="close-menu" class="close-menu" onclick="closeMenu()"></div>
+        </div>
         <article class="popular">
             <h3>Популярные товары</h3>
             <ul>
@@ -35,38 +37,38 @@
             </ul>
         </article>
         <article class="content">
-            <div class="tile firstTile">
+            <div class="tile first-tile">
                 <img src="./static/pictures/png/1.png" alt="first souvenir">
                 <div class="description"><a>1 сувенир</a></div>
                 <div class="price"><strong>290&#8381;</strong></div>
                 <div class="feedback">4.5</div><!--
-                 --><div class="feedbackBorder"></div>
+                 --><div class="feedback-border"></div>
             </div>
-            <div class="tile secondTile">
+            <div class="tile second-tile">
                 <img src="./static/pictures/png/2.png" alt="second souvenir">
                 <div class="description"><a>2 сувенир</a></div>
                 <div class="price"><strong>290&#8381;</strong></div>
                 <div class="feedback">4.5</div><!--
-                --><div class="feedbackBorder"></div>
+                --><div class="feedback-border"></div>
             </div>
-            <div class="tile thirdTile">
+            <div class="tile third-tile">
                 <img src="./static/pictures/png/3.png" alt="third souvenir">
                 <div class="description"><a>3 сувенир</a></div>
                 <div class="price"><strong>290&#8381;</strong></div>
                 <div class="feedback">4.5</div><!--
-                --><div class="feedbackBorder"></div>
+                --><div class="feedback-border"></div>
             </div>
-            <div class="tile fourthTile">
+            <div class="tile fourth-tile">
                 <img src="./static/pictures/png/4.png" alt="fourth souvenir">
                 <div class="description"><a>4 сувенир</a></div>
                 <div class="price"><strong>290&#8381;</strong></div>
                 <div class="feedback">4.5</div><!--
-                --><div class="feedbackBorder"></div>
+                --><div class="feedback-border"></div>
             </div>
         </article>
         <article class="order">
             <h2>Заказать сувенир</h2>
-            <div class="orderForm">
+            <div class="order-form">
                 <div class="count">
                     <div>Количество</div>
                     <input type="number">
@@ -87,10 +89,13 @@
                     <div>Дата</div>
                     <input type="date">
                 </div>
-                <input type="reset" value="Сбросить заказ">
-                <input type="submit" value="Заказать!">
+                <div class="order-buttons">
+                    <input type="reset" value="Сбросить заказ">
+                    <input type="submit" value="Заказать!">
+                </div>
             </div>
         </article>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
