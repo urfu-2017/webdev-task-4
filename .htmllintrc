@@ -7,7 +7,7 @@
     "frameborder",
     "style"
   ],
-  "attr-name-style": "lowercase",
+  "attr-name-style": "dash",
   "attr-no-dup": true,
   "attr-quote-style": "double",
   "attr-req-value": false,

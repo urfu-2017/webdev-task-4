@@ -1,0 +1,33 @@
+.form
+{
+    display: grid;
+    grid-template-areas: 'title' 'rows';
+    grid-template-rows: auto auto;
+    padding: 2em;
+    background: #fff;
+
+}
+
+.form__title
+{
+    grid-area: title;
+    font-size: 22pt;
+    text-wrap: none;
+}
+
+.form__row
+{
+    margin-top: 1em;
+}
+
+.form__input
+{
+    box-sizing: border-box;
+    width: 200px;
+    float: right;
+}
+
+.form__button_right
+{
+    float: right;
+}

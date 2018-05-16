@@ -1,0 +1,113 @@
+.page
+{
+    display: grid;
+    /*noinspection Stylelint*/
+    grid-template-areas: 'head head head head head'
+        ' .   menu item hint   . '
+        ' .    .   form   .    . ';
+    grid-template-rows: max-content auto 3fr;
+    grid-template-columns: 1em auto minmax(min-content, auto) auto 1em;
+    grid-gap: 3em;
+    background: #f6f6f6;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 0 3em;
+}
+
+@media (min-width: 767px) and (max-width: 1023px)
+{
+    .page
+    {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1em minmax(min-content, auto) 1em;
+        /*noinspection Stylelint*/
+        grid-template-areas: 'head head  head'
+            ' .   menu    . '
+            ' .   item    . '
+            ' .   hint    . '
+            ' .   form    . ';
+    }
+}
+
+.page__menu-close-button
+{
+    display: none;
+}
+@media screen and (max-width: 767px)
+{
+    .page
+    {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1em minmax(min-content, auto) 1em;
+        /*noinspection Stylelint*/
+        grid-template-areas: 'head head  head'
+            ' .   item    . '
+            ' .   hint    . '
+            ' .   form    . ';
+    }
+
+    .page__menu
+    {
+        display: none;
+    }
+
+    .page__menu.page__menu_active
+    {
+        display: block;
+        position: fixed;
+        width: 50%;
+        right: 0;
+        height: 100%;
+    }
+
+    .page_scrollable_no
+    {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .page__menu.page__menu_active:before
+    {
+        display: block;
+        position: fixed;
+        right: 0;
+    }
+
+    .page__menu-close-button
+    {
+        margin-left: 80%;
+        margin-top: 1em;
+        display: block;
+    }
+}
+
+.page__items
+{
+    grid-area: item;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.page__hint
+{
+    grid-area: hint;
+    background: #fff;
+}
+
+.page__menu
+{
+    grid-area: menu;
+    background: #fff;
+}
+
+.page__head
+{
+    grid-area: head;
+    background: #fff;
+}
+
+.page__form
+{
+    grid-area: form;
+    background: #fff;
+}

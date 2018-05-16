@@ -1,0 +1,66 @@
+.head
+{
+    display: grid;
+    grid-template-areas: 'title . input button';
+    grid-template-columns: max-content 1em auto max-content;
+    padding: 2em;
+
+}
+
+.head .head__hamburger
+{
+    grid-area: hamburger;
+    justify-self: flex-end;
+    padding-right: 0;
+    display: none;
+}
+
+@media screen and (max-width: 767px)
+{
+    .head
+    {
+        /*noinspection Stylelint*/
+        grid-template-areas: 'title   .     .   hamburger'
+            'input input input button';
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 1em;
+    }
+
+    .head .head__hamburger
+    {
+        display: inline-block;
+    }
+}
+
+.head__title
+{
+    grid-area: title;
+    font-weight: lighter;
+    font-size: 50px;
+    text-wrap: none;
+}
+
+.head__input
+{
+    grid-area: input;
+    border: solid #e8e8e8;
+    padding-left: .5em;
+    padding-right: .5em;
+    outline: none;
+    font-size: 24px;
+    border-radius: .25em 0 0 .25em;
+}
+
+.head__button
+{
+    grid-area: button;
+    width: max-content;
+    background-color: #e8e8e8;
+    border: solid #e8e8e8;
+    border-radius: 0 .25em .25em 0;
+    font-size: 16px;
+    padding: 1em 1.5em 1em 1em;
+
+}
+
