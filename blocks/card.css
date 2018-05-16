@@ -12,7 +12,7 @@
     grid-column-gap: 1em;
     grid-row-gap: .5em;
     padding: 1em;
-    background: white;
+    background: #fff;
     border: 1px solid #f6f6f6;
     box-sizing: border-box;
 }
@@ -81,7 +81,7 @@
 .card__label
 {
     width: 2em;
-    color: white;
+    color: #fff;
     background-color: var(--label-color);
     height: 1.5em;
     grid-area: label;
@@ -111,7 +111,7 @@
 
 .card__review
 {
-    color: darkgray;
+    color: #a9a9a9;
     grid-area: review;
     align-self: center;
 }

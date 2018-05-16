@@ -4,7 +4,7 @@
     grid-template-areas: 'title' 'rows';
     grid-template-rows: auto auto;
     padding: 2em;
-    background: white;
+    background: #fff;
 
 }
 
