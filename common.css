@@ -1,0 +1,208 @@
+body
+{
+    font-family: 'Arial', serif;
+}
+
+.body_no-scroll
+{
+    overflow: hidden;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.logo__text
+{
+    margin: 0 15px 0 0;
+    padding: 5px 0;
+}
+
+.header__btn-sandwich
+{
+    display: none;
+}
+
+.search
+{
+    flex-grow: 1;
+    display: flex;
+    height: 40px;
+}
+
+.search__input
+{
+    box-sizing: border-box;
+    border-radius: 3px 0 0 3px;
+    border: solid #e8e8e8 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.search__button
+{
+    border: none;
+    border-radius: 0 3px 3px 0;
+    background-color: #e8e8e8;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.main
+{
+    background-color: #f6f6f6;
+}
+
+.layout
+{
+    display: grid;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.menu,
+.order,
+.popular
+{
+    background-color: white;
+    border: solid 1px #e8e8e8;
+}
+
+.menu
+{
+    grid-area: menu;
+    align-self: start;
+}
+
+.menu__btn-close
+{
+    display: none;
+}
+
+.menu-list,
+.popular__list
+{
+    padding: 0;
+    display: flex;
+}
+
+.menu-list__item,
+.menu__item-order,
+.popular__list-item
+{
+    list-style-type: none;
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+
+.goods
+{
+    grid-area: goods;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product
+{
+    border: solid 1px #e8e8e8;
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__image
+{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.product__image img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product__price
+{
+    font-weight: bold;
+}
+
+.product__opinions
+{
+    margin-top: 10px;
+}
+
+.product__rate
+{
+    color: white;
+    background-color: #529f06;
+    padding: 3px;
+}
+
+.product__reviews
+{
+    margin-left: 5px;
+    color: gray;
+    font-size: .8em;
+}
+
+.popular
+{
+    grid-area: popular;
+    align-self: start;
+    box-sizing: border-box;
+}
+
+.popular__heading
+{
+    padding: 0 17px;
+}
+
+.order
+{
+    grid-area: order;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    justify-self: center;
+    width: 100%;
+}
+
+.order__heading
+{
+    margin-top: 0;
+}
+
+.order__row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order__row input,
+.order__row select
+{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.order__actions
+{
+    display: flex;
+    justify-content: space-between;
+}

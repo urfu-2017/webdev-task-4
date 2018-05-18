@@ -3,8 +3,127 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Тим слишком занят»</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/solid.css"
+          integrity="sha384-29Ax2Ao1SMo9Pz5CxU1KMYy+aRLHmOu6hJKgWiViCYpz3f9egAJNwjnKGgr+BXDN"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css"
+          integrity="sha384-Lyz+8VfV0lv38W729WFAmn77iH5OSroyONnUva4+gYaQTic3iI2fnUKtDSpbVf0J"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
+<div class="page">
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo__text">Билли.Маркет</h1>
+        </div>
+        <button class="header__btn-sandwich"><span class="fas fa-bars"></span></button>
+        <div class="search">
+            <input type="text" class="search__input">
+            <button class="search__button">Найти</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="layout">
+            <nav class="menu">
+                <button class="menu__btn-close"><span class="fas fa-times"></span></button>
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href="#">Морские ракушки</a></li>
+                    <li class="menu-list__item"><a href="#">Сувениры из Тайланда</a></li>
+                    <li class="menu-list__item"><a href="#">Автомобили Тесла</a></li>
+                    <li class="menu-list__item"><a href="#">Марки из разных стран</a></li>
+                </ul>
+                <div class="menu__item-order"><a href="#">Заказать сувенир</a></div>
+            </nav>
+            <section class="goods">
+                <article class="product">
+                    <div class="product__image">
+                        <img src="images/seashells.webp" alt="ракушки">
+                    </div>
+                    <h4 class="product__name"><a href="#">Ракушки "Морское дно"</a></h4>
+                    <div class="product__price">290 Р</div>
+                    <div class="product__opinions">
+                        <span class="product__rate">4.0</span>
+                        <span class="product__reviews">111 отзывов</span>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product__image">
+                        <img src="images/thermo.webp" alt="термокружкус">
+                    </div>
+                    <h4 class="product__name"><a href="#">Термокружкус "Батарейка"</a></h4>
+                    <div class="product__price">404 Р</div>
+                    <div class="product__opinions">
+                        <span class="product__rate">4.5</span>
+                        <span class="product__reviews">290 отзывов</span>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product__image">
+                        <img src="images/tesla.jpg" alt="Тесла">
+                    </div>
+                    <h4 class="product__name"><a href="#">Автомобиль "Тесла"</a></h4>
+                    <div class="product__price">359 900 Р</div>
+                    <div class="product__opinions">
+                        <span class="product__rate">4.5</span>
+                        <span class="product__reviews">1 отзыв</span>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product__image">
+                        <img src="images/comb.webp" alt="чесалка">
+                    </div>
+                    <h4 class="product__name"><a href="#">Чесалка для спины</a></h4>
+                    <div class="product__price">195 Р</div>
+                    <div class="product__opinions">
+                        <span class="product__rate">4.0</span>
+                        <span class="product__reviews">29 отзывов</span>
+                    </div>
+                </article>
+            </section>
+            <form class="order">
+                <h2 class="order__heading">Заказать сувенир</h2>
+                <div class="order__count order__row">
+                    <label for="order__count">Количество:</label>
+                    <input type="number" id="order__count">
+                </div>
+                <div class="order__city order__row">
+                    <label for="order__city">Город</label>
+                    <select id="order__city">
+                        <option>-</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Екатеринбург</option>
+                    </select>
+                </div>
+                <div class="order__email order__row">
+                    <label for="order__email">Email</label>
+                    <input type="email" placeholder="email" id="order__email">
+                </div>
+                <div class="order__tel order__row">
+                    <label for="order__tel">Телефон</label>
+                    <input type="tel" placeholder="Номер телефона*" id="order__tel">
+                </div>
+                <div class="order__date order__row">
+                    <label for="order__date">Дата доставки:</label>
+                    <input type="date" id="order__date">
+                </div>
+                <div class="order__actions">
+                    <input type="reset" class="order__btn-reset" value="Сбросить заказ">
+                    <input type="submit" class="order__btn-submit" value="Заказать!">
+                </div>
+            </form>
+            <aside class="popular">
+                <h4 class="popular__heading">Популярные товары</h4>
+                <ul class="popular__list">
+                    <li class="popular__list-item"><a href="#">Чесалка для спины</a></li>
+                    <li class="popular__list-item"><a href="#">Автомобиль "Тесла"</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+</div>
 </body>
 </html>
