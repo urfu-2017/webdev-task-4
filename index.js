@@ -25,8 +25,6 @@ window.onload = function () {
         startX = event.changedTouches[0].pageX;
         if (window.innerWidth - startX > 30) {
             startX = null;
-
-            return;
         }
     };
 
@@ -46,8 +44,9 @@ window.onload = function () {
     };
 
     function showMenu(show) {
-        menu.style.display = show ? 'block' : 'none';
+        menu.classList.remove('menu_opened');
         if (show) {
+            menu.classList.add('menu_opened');
             disableScroll();
         } else {
             enableScroll();
@@ -55,12 +54,12 @@ window.onload = function () {
     }
 
     function disableScroll() {
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('body_no-scroll');
         window.onscroll = (e) => e.preventDefault();
     }
 
     function enableScroll() {
-        document.body.style.overflow = '';
+        document.body.classList.remove('body_no-scroll');
         window.onscroll = null;
     }
 };

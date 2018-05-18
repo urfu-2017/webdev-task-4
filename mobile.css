@@ -53,6 +53,11 @@
         min-width: 50vw;
     }
 
+    .menu_opened
+    {
+        display: block;
+    }
+
     .menu__btn-close
     {
         display: block;

@@ -3,6 +3,11 @@ body
     font-family: 'Arial', serif;
 }
 
+.body_no-scroll
+{
+    overflow: hidden;
+}
+
 a
 {
     text-decoration: none;
