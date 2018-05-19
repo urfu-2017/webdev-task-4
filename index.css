@@ -353,7 +353,7 @@ body
 
     .wrapper__order
     {
-       margin: 0;
+        margin: 0;
     }
 
     .wrapper
@@ -724,7 +724,8 @@ body
         width: 50%;
     }
 
-    .overflow-hidden {
+    .overflow-hidden
+    {
         height: 100%;
         overflow: hidden;
         width: 100%;
