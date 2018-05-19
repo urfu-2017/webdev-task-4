@@ -12,7 +12,7 @@
             <div class="main-head__market-name">Билли.Маркет</div>
             <div class="main-head--menu-icon" id="menu-icon"></div>
             <div class="main-head__input-field">
-                <input type="text" id="search-field"
+                <input type="text" id="search-field" autofocus
                     class="input-field__search-field hide-inputs-tablet">
                 <input type="button" class="input-field__search-button hide-inputs-tablet" value="Найти">
                 <div class="input-field__input-border"></div>
@@ -42,29 +42,37 @@
                 <img src="./static/pictures/jpg/1.jpg" alt="first souvenir">
                 <div class="tile__description"><a>1 сувенир</a></div>
                 <div class="tile__price"><strong>290&#8381;</strong></div>
-                <div class="tile__feedback">4.5</div>
-                <div class="tile__feedback-border"></div>
+                <div class="tile__feedback-block">
+                    <div class="tile__feedback">4.5</div>
+                    <div class="tile__feedback-border"></div>
+                </div>
             </section>
             <section class="content__tile content__second-tile">
                 <img src="./static/pictures/jpg/2.jpg" alt="second souvenir">
                 <div class="tile__description"><a>2 сувенир</a></div>
                 <div class="tile__price"><strong>290&#8381;</strong></div>
-                <div class="tile__feedback">4.5</div>
-                <div class="tile__feedback-border"></div>
+                <div class="tile__feedback-block">
+                    <div class="tile__feedback">4.5</div>
+                    <div class="tile__feedback-border"></div>
+                </div>
             </section>
             <section class="content__tile content__third-tile">
                 <img src="./static/pictures/jpg/3.jpg" alt="third souvenir">
                 <div class="tile__description"><a>3 сувенир</a></div>
                 <div class="tile__price"><strong>290&#8381;</strong></div>
-                <div class="tile__feedback">4.5</div>
-                <div class="tile__feedback-border"></div>
+                <div class="tile__feedback-block">
+                    <div class="tile__feedback">4.5</div>
+                    <div class="tile__feedback-border"></div>
+                </div>
             </section>
             <section class="content__tile content__fourth-tile">
                 <img src="./static/pictures/jpg/4.jpg" alt="fourth souvenir">
                 <div class="tile__description"><a>4 сувенир</a></div>
                 <div class="tile__price"><strong>290&#8381;</strong></div>
-                <div class="tile__feedback">4.5</div>
-                <div class="tile__feedback-border"></div>
+                <div class="tile__feedback-block">
+                    <div class="tile__feedback">4.5</div>
+                    <div class="tile__feedback-border"></div>
+                </div>
             </section>
         </section>
         <section class="wrapper__order">
@@ -80,11 +88,11 @@
                 </section>
                 <section class="order-form__email">
                     <div>Почта</div>
-                    <input type="email" value="email">
+                    <input type="email" id="email-input" value="email">
                 </section>
                 <section class="order-form__phone">
                     <div>Телефон</div>
-                    <input type="tel" value="Номер телефона*">
+                    <input type="tel" id="phone-input" value="Номер телефона">
                 </section>
                 <section class="order-form__date">
                     <div>Дата</div>
